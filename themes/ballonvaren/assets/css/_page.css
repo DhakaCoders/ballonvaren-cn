@@ -40,3 +40,13 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+/* == pagination == */
+.fl-pagi-cntlr ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fl-pagi-cntlr ul li{
+	
+}
