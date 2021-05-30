@@ -358,6 +358,11 @@ form
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
+	border: 2px solid #EE3E15;
+}
+.fl-red-btn:hover{
+	background: transparent;
+	color: #EE3E15;
 }
 .fl-navyblue-btn{
 	width: 210px;
@@ -373,6 +378,11 @@ form
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
+	border: 2px solid #2C113E;
+}
+.fl-navyblue-btn:hover{
+	background: transparent;
+	color: #2C113E;
 }
 .fl-cyan-btn{
 	width: 210px;
@@ -388,6 +398,11 @@ form
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
+	border: 2px solid #1DB4B2;
+}
+.fl-cyan-btn:hover{
+	background: transparent;
+	color: #1DB4B2;
 }
 .fl-transparent-btn{
 	width: 210px;
@@ -404,6 +419,10 @@ form
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
+}
+.fl-transparent-btn:hover{
+	background: #2C113E;
+	color: #fff;
 }
 
 
