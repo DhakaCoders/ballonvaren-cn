@@ -212,6 +212,12 @@ strong{
 	font-weight: 700;
 }
 
+a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #909BA5;
+}
+
 
 
 
