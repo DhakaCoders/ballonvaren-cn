@@ -16,11 +16,12 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #f8f8f8;
-    color: #000000;
-    font-size: 18px;
+    background: #ffffff;
+    color: #909BA5;
+    font-size: 16px;
     line-height: 24px;
-     font-family: 'Candara';
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 p{
 	line-height: 1.2;
@@ -28,7 +29,7 @@ p{
 }
 ::selection {
   color: #fff;
-  background: #512C36;
+  background: #EE3E15;
 }
 /*-- app gap use pattern --*/
 /*data-xxs = 575
@@ -90,13 +91,14 @@ Containers
 	clear: both;
 }
 .container-xlg{
-	
+	max-width: 1830px;
+	width: 100%;
 }
 .container-lg{
 
 }
 .container{
-	max-width: 1200px;
+	max-width: 1315px;
 	width: 100%;
 }
 .container-md{
@@ -202,6 +204,12 @@ ul.ab-top-menu li:before,
 .fl-pagination-ctlr ul li:before,
 .attachments-browser ul li:before{
 	content: none!important;
+}
+
+
+
+strong{
+	font-weight: 700;
 }
 
 
@@ -332,6 +340,71 @@ form
 	width: 100%;
 }
 
+
+
+/*common button*/
+
+.fl-red-btn{
+	width: 210px;
+	height: 48px;
+	background: #EE3E15;
+	color: #fff;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.fl-navyblue-btn{
+	width: 210px;
+	height: 48px;
+	background: #2C113E;
+	color: #fff;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.fl-cyan-btn{
+	width: 210px;
+	height: 48px;
+	background: #1DB4B2;
+	color: #fff;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.fl-transparent-btn{
+	width: 210px;
+	height: 48px;
+	background: transparent;
+	color: #2C113E;
+	border: 1px solid #2C113E;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-weight: 800;
+}
 
 
 /*slider break fix*/

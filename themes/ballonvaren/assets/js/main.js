@@ -223,6 +223,27 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }, false);
 })();
 
+
+/*start of Sabbir*/
+
+
+/*start of Niaz*/
+
+
+
+/*start of Milon*/
+
+
+
+
+/*start of Noyon*/
+
+
+
+
+/*start of Shariful*/
+
+
     new WOW().init();
 
 })(jQuery);
