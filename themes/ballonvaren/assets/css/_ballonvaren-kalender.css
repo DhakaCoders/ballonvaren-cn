@@ -63,6 +63,7 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #909BA5;
+	margin: 0;
 }
 
 .img-part-innr{
@@ -176,9 +177,9 @@
 .element-grid-item-iner h5{
 	font-style: normal;
 	font-weight: 700;
-	font-size: 24px;
 	color: #2C113E;
 }
+
 .element-grid-heading{
 	margin-bottom: 10px;
 }
