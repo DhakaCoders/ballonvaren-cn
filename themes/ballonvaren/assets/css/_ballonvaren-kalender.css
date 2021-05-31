@@ -2,7 +2,26 @@
     padding-top: 60px;
     padding-bottom: 110px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
+    position: relative;
+    z-index: 9;
 }
+
+.off-days-sec:after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/calender-sec-shadow.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 1920px;
+    height: 551.95px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin-bottom: -250px;
+}
+
 
 .off-days-inner{
 	display: flex;
@@ -80,7 +99,7 @@
     transform: translate(-0%,-0%);
     height: 276px;
     width: 235px;
-    margin-bottom: -175px;
+    margin-bottom: -180px;
     margin-right: -140px;
 }
 
@@ -97,6 +116,8 @@
 .element-grid-sec{
 	padding-top: 65px;
 	padding-bottom: 65px;
+	position: relative;
+	z-index: 9;
 }
 
 .element-grid-item-inner ul{
