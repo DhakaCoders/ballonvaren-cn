@@ -1,3 +1,9 @@
+.onze-luch-grid-sec{
+	padding-top: 56px;
+}
+.onze-luch-grid-sec-cntlr{
+	padding-bottom: 30px;
+}
 .onze-luch-grid-sec-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
@@ -6,6 +12,6 @@
 .onze-luch-grid-sec-cntlr ul li{
 	max-width: 33.333%;
 	padding: 0 12px;
-	padding-bottom: 38px;
+	padding-bottom: 34px;
 	width: 100%;
 }
