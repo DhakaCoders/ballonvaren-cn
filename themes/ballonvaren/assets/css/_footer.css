@@ -47,12 +47,122 @@
 
 }
 .footer-cntlr{
+	padding-top: 58px;
+}
+.ftr-top-cntlr{
+	padding-bottom: 69px;
+	border-bottom: 2px solid #F8FAFB;
+}
+.ftr-top-col{
+	float: left;
+	padding-right: 10px;
+	width: 100%;
+}
+.ftr-top-col:last-of-type{
+	padding-right: 0;
+}
+.ftr-top-col1{
+	max-width: 33.92%;
+}
+.ftr-top-col2{
+	max-width: 36.18%;
+	padding-top: 22px;
+}
+.ftr-top-col3{
+	max-width: 29.49%;
+	padding-top: 22px;
+}
+
+.ftr-top-logo{
+	margin-bottom: 26px;
+}
+.ftr-top-logo a{
+	display: inline;
+}
+.ftr-top-bank-logo-cntlr{
 
 }
+.ftr-top-bank-logo-cntlr ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -6px;
+}
+.ftr-top-bank-logo-cntlr ul li{
+	padding: 0 6px;
+}
+.ftr-top-col-title{
+	color: #2C113E;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	line-height: 1;
+}
+.ftr-top-col-menu{
+
+}
+.ftr-top-col-menu ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.ftr-top-col-menu ul li{
+	padding: 13px 0;
+	padding-right: 5px;
+	width: 50%;
+}
+.ftr-top-col-menu ul li:nth-child(2n+2){
+	padding-right: 0;
+}
+.ftr-top-col-menu ul li.ftr-top-col-menu-single{
+	width: 100%;
+	display: block;
+}
+.ftr-top-col-menu ul li a{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+}
+.ftr-top-col-menu ul li:first-child,
+.ftr-top-col-menu ul li:nth-child(2){
+	padding-top: 0;
+}
+.ftr-top-col-menu ul li:last-child{
+	padding-bottom: 0;
+}
+.ftr-top-col-details{
+
+}
+.ftr-top-col-addr{
+	margin-bottom: 35px;
+}
+.ftr-top-col-addr a{
+	display: inline-block;
+	line-height: 2;
+}
+.ftr-top-col-tel{
+	margin-bottom: 16px;
+}
+.ftr-top-col-tel span,
+.ftr-top-col-mail span{
+	display: inline-block;
+}
+.ftr-top-col-tel a,
+.ftr-top-col-mail a{
+	display: inline-block;
+	line-height: 1;
+}
+.ftr-top-col-mail{
+	margin-bottom: 35px;
+}
+.ftr-top-col-socials{
+	padding-left: 0;
+}
+
 .ftr-btm-cntlr{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	padding: 49px 0;
 }
 .ftr-btm-copyright{
 	padding-right: 10px;
@@ -87,6 +197,7 @@
 	height: 2px;
 	width: 4px;
 	background: #909BA5;
+	margin-top: 1px;
 }
 .ftr-btm-menu ul li:last-child:after{
 	content: none;
@@ -99,6 +210,9 @@
 	text-transform: capitalize;
 	color: #909BA5;
 }
+.ftr-btm-menu ul li a:hover{
+	color: #EE3E15;
+}
 .ftr-btm-conv{
 	margin-left: auto;
 }
@@ -109,5 +223,13 @@
 }
 .ftr-btm-conv p a{
 	display: inline-block;
-	color: #;
+	color: #EE3E15;
+}
+
+
+/*responsive*/
+@media(max-width: 1699px){
+	.footer-top-sec-cntlr ul li{
+		padding: 0 25px;
+	}
 }
