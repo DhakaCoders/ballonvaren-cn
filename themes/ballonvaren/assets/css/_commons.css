@@ -135,9 +135,9 @@ img{
 .show-lg{
 	display: none!important;
 }
-.hide-md{
+/*.hide-md{
 	display: block!important;
-}
+}*/
 .show-md{
 	display: none!important;
 }
