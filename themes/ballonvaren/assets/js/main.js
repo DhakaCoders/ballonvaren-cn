@@ -240,9 +240,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Momin*/
+//Masonry
 
-
-
+      if( $('.onze-luch-grid').length ){
+        $('.onze-luch-grid').masonry({
+          // options
+          itemSelector: '.onze-luch-grid-item',
+        });
+      };
 
 /*start of Noyon*/
 
