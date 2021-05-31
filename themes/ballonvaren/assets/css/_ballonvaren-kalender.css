@@ -187,7 +187,7 @@
 }
 
 .element-grid-heading{
-	margin-bottom: 10px;
+	margin-bottom: 13px;
 }
 
 .element-grid-item-iner span{
@@ -204,5 +204,9 @@
 .element-grid-item-iner p{
 	font-size: 16px;
 	color: #909BA5;
-	margin: 0;
+	/*margin: 0;*/
+}
+
+.element-grid-item-inner ul li .element-grid-item .element-grid-item-iner p:last-of-type {
+    margin-bottom: 0;
 }
