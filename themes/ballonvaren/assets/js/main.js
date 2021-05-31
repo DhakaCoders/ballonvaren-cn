@@ -268,6 +268,19 @@ if (windowWidth <= 767) {
 
 /*start of Shariful*/
 
+if( $('.humbergar').length ){
+    $('.humbergar').click(function(){
+      $('body').toggleClass('allWork');
+    });
+  }
+  if( $('li.menu-item-has-children > a').length ){
+    $('li.menu-item-has-children > a').click(function(e){
+     event.preventDefault();
+     $(this).next().slideToggle(300);
+     $(this).parent().toggleClass('sub-menu-arrow');
+   });
+  }
+
 
     new WOW().init();
 
