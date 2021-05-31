@@ -10,10 +10,9 @@
     position: absolute;
     content: "";
     background-image: url(../images/calender-sec-shadow.png);
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: 100% 100%;
     background-repeat: repeat-x;
-    width: 1920px;
     height: 551.95px;
     left: 0;
     bottom: 0;
@@ -21,7 +20,6 @@
     z-index: -1;
     margin-bottom: -250px;
 }
-
 
 .off-days-inner{
 	display: flex;
@@ -40,6 +38,10 @@
 .off-days-sec-img-part{
 	max-width: 50%;
 	width: 100%;
+}
+
+.img-part-innr {
+    padding-left: 13px;
 }
 
 .heading{
@@ -188,7 +190,7 @@
 	color: #EE3E15;
 	display: inline-block;
 	margin-bottom: 35px;
-	padding-left: 31px;
+	/*padding-left: 31px;*/
 }
 
 
