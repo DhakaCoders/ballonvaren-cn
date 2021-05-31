@@ -10,10 +10,9 @@
     position: absolute;
     content: "";
     background-image: url(../images/calender-sec-shadow.png);
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: 100% 100%;
     background-repeat: repeat-x;
-    width: 1920px;
     height: 551.95px;
     left: 0;
     bottom: 0;
@@ -21,7 +20,6 @@
     z-index: -1;
     margin-bottom: -250px;
 }
-
 
 .off-days-inner{
 	display: flex;
@@ -40,6 +38,10 @@
 .off-days-sec-img-part{
 	max-width: 50%;
 	width: 100%;
+}
+
+.img-part-innr {
+    padding-left: 13px;
 }
 
 .heading{
@@ -61,6 +63,7 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #909BA5;
+	margin: 0;
 }
 
 .img-part-innr{
@@ -136,6 +139,7 @@
 	background: #FFFFFF;
 	box-shadow: 0px 30px 84px rgba(44, 17, 62, 0.09);
 	border-radius: 3px;
+	border-radius: 3px;
 	padding-top: 31px;
 	padding-left: 35px;
 	padding-right: 35px;
@@ -173,11 +177,11 @@
 .element-grid-item-iner h5{
 	font-style: normal;
 	font-weight: 700;
-	font-size: 24px;
 	color: #2C113E;
 }
+
 .element-grid-heading{
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .element-grid-item-iner span{
@@ -187,12 +191,13 @@
 	text-transform: uppercase;
 	color: #EE3E15;
 	display: inline-block;
-	margin-bottom: 35px;
-	padding-left: 31px;
+	margin-bottom: 30px;
+	/*padding-left: 31px;*/
 }
 
 
 .element-grid-item-iner p{
 	font-size: 16px;
 	color: #909BA5;
+	margin: 0;
 }
