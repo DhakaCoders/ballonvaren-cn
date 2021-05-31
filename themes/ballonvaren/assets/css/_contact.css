@@ -4,16 +4,42 @@
 ------------------
 */
 .contact-form-sec-wrp{
-	padding-bottom: 215px;
+	padding-bottom: 320px;
+	position: relative;
+}
+.contact-form-angle-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 550px;
+	background: url(../images/contact-form-bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.contact-parachute-icon{
+	position: absolute;
+	right: 205px;
+	bottom: 30px;
+	background:url(../images/contact-parachute-icon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 235px;
+	height: 275px;
 }
 .page-entry-header{
 	border-bottom: 1px solid#f4f8f9;
 	margin-bottom: 60px;
 }
-.page-entry-header .fl-h1{
-	color: #2c113e;
-	text-transform: uppercase;
-	margin-bottom: 20px;
+.page-entry-header .fl-h1 {
+    color: #2c113e;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
 }
 .page-entry-header .fl-h1 span{
 	display: inline-block;
@@ -405,6 +431,23 @@ Contact info
 contact-google-map
 ----------------
 */
+.contact-google-map-sec-wrp{
+	padding-bottom: 85px;
+}
+.contact-google-map{
+	position: relative;
+}
 .contact-google-map iframe{
 	height: 680px;
+}
+.contact-google-parachute {
+    position: absolute;
+    left: -55px;
+    bottom: 100px;
+    background: url(../images/contact-google-parachute-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 75px;
+    height: 87px;
 }
