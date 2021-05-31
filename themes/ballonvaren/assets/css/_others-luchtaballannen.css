@@ -10,8 +10,7 @@
 	margin: 0 -12px;
 }
 .onze-luch-grid-sec-cntlr ul li{
-	max-width: 33.333%;
+	width: 33.333%;
 	padding: 0 12px;
 	padding-bottom: 34px;
-	width: 100%;
 }
