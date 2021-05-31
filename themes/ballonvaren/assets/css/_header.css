@@ -432,6 +432,10 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.hdr-main-menu {
 	    padding-right: 20px;
 	}
+	nav.main-nav > ul{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
 	nav.main-nav > ul > li {
 	    padding-left: 10px;
 	    padding-right: 10px;
@@ -444,12 +448,20 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.logo a{
 		max-width: 220px;
 	}
+	nav.main-nav > ul{
+		margin-left: -6px;
+		margin-right: -6px;
+	}
 	nav.main-nav > ul > li {
 	    padding-left: 6px;
 	    padding-right: 6px;
 	}
 	nav.main-nav > ul > li > a {
 	    font-size: 12px;
+	}
+	.hdr-contact-menu ul{
+		margin-left: -4px;
+		margin-right: -4px;
 	}
 	.hdr-contact-menu ul li {
 	    padding-left: 4px;
@@ -514,6 +526,10 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn{
 		height: 32px;
 	}
+	nav.main-nav > ul{
+		margin-left: -3px;
+		margin-right: -3px;
+	}
 	nav.main-nav > ul > li {
 	    padding-left: 3px;
 	    padding-right: 3px;
@@ -567,7 +583,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		top: 0;
 		right: -383px;
 		bottom: 0;
-		padding: 20px;
+		padding: 20px 20px 28px;
 		background: #f9f9f9;
 		max-width: 383px;
 		width: 0;
@@ -579,6 +595,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		height: 100%;
 		width: 100%;
 		overflow-y: auto;
+		padding-top: 125px;
 	}
 	/*.xs-mobile-menu{
 		background: #faf5ef;
@@ -601,8 +618,112 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 
 	.xs-mobile-menu-cntlr nav.main-nav > ul > li{
 		display: block;
+		padding-bottom: 15px;
 	}
 	.xs-mobile-menu-cntlr nav.main-nav > ul > li > a{
 		padding-bottom: 0px;
+	}
+	.xs-mobile-menu-cntlr nav.main-nav > ul > li > a:after{
+		content: none;
+	}
+	.xs-mobile-menu-cntlr nav.main-nav > ul > li.active a{
+		color: inherit;
+	}
+	.xs-mobile-menu-cntlr .xs-menu{
+		border-bottom: 2px solid #ECF1F4;
+		padding-left: 30px;
+	}
+	.xs-mobile-menu-cntlr .hdr-social-media {
+	    padding-left: 20px;
+	    border-left: none;
+	}
+	.xs-mobile-menu-cntlr .fl-lang ul li.lang-active a, 
+	.xs-mobile-menu-cntlr .fl-lang ul li a {
+	    font-size: 14px;
+	}
+	.xs-social-menu{
+		padding-top: 15px;
+		padding-bottom: 35px;
+	}
+	.xs-contact-menu ul{
+		margin-left: -6px;
+		margin-right: -6px;
+	}
+	.xs-contact-menu ul li{
+		display: inline-block;
+		vertical-align: baseline;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.xs-contact-menu ul li.xs-cart a.fl-red-btn{
+		width: 160px;
+		height: 48px;
+		font-size: 14px;
+		font-weight: 900;
+	}
+	.xs-contact-menu ul li.xs-contact-btn a.fl-navyblue-btn{
+		width: 160px;
+		height: 48px;
+		font-size: 14px;
+		font-weight: 900;
+	}
+	.allWork .xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children > a{
+		display: inline-block;
+		vertical-align: baseline;
+		padding-right: 20px;
+		position: relative;
+	}
+	.allWork .xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children > a:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: url('../images/xs-btm-arrow.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 11px;
+		height: 7px;
+	}
+	.xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
+		position: initial;
+		background: transparent;
+		width: 100%;
+		margin-top: 20px;
+    	padding: 0 30px 10px 40px;
+		transition: initial;
+		-ms-transition: initial;
+		-webkit-transition: initial;
+		transform: initial;
+		-ms-transform: initial;
+		-webkit-transform: initial;
+		-o-transform: initial;
+		transform-origin: initial;
+		opacity: 1;
+		box-shadow: initial;
+		-ms-box-shadow: initial;
+		-webkit-box-shadow: initial;
+		border-bottom: 2px solid #ECF1F4;
+		display: none;
+	}
+	.xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
+		color: #909BA5;
+	}
+	.xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li{
+		border-bottom: none;
+	}
+	.xs-mobile-menu-cntlr nav.main-nav > ul > li > a{
+		font-size: 14px;
+		font-weight: 700;
+		color: #909BA5;
+	}
+}
+
+
+@media(max-width: 479px){
+	.xs-contact-menu ul li.xs-cart a.fl-red-btn,
+	.xs-contact-menu ul li.xs-contact-btn a.fl-navyblue-btn{
+		width: 130px;
+		height: 40px;
+		font-size: 12px;
 	}
 }
