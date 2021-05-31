@@ -254,7 +254,15 @@ $('.wpforms-error').on('click', function(){
       };
 
 /*start of Noyon*/
+if (windowWidth <= 767) {
+    $('.ftr-top-col h6').on('click', function(){
+      $(this).toggleClass('active');
+      $(this).parent().siblings().find('h6').removeClass('active');
+      $(this).parent().find('.ftr-menu-des').slideToggle(300);
+      $(this).parent().siblings().find('.ftr-menu-des').slideUp(300);
+    });
 
+  }
 
 
 

@@ -94,6 +94,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -6px;
+	justify-content: center;
 }
 .ftr-top-bank-logo-cntlr ul li{
 	padding: 0 6px;
@@ -242,4 +243,167 @@
 	.footer-top-sec-cntlr ul li{
 		padding: 0 25px;
 	}
+	.footer-cntlr{
+		padding-top: 40px;
+	}
+}
+@media(max-width: 1399px){
+
+}
+@media(max-width: 1299px){
+
+}
+@media(max-width: 1199px){
+	.footer-top-sec-cntlr ul{
+		margin: 0 -15px;
+	}
+	.footer-top-sec-cntlr ul li{
+		padding: 0 15px;
+	}
+	.ftr-top-sec-item-title.fl-h6{
+		font-size: 15px;
+	}
+	.ftr-top-col1{
+		max-width: 35.92%;
+	}
+	.ftr-top-col2 {
+	    max-width: 34.18%;
+	}
+	.footer-cntlr{
+		padding-top: 34px;
+	}
+	.ftr-top-col-menu ul li{
+		padding: 9px 0;
+	}
+}
+@media(max-width: 991px){
+	.footer-top-sec{
+		padding-top: 27px;
+		padding-bottom: 12px;
+	}
+	.footer-top-sec-cntlr ul{
+		margin: 0 -10px;
+	}
+	.footer-top-sec-cntlr ul li{
+		padding: 0 10px;
+	}
+	.ftr-top-sec-item-title.fl-h6{
+		font-size: 14px;
+	}
+	.ftr-top-col2{
+		padding-left: 30px;
+	}
+	.ftr-top-col-menu ul li{
+		width: 100%;
+		padding: 7px 0;
+	}
+	.ftr-top-col-menu ul li:nth-child(2){
+		padding-top: 7px;
+	}
+	.ftr-btm-cntlr{
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+	.ftr-btm-copyright{
+		width: 100%;
+		margin-bottom: 22px;
+	}
+	.ftr-btm-menu{
+		margin-bottom: 30px;
+	}
+
+	.ftr-btm-menu,
+	.ftr-btm-conv{
+		width: 100%;
+	}
+	.ftr-btm-menu ul{
+		justify-content: center;
+	}
+	.ftr-btm-menu ul li{
+		margin-bottom: 12px;
+	}
+}
+@media(max-width: 767px){
+	.footer-top-sec-cntlr ul{
+		margin: 0;
+	}
+	.footer-top-sec-cntlr ul li{
+		width: 1000%;
+		padding: 0;
+		text-align: center;
+	}
+	.ftr-top-sec-item-title.fl-h6{
+		display: inline-block;
+	}
+	.ftr-top-col{
+		padding: 0;
+		max-width: 100%;
+		text-align: center;
+	}
+	.ftr-top-cntlr{
+		padding-bottom: 50px;
+	}
+	.ftr-top-logo{
+		padding-bottom: 29px;
+		margin-bottom: 60px;
+		position: relative;
+	}
+	.ftr-top-logo:after{
+		position: absolute;
+		bottom: 0;
+		content: "";
+		height: 2px;
+		width: 67px;
+		background: #ECF1F4;
+		left: 50%;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+	}
+	.ftr-top-col-menu ul li{
+		padding: 10px 0;
+	}
+	.ftr-top-col-menu ul li:nth-child(2){
+		padding-top: 10px;
+	}
+	.ftr-top-col2{
+		margin-bottom: 50px;
+	}
+	.ftr-menu-des{
+		display: none;
+	}
+	.ftr-top-col-title{
+		padding-right: 26px;
+		position: relative;
+		display: inline-block;
+	}
+	.ftr-top-col-title:after{
+		position: absolute;
+		top: 2px;
+		content: "";
+		right: 0;
+		background-image: url('../images/ftr-top-col-title-img.svg');
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 10px;
+		background-size: contain;
+	}
+	.ftr-top-col-title.active:after{
+		transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg);
+		-o-transform: rotate(-180deg);
+	}
+	.ftr-top-col-socials{
+		display: block;
+		padding-top: 15px;
+	}
+	.ftr-top-bank-logo-cntlr{
+		margin-bottom: 40px;
+	}
+}
+@media(max-width: 575px){
+
 }
