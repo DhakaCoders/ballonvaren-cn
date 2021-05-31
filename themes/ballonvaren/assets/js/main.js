@@ -233,6 +233,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 /*start of Milon*/
 
+$('.wpforms-error').on('click', function(){
+  $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+});
+
 
 
 /*start of Jahir*/
