@@ -18,17 +18,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.contact-parachute-icon{
-	position: absolute;
-	right: 205px;
-	bottom: 30px;
-	background:url(../images/contact-parachute-icon.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	width: 235px;
-	height: 275px;
-}
+
 .page-entry-header{
 	border-bottom: 1px solid#f4f8f9;
 	margin-bottom: 60px;
@@ -434,7 +424,7 @@ contact-google-map
 .contact-google-map-sec-wrp{
 	padding-bottom: 85px;
 }
-.contact-google-map{
+.contact-google-map-wrp{
 	position: relative;
 }
 .contact-google-map iframe{
@@ -450,4 +440,88 @@ contact-google-map
     background-position: center center;
     width: 75px;
     height: 87px;
+}
+
+.contact-parachute-icon {
+    position: absolute;
+    right: -130px;
+    top: -300px;
+    background: url(../images/contact-parachute-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 235px;
+    height: 275px;
+}
+
+
+/*
+---------------------
+ Responsive Css
+---------------------
+*/
+
+@media (max-width: 1699px){
+	.contact-form-lft {
+		width: 72%;
+	    padding-right: 80px;
+	}
+	.contact-form-rgt {
+	    width: 28%;
+	}
+}
+
+
+@media (max-width: 1499px) {
+	.contact-form-lft {
+		width: 68%;
+	    padding-right: 70px;
+	}
+	.contact-form-rgt {
+	    width: 32%;
+	}
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.contact-parachute-icon {
+	    right: -50px;
+	    top: -265px;
+	    width: 200px;
+	    height: 240px;
+	}
+
+}
+
+@media(max-width: 1199px){
+	
+
+}
+
+@media(max-width: 991px){
+	
+	
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+	
+
+}
+
+@media(max-width: 479px){
+	
+
+}
+
+@media(max-width: 359px){
+
 }
