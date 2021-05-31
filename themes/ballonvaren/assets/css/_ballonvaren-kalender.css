@@ -1,6 +1,6 @@
 .off-days-sec {
     padding-top: 60px;
-    padding-bottom: 110px;
+    padding-bottom: 120px;
     position: relative;
     z-index: 9;
 }
@@ -114,7 +114,7 @@
     right: 0;
     height: 276px;
     width: 235px;
-    margin-top: 550px;
+    margin-top: 540px;
     margin-right: -140px;
 }
 
