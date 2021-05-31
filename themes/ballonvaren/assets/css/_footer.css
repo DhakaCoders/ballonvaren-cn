@@ -2,6 +2,13 @@
 	background: #2C113E;
 	padding-top: 32px;
 	padding-bottom: 17px;
+	position: relative;
+	margin-top: 6px;
+}
+.footer-top-sec .hdr-color-border:after{
+	bottom: initial;
+	top: 0;
+	margin-top: -6px;
 }
 .footer-top-sec-cntlr{
 
@@ -229,6 +236,9 @@
 
 /*responsive*/
 @media(max-width: 1699px){
+	.footer-top-sec-cntlr ul{
+		margin: 0 -25px;
+	}
 	.footer-top-sec-cntlr ul li{
 		padding: 0 25px;
 	}
