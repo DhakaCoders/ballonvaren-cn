@@ -412,6 +412,9 @@ Contact info
 	 font-size: 14px;
     line-height: 26px;
 }
+.has-svg-social ul li a i svg{
+	background:transparent;
+}
 .contact-form-info-socail ul li a:hover{
 		opacity: 0.7;
 }
