@@ -42,6 +42,9 @@
 }
 
 /* == pagination == */
+.fl-pagi-cntlr{
+	padding-bottom: 64px;
+}
 .fl-pagi-cntlr ul{
 	display: flex;
 	justify-content: center;
