@@ -2,6 +2,23 @@
     padding-top: 60px;
     padding-bottom: 110px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
+    position: relative;
+    z-index: 9;
+}
+
+.off-days-sec:after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/calender-sec-shadow.png);
+    background-size: auto;
+    background-position: 100% 100%;
+    background-repeat: repeat-x;
+    height: 551.95px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin-bottom: -250px;
 }
 
 .off-days-inner{
@@ -21,6 +38,10 @@
 .off-days-sec-img-part{
 	max-width: 50%;
 	width: 100%;
+}
+
+.img-part-innr {
+    padding-left: 13px;
 }
 
 .heading{
@@ -80,7 +101,7 @@
     transform: translate(-0%,-0%);
     height: 276px;
     width: 235px;
-    margin-bottom: -175px;
+    margin-bottom: -180px;
     margin-right: -140px;
 }
 
@@ -97,6 +118,8 @@
 .element-grid-sec{
 	padding-top: 65px;
 	padding-bottom: 65px;
+	position: relative;
+	z-index: 9;
 }
 
 .element-grid-item-inner ul{
@@ -167,7 +190,7 @@
 	color: #EE3E15;
 	display: inline-block;
 	margin-bottom: 35px;
-	padding-left: 31px;
+	/*padding-left: 31px;*/
 }
 
 
