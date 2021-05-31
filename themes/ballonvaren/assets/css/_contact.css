@@ -135,7 +135,45 @@
 	border-radius: 3px;
 	box-shadow: none !important;
 }
+.contact-form-wrp .wpforms-field-container .wpforms-field-select-calendar,
+.contact-form-wrp .wpforms-field-container .wpforms-field-select{
+    width: 100% !important;
+}
 
+.contact-form-wrp .wpforms-field-container .wpforms-field-select-calendar select,
+.contact-form-wrp .wpforms-field-select select{
+    outline: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 40px;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 48px !important;
+    background: #fff !important;
+    border: 1px solid #ECF1F4;
+    padding: 15px 15px 15px;
+    font-size: 16px !important;
+    line-height: 1;
+	color: #909BA5;
+    font-weight: 400 !important;
+    border-radius: 0;
+    position: relative;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    background-image: url(../images/select-angle-icon.svg)!important;
+    background-size: 5px 5px;
+    background-repeat: no-repeat !important;
+    background-position: 97% center !important;
+    border-radius: 3px;
+}
+.contact-form-wrp .wpforms-field-container .wpforms-field-select-calendar select{
+	background-image: url(../images/select-angle-cln-icon.svg)!important;
+    background-size: 5px 5px;
+    background-repeat: no-repeat !important;
+    background-position: 97% center !important;
+}
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea{
 	width: 100%;
 	margin-bottom: 15px;
@@ -457,6 +495,55 @@ contact-google-map
     height: 275px;
 }
 
+
+/*
+-----------------------
+boek-je-form-sec-wrp
+-----------------------
+*/
+.boek-je-form-sec-wrp{
+	padding-bottom: 55px;
+	position: relative;
+}
+.boek-je-form-sec-wrp .page-entry-header{
+	padding-bottom: 20px;
+}
+.boek-je-form-sec-wrp .contact-form-info-cntlr{
+    padding: 60px 30px 50px 30px;
+    background: #FDCA35;
+    position: relative;
+}
+.contact-form-info-title-1{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.boek-je-form-sec-wrp .contact-form-info{
+	color: #fff;
+}
+.boek-je-form-sec-wrp .contact-form-info p{
+	margin-bottom: 30px;
+}
+.boek-je-form-sec-wrp .fl-transparent-btn{
+	width: 200px;
+	height: 50px;
+	color: #fff;
+	border:2px solid#fff;
+	margin: 0 auto;
+}
+.boek-parachute-icon{
+	position: absolute;
+	right: -80px;
+	bottom: -40px;
+	background:url(../images/boek-parachute-icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 125px;
+	height: 148px;
+}
 
 /*
 ---------------------
