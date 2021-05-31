@@ -217,6 +217,9 @@ a{
 	vertical-align: baseline;
 	color: #909BA5;
 }
+a:hover{
+	color: #EE3E15;
+}
 
 
 

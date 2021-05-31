@@ -461,3 +461,15 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	    font-size: 12px;
 	}
 }
+
+@media(max-width: 1199px){
+	.logo a {
+	    max-width: 170px;
+	}
+	nav.main-nav > ul > li > a {
+	    font-size: 10px;
+	}
+	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn {
+	    font-size: 10px;
+	}
+}
