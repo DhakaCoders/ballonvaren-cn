@@ -12,7 +12,7 @@
 .onze-luch-grid-sec-cntlr ul li{
 	width: 33.333%;
 	padding: 0 12px;
-	padding-bottom: 34px;
+	padding-bottom: 36px;
 }
 
 @media(max-width: 1199px){
@@ -40,6 +40,9 @@
 }
 
 @media(max-width: 767px){
+.header{
+	overflow: hidden;
+}
 .onze-luch-grid-sec{
 	padding-top: 40px;
 }
