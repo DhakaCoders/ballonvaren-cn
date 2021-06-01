@@ -59,8 +59,6 @@ overons-msnry-grd-sec-wrp
 
 .overons-msnry-grd-dsc .fl-h1{
 	display: block;
-	font-size: 48px;
-	line-height: 1;
 	color: #2C113E;
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -115,8 +113,6 @@ overons-team-sec-wrp
 }
 .overons-team-module .fl-h4{
 	display: block;
-	font-size: 30px;
-	line-height: 1;
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 15px;
@@ -187,21 +183,59 @@ overons-team-sec-wrp
 	.overons-msnry-grd-rgt {
 	    padding-left: 65px;
 	}
+	.boek-parachute-icon {
+	    right: -55px;
+	    bottom: -40px;
+	    width: 100px;
+	    height: 130px;
+	    background-size: 100px 130px;
+	}
 }
 
 @media(max-width: 1199px){
-	
+	.boek-parachute-icon {
+	    right: -15px;
+	    bottom: -40px;
+	    width: 80px;
+	    height: 110px;
+	    background-size: 80px 110px;
+	}
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 120px;
+	}
 
 }
 
 @media(max-width: 991px){
-	
+	.boek-parachute-icon {
+	    right: -15px;
+	    bottom: -40px;
+	    width: 65px;
+	    height: 85px;
+	    background-size: 65px 85px;
+	}
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 80px;
+	}
 	
 	
 }
 
 @media(max-width: 767px){
-	
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 50px;
+	}
+	.boek-je-form-sec-wrp{
+		padding-top: 50px;
+	}
+	.boek-parachute-icon {
+	    right: auto;
+	    bottom: -10px;
+	    width: 65px;
+	    height: 85px;
+	    background-size: 65px 85px;
+	    left: -50px;
+	}
 }
 
 @media(max-width: 575px){
