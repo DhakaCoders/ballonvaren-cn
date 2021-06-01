@@ -409,6 +409,12 @@
 	.ftr-top-pament-method ul{
 		justify-content: center;
 	}
+	.ftr-top-col2 .ftr-top-col-title{
+		margin-bottom: 0;
+	}
+	.ftr-top-col-menu{
+		padding-top: 40px;
+	}
 }
 @media(max-width: 575px){
 
