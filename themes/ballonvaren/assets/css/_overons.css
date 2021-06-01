@@ -1,0 +1,150 @@
+/*
+-------------------------
+overons-msnry-grd-sec-wrp
+-------------------------
+*/
+.overons-msnry-grd-sec-wrp{
+	position: relative;
+	padding-bottom: 315px;
+}
+.overons-msnry-grd-sec-wrp .contact-form-angle-bg{
+	height: 600px;
+}
+.overons-msnry-grd-wrp{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	min-height: 750px;
+	height: 100%;
+}
+.overons-msnry-grd-item{
+	/*position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;*/
+	width: 50%;
+	padding: 0 12px 30px;
+	float: left;
+}
+.msnrytgi3{
+	margin-top: -130px;
+}
+.overons-msnry-grd-item-img{
+	border-radius: 3px;
+}
+.msnrytgi1 .overons-msnry-grd-item-img{
+	min-height: 260px;
+}
+.msnrytgi2 .overons-msnry-grd-item-img{
+	height: 390px;
+}
+.msnrytgi3 .overons-msnry-grd-item-img{
+	min-height: 455px;
+}
+.msnrytgi4 .overons-msnry-grd-item-img{
+	height: 325px;
+}
+.overons-msnry-grd-lft {
+    width: 42%;
+    float: left;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.overons-msnry-grd-rgt{
+	width: 58%;
+	float: right;
+	padding-left: 105px;
+}
+
+.overons-msnry-grd-dsc .fl-h1{
+	display: block;
+	font-size: 48px;
+	line-height: 1;
+	color: #2C113E;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.overons-msnry-grd-dsc p{
+	margin-bottom: 28px;
+}
+.overons-msnry-grd-dsc ul{
+	padding-left: 18px;
+	padding-bottom: 17px;
+}
+.overons-msnry-grd-dsc a{
+	margin-top: 35px;
+}
+
+/*
+--------------------
+overons-team-sec-wrp
+--------------------
+*/
+.overons-team-sec-wrp{
+	position: relative;
+}
+.ovs-team-entry-hdr .fl-h3{
+	font-size: 36px;
+	line-height: 1;
+	color: #2C113E;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+.ovs-team-entry-hdr p{
+	margin-bottom: 30px;
+}
+.overons-team-parachute-tp {
+    position: absolute;
+    top: -305px;
+    right: -110px;
+    background: url(../images/overons-team-parachute-tp-icon.png);
+    background-repeat: no-repeat;
+    background-size: 212px 288px;
+    width: 212px;
+    height: 288px;
+}
+.overons-team-img{
+	height: 600px !important;
+	margin-bottom: 100px;
+}
+.overons-team-module{
+	background:#FDCA35;
+	padding: 60px 20px;
+}
+.overons-team-module .fl-h4{
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.overons-team-module p{
+	color: #fff;
+	margin-bottom: 25px;
+}
+.overons-team-module a.fl-transparent-btn{
+	width: 200px;
+	height: 50px;
+	color: #fff;
+	font-weight: 900;
+	border:2px solid #fff;
+	margin: 0 auto;
+}
+.boek-je-form-sec-wrp .fl-transparent-btn:hover,
+.overons-team-module a.fl-transparent-btn:hover{
+	border-color:#2C113E;
+	background:#2C113E; 
+}
+
+.overons-team-parachute-btm{
+    position: absolute;
+    bottom: 60px;
+    left: -125px;
+    background: url(../images/overons-team-parachute-btm-icon.png);
+    background-repeat: no-repeat;
+    background-size: 236px 280px;
+    width: 236px;
+    height: 280px;
+}
