@@ -54,13 +54,6 @@
 	width: 100%;
 }
 
-.img-part-innr {
-}
-
-.heading{
-
-}
-
 .heading h3{
 	font-weight: 700;
 	font-style: normal;
@@ -69,7 +62,6 @@
 	color: #2C113E;
 }
 
-
 .heading p{
 	font-style: normal;
 	font-weight: 400;
@@ -77,10 +69,6 @@
 	line-height: 24px;
 	color: #909BA5;
 	margin: 0;
-}
-
-.img-part-innr{
-
 }
 
 .inline-bg-img{
@@ -165,7 +153,6 @@
 }
 
 
-
 .element-grid-item-iner h5{
 	font-style: normal;
 	font-weight: 700;
@@ -185,7 +172,6 @@
 	display: inline-block;
 	margin-bottom: 30px;
 }
-
 
 .element-grid-item-iner p{
 	font-size: 16px;
