@@ -264,7 +264,7 @@ if (windowWidth <= 767) {
 
   }
 
-  if (windowWidth <= 767){
+  if (windowWidth <= 992){
     if( $('.ftrTpSecSlider').length ){
       $('.ftrTpSecSlider').slick({
         dots: false,
@@ -277,7 +277,7 @@ if (windowWidth <= 767) {
         slidesToScroll: 1,
         responsive: [
         {
-          breakpoint: 576,
+          breakpoint: 640,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
