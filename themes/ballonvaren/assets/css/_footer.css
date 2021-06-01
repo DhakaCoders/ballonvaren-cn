@@ -254,7 +254,7 @@
 		padding-top: 22px;
 	}
 }
-@media(max-width: 1399px){
+@media(max-width: 1349px){
 	.ftr-top-sec-item-title.fl-h6{
 		font-size: 15px;
 	}
@@ -436,6 +436,9 @@
 	}
 	.ftr-top-col-menu{
 		padding-top: 40px;
+	}
+	.ftr-top-logo a{
+		max-width: 260px;
 	}
 }
 @media(max-width: 575px){
