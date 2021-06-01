@@ -876,6 +876,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		width: 11px;
 		margin-right: -3px;
 	}
+	.xs-lang .xs-lang-icon{
+		transform: rotate(-180deg);
+	}
 }
 
 @media(max-width: 575px){
