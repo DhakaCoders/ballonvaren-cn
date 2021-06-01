@@ -50,6 +50,8 @@
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
+	margin-top: -2px;
+	z-index: 2;
 }
 
 .footer-wrp{
