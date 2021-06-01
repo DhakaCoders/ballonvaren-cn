@@ -114,7 +114,8 @@ hr{
 	margin-top: 0;
 	padding-top: 20px;
 	margin-bottom: 50px;
-	border-top: 1px solid #ECF1F4;
+	border-top: none;
+	border-bottom: 1px solid #ECF1F4;
 	transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
