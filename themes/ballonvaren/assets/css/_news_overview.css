@@ -135,7 +135,6 @@
 	margin-bottom: 0;
 }
 
-/* ==== */
 a.red-color-arrow-btn{
 	padding-right: 19px;
 	position: relative;
@@ -149,6 +148,7 @@ a.red-color-arrow-btn{
 }
 a.red-color-arrow-btn i{
 	position: absolute;
+	margin-top: -1px;
 	right: 5px;
 	top: 50%;
 	transform: translateY(-50%);
@@ -157,10 +157,7 @@ a.red-color-arrow-btn i{
 	-o-transform: translateY(-50%);
 }
 a.red-color-arrow-btn:hover{
-	/* color: #2C113E; */
-}
-a.red-color-arrow-btn:hover i svg{
-	/* fill: #2C113E; */
+	opacity: 0.8;
 }
 a.red-color-arrow-btn:hover i{
 	right: 0;
