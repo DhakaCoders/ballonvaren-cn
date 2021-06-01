@@ -264,6 +264,30 @@ if (windowWidth <= 767) {
 
   }
 
+  if (windowWidth <= 992){
+    if( $('.ftrTpSecSlider').length ){
+      $('.ftrTpSecSlider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+      });
+    }
+  }
+
 
 
 /*start of Shariful*/
@@ -280,6 +304,15 @@ if( $('.humbergar').length ){
      $(this).parent().toggleClass('sub-menu-arrow');
    });
   }
+
+  if (windowWidth <= 992){
+    if($('.fl-lang-cntlr ul li a').length){
+      $('.fl-lang-cntlr ul li a').click(function(){
+        $(this).parents().toggleClass('xs-lang');
+      });
+    }
+  }
+
 
 
     new WOW().init();
