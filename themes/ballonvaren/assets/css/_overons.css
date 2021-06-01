@@ -97,7 +97,7 @@ overons-team-sec-wrp
 .overons-team-parachute-tp {
     position: absolute;
     top: -305px;
-    right: -110px;
+    right: -90px;
     background: url(../images/overons-team-parachute-tp-icon.png);
     background-repeat: no-repeat;
     background-size: 212px 288px;
@@ -147,4 +147,70 @@ overons-team-sec-wrp
     background-size: 236px 280px;
     width: 236px;
     height: 280px;
+}
+
+/*
+---------------------
+ Responsive Css
+---------------------
+*/
+
+@media (max-width: 1699px){
+	
+}
+
+
+@media (max-width: 1499px) {
+	
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.overons-team-parachute-tp {
+	    top: -290px;
+	    right: -40px;
+	    background-size: 180px 260px;
+	    width: 180px;
+	    height: 260px;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 60px;
+	    left: -60px;
+	    background-size: 200px 250px;
+	    width: 200px;
+	    height: 250px;
+	}
+}
+
+@media(max-width: 1199px){
+	
+
+}
+
+@media(max-width: 991px){
+	
+	
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+	
+
+}
+
+@media(max-width: 479px){
+	
+
+}
+
+@media(max-width: 359px){
+
 }

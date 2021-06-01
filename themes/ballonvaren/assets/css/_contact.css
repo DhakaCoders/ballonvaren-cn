@@ -504,8 +504,9 @@ boek-je-form-sec-wrp
 .boek-je-form-bg-cntlr{
 	padding-bottom: 160px;
 }
-.boek-je-form-sec-wrp .page-entry-header{
-	padding-bottom: 20px;
+.boek-je-form-sec-wrp .page-entry-header {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 .boek-je-form-sec-wrp .contact-form-info-cntlr{
     padding: 60px 30px 50px 30px;
