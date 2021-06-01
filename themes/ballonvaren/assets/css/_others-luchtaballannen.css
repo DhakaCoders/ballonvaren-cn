@@ -14,7 +14,9 @@
 	padding: 0 12px;
 	padding-bottom: 38px;
 }
-
+.onze-luch-grid-item-innr a img{
+	border-radius: 3px;
+}
 @media(max-width: 1199px){
 .onze-luch-grid-sec{
 	padding-top: 48px;
