@@ -142,7 +142,7 @@
 .breadcrumb-cntlr ul li:first-child a{
 	padding-left: 23px;
 }*/
-.breadcrumb-cntlr ul li a.fl-home-icon:after,
+/*.breadcrumb-cntlr ul li a.fl-home-icon:after,
 .breadcrumb-cntlr ul li:first-child a:after{
 	content: "";
 	position: absolute;
@@ -157,7 +157,7 @@
 	height: 17px;
 	width: 15px;
 	background-size: contain;
-}
+}*/
 @media(max-width: 767px){
 	.breadcrumb-sec{
 		display: none;
