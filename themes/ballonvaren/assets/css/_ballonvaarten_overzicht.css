@@ -262,10 +262,7 @@
 	height: 10px;
 	background-color: #ee3e15;
 	left: 0;
-	top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
+	top: 3px;
 	border-radius: 100%;
 }
 .fl-pro-grd-btn{
@@ -627,7 +624,7 @@
 		margin: 0 -8px;
 	}
 	.fl-products-cntlr ul.products > li{
-		padding: 0 8px 24px!important;
+		padding: 0 8px 40px!important;
 	}
 	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
 	.single-product .fl-pro-grd-title{
@@ -677,9 +674,6 @@
 	}
 	.fl-products-cntlr ul.products{
 		padding-bottom: 40px!important;
-	}
-	.fl-products-cntlr ul.products > li{
-		padding: 0 8px 20px!important;
 	}
 	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
 	.single-product .fl-pro-grd-title{

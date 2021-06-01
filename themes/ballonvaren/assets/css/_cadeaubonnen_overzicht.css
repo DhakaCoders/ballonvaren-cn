@@ -123,12 +123,19 @@
 }
 
 @media(max-width: 991px){
+	.fl-pro-gift-cntlr{
+		min-height: 190px;
+		padding: 0 15px;
+	}
 	.fl-pro-gift-cntlr i{
 		padding-bottom: 28px;
 	}
 	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi,
 	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
 		font-size: 29px;
+	}
+	.fl-pro-gift-cntlr span{
+		font-size: 25px;
 	}
 }
 
