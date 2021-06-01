@@ -132,6 +132,10 @@
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
+.fl-lang ul li.lang-active a:hover, 
+.fl-lang ul li a:hover{
+	color: #EE3E15;
+}
 .fl-lang-cntlr:after{
 	background-image: url('../images/bottom-arrow.svg');
 	background-repeat: no-repeat;
@@ -513,13 +517,13 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	    max-width: 170px;
 	}
 	nav.main-nav > ul > li > a {
-	    font-size: 10px;
+	    font-size: 11px;
 	}
 	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn {
-	    font-size: 10px;
+	    font-size: 11px;
 	}
 	.hdr-top-menu ul li a {
-	    font-size: 10px;
+	    font-size: 11px;
 	}
 	.hdr-top-menu ul li {
 	    padding-left: 8px;
@@ -539,6 +543,22 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	}
 	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn{
 		height: 32px;
+	}
+	nav.main-nav > ul{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	nav.main-nav > ul > li {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+}
+
+@media(max-width: 1023px){
+	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn,
+	.hdr-top-menu ul li a,
+	nav.main-nav > ul > li > a{
+	    font-size: 10px;
 	}
 	nav.main-nav > ul{
 		margin-left: -3px;
@@ -596,7 +616,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		top: 100%;
 		left: 0;
 		right: 0;
-		padding: 20px 20px 28px;
+		padding: 30px 20px 28px;
 		background: #f9f9f9;
 		z-index: 99999;
 		opacity: 0;
@@ -739,6 +759,25 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		font-size: 14px;
 		font-weight: 700;
 		color: #909BA5;
+	}
+	.fl-lang-cntlr:focus ul li.lang-active{
+		background: transparent;
+    	box-shadow: none;
+	}
+	.fl-lang-cntlr:focus ul li{
+		background-color: #fff;
+	    box-shadow: 0px 30px 84px rgb(44 17 62 / 9%), 0px 8px 32px rgb(19 10 46 / 7%);
+	    -webkit-box-shadow: 0px 30px 84px rgb(44 17 62 / 9%), 0px 8px 32px rgb(19 10 46 / 7%);
+	    -ms-box-shadow: 0px 30px 84px rgba(44, 17, 62, 0.09), 0px 8px 32px rgba(19, 10, 46, 0.07);
+	    text-align: center;
+	}
+	.fl-lang-cntlr:focus ul li:nth-child(2) {
+	    border-top-left-radius: 3px;
+	    border-top-right-radius: 3px;
+	}
+	.fl-lang-cntlr:focus ul li:last-child {
+	    border-bottom-left-radius: 3px;
+	    border-bottom-right-radius: 3px;
 	}
 }
 
