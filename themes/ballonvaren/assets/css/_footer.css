@@ -84,19 +84,18 @@
 	margin-bottom: 26px;
 }
 .ftr-top-logo a{
-	display: inline;
+	display: inline-block;
 }
-.ftr-top-bank-logo-cntlr{
+.ftr-top-pament-method{
 
 }
-.ftr-top-bank-logo-cntlr ul{
+.ftr-top-pament-method ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -6px;
-	justify-content: center;
 }
-.ftr-top-bank-logo-cntlr ul li{
+.ftr-top-pament-method ul li{
 	padding: 0 6px;
 }
 .ftr-top-col-title{
@@ -164,6 +163,7 @@
 }
 .ftr-top-col-socials{
 	padding-left: 0;
+	border-left: none;
 }
 
 .ftr-btm-cntlr{
@@ -172,10 +172,10 @@
 	flex-wrap: wrap;
 	padding: 49px 0;
 }
-.ftr-btm-copyright{
+.ftr-copyright{
 	padding-right: 10px;
 }
-.ftr-btm-copyright p{
+.ftr-copyright p{
 	margin-bottom: 0;
 	line-height: 1;
 	font-size: 13px;
@@ -221,17 +221,20 @@
 .ftr-btm-menu ul li a:hover{
 	color: #EE3E15;
 }
-.ftr-btm-conv{
+.ftr-developed-by{
 	margin-left: auto;
 }
-.ftr-btm-conv p{
+.ftr-developed-by p{
 	margin-bottom: 0;
 	line-height: 1;
 	font-size: 13px;
 }
-.ftr-btm-conv p a{
+.ftr-developed-by p a{
 	display: inline-block;
 	color: #EE3E15;
+}
+.ftr-developed-by p a:hover{
+	color: #909BA5;
 }
 
 
@@ -305,7 +308,7 @@
 		justify-content: center;
 		text-align: center;
 	}
-	.ftr-btm-copyright{
+	.ftr-copyright{
 		width: 100%;
 		margin-bottom: 22px;
 	}
@@ -314,7 +317,7 @@
 	}
 
 	.ftr-btm-menu,
-	.ftr-btm-conv{
+	.ftr-developed-by{
 		width: 100%;
 	}
 	.ftr-btm-menu ul{
@@ -400,8 +403,11 @@
 		display: block;
 		padding-top: 15px;
 	}
-	.ftr-top-bank-logo-cntlr{
+	.ftr-top-pament-method{
 		margin-bottom: 40px;
+	}
+	.ftr-top-pament-method ul{
+		justify-content: center;
 	}
 }
 @media(max-width: 575px){
