@@ -1,0 +1,87 @@
+.eveline-vernaeve-sec{
+
+}
+.eveline-vernaeve-sec-cntlr{
+
+}
+.eveline-vernaeve-sec-cntlr .page-entry-header{
+	margin-bottom: 29px;
+}
+
+.share-on-module{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin-bottom: 25px;
+}
+.share-on-module span{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1;
+	color: #909BA5;
+	display: inline-block;
+	padding-right: 20px;
+}
+.share-on-module ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+.share-on-module ul li{
+	padding: 0 10px;
+}
+.share-on-module ul li a,
+.share-on-module ul li a i{
+	display: inline-block;
+}
+.share-on-module ul li a:hover i svg{
+	fill: #EE3E15;
+}
+.eveline-vernaeve-cntlr{
+	margin-bottom: 50px;
+}
+.eveline-vernaeve-cntlr .overons-msnry-grd-lft{
+	width: 49.02%;
+}
+.eveline-vernaeve-cntlr .overons-msnry-grd-rgt{
+	width: 50.98%;
+}
+
+
+
+.overons-msnry-grd-dsc-mdul{
+	margin-bottom: 42px;
+	max-width: 543px;
+	width: 100%;
+	padding-bottom: 35px;
+	border-bottom: 1px solid #ECF1F4;
+}
+.overons-msnry-grd-dsc-mdul:last-child{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+.overons-msnry-grd-dsc-mdul.ovms-grd-dsc-mdul-text-lg p{
+	font-weight: 300;
+	font-size: 24px;
+}
+.overons-msnry-grd-dsc-mdul p:last-of-type{
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+.experience-overview-title.fl-h3{
+	margin: 0 0 36px 0;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #2C113E;
+}
