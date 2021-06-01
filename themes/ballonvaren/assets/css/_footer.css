@@ -90,16 +90,16 @@
 .ftr-top-logo a{
 	display: inline-block;
 }
-.ftr-top-pament-method{
+.ftr-top-payment-method{
 
 }
-.ftr-top-pament-method ul{
+.ftr-top-payment-method ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -6px;
 }
-.ftr-top-pament-method ul li{
+.ftr-top-payment-method ul li{
 	padding: 0 6px;
 }
 .ftr-top-col-title{
@@ -347,7 +347,7 @@
 	.ftr-btm-menu ul li{
 		margin-bottom: 12px;
 	}
-	.ftr-top-pament-method ul{
+	.ftr-top-payment-method ul{
 		justify-content: center;
 	}
 }
@@ -425,10 +425,10 @@
 		display: block;
 		padding-top: 15px;
 	}
-	.ftr-top-pament-method{
+	.ftr-top-payment-method{
 		margin-bottom: 40px;
 	}
-	.ftr-top-pament-method ul{
+	.ftr-top-payment-method ul{
 		justify-content: center;
 	}
 	.ftr-top-col2 .ftr-top-col-title{
