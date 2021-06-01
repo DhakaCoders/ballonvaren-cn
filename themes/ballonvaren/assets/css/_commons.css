@@ -446,7 +446,10 @@ a.red-color-arrow-btn{
 }
 a.red-color-arrow-btn i{
 	position: absolute;
-	margin-top: -1px;
+	width: 9px;
+	height: 14px;
+	background-size: contain;
+	margin-top: -2px;
 	right: 5px;
 	top: 50%;
 	transform: translateY(-50%);
