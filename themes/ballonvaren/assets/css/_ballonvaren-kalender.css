@@ -87,35 +87,21 @@
 	position: relative;
 }
 
-.inline-bg-img:before {
-    position: absolute;
-    content: "";
-    background-image: url(../images/absolute-ballon-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 152px;
-    height: 87px;
-    width: 76px;
-    margin-left: -50px;
+.absolute-img-one{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 152px;
+      margin-left: -50px;
+}
+.absolute-img-two{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 540px;
+	margin-right: -140px;
 }
 
-.inline-bg-img:after {
-    position: absolute;
-    content: "";
-    background-image: url(../images/absolute-ballon-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    right: 0;
-    height: 276px;
-    width: 235px;
-    margin-top: 540px;
-    margin-right: -140px;
-}
 
 /*--------------------------------element-grid-sec-----------------------------*/
 .element-grid-sec{
