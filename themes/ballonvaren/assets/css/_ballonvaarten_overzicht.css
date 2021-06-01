@@ -271,11 +271,6 @@
 .fl-pro-grd-btn{
 	line-height: 1;
 }
-.fl-pro-grd-btn a{
-	display: inline-block;
-	vertical-align: baseline;
-	line-height: 1;
-}
 .product-page-col-rgt .fl-pagination-ctlr{
 	text-align: right;
 }
@@ -631,7 +626,10 @@
 	.fl-products-cntlr ul.products > li{
 		padding: 0 8px 24px!important;
 	}
-	
+	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
+	.single-product .fl-pro-grd-title{
+		font-size: 23px;
+	}
 	.fl-pro-grd-des p{
 		font-size: 15px;
 	}
@@ -654,6 +652,10 @@
 	}
 	.contacteer-inner p{
 		margin-bottom: 42px;
+	}
+	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
+	.single-product .fl-pro-grd-title{
+		font-size: 22px;
 	}
 }
 
