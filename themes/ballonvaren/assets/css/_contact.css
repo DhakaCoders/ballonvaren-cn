@@ -501,9 +501,8 @@ contact-google-map
 boek-je-form-sec-wrp
 -----------------------
 */
-.boek-je-form-sec-wrp{
-	padding-bottom: 55px;
-	position: relative;
+.boek-je-form-bg-cntlr{
+	padding-bottom: 160px;
 }
 .boek-je-form-sec-wrp .page-entry-header{
 	padding-bottom: 20px;
@@ -543,6 +542,12 @@ boek-je-form-sec-wrp
 	background-position: center center;
 	width: 125px;
 	height: 148px;
+}
+.boek-je-form-bg-cntlr{
+	background:url(../images/boek-je-form-bg-cntlr.png);
+	background-size: cover;
+	background-position: center center;
+
 }
 
 /*
