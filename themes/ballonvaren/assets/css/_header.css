@@ -841,6 +841,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	    border-bottom-left-radius: 3px;
 	    border-bottom-right-radius: 3px;
 	}
+	.xs-mobile-menu-cntlr .fl-lang-cntlr.xs-lang:after{
+		transform: rotate(-180deg);
+	}
 	.logo {
 	    margin-top: 0;
 	}
