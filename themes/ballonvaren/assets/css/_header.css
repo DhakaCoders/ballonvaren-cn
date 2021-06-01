@@ -286,6 +286,11 @@
 	width: 160px;
 	height: 55px;
 }
+.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn:hover{
+	background: #EE3E15;
+	color: #fff;
+	border-color: #EE3E15;
+}
 
 .hdr-main-menu{
 	padding-right: 30px;
