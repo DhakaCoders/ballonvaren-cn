@@ -184,6 +184,9 @@ overons-team-sec-wrp
 	    width: 200px;
 	    height: 250px;
 	}
+	.overons-msnry-grd-rgt {
+	    padding-left: 65px;
+	}
 }
 
 @media(max-width: 1199px){
