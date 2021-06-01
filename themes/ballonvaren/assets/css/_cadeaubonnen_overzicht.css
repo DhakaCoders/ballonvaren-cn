@@ -1,0 +1,16 @@
+.gift-card .xs-mobile-menu-cntlr{
+	display: none;
+}
+.cadeaubonnen-overzicht-cntrl > ul > li:nth-child(2) .fl-pro-gift-cntlr{
+	background-color: #1eb4b3;
+}
+.cadeaubonnen-overzicht-cntrl > ul > li:nth-child(3) .fl-pro-gift-cntlr{
+	background-color: #d2437b;
+}
+.fl-pro-gift-cntlr{
+	min-height: 226px;
+	background-color: #fdc935;
+}
+.fl-gift-btn{
+	width: 100%
+}

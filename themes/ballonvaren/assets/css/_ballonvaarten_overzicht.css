@@ -140,12 +140,13 @@
     height: 278px;
     width: auto;
     border-radius: 3px 3px 0px 0px;
+    overflow: hidden;
 }
 .fl-pro-grd-img-cntlr img{
 	height: 100%;
 	width: auto;
 }
-.fl-pro-grd-img-cntlr:hover img{
+.fl-product-grd-inr:hover .fl-pro-grd-img-cntlr img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -271,6 +272,57 @@
 }
 .product-page-col-rgt .fl-pagination-ctlr{
 	text-align: right;
+}
+.fl-product-top{
+	padding-bottom: 64px;
+}
+.cadeaubonnen-page-link{
+	margin-bottom: 104px;
+}
+.fl-product-btm{
+	padding-bottom: 40px;
+}
+
+/* == cadeaubonnen == */
+.cadeaubonnen-page-link	{
+	background-color: #FDCA35;
+	border-radius: 3px;
+	position: relative;
+}
+.cadeaubonnen-page-link:after{
+	position: absolute;
+	content: "";
+	background-image: url('../images/absolute-ballon-3.png');
+	background-repeat: no-repeat;
+	width: 236px;
+	height: 280px;
+	left: -144px;
+	top: -70px;
+}
+.cadeaubonnen-pg-lnk-cntrl{
+	text-align: center;
+	padding: 64px 0;
+	color: #fff;
+}
+.cad-pg-lnk-title{
+	text-transform: uppercase;
+}
+.cadeaubonnen-pg-lnk-cntrl p{
+	margin-bottom: 25px;
+}
+.cadeaubonnen-pg-lnk-cntrl a{
+	margin: auto;
+}
+.cad-pg-lnk-btn{
+	color: #fff;
+	font-weight: 900;
+	border: 2px solid #fff;
+	width: 200px;
+	height: 50px;
+}
+.cad-pg-lnk-btn:hover{
+	/* background-color: #ef3e15; */
+	border-color: #2C113E;
 }
 
 /* producteen-ons */
@@ -573,19 +625,9 @@
 	.fl-products-cntlr ul.products > li{
 		padding: 0 8px 24px!important;
 	}
-	.fl-pro-grd-des{
-		margin: 0 20px;
-	}
 	
 	.fl-pro-grd-des p{
 		font-size: 15px;
-	}
-	.fl-pro-grd-btn{
-		padding: 0 32px 30px;
-	}
-	.fl-pro-grd-btn{
-	    padding-left: 20px;
-	    padding-right: 20px;
 	}
 }
 
