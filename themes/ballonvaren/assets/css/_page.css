@@ -63,6 +63,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 1px;
 }
 .fl-pagi-cntlr ul li a, .fl-pagi-cntlr ul li span{
 	display: inline-block;

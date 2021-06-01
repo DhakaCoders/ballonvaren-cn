@@ -54,13 +54,6 @@
 	width: 100%;
 }
 
-.img-part-innr {
-}
-
-.heading{
-
-}
-
 .heading h3{
 	font-weight: 700;
 	font-style: normal;
@@ -68,7 +61,6 @@
 	text-transform: uppercase;
 	color: #2C113E;
 }
-
 
 .heading p{
 	font-style: normal;
@@ -79,43 +71,25 @@
 	margin: 0;
 }
 
-.img-part-innr{
-
-}
-
 .inline-bg-img{
 	position: relative;
 }
 
-.inline-bg-img:before {
-    position: absolute;
-    content: "";
-    background-image: url(../images/absolute-ballon-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 152px;
-    height: 87px;
-    width: 76px;
-    margin-left: -50px;
+.absolute-img-one{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 152px;
+      margin-left: -50px;
+}
+.absolute-img-two{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 540px;
+	margin-right: -140px;
 }
 
-.inline-bg-img:after {
-    position: absolute;
-    content: "";
-    background-image: url(../images/absolute-ballon-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    right: 0;
-    height: 276px;
-    width: 235px;
-    margin-top: 540px;
-    margin-right: -140px;
-}
 
 /*--------------------------------element-grid-sec-----------------------------*/
 .element-grid-sec{
@@ -123,6 +97,10 @@
 	padding-bottom: 65px;
 	position: relative;
 	z-index: 9;
+}
+
+.element-grid-item-cntlr{
+	padding-bottom: 70px;
 }
 
 .element-grid-item-inner ul{
@@ -179,11 +157,14 @@
 }
 
 
-
-.element-grid-item-iner h5{
+.element-grid-item-iner h5 a{
 	font-style: normal;
 	font-weight: 700;
 	color: #2C113E;
+}
+
+.element-grid-item-iner h5:hover a{
+	color: #EE3E15;
 }
 
 .element-grid-heading{
@@ -200,13 +181,54 @@
 	margin-bottom: 30px;
 }
 
-
 .element-grid-item-iner p{
 	font-size: 16px;
 	color: #909BA5;
-	/*margin: 0;*/
 }
 
 .element-grid-item-inner ul li .element-grid-item .element-grid-item-iner p:last-of-type {
     margin-bottom: 0;
 }
+
+
+/*________________________________________________________--responsvie-1199-__________________________________________________*/
+/*________________________________________________________--responsvie-1199-__________________________________________________*/
+/*________________________________________________________--responsvie-1199-__________________________________________________*/
+@media(max-width: 1199px){}
+
+
+/*________________________________________________________--responsvie-991-__________________________________________________*/
+/*________________________________________________________--responsvie-991-__________________________________________________*/
+/*________________________________________________________--responsvie-991-__________________________________________________*/
+@media(max-width: 991px){}
+
+
+/*________________________________________________________--responsvie-767-__________________________________________________*/
+/*________________________________________________________--responsvie-767-__________________________________________________*/
+/*________________________________________________________--responsvie-767-__________________________________________________*/
+@media(max-width: 767px){}
+
+
+/*________________________________________________________--responsvie-575-__________________________________________________*/
+/*________________________________________________________--responsvie-575-__________________________________________________*/
+/*________________________________________________________--responsvie-575-__________________________________________________*/
+@media(max-width: 575px){}
+
+
+/*________________________________________________________--responsvie-479-__________________________________________________*/
+/*________________________________________________________--responsvie-479-__________________________________________________*/
+/*________________________________________________________--responsvie-479-__________________________________________________*/
+@media(max-width: 479px){}
+
+
+/*________________________________________________________--responsvie-359-__________________________________________________*/
+/*________________________________________________________--responsvie-359-__________________________________________________*/
+/*________________________________________________________--responsvie-359-__________________________________________________*/
+@media(max-width: 359px){}
+
+
+/*________________________________________________________--responsvie-320-__________________________________________________*/
+/*________________________________________________________--responsvie-320-__________________________________________________*/
+/*________________________________________________________--responsvie-320-__________________________________________________*/
+@media(max-width: 320px){}
+

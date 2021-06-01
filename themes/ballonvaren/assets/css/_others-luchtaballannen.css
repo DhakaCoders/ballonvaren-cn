@@ -14,64 +14,68 @@
 	padding: 0 12px;
 	padding-bottom: 38px;
 }
+.onze-luch-grid-item-innr a img{
+	border-radius: 3px;
+	width: 100%;
+	height: auto;
+}
+
+
 
 @media(max-width: 1199px){
-.onze-luch-grid-sec{
-	padding-top: 48px;
-}
-.onze-luch-grid-sec-cntlr ul {
-	margin-left: -10px;
-	margin-right: -10px;
-}
-.onze-luch-grid-sec-cntlr ul li{
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 32px;
-}
-.onze-luch-grid-sec-cntlr{
-	padding-bottom: 25px;
-}
+	.onze-luch-grid-sec{
+		padding-top: 48px;
+	}
+	.onze-luch-grid-sec-cntlr ul {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.onze-luch-grid-sec-cntlr ul li{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 32px;
+	}
+	.onze-luch-grid-sec-cntlr{
+		padding-bottom: 25px;
+	}
 }
 
 @media(max-width: 991px){
-.onze-luch-grid-sec-cntlr ul li{
-	padding-bottom: 26px;
-}
+	.onze-luch-grid-sec-cntlr ul li{
+		padding-bottom: 26px;
+	}
 }
 
 @media(max-width: 767px){
-.header{
-	overflow: hidden;
-}
-.onze-luch-grid-sec{
-	padding-top: 40px;
-}
-.onze-luch-grid-sec-cntlr ul{
-	margin-left: -8px;
-	margin-right: -8px;
-}
-.onze-luch-grid-sec-cntlr ul li{
-	width: 50%;
-	padding-bottom: 20px;
-	padding-left: 8px;
-	padding-right: 8px;
-}
-.onze-luch-grid-sec-cntlr{
-	padding-bottom: 20px;
-}
-.onze-luch-grid-sec .fl-pagi-cntlr{
-	display: none;
-}
+	.onze-luch-grid-sec{
+		padding-top: 40px;
+	}
+	.onze-luch-grid-sec-cntlr ul{
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+	.onze-luch-grid-sec-cntlr ul li{
+		width: 50%;
+		padding-bottom: 20px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.onze-luch-grid-sec-cntlr{
+		padding-bottom: 20px;
+	}
+	.onze-luch-grid-sec .fl-pagi-cntlr{
+		display: none;
+	}
 
 }
 
 @media(max-width: 359px){
-.onze-luch-grid-sec-cntlr ul{
-	margin-left: -6px;
-	margin-right: -6px;}
-.onze-luch-grid-sec-cntlr ul li{
-	padding-left: 6px;
-	padding-right: 6px;
-	padding-bottom: 15px;
-}
+	.onze-luch-grid-sec-cntlr ul{
+		margin-left: -6px;
+		margin-right: -6px;}
+	.onze-luch-grid-sec-cntlr ul li{
+		padding-left: 6px;
+		padding-right: 6px;
+		padding-bottom: 15px;
+	}
 }

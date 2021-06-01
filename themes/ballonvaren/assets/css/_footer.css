@@ -13,18 +13,20 @@
 .footer-top-sec-cntlr{
 
 }
-.footer-top-sec-cntlr ul{
+.footer-top-sec-cntlr{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -61px;
 	justify-content: center;
 }
-.footer-top-sec-cntlr ul li{
+.ftr-top-sec-item-wrap{
 	padding: 0 61px;
 	line-height: 1;
 	margin-bottom: 15px;
 	width: 33.33%;
+	display: flex;
+	justify-content: center;
 }
 .ftr-top-sec-item{
 
@@ -37,7 +39,7 @@
 .ftr-top-sec-item-title.fl-h6{
 	font-size: 16px;
 	margin-bottom: 0;
-	line-height: 1;
+	line-height: 1.5;
 	text-transform: uppercase;
 }
 .ftr-top-sec-item-title i{
@@ -48,6 +50,8 @@
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
+	margin-top: -2px;
+	z-index: 2;
 }
 
 .footer-wrp{
@@ -84,19 +88,18 @@
 	margin-bottom: 26px;
 }
 .ftr-top-logo a{
-	display: inline;
+	display: inline-block;
 }
-.ftr-top-bank-logo-cntlr{
+.ftr-top-pament-method{
 
 }
-.ftr-top-bank-logo-cntlr ul{
+.ftr-top-pament-method ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -6px;
-	justify-content: center;
 }
-.ftr-top-bank-logo-cntlr ul li{
+.ftr-top-pament-method ul li{
 	padding: 0 6px;
 }
 .ftr-top-col-title{
@@ -106,32 +109,25 @@
 	line-height: 1;
 }
 .ftr-top-col-menu{
-
-}
-.ftr-top-col-menu ul{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+}
+.ftr-top-col-menu ul{
+	width: 50%;
+	
+}
+.ftr-top-col-menu ul:first-child{
+	padding-right: 5px;
 }
 .ftr-top-col-menu ul li{
 	padding: 13px 0;
-	padding-right: 5px;
-	width: 50%;
-}
-.ftr-top-col-menu ul li:nth-child(2n+2){
-	padding-right: 0;
-}
-.ftr-top-col-menu ul li.ftr-top-col-menu-single{
-	width: 100%;
-	display: block;
 }
 .ftr-top-col-menu ul li a{
 	display: inline-block;
 	font-size: 14px;
 	line-height: 1;
 }
-.ftr-top-col-menu ul li:first-child,
-.ftr-top-col-menu ul li:nth-child(2){
+.ftr-top-col-menu ul li:first-child{
 	padding-top: 0;
 }
 .ftr-top-col-menu ul li:last-child{
@@ -164,6 +160,7 @@
 }
 .ftr-top-col-socials{
 	padding-left: 0;
+	border-left: none;
 }
 
 .ftr-btm-cntlr{
@@ -172,10 +169,10 @@
 	flex-wrap: wrap;
 	padding: 49px 0;
 }
-.ftr-btm-copyright{
+.ftr-copyright{
 	padding-right: 10px;
 }
-.ftr-btm-copyright p{
+.ftr-copyright p{
 	margin-bottom: 0;
 	line-height: 1;
 	font-size: 13px;
@@ -221,48 +218,58 @@
 .ftr-btm-menu ul li a:hover{
 	color: #EE3E15;
 }
-.ftr-btm-conv{
+.ftr-developed-by{
 	margin-left: auto;
 }
-.ftr-btm-conv p{
+.ftr-developed-by p{
 	margin-bottom: 0;
 	line-height: 1;
 	font-size: 13px;
 }
-.ftr-btm-conv p a{
+.ftr-developed-by p a{
 	display: inline-block;
 	color: #EE3E15;
+}
+.ftr-developed-by p a:hover{
+	color: #2C113E;
 }
 
 
 /*responsive*/
 @media(max-width: 1699px){
-	.footer-top-sec-cntlr ul{
+	.footer-top-sec-cntlr{
 		margin: 0 -25px;
 	}
-	.footer-top-sec-cntlr ul li{
+	.ftr-top-sec-item-wrap{
 		padding: 0 25px;
 	}
 	.footer-cntlr{
 		padding-top: 40px;
 	}
+	.ftr-top-col1{
+		max-width: 38.92%;
+	}
+	.ftr-top-col2{
+		max-width: 31.18%;
+		padding-top: 22px;
+	}
 }
-@media(max-width: 1399px){
-
+@media(max-width: 1349px){
+	.ftr-top-sec-item-title.fl-h6{
+		font-size: 15px;
+	}
 }
 @media(max-width: 1299px){
 
 }
 @media(max-width: 1199px){
-	.footer-top-sec-cntlr ul{
+	.footer-top-sec-cntlr{
 		margin: 0 -15px;
 	}
-	.footer-top-sec-cntlr ul li{
+	.ftr-top-sec-item-wrap{
 		padding: 0 15px;
 	}
-	.ftr-top-sec-item-title.fl-h6{
-		font-size: 15px;
-	}
+	
 	.ftr-top-col1{
 		max-width: 35.92%;
 	}
@@ -281,31 +288,48 @@
 		padding-top: 27px;
 		padding-bottom: 12px;
 	}
-	.footer-top-sec-cntlr ul{
+	.footer-top-sec-cntlr{
 		margin: 0 -10px;
 	}
-	.footer-top-sec-cntlr ul li{
+	.ftr-top-sec-item-wrap{
 		padding: 0 10px;
 	}
+	.footer-top-sec-cntlr{
+		margin: 0;
+	}
+	.ftr-top-sec-item-wrap{
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
 	.ftr-top-sec-item-title.fl-h6{
+		display: inline-block;
 		font-size: 14px;
 	}
 	.ftr-top-col2{
 		padding-left: 30px;
 	}
-	.ftr-top-col-menu ul li{
+	.ftr-top-col-menu ul{
 		width: 100%;
+	}
+	.ftr-top-col-menu ul:first-child li:last-child{
+		padding-bottom: 7px;
+	}
+	.ftr-top-col-menu ul:last-child li:first-child{
+		padding-top: 7px;
+	}
+	.ftr-top-col-menu ul li{
 		padding: 7px 0;
 	}
-	.ftr-top-col-menu ul li:nth-child(2){
-		padding-top: 7px;
+	.ftr-top-col-menu ul li a{
+		text-transform: uppercase;
 	}
 	.ftr-btm-cntlr{
 		flex-wrap: wrap;
 		justify-content: center;
 		text-align: center;
 	}
-	.ftr-btm-copyright{
+	.ftr-copyright{
 		width: 100%;
 		margin-bottom: 22px;
 	}
@@ -314,7 +338,7 @@
 	}
 
 	.ftr-btm-menu,
-	.ftr-btm-conv{
+	.ftr-developed-by{
 		width: 100%;
 	}
 	.ftr-btm-menu ul{
@@ -323,19 +347,13 @@
 	.ftr-btm-menu ul li{
 		margin-bottom: 12px;
 	}
+	.ftr-top-pament-method ul{
+		justify-content: center;
+	}
 }
 @media(max-width: 767px){
-	.footer-top-sec-cntlr ul{
-		margin: 0;
-	}
-	.footer-top-sec-cntlr ul li{
-		width: 1000%;
-		padding: 0;
-		text-align: center;
-	}
-	.ftr-top-sec-item-title.fl-h6{
-		display: inline-block;
-	}
+	
+	
 	.ftr-top-col{
 		padding: 0;
 		max-width: 100%;
@@ -365,7 +383,10 @@
 	.ftr-top-col-menu ul li{
 		padding: 10px 0;
 	}
-	.ftr-top-col-menu ul li:nth-child(2){
+	.ftr-top-col-menu ul:first-child li:last-child{
+		padding-bottom: 10px;
+	}
+	.ftr-top-col-menu ul:last-child li:first-child{
 		padding-top: 10px;
 	}
 	.ftr-top-col2{
@@ -381,7 +402,7 @@
 	}
 	.ftr-top-col-title:after{
 		position: absolute;
-		top: 2px;
+		top: 3px;
 		content: "";
 		right: 0;
 		background-image: url('../images/ftr-top-col-title-img.svg');
@@ -389,21 +410,39 @@
 		width: 16px;
 		height: 10px;
 		background-size: contain;
+		transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
 	}
 	.ftr-top-col-title.active:after{
 		transform: rotate(-180deg);
 		-ms-transform: rotate(-180deg);
 		-webkit-transform: rotate(-180deg);
 		-o-transform: rotate(-180deg);
+		top: 2px;
 	}
 	.ftr-top-col-socials{
 		display: block;
 		padding-top: 15px;
 	}
-	.ftr-top-bank-logo-cntlr{
+	.ftr-top-pament-method{
 		margin-bottom: 40px;
+	}
+	.ftr-top-pament-method ul{
+		justify-content: center;
+	}
+	.ftr-top-col2 .ftr-top-col-title{
+		margin-bottom: 0;
+	}
+	.ftr-top-col-menu{
+		padding-top: 40px;
+	}
+	.ftr-top-logo a{
+		max-width: 260px;
 	}
 }
 @media(max-width: 575px){
-
+	.ftr-top-logo a{
+		max-width: 200px;
+	}
 }

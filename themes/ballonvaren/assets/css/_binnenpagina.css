@@ -16,7 +16,7 @@
 }
 .default-page-con {
 	padding-bottom: 75px;
-	padding-top: 70px;
+	padding-top: 60px;
 }
 
 .fl-dft-overflow-controller {
@@ -31,17 +31,19 @@
 	margin-bottom: 20px;
 	line-height: 1.1;
 }
+.default-page-con h2{
+	color: #2C113E;
+	letter-spacing: -0.02em;
+	padding-top: 25px;
+	margin-bottom: 25px;
+}
 .dfp-promo-module-title{
-	color: #fff;
+	color: #2C113E;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
-	display: inline-block;
-	margin-bottom: 0;
-	padding: 10px 50px;
-	background: #B3192A;
-	position: absolute;
-	top: 85px;
-	left: -300px;
+	margin-bottom: 35px;
+	font-weight: 700;
+	display: block;
 }
 
 .dfp-text-module{
@@ -72,7 +74,7 @@ ul li::before {
 	-ms-transform: translateY(-50%);
 	width: 10px;
 	height: 10px;
-	background: #B3192A;
+	background: #EE3E15;
 	border-radius: 100%;
 	margin-top: -2px;
 }
@@ -90,29 +92,33 @@ ul li.refGridItem:before{
 	counter-increment: my-awesome-counter;
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 	line-height: 24px;
 }
 .default-page-con ol li::before,
 ol li::before {
 	content: counter(my-awesome-counter) ".";
-	color: #B3192A;
-	font-weight: 600;
-	margin-right: 8px;
+	color: #EE3E15;
+	font-weight: 700;
 	text-align: center;
 	font-size: 16px;
 	line-height: 16px;
 	text-align: center;
-	padding: 0 5.5px 0 1px;
+	padding: 0 8px 0 1px;
 }
 .default-page-con p {
     margin-bottom: 25px;
 }
 
-.dfp-promo-module{
-	padding-bottom: 45px;
-	position: relative;
+hr{
+	margin-top: 0;
+	padding-top: 20px;
+	margin-bottom: 50px;
+	border-top: none;
+	border-bottom: 1px solid #ECF1F4;
+	transform: matrix(1, 0, 0, -1, 0, 0);
 }
+
 
 
 .dfp-plate-one-img-bx img{
@@ -124,9 +130,9 @@ ol li::before {
 	overflow: hidden;
 	max-width: 100%;
     width: 100%;
-    height: 530px;
+    height: 600px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 .fancy-img{
     width: 100%;
@@ -143,11 +149,14 @@ ol li::before {
 }
 .ms-video-play-cntlr{
     position: absolute;
-    left: 15px;
-    bottom: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
     color: #fff;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
