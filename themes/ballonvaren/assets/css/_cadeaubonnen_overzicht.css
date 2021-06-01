@@ -1,0 +1,54 @@
+.cadeaubonnen-overzicht-sec{
+	padding-top: 64px;
+	padding-bottom: 84px;
+}
+.cadeaubonnen-overzicht-cntrl > ul > li:nth-child(2) .fl-pro-gift-cntlr{
+	background-color: #1eb4b3;
+}
+.cadeaubonnen-overzicht-cntrl > ul > li:nth-child(3) .fl-pro-gift-cntlr{
+	background-color: #d2437b;
+}
+.fl-pro-gift-cntlr{
+	min-height: 226px;
+	background-color: #fdc935;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 23px;
+}
+.fl-pro-gift-cntlr .fl-gift-price{
+	padding-bottom: 7px;
+}
+.fl-pro-gift-cntlr i{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-bottom: 36px;
+}
+.fl-pro-gift-cntlr .fl-gift-price span{
+	display: inline-block;
+	vertical-align: baseline;
+	line-height: 1;
+}
+.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-Price-amount bdi{
+	font-size: 36px;
+	font-weight: 700;	
+	color: #fff;
+	line-height: 1.2;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol{
+	font-weight: 700;
+	padding-right: 12px;
+}
+.fl-pro-gift-cntlr span{
+	display: inline-block;
+	vertical-align: baseline;
+	line-height: 1;
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;	
+}
+.fl-gift-btn{
+	width: 100%
+}
