@@ -623,6 +623,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	    padding-left: 3px;
 	    padding-right: 3px;
 	}
+	.hdr-topbar-inr{
+		padding-left: 70px;
+	}
 }
 
 @media(max-width: 991px){
@@ -836,6 +839,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	}
 	.logo {
 	    margin-top: 0;
+	}
+	.logo a {
+	    max-width: 248px;
 	}
 }
 
