@@ -83,6 +83,7 @@ overons-team-sec-wrp
 */
 .overons-team-sec-wrp{
 	position: relative;
+	padding-bottom: 100px;
 }
 .ovs-team-entry-hdr .fl-h3{
 	font-size: 36px;
