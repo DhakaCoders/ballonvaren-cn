@@ -862,6 +862,19 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	}
 	.xs-mobile-menu-cntlr .fl-lang-cntlr:after{
 		top: 24px;
+		content: none;
+	}
+	.xs-lang-icon{
+		content: "";
+		position: absolute;
+		top: 24px;
+		right: 0;
+		background: url('../images/bottom-arrow.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 7px;
+		width: 11px;
+		margin-right: -3px;
 	}
 }
 
