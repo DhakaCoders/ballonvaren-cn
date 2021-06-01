@@ -135,33 +135,4 @@
 	margin-bottom: 0;
 }
 
-/* ==== */
-a.red-color-arrow-btn{
-	padding-right: 19px;
-	position: relative;
-	display: inline-block;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	color: #EE3E15;
-}
-a.red-color-arrow-btn i{
-	position: absolute;
-	right: 5px;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-}
-a.red-color-arrow-btn:hover{
-	/* color: #2C113E; */
-}
-a.red-color-arrow-btn:hover i svg{
-	/* fill: #2C113E; */
-}
-a.red-color-arrow-btn:hover i{
-	right: 0;
-}
+

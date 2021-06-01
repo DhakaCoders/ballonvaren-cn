@@ -306,9 +306,9 @@ if( $('.humbergar').length ){
   }
 
   if (windowWidth <= 992){
-    if($('.fl-lang-cntlr ul li a').length){
-      $('.fl-lang-cntlr ul li a').click(function(){
-        $(this).parents().toggleClass('xs-lang');
+    if($('.fl-lang-cntlr ul').length){
+      $('.fl-lang-cntlr ul').click(function(){
+        $(this).parent().toggleClass('xs-lang');
       });
     }
   }
