@@ -413,6 +413,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 
 
 
+.xs-mobile-menu-cntlr{
+	display: none;
+}
 
 
 
@@ -596,6 +599,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		width: 100%;
 		overflow-y: auto;
 		padding-top: 125px;
+		display: block;
 	}
 	/*.xs-mobile-menu{
 		background: #faf5ef;
@@ -680,9 +684,12 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		right: 0;
 		background: url('../images/xs-btm-arrow.svg');
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 		width: 11px;
 		height: 7px;
+		opacity: 1!important;
+		text-decoration: inherit;
+		left: auto;
 	}
 	.xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 		position: initial;
