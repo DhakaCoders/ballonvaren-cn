@@ -25,6 +25,8 @@
 	line-height: 1;
 	margin-bottom: 15px;
 	width: 33.33%;
+	display: flex;
+	justify-content: center;
 }
 .ftr-top-sec-item{
 
