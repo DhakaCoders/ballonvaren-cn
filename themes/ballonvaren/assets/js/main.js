@@ -305,6 +305,15 @@ if( $('.humbergar').length ){
    });
   }
 
+  if (windowWidth <= 992){
+    if($('.fl-lang-cntlr ul li a').length){
+      $('.fl-lang-cntlr ul li a').click(function(){
+        $(this).parents().toggleClass('xs-lang');
+      });
+    }
+  }
+
+
 
     new WOW().init();
 
