@@ -157,10 +157,10 @@ a.red-color-arrow-btn i{
 	-o-transform: translateY(-50%);
 }
 a.red-color-arrow-btn:hover{
-	color: #2C113E;
+	/* color: #2C113E; */
 }
 a.red-color-arrow-btn:hover i svg{
-	fill: #2C113E;
+	/* fill: #2C113E; */
 }
 a.red-color-arrow-btn:hover i{
 	right: 0;
