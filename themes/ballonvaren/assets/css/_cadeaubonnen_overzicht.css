@@ -2,6 +2,12 @@
 	padding-top: 64px;
 	padding-bottom: 84px;
 }
+.cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
+	margin-bottom: 64px;
+}
+.cadeaubonnen-overzicht-page-entry-hdr .page-entry-header p{
+	margin-bottom: 34px;
+} 
 .cadeaubonnen-overzicht-cntrl > ul > li:nth-child(2) .fl-pro-gift-cntlr{
 	background-color: #1eb4b3;
 }

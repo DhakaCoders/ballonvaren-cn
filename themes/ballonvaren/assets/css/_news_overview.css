@@ -1,6 +1,12 @@
 .blog-page-sec{
 	padding-top: 35px;
 }
+.news-overview-page-entry-hdr .page-entry-header{
+	margin-bottom: 34px;
+}
+.news-overview-page-entry-hdr .page-entry-header p{
+	margin-bottom: 34px;
+}
 .blog-grid-category{
 	padding-bottom: 35px;
 }
