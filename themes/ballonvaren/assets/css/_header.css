@@ -37,7 +37,19 @@
 	margin-left: auto;
 	padding-left: 90px;
 	padding-bottom: 15px;
-	border-bottom: 2px solid #EFEFEF;
+	/*border-bottom: 2px solid #EFEFEF;*/
+	position: relative;
+}
+.hdr-topbar-inr:after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: url('../images/hdr-border.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 2px;
+	width: 100%;
 }
 
 .hdr-top-menu,
