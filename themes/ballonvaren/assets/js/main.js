@@ -232,6 +232,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Milon*/
+$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
+  $('.wpforms-field').addClass('wpforms-has-error');
+});
 
 $('.wpforms-error').on('click', function(){
   $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
