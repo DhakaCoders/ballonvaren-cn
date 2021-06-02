@@ -19,48 +19,24 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-$cURL = wc_get_cart_url();
+if( is_user_logged_in() ){
+	$enable_different_address = get_user_meta(get_current_user_id()
+, 'enable_ship_to_different', true);
+	$enable_different_address = isset($enable_different_address)?$enable_different_address:0;
+	if($enable_different_address){
+		?>
+		<script> 
+			(function($) {
+				$(window).load(function() {
+					console.log('d');
+					$('#ship-to-different-address #ship-to-different-address-checkbox').trigger('click');
+				});
+			})(jQuery);
+		</script>
+		<?php
+	}
+}
 ?>
-
-<div class="checkout-page-title clearfix">
-	<div class="checkoutpt-left">
-		<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo $cURL; ?>">Terug naar winkelmandje</a></div>
-		<h1><?php the_title(); ?></h1>
-	</div>
-	<div class="checkoutpt-right">
-		<div class="checkout-page-bar-crtl">
-			<div class="progressbar-crtl">
-				<div class="n-checkout-progress-wrap">
-				  <div class="checkout-progress-cntlr">
-				    <div class="checkout-progress">
-				      <div class="checkout-progress-bar">
-				        <span class="ckour-pro-bar-active ckour-pro-bar-1"></span>
-				        <span class="ckour-pro-bar-active ckour-pro-bar-2 active"></span>
-				        <span class="ckour-pro-bar-active ckour-pro-bar-3"></span>
-				      </div>
-				      <div class="chckout-prgrs-col chckout-prgrs-col-1 ">
-				        <strong class="chckout-prgrs-number">1</strong> 
-				        <h6 class="chckout-prgrs-title">Winkelmandje</h6>
-				      </div>
-
-				      <div class="chckout-prgrs-col chckout-prgrs-col-2 active">
-				        <strong class="chckout-prgrs-number">2</strong> 
-				        <h6 class="chckout-prgrs-title">Klantgegevens <br>
-				        en Betaling</h6>
-				      </div>
-
-				      <div class="chckout-prgrs-col chckout-prgrs-col-3">
-				        <strong class="chckout-prgrs-number">3</strong> 
-				        <h6 class="chckout-prgrs-title">Bevestiging</h6>
-				      </div>
-
-				    </div>
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 <?php
 do_action( 'woocommerce_before_checkout_form', $checkout );
 
@@ -90,7 +66,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 						<div class="payment-method-crtl">
 							<div id="order_review" class="woocommerce-checkout-review-order">
-							<h3>2.<?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
+							<h3>2. <?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
 							<div class="shipping-methods">
 									<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 
@@ -102,14 +78,34 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 									<?php endif; ?>
 							</div>
-							    <h3>3.<?php esc_html_e( 'Betaalmethode', 'woocommerce' ); ?></h3>
+							    <h3>3 .<?php esc_html_e( 'Betaalmethode', 'woocommerce' ); ?></h3>
 								<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 							</div>
 							<div class="woocommerce-additional-fields extra-info">	
-								<h3>4.<?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></h3>
-								<div class="woocommerce-additional-fields__field-wrapper">
+								<!-- <h3>4. <?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></h3> -->
+								<!-- <div class="woocommerce-additional-fields__field-wrapper">
 									<p class="form-row notes thwcfd-field-wrapper thwcfd-field-textarea" id="order_comments_field" ><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="" rows="2" cols="5"></textarea></span></p>	
-								</div>
+								</div> -->
+
+							<div class="woocommerce-additional-fields">
+								<?php do_action( 'woocommerce_before_order_notes', $checkout ); ?>
+
+								<?php if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' === get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) : ?>
+
+									<h3>4. <?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></h3>
+
+									<div class="woocommerce-additional-fields__field-wrapper">
+										<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
+											<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
+										<?php endforeach; ?>
+									</div>
+
+								<?php endif; ?>
+
+								<?php do_action( 'woocommerce_after_order_notes', $checkout ); ?>
+							</div>
+
+							
 							</div>
 							<div class="custom-checkout-btn">
 								<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
@@ -122,10 +118,10 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			<div class="col-2">
 				
 				<div class="custom-checkout-order-review">
-					<h3 class="order-review-title"><?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
+					<h3 class="order-review-title">5. <?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
 					<?php 
 						wc_get_template_part('checkout/review-order');
-						do_action('woocommerce_giftcard_form');
+						wc_get_template_part('checkout/cbv-form-coupon');
 					?>
 					<div class="checkout-terms">
 						<?php wc_get_template_part( 'checkout/terms' ); ?>
