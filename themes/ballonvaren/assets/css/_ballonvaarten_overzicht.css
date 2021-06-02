@@ -995,3 +995,12 @@
     	width: 180px;
     }
 }
+
+@media (max-width: 359px) {
+	.cadeaubonnen-pg-lnk-cntrl{
+		padding: 30px 30px;
+	}
+	.cadeaubonnen-page-link i{
+		top: 103px;
+	}
+}
