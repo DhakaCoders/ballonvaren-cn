@@ -609,6 +609,42 @@ Gallery design
 
 /*news details */
 
+#news-details .dfp-promo-module-title{
+	margin-bottom: 20px;
+}
+#news-details .top-gallery-module {
+    padding-bottom: 25px;
+}
+#news-details .default-page-con h5{
+	font-size: 22px;
+	margin-bottom: 25px;
+	color: #EE3E15;
+}
+#news-details .social-media{
+	text-align: right;
+	padding-top: 45px;
+	border-top: 1px solid #ECF1F4;
+}
+#news-details .social-media span{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-right: 15px;
+	color: #909BA5;
+}
+#news-details .social-media ul{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+#news-details .social-media ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 0;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
 @media(max-width: 1599px){
 	
 }
