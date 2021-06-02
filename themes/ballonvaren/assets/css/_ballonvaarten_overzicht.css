@@ -287,7 +287,7 @@
 	border-radius: 3px;
 	position: relative;
 }
-.cadeaubonnen-pg-lnk-cntrl {
+/* .cadeaubonnen-pg-lnk-cntrl {
     text-align: center;
     padding: 64px 41px;
     color: #fff;
@@ -297,19 +297,14 @@
     align-items: center;
     max-width: 82%;
     width: 100%;
-}
-.cadeaubonnen-page-link .cadeaubonnen-ballon {
+} */
+/* .cadeaubonnen-page-link .cadeaubonnen-ballon {
     margin-left: -144px;
     order: 1;
     margin-top: -60px;
     max-width: 18%;
     width: 100%;
-}
-.cadeaubonnen-page-link .cadeaubonnen-ballon i{
-	width: auto;
-	height: 280px;
-	background-size: contain;
-}
+} */
 /* .cadeaubonnen-page-link:after{
 	position: absolute;
 	content: "";
@@ -324,6 +319,16 @@
 	text-align: center;
 	padding: 64px 41px;
 	color: #fff;
+}
+.cadeaubonnen-page-link  i{
+	display: inline-block;
+	vertical-align: baseline;
+	position: absolute;
+	top: -70px;
+    left: -144px
+}
+.cadeaubonnen-page-link  i img{
+	height: 100%;
 }
 .cad-pg-lnk-title{
 	text-transform: uppercase;
@@ -642,6 +647,10 @@
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 60px 41px;
 	}
+	.cadeaubonnen-page-link i{
+		top: -65px;
+		height: 277px;
+	}
 	.fl-pagi-cntlr{
 		padding-bottom: 62px;
 	}
@@ -669,6 +678,11 @@
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 50px 41px;
 	}
+	.cadeaubonnen-page-link i{
+		top: -63px;
+		height: 262px;
+		left: -135px;
+	}
 }
 
 @media (max-width: 1399px) {
@@ -692,6 +706,11 @@
 	}
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 46px 41px;
+	}
+	.cadeaubonnen-page-link i{
+		top: -50px;
+		height: 247px;
+		left: -125px;
 	}
 	.fl-pagi-cntlr{
 		padding-bottom: 58px;
@@ -732,6 +751,9 @@
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 40px 41px;
 	}
+	.cadeaubonnen-page-link i{
+		top: -95px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -765,6 +787,9 @@
 	}
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 37px 41px;
+	}
+	.cadeaubonnen-page-link i{
+		top: -100px;
 	}
 	.fl-pagi-cntlr{
 		padding-bottom: 54px;
@@ -801,6 +826,9 @@
 	}
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 33px 41px;
+	}
+	.cadeaubonnen-page-link i{
+		top: -106px;
 	}
 }
 
