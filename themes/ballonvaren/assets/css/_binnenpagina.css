@@ -696,6 +696,69 @@ Gallery design
 
 
 
+/*ballonvaren voor bedrijven*/
+
+.dft-blockquote{
+	padding-bottom: 55px;
+	margin-bottom: 55px;
+	border-bottom: 1px solid #ECF1F4;
+}
+.dft-blockquote blockquote{
+	padding-left: 45px;
+	border-left: 6px solid #C1E2C4;
+	color: #909BA5;
+	font-style: italic;
+	margin-bottom: 0;
+}
+.dft-blockquote blockquote span{
+	font-style: italic;
+	display: inline-block;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+#ballonvaren-voor-bedrijven .ac-fancy-module{
+	padding-top: 30px;
+}
+
+#ballonvaren-voor-bedrijven .default-page-con h4{
+	margin-bottom: 35px;
+	font-size: 32px;
+	color: #2C113E;
+}
+#ballonvaren-voor-bedrijven .full-img-module {
+    padding-bottom: 50px;
+}
+
+.ballon-rides-module{
+	position: relative;
+	margin-top: 55px;
+}
+.ballon-rides-lft-top-img{
+	position: absolute;
+	top: -125px;
+	left: -140px;
+}
+
+#ballonvaren-voor-bedrijven .dfp-cta-module.orange {
+    margin-bottom: 85px;
+}
+#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap{
+	float: left;
+	width: 50%;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-bottom: 25px;
+}
+
+#ballonvaren-voor-bedrijven .default-page-con{
+	padding-bottom: 75px;
+}
+
+
 
 /*responsive*/
 
