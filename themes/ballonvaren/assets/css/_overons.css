@@ -5,7 +5,7 @@ overons-msnry-grd-sec-wrp
 */
 .overons-msnry-grd-sec-wrp{
 	position: relative;
-	padding-bottom: 315px;
+	padding-bottom: 285px;
 }
 .overons-msnry-grd-sec-wrp .contact-form-angle-bg{
 	height: 600px;
@@ -56,11 +56,9 @@ overons-msnry-grd-sec-wrp
 	float: right;
 	padding-left: 105px;
 }
-
+.overons-msnry-grd-lft .fl-h1,
 .overons-msnry-grd-dsc .fl-h1{
 	display: block;
-	font-size: 48px;
-	line-height: 1;
 	color: #2C113E;
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -115,8 +113,6 @@ overons-team-sec-wrp
 }
 .overons-team-module .fl-h4{
 	display: block;
-	font-size: 30px;
-	line-height: 1;
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 15px;
@@ -187,25 +183,201 @@ overons-team-sec-wrp
 	.overons-msnry-grd-rgt {
 	    padding-left: 65px;
 	}
+	.boek-parachute-icon {
+	    right: -55px;
+	    bottom: -40px;
+	    width: 100px;
+	    height: 130px;
+	    background-size: 100px 130px;
+	}
 }
 
 @media(max-width: 1199px){
-	
+	.boek-parachute-icon {
+	    right: -15px;
+	    bottom: -40px;
+	    width: 80px;
+	    height: 110px;
+	    background-size: 80px 110px;
+	}
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 120px;
+	}
+	.overons-team-parachute-tp {
+	    top: -270px;
+	    right: 0;
+	    background-size: 160px 240px;
+	    width: 160px;
+	    height: 240px;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 60px;
+	    left: -15px;
+	    background-size: 170px 220px;
+	    width: 170px;
+	    height: 220px;
+	}
+	.overons-team-sec-wrp {
+	    padding-bottom: 80px;
+	}
+	.overons-team-img {
+	    height: 520px !important;
+	    margin-bottom: 80px;
+	}
+	.overons-msnry-grd-dsc p br{
+		display: none;
+	}
+	.overons-msnry-grd-sec-wrp {
+	    padding-bottom: 235px;
+	}
+	.overons-msnry-grd-wrp{
+		min-height: 720px;
+	}
+	.msnrytgi1 .overons-msnry-grd-item-img {
+	    min-height: 230px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img {
+	    height: 360px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img {
+	    min-height: 425px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img {
+	    height: 295px;
+	}
+	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
+	    height: 540px;
+	}
+	.overons-team-module {
+	    padding: 50px 20px;
+	}
 
 }
 
 @media(max-width: 991px){
-	
+	.boek-parachute-icon {
+	    right: -15px;
+	    bottom: -40px;
+	    width: 65px;
+	    height: 85px;
+	    background-size: 65px 85px;
+	}
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 80px;
+	}
+	.overons-msnry-grd-rgt {
+	    padding-left: 40px;
+	}
+	.overons-team-sec-wrp {
+	    padding-bottom: 60px;
+	}
+	.overons-team-img {
+	    height: 420px !important;
+	    margin-bottom: 70px;
+	}
+	.overons-msnry-grd-sec-wrp {
+	    padding-bottom: 185px;
+	}
+	.msnrytgi1 .overons-msnry-grd-item-img {
+	    min-height: 200px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img {
+	    height: 330px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img {
+	    min-height: 395px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img {
+	    height: 265px;
+	}
+	.overons-msnry-grd-wrp{
+		min-height: 660px;
+	}
+	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
+	    height: 480px;
+	}
+	.overons-team-module {
+	    padding: 40px 20px;
+	}
 	
 	
 }
 
 @media(max-width: 767px){
-	
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 50px;
+	}
+	.boek-je-form-sec-wrp{
+		padding-top: 50px;
+	}
+	.overons-team-sec-wrp {
+	    padding-bottom: 35px;
+	}
+	.overons-team-img {
+	    height: 320px !important;
+	    margin-bottom: 60px;
+	}
+	.overons-msnry-grd-sec-wrp {
+	    padding-bottom: 150px;
+	    padding-top: 50px;
+	}
+	.overons-msnry-grd-lft {
+	    width: 100%;
+	    margin: 0 -8px;
+	}
+	.overons-msnry-grd-rgt {
+	    padding-left: 0;
+	    width: 100%;
+	    padding-top: 20px;
+	}
+	.msnrytgi1 .overons-msnry-grd-item-img {
+	    min-height: 160px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img {
+	    height: 240px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img {
+	    min-height: 280px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img {
+	    height: 200px;
+	}
+	.msnrytgi3 {
+	    margin-top: -80px;
+	}
+	.overons-msnry-grd-item {
+	    width: 50%;
+	    padding: 0 8px 20px;
+	}
+	.overons-msnry-grd-dsc .fl-h2 {
+	    color: #2C113E;
+	    margin-bottom: 25px;
+	}
+	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
+	    height: 400px;
+	}
+	.overons-team-module {
+	    padding: 30px 20px;
+	}
+	.overons-team-module-cntlr{
+		padding-top: 50px;
+		border-top: 1px solid#ECF1F4;
+	}
+	.overons-team-module .fl-h4{
+		text-transform: inherit;
+	}
+	.overons-team-module p {
+	    margin-bottom: 20px;
+	}
+
+
 }
 
 @media(max-width: 575px){
-	
+	.overons-team-img {
+	    height: 225px !important;
+	    margin-bottom: 60px;
+	}
 	
 
 }

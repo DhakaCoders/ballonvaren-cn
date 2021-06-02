@@ -36,7 +36,7 @@ $product_id = yit_get_product_id ( $product );
 	    echo '</div>';
 	?>
 	<button type="submit"
-	        class="single_add_to_cart_button gift_card_add_to_cart_button button alt"><?php echo esc_html ( apply_filters( 'ywgc_add_to_cart_button_text',  $product->single_add_to_cart_text () ) ); ?></button>
+	        class="single_add_to_cart_button gift_card_add_to_cart_button button alt"><span><?php echo esc_html ( apply_filters( 'ywgc_add_to_cart_button_text',  $product->single_add_to_cart_text () ) ); ?></span></button>
 	<input type="hidden" name="add-to-cart" value="<?php echo absint ( $product_id ); ?>" />
 	<input type="hidden" name="product_id" value="<?php echo absint ( $product_id ); ?>" />
 </div>
