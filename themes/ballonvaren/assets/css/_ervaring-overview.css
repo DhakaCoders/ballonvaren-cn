@@ -72,9 +72,30 @@
 .exprns-ovrvw-item-btn{
 	line-height: 1;
 }
+.exprns-ovrvw-item-btn a.red-color-arrow-btn i{
+	margin-top: -2px!important;
+}
+.exprns-ovrvw-item-btn a.red-color-arrow-btn i svg{
+	height: 11px!important;
+	width: 7px!important;
+}
 
 
 /*responsive*/
+@media(max-width: 1499px){
+	.exprns-ovrvw-item-desc p{
+		font-size: 18px;
+	}
+	.exprns-ovrvw-item-desc{
+		margin-bottom: 40px;
+	}
+	.exprns-ovrvw-item{
+		padding: 45px 28px 43px 28px;
+	}
+	.exprns-ovrvw-item-btn a.red-color-arrow-btn i{
+		margin-top: -3px!important;
+	}
+}
 @media(max-width: 1199px){
 	.exprns-ovrvw-grid-cntlr{
 		margin: 0 -10px;
@@ -125,5 +146,14 @@
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.exprns-ovrvw-item-desc p{
+		font-size: 20px;
+	}
+	.exprns-ovrvw-item-desc{
+		margin-bottom: 50px;
+	}
+	.exprns-ovrvw-item{
+		padding: 51px 28px 48px 28px;
 	}
 }
