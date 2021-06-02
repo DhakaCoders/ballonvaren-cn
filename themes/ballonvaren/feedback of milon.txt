@@ -52,3 +52,48 @@ Desktop-->
 
 11. https://prnt.sc/13pg9h2
 	heading tar j j media te  responsive kora ache se se media ta dimention akare sub heading taro responsive korte hobe.
+
+
+
+12. https://prnt.sc/13pqbj7
+	normal desktop look a ai gap ta aktu komay rakhte hobe.
+
+
+Overons
+----------------------
+Desktop-->
+
+1. https://prnt.sc/13pojr8
+	button ar text thik nei.
+
+2. https://prnt.sc/13pozjs
+	img tag a use hobe and .svg img use hobe
+
+
+3. https://prnt.sc/13pp6bc
+	ai bg ta mileni kata poreche. 
+
+
+4. https://prnt.sc/13ppiou
+	text bere gele img ar vitore dhuke jay 
+
+5. https://prnt.sc/13pplhr
+	i) img tag a use kore dekho j kono problem hosche naki ? jodi na hoy tahole img tag a daw
+	ii) ai img ta jpg use kore dekho problem na hole jpg use koro.
+
+
+6. https://prnt.sc/13pq6vc
+	normal desktop view ar jonno ai img gulor height komate hobe. img kata poreche.
+	1499px a komao.
+
+
+7. https://prnt.sc/13pq8wk
+	text barale lege jasche. 'br' tag badh diye max-width diye center a rakho.
+
+
+
+Boek je ballonvucht
+----------------------
+Desktop-->
+
+1. ager fixing ar moddhe ja ja pore
