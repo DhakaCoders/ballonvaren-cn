@@ -25,22 +25,24 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 	global $woocommerce; global $data_reg;
 	$setedEmail = isset( $_POST["reg_email"])? $_POST["reg_email"]:'';
     $countries_obj   = new WC_Countries();
-    $countries   = $countries_obj->__get('countries');
+    //$countries   = $countries_obj->__get('countries');
+    $countries = $countries_obj->get_allowed_countries();
 ?>
 <div class="register-nextstep woocommerce-billing-fields" id="form_next">
 	<div class="register-top-title">
-		<h1>Nieuw bij Thelene</h1>
+		<h1>Nieuw bij Matheco</h1>
 	</div>
 	<?php if($data_reg): ?>
-	<div class="register-field-error">
+	
+	<?php endif; ?>
+    <div class="register-field-error">
 		<div class="contact-er-msg">
           <span>
-            <i><svg class="error-msg-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="#ffffff">
-            <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
+            <i><svg class="error-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff">
+            <use xlink:href="#error-icon-svg"></use> </svg></i>
             Oh snap! Het formulier lijkt niet correct!</span>
         </div>
 	</div>
-	<?php endif; ?>
 	<div class="register-title">
 		<h3>Persoonlijke gegevens</h3>
 	</div>
@@ -63,8 +65,6 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			</p>
 		</div>
 		<div class="woocommerce-billing-fields__field-wrapper">
-			<div id="extra_fields">
-			</div>
 			<p class="form-row form-row-first" id="billing_first_name_field">
 				<label for="billing_first_name" class="">Naam</label>
 				<span class="woocommerce-input-wrapper">
@@ -77,6 +77,13 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 					<input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="Naam" value="<?php echo isset($_POST['billing_last_name'])? $_POST['billing_last_name']:'';?>" required>
 				</span>
 			</p>
+			<p class="form-row form-row-wide" id="billing_company_field">
+		        <label for="billing_company" class="">Bedrijfsnaam</label>
+		        <span class="woocommerce-input-wrapper">
+		          <input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="Bedrijfsnaam">
+		        </span>
+	      	</p>
+			<div id="extra_fields"></div>
 			<?php 
 				woocommerce_form_field('billing_country', array(
 			    'type'       => 'select',
@@ -121,21 +128,67 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			<div class="billing-address-wrap">
 				<h3>Factuuradres</h3>
 				<p class="same-as-shipping-address">
-					<input type="checkbox" name="is_shipping_address" value="1">&nbsp;Hetzelfde als bezorgadres
+					<input type="checkbox" name="is_shipping_address" id="is_shipping_address" value="0">&nbsp;Hetzelfde als bezorgadres
 				</p>
+				<!-- Start Shipping fields -->
+				<div class="show_shipping_fields">
+					<p class="form-row form-row-first" id="shipping_first_name_field">
+						<label for="shipping_first_name" class="">Naam</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_first_name" id="shipping_first_name" placeholder="Voornaam" value="<?php echo isset($_POST['shipping_first_name'])? $_POST['shipping_first_name']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-last" id="shipping_last_name_field">
+						<label for="shipping_last_name" class="">&nbsp;</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_last_name" id="shipping_last_name" placeholder="Naam" value="<?php echo isset($_POST['shipping_last_name'])? $_POST['shipping_last_name']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-first shipping_postcode" id="shipping_postcode_field">
+						<label for="shipping_postcode" class="">Postcode</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_postcode" id="shipping_postcode" placeholder="Bijv. 9300" value="<?php echo isset($_POST['shipping_postcode'])? $_POST['shipping_postcode']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-last shipping_city" id="shipping_city_field">
+						<label for="shipping_city" class="">Gemeente</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_city" id="shipping_city" placeholder="Bijv. 9300" value="<?php echo isset($_POST['shipping_city'])? $_POST['shipping_city']:'';?>">
+						</span>
+					</p>
+
+					<p class="form-row form-row-first shipping_address_1" id="shipping_address_1_field">
+						<label for="shipping_address_1" class="">Straatnaam</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_address_1" id="shipping_address_1" placeholder="Bijv. Stationstraat" value="<?php echo isset($_POST['shipping_address_1'])? $_POST['shipping_address_1']:'';?>">
+						</span>
+					</p>
+					<p class="form-row form-row-last shipping_house" id="shipping_house_field">
+						<label for="shipping_house" class="">Huisnummer en bus</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_house" id="shipping_house" placeholder="Bijv. 113-C" value="<?php echo isset($_POST['shipping_house'])? $_POST['shipping_house']:'';?>" autocomplete="house-number">
+						</span>
+					</p>
+					<p class="form-row form-row-wide shipping_address_2" id="shipping_address_2_field">
+						<label for="shipping_address_2" class="">Extra adresregel</label>
+						<span class="woocommerce-input-wrapper">
+							<input type="text" class="input-text " name="shipping_address_2" id="shipping_address_2" placeholder="" value="<?php echo isset($_POST['shipping_address_2'])? $_POST['shipping_address_2']:'';?>" autocomplete="address-line2">
+						</span>
+					</p>
+				</div><!-- End Shipping fields -->
 				<p class="form-row form-row-wide" id="billing_email_2_field">
 					<label for="billing_email_2" class="">E-mailadres</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="email" class="input-text " name="billing_email_2" id="billing_email_2" placeholder="" value="<?php echo isset($_POST['billing_email_2'])? $_POST['billing_email_2']:$setedEmail;?>" required>
 					</span>
 				</p>
-				<p class="form-row form-row-first billing_gsm_number" id="billing_address_1_field">
+				<p class="form-row form-row-wide billing_gsm_number" id="billing_address_1_field">
 					<label for="billing_gsm_number" class="">GSM nummer</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="text" class="input-text " name="billing_gsm_number" id="billing_gsm_number" placeholder="Bijv. 0493 20 36 20" value="<?php echo isset($_POST['billing_gsm_number'])? $_POST['billing_gsm_number']:'';?>" autocomplete="gsm-number">
 					</span>
 				</p>
-				<p class="form-row form-row-last billing_phone" id="billing_phone_field">
+				<p class="form-row form-row-wide billing_phone" id="billing_phone_field">
 					<label for="billing_phone" class="">Telefoon</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="Bijv. 09 224 61 11" value="<?php echo isset($_POST['billing_phone'])? $_POST['billing_phone']:'';?>" autocomplete="tel" required>
@@ -144,7 +197,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			</div>
 			<div class="clearfix"></div>
 			<div class="login-info">
-				<p><input type="checkbox" name="create_account" value="1" checked>&nbsp;Account aanmaken</p>
+				<!-- <p><input type="checkbox" name="create_account" value="1" checked>&nbsp;Account aanmaken</p> -->
 				<h3>Inloggegevens</h3>
 				<p>Het e-mailadres en wachtwoord zijn nodig om toegang te krijgen tot de gegevens. Ook zullen we je via dit e-mailadres op de hoogte houden van de status van bestellingen.</p>
 				<p class="form-row form-row-wide" id="billing_email_field">
@@ -155,14 +208,14 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 					
 					<?php if( isset($data_reg) && array_key_exists('exists_email', $data_reg) ){printf('<span class="error-valid error-confirm_password">%s</span>', $data_reg['exists_email'] );}?>
 				</p>
-				<p class="form-row form-row-first password" id="password_field">
+				<p class="form-row form-row-wide password" id="password_field">
 					<label for="re_password" class="">Wachtwoord</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="password" class="input-text " name="password" id="re_password" placeholder="Minimaal 8 karakters"  autocomplete="password" required>
 					</span>
 					<span class="error-valid error-rel_password"></span>
 				</p>
-				<p class="form-row form-row-last confirm_password" id="confirm_password_field">
+				<p class="form-row form-row-wide confirm_password" id="confirm_password_field">
 					<label for="confirm_password" class="">Wachtwoord bevestigen</label>
 					<span class="woocommerce-input-wrapper">
 						<input type="password" class="input-text " name="confirm_password" id="confirm_password" autocomplete="confirm-password" required>
@@ -190,8 +243,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
               <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-05.svg"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
             </ul>
 		</div>
 	</div>
@@ -204,9 +257,9 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		<div class="u-column1 col-1">
 
-	<?php endif; ?>
+	<?php endif; $losturl = wp_lostpassword_url();?>
 
-			<h2><?php esc_html_e( 'Inloggen', 'woocommerce' ); ?></h2>
+			<h4><?php esc_html_e( 'Inloggen', 'woocommerce' ); ?></h4>
 			<div><p>Welkom terug!</p></div>
 			<form class="woocommerce-form woocommerce-form-login login" method="post">
 
@@ -220,11 +273,11 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 					<label for="password"><?php esc_html_e( 'Wachtwoord', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 					<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
 				</p>
-
-				<?php do_action( 'woocommerce_login_form' ); ?>
-				<p class="woocommerce-LostPassword lost_password">
-					<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Wachtwoord vergeten?', 'woocommerce' ); ?></a>
+                <p class="woocommerce-LostPassword lost_password">
+					<a href="#" id="lostpassword" data-link="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Wachtwoord vergeten?', 'woocommerce' ); ?></a>
 				</p>
+				<?php do_action( 'woocommerce_login_form' ); ?>
+				
 				<p class="form-row">
 					<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
 						<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
@@ -243,7 +296,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		<div class="u-column2 col-2">
 
-			<h2><?php esc_html_e( 'Nieuw bij Thelene?', 'woocommerce' ); ?></h2>
+			<h4><?php esc_html_e( 'Nieuw bij Matheco?', 'woocommerce' ); ?></h4>
 			<div class="signup-notification">
 				<p>Vul hier je e-mailadres in als je nog niet beschikt over een account. Indien gewenst, kan je in de volgende stap een account aanmaken.</p>
 			</div>
@@ -259,31 +312,6 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		</div>
 
-	</div>
-	<div class="login-btm-wrap">
-		<h2 class="login-btm-title">DOLOR SIT AMET</h2>
-		<div class="login-info-crtl">
-			<div class="login-info-inr loginInfoSlider">
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 <?php endif; ?>
