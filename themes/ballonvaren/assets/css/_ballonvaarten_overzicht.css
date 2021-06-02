@@ -186,7 +186,7 @@
     padding-bottom: 24px;
 }
 .fl-pro-grd-price{
-	padding-bottom: 22px;
+	padding-bottom: 24px;
 	border-bottom: 1px solid #ECF1F4;
 	margin-bottom: 30px;
 }
@@ -603,9 +603,12 @@
 /* == responive == */
 /* ============== */
 @media (max-width: 1699px) {
-	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
+	.archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
 	.single-product .fl-pro-grd-title{
-		font-size: 23px;
+		font-size: 22px;
+	}
+	.archive .fl-pro-grd-des{
+		padding: 30px 19px 33px;
 	}
 }
 
@@ -617,18 +620,20 @@
 	.dft-hm-product-module .hmProdctGrdsSlideItme .fl-product-grd{
 		border: 3px solid #F8F8F8;
 	}	
+	.archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title, .single-product .fl-pro-grd-title{
+		font-size: 21px;
+	}
 }
 
 @media (max-width: 1399px) {
 	.fl-products-cntlr ul.products{
-		margin: 0 -8px;
+		margin: 0 -8px!important;
 	}
 	.fl-products-cntlr ul.products > li{
 		padding: 0 8px 40px!important;
 	}
-	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
-	.single-product .fl-pro-grd-title{
-		font-size: 22px;
+	.archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title, .single-product .fl-pro-grd-title{
+		font-size: 20px;
 	}
 	.fl-pro-grd-des p{
 		font-size: 15px;
@@ -647,15 +652,14 @@
 	.fltr-prdt-title{
 		margin-left: 14px;
 	}
-	.fl-pro-grd-btn{
-		padding: 0 20px 30px;
-	}
 	.contacteer-inner p{
 		margin-bottom: 42px;
 	}
-	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
-	.single-product .fl-pro-grd-title{
-		font-size: 22px;
+	.archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title, .single-product .fl-pro-grd-title{
+		font-size: 19px;
+	}
+	.archive .fl-pro-grd-des{
+		padding: 30px 15px 30px;
 	}
 }
 
@@ -672,16 +676,10 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	.fl-products-cntlr ul.products{
-		padding-bottom: 40px!important;
-	}
 	.fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
 	.single-product .fl-pro-grd-title{
 		font-size: 18px;
 		margin-bottom: 8px;
-	}
-	.fl-pro-grd-btn{
-		padding: 0 25px 30px;
 	}
 	.fl-products-cntlr .fl-pro-grd-price{
 		font-size: 15px;
