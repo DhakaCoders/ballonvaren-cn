@@ -183,9 +183,6 @@ overons-team-sec-wrp
 	.overons-team-parachute-btm {
 	    bottom: 60px;
 	    left: -60px;
-	    background-size: 200px 250px;
-	    width: 200px;
-	    height: 250px;
 	}
 	.overons-msnry-grd-rgt {
 	    padding-left: 65px;
@@ -213,22 +210,15 @@ overons-team-sec-wrp
 	.overons-team-parachute-tp {
 	    top: -270px;
 	    right: 0;
-	    background-size: 160px 240px;
-	    width: 160px;
-	    height: 240px;
 	}
 	.overons-team-parachute-btm {
 	    bottom: 60px;
 	    left: -15px;
-	    background-size: 170px 220px;
-	    width: 170px;
-	    height: 220px;
 	}
 	.overons-team-sec-wrp {
 	    padding-bottom: 80px;
 	}
 	.overons-team-img {
-	    height: 520px !important;
 	    margin-bottom: 80px;
 	}
 	.overons-msnry-grd-dsc p br{
@@ -252,11 +242,8 @@ overons-team-sec-wrp
 	.msnrytgi4 .overons-msnry-grd-item-img {
 	    height: 295px;
 	}
-	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
-	    height: 540px;
-	}
 	.overons-team-module {
-	    padding: 50px 20px;
+	    padding: 50px 70px;
 	}
 
 }
@@ -275,11 +262,10 @@ overons-team-sec-wrp
 	.overons-msnry-grd-rgt {
 	    padding-left: 40px;
 	}
-	.overons-team-sec-wrp {
+	.overons-team-sec-wrp{
 	    padding-bottom: 60px;
 	}
 	.overons-team-img {
-	    height: 420px !important;
 	    margin-bottom: 70px;
 	}
 	.overons-msnry-grd-sec-wrp {
@@ -300,11 +286,8 @@ overons-team-sec-wrp
 	.overons-msnry-grd-wrp{
 		min-height: 660px;
 	}
-	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
-	    height: 480px;
-	}
 	.overons-team-module {
-	    padding: 40px 20px;
+	    padding: 40px 70px;
 	}
 	
 	
@@ -314,19 +297,14 @@ overons-team-sec-wrp
 	.boek-je-form-bg-cntlr {
 	    padding-bottom: 50px;
 	}
-	.boek-je-form-sec-wrp{
-		padding-top: 50px;
-	}
 	.overons-team-sec-wrp {
 	    padding-bottom: 35px;
 	}
 	.overons-team-img {
-	    height: 320px !important;
 	    margin-bottom: 60px;
 	}
 	.overons-msnry-grd-sec-wrp {
 	    padding-bottom: 150px;
-	    padding-top: 50px;
 	}
 	.overons-msnry-grd-lft {
 	    width: 100%;
@@ -360,9 +338,6 @@ overons-team-sec-wrp
 	    color: #2C113E;
 	    margin-bottom: 25px;
 	}
-	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
-	    height: 400px;
-	}
 	.overons-team-module {
 	    padding: 30px 20px;
 	}
@@ -379,13 +354,27 @@ overons-team-sec-wrp
 	.overons-msnry-grd-dsc a{
 		display: none;
 	}
+	.overons-team-parachute-tp {
+	    top: -155px;
+	    right: 0;
+	    background-size: 160px 240px;
+	    width: auto;
+	    height: auto;
+	}
+	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
+	    height: 1000px;
+	    bottom: -110px;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 70px;
+	    left: 0;
+	}
 
 
 }
 
 @media(max-width: 575px){
 	.overons-team-img {
-	    height: 225px !important;
 	    margin-bottom: 60px;
 	}
 	
