@@ -742,11 +742,13 @@ Gallery design
 #ballonvaren-voor-bedrijven .dfp-cta-module.orange {
     margin-bottom: 85px;
 }
-#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr{
+#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr,
+#ballonvaren-voor-bedrijven#vip .exprns-ovrvw-grid-ctlr{
 	margin-left: -12px;
 	margin-right: -12px;
 }
-#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap{
+#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap,
+#ballonvaren-voor-bedrijven#vip .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap{
 	float: left;
 	width: 50%;
 	padding-left: 12px;
@@ -756,6 +758,19 @@ Gallery design
 
 #ballonvaren-voor-bedrijven .default-page-con{
 	padding-bottom: 75px;
+}
+
+
+
+/*vip*/
+
+#vip .ballon-rides-module {
+    margin-top: 35px;
+}
+
+#vip .exprns-ovrvw-item-wrap{
+	float: left;
+	width: 50%;
 }
 
 
