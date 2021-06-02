@@ -97,3 +97,6 @@ Boek je ballonvucht
 Desktop-->
 
 1. ager fixing ar moddhe ja ja pore
+
+
+N.B----->  sob fix hoye gele , browser check and responsive check kore dekhte hobe.
