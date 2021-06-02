@@ -635,6 +635,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.header{
 		padding-top: 25px;
 		padding-bottom: 35px;
+		margin-bottom: 45px;
 	}
 	.hambergar-icon i,
 	.close-icon i{
