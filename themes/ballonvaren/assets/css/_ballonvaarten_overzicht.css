@@ -752,7 +752,9 @@
 		padding: 40px 41px;
 	}
 	.cadeaubonnen-page-link i{
-		top: -95px;
+		top: -53px;
+		height: 232px;
+		left: -114px;
 	}
 }
 
@@ -789,7 +791,9 @@
 		padding: 37px 41px;
 	}
 	.cadeaubonnen-page-link i{
-		top: -100px;
+		top: -56px;
+		height: 217px;
+		left: -109px;
 	}
 	.fl-pagi-cntlr{
 		padding-bottom: 54px;
@@ -828,7 +832,9 @@
 		padding: 33px 41px;
 	}
 	.cadeaubonnen-page-link i{
-		top: -106px;
+		top: -50px;
+		height: 202px;
+		left: -106px;
 	}
 }
 
@@ -886,6 +892,11 @@
     }
     .cadeaubonnen-pg-lnk-cntrl{
 		padding: 30px 41px;
+	}
+	.cadeaubonnen-page-link i{
+		top: 90px;
+		height: 150px;
+		left: -85px;
 	}
     .cadeaubonnen-pg-lnk-cntrl p:first-of-type{
     	display: none;
@@ -973,6 +984,11 @@
 	.cadeaubonnen-page-link .cad-pg-lnk-title{
     	font-size: 26px;
     }
+    .cadeaubonnen-page-link i{
+		top: 102px;
+		height: 134px;
+		left: -77px;
+	}
     .cad-pg-lnk-btn{
     	font-size: 14px;
     	height: 40px;
