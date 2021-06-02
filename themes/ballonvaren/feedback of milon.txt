@@ -1,0 +1,54 @@
+Contact
+----------------------
+Desktop-->
+
+1. https://prnt.sc/13pe2dd
+	ai class ta change kore daw, bcoz ata akta common module.
+	 '.error-msg' ata class name daw
+
+2. https://prnt.sc/13pe6s7
+	error-msg box take hide kore dile top a gap thake, so gap ta erro-msg ar bottom a dite hobe.
+	bcoz ata first time thakbena , error hole show hobe ai div ta. 
+
+3. i) https://prnt.sc/13peznx
+   ii) https://prnt.sc/13pf3hs
+
+   img tag a use koro, r .svg img hobe
+
+4. https://prnt.sc/13pf5nz
+	ai markup ta live site thake dekhe niye update koro. ai fix ta bar bar korte hosche keno? 
+	https://wordpress-520010-1818899.cloudwaysapps.com/contact/
+
+
+5. https://prnt.sc/13pfb15
+	wp-forms thake validation a ki span tag dey? 
+
+	live site thake dekhe update koro -- https://wordpress-520010-1818899.cloudwaysapps.com/contact/
+
+
+6. https://prnt.sc/13pfjv8
+	aktu upore uthbe. ata daw
+
+
+
+7. https://prnt.sc/13pfsiz
+	i) hover a opacity badh diye fill color ata daw. 
+	ii) sob social icon a target blank hobe always , ata amader mone rakhte hobe.
+
+
+8. https://prnt.sc/13pfw4p
+	hover a always logo thake color dite hoy. 
+	logo ar black or orange 2 ta try koro , jeta valo lage rakho.
+
+
+9. https://prnt.sc/13pfyeu
+	aikhane opacity te beshi hoye geche , ata rakho.
+	
+
+
+10. https://prnt.sc/13pg69b
+	bg ta design ar moto match koreni.
+
+
+11. https://prnt.sc/13pg9h2
+	heading tar j j media te  responsive kora ache se se media ta dimention akare sub heading taro responsive korte hobe.
