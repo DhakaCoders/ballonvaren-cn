@@ -1,5 +1,4 @@
 .cadeaubonnen-overzicht-sec{
-	padding-top: 64px;
 	padding-bottom: 84px;
 }
 .cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
@@ -66,12 +65,11 @@
 /* == responsive == */
 
 @media (max-width: 1699px){	
-	.cadeaubonnen-overzicht-sec{
-		padding-top: 62px;
-		padding-bottom: 80px;
-	}
 	.cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
 		margin-bottom: 57px;
+	}
+	.cadeaubonnen-overzicht-sec{
+		padding-bottom: 66px;
 	}
 	.fl-pro-gift-cntlr{
 		min-height: 217px;
@@ -107,12 +105,11 @@
 }
 
 @media (max-width: 1399px) {
-	.cadeaubonnen-overzicht-sec{
-		padding-top: 60px;
-		padding-bottom: 76px;
-	}
 	.cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
 		margin-bottom: 45px;
+	}
+	.cadeaubonnen-overzicht-sec{
+		padding-bottom: 56px;
 	}
 	.fl-pro-gift-cntlr{
 		min-height: 200px;
@@ -141,8 +138,7 @@
 		margin-bottom: 0;
 	}
 	.cadeaubonnen-overzicht-sec{
-		padding-top: 58px;
-		padding-bottom: 65px;
+		padding-bottom: 46px;
 	}
 	.fl-pro-gift-cntlr{
 		min-height: 190px;
@@ -164,12 +160,11 @@
 }
 
 @media(max-width: 767px){
-	.cadeaubonnen-overzicht-sec{
-		padding-top: 56px;
-		padding-bottom: 55px;
-	}
 	.gift-card .fl-pro-grd-des{
 		padding: 38px 20px 30px;
+	}
+	.cadeaubonnen-overzicht-sec{
+		padding-bottom: 36px;
 	}
 	.fl-pro-gift-cntlr{
 		min-height: 200px;
@@ -184,6 +179,10 @@
 	.fl-pro-gift-cntlr span{
 		font-size: 27px;
 	}
+}
+
+@media (max-width: 639px) {
+
 }
 
 @media(max-width: 575px){
