@@ -609,6 +609,17 @@ Gallery design
 
 /*news details */
 
+#news-details{
+	padding-bottom: 80px;
+	position: relative;
+}
+#news-details .news-details-btm-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 490px;
+	z-index: -1;
+}
 #news-details .dfp-promo-module-title{
 	margin-bottom: 20px;
 }
@@ -644,6 +655,49 @@ Gallery design
 	padding-left: 8px;
 	padding-right: 8px;
 }
+
+#news-details .page-entry-header {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+#news-details .page-entry-header h3{
+	text-align: center;
+	margin-bottom: 35px;
+	color: #2C113E;
+	text-transform: uppercase;
+}
+
+#news-details .blog-grds-item-ctlr{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+#news-details .blog-grds-item{
+	float: left;
+	width: 33.3333%;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 25px;
+}
+#news-details .blog-grds-item:nth-child(3n+1){
+	clear: left;
+}
+#news-details .default-page-con{
+	padding-bottom: 230px;
+}
+
+#news-details .blog-grds-inr{
+	position: relative;
+}
+#news-details .blog-grd-top-img{
+	position: absolute;
+	top: -350px;
+	right: -212px;
+}
+
+
+
+
+/*responsive*/
 
 @media(max-width: 1599px){
 	
