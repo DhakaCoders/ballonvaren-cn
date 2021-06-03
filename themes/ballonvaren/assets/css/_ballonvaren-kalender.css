@@ -24,16 +24,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-repeat: repeat-x;
-    height: 184px;
     padding-bottom: 315px;
     z-index: -1;
 }
 
 .white-sky-inline-bg{
-    /*position: absolute;*/
-    /*height: 184px;*/
-    /*background-repeat: repeat-x;*/
+    height: 552px;
     background-position: left bottom;
     position: absolute;
     width: 100%;
