@@ -980,6 +980,9 @@ Gallery design
 	#news-details .news-details-btm-bg {
 	    bottom: 1080px;
 	}
+	.has-inline .gallery-icon-img {
+	    height: 350px;
+	}
 }
 
 
@@ -1183,6 +1186,9 @@ Gallery design
 	#news-details .news-details-btm-bg {
 	    bottom: 680px;
 	}
+	.has-inline .gallery-icon-img {
+	    height: 250px;
+	}
 
 }
 
@@ -1353,6 +1359,9 @@ Gallery design
 	}
 	#news-details .social-media span{
 		margin-right: 7px;
+	}
+	.has-inline .gallery-icon-img {
+	    height: 160px;
 	}
 
 }
