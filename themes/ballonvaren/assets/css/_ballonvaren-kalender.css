@@ -1,5 +1,5 @@
 .off-days-sec {
-    padding-bottom: 120px;
+    padding-bottom: 35px;
     position: relative;
     z-index: 9;
 }
@@ -24,7 +24,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: 315px;
+    padding-bottom: 235px;
     z-index: -1;
 }
 
@@ -111,7 +111,7 @@
 
 /*--------------------------------events-grid-sec-----------------------------*/
 .events-grid-sec{
-	padding-top: 65px;
+	padding-top: 130px;
 	padding-bottom: 65px;
 	position: relative;
 	z-index: 9;
