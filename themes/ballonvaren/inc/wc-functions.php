@@ -12,25 +12,16 @@ function get_custom_wc_output_content_wrapper(){
 
     if(is_shop() OR is_product_category()){ 
         get_template_part('templates/breadcrumbs');
-        echo '<section class="product-page-cntlr"><div class="container"><div class="row"><div class="col-md-12"><div class="product-page-col-cntlr clearfix">';
-        //get_template_part('templates/shop', 'search');
-        $off_sidebar = false;
-        $classCss = '';
-        if(is_product_category()){
-            $category = get_queried_object();
-            if( in_array($category->slug, assign_gift_card_cat()) ){
-                $off_sidebar = true;
-                $classCss = ' full-product-page';
-            }
-        }
-        if( !$off_sidebar ){
-            echo '<div class="product-page-sidebar">';
-                get_sidebar('shop');
-            echo '</div>';
-        }
-        echo '<div class="product-page-col-rgt'.$classCss.'">';
-        get_template_part('templates/shop', 'top');
-        echo '<div class="fl-products-cntlr">';
+        echo '<section class="product-page-cntlr"><div class="product-category"><div class="container"><div class="row"><div class="col-md-12">';
+        echo '<div class="ballonvaarten-overzicht-page-entry-hdr">
+            <div class="contact-form-dsc-wrp">
+              <div class="page-entry-header">
+                <h1 class="fl-h1">BALLONVAARTEN<span>Consectetur sit velit neque.</span></h1>
+                <p>Ornare pretium volutpat faucibus nibh suscipit dictum. Integer ut urna lacus etiam est.</p>
+              </div>
+            </div>
+          </div>';
+        echo '<div class="fl-products-cntlr"><div class="fl-product-top">';
     }
 
 
@@ -38,8 +29,7 @@ function get_custom_wc_output_content_wrapper(){
 
 function get_custom_wc_output_content_wrapper_end(){
   if(is_shop() OR is_product_category()){
-    echo '</div>'; 
-    echo '</div>'; 
+    echo '</div></div>';
     echo '</div></div></div></div></section>';
     get_template_part('templates/shop', 'bottom');
   }
@@ -84,34 +74,45 @@ if (!function_exists('add_shorttext_below_title_loop')) {
     function add_shorttext_below_title_loop() {
         global $product, $woocommerce, $post;
           switch ( $product->get_type() ) {
-          case "pw-gift-card" :
-              $label  = __('selecteer bedrag', 'woocommerce');
-          break;
           default :
               $label  = __('MEER INFO', 'woocommerce');
           break;
           }
         $seller_flash = get_field('seller_flash', $product->get_id());
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
+        $short_desc = $product->get_short_description();
         echo '<div class="fl-product-grd mHc">';
-        if( !empty($seller_flash) ) printf('<span class="seller-flash">%s</span>', $seller_flash); 
-        wc_get_template_part('loop/sale-flash');
         echo '<div class="fl-product-grd-inr">';
-        echo '<div class="fl-pro-grd-img-cntlr mHc1">';
-        echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
+        echo '<div class="fl-pro-grd-img-cntlr">';
+        echo '<a href="'.get_permalink( $product->get_id() ).'" class="overlay-link"></a>';
         echo $gridtag;
-        echo '</div>';/*end loop image*/
-        echo '<h3 class="fl-h5 mHc2 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
+        echo '</div>';
+        echo '<div class="fl-pro-grd-des mHc1">';
+        echo '<h4 class="fl-h5 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
         echo '<div class="fl-pro-grd-price">';
-        echo $product->get_price_html();
-        echo '</div>';/*end loop price*/
-        echo '<div><a class="fl-trnsprnt-btn" href="'.get_permalink( $product->get_id() ).'">'.$label.'</a></div>';
+        echo $product->get_price_html();                                                         
+        echo '</div>';
+        if( !empty($short_desc) ) echo '<div class="fl-pro-grd-cont">'.wpautop($short_desc).'</div>';
+        echo '<div class="fl-pro-grd-btn">';
+        echo '<a class="red-color-arrow-btn" href="'.get_permalink( $product->get_id() ).'">
+            <span>'.$label.'</span>
+            <i><svg class="red-right-arrow" width="7" height="11" viewBox="0 0 7 11">
+            <use xlink:href="#red-right-arrow"></use> </svg>
+            </i>
+          </a>';
+        echo '</div>';
+        echo '</div>';                      
         echo '</div>';
         echo '</div>';
         
     }
 }
-
+add_filter( 'woocommerce_get_price_html', 'njengah_text_before_price' );
+function njengah_text_before_price($price){
+    $text_to_add_before_price  = 'VANAF'; //change text in bracket to your preferred text         
+    return $text_to_add_before_price . $price   ;
+          
+}
 function loop_qty_input(){
 
     global $product;
@@ -317,8 +318,8 @@ function misha_adv_product_options(){
     echo '</div>';
  
 }
- 
- 
+
+
 add_action( 'woocommerce_process_product_meta', 'misha_save_fields', 10, 2 );
 function misha_save_fields( $id, $post ){
  
@@ -559,10 +560,10 @@ function misha_remove_my_account_links( $menu_links ){
     unset( $menu_links['edit-account'] ); // Remove Account details tab
     unset( $menu_links['customer-logout'] ); // Remove Logout link
 
-    $menu_links['orders'] = 'Bestellingen';
+    $menu_links['orders'] = 'Geboekte vluchten';
     $menu_links['winkelmandje'] = 'Winkelmandje';
     $menu_links['edit-account'] = 'ACCOUNT info';
-    $menu_links['customer-logout'] = 'LOGOUT';
+    $menu_links['customer-logout'] = 'Uitloggen';
     return $menu_links;
  
 }
