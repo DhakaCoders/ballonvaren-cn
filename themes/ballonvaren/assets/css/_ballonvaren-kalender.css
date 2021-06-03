@@ -4,7 +4,7 @@
     z-index: 9;
 }
 
-.off-days-sec:after {
+/*.off-days-sec:after {
     position: absolute;
     content: "";
     background-image: url(../images/calender-sec-shadow.png);
@@ -17,7 +17,29 @@
     right: 0;
     z-index: -1;
     margin-bottom: -250px;
+}*/
+
+.white-sky-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 184px;
+    padding-bottom: 315px;
+    z-index: -1;
 }
+
+.white-sky-inline-bg{
+    /*position: absolute;*/
+    /*height: 184px;*/
+    /*background-repeat: repeat-x;*/
+    background-position: left bottom;
+    position: absolute;
+    width: 100%;
+}
+
+
 
 .off-days-sec:before {
     background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
