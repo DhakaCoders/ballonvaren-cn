@@ -228,6 +228,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Niaz*/
+
 //products counter
 if( $('.qty').length ){
   $('.qty').each(function() {
@@ -299,6 +300,73 @@ if( $('.qty1').length ){
 
 }
 
+if( $('.main-img-crtl').length ){
+ $('.main-img-crtl').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  autoplay:true,
+  asNavFor: '.thumbnails-cntlr .thumbnails',
+   prevArrow: $('.fl-singgle-pro-prev'),
+  nextArrow: $('.fl-singgle-pro-next'),
+});
+$('.thumbnails-cntlr .thumbnails').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.main-img-crtl',
+  dots: false,
+  arrows: true,
+  autoplay:true,
+  focusOnSelect: true
+});
+}
+
+/**
+Slick slider
+*/
+if( $('.hasRelatedProduct').length ){
+    $('.hasRelatedProduct').slick({
+      dots: false,
+      arrows:false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
 
 /*start of Milon*/
 $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
