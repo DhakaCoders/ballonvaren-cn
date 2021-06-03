@@ -359,7 +359,12 @@ Gallery design
 }
 .cta-btn .fl-transparent-btn:hover{
 	background: #fff;
-	color: #71867E;
+	color: #1DB4B2;
+}
+.orange .cta-btn .fl-transparent-btn:hover,
+.dfp-gift-ctlr .cta-btn .fl-transparent-btn:hover{
+	background: #fff;
+	color: #FDCA35;
 }
 
 .dfp-cta-module{
@@ -1034,6 +1039,12 @@ Gallery design
 	.fl-btn a{
 		max-width: 100%;
 		width: 100%;
+	}
+	.fl-dft-lftimg-rgtdes-rgt{
+		padding-left: 15px;
+	}
+	.fl-dft-lftimg-rgtdes{
+		padding-bottom: 25px;
 	}
 }
 
