@@ -20,6 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 do_action( 'woocommerce_before_customer_login_form' ); ?>
+<div class="page-title">
+	<h1>Jouw account</h1>
+</div>
 <?php 
 if( isset($_GET['action']) && $_GET['action']=='registration'):
 	global $woocommerce; global $data_reg;
@@ -30,7 +33,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 ?>
 <div class="register-nextstep woocommerce-billing-fields" id="form_next">
 	<div class="register-top-title">
-		<h1>Nieuw bij Matheco</h1>
+		<h3>NIEUW BIJ BALLONVAREN?</h3>
 	</div>
 	<?php if($data_reg): ?>
 	
