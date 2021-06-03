@@ -50,6 +50,27 @@
 .blog-grid-items ul li{
 	padding: 0 12px 59px!important;
 	width: 33.3333%!important;
+	position: relative;
+}
+.onsale-tag{
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	left: 18px;
+}
+.spotlight .onsale-tag span{
+	background-color: #fdc935;
+}
+.onsale-tag span{
+	padding: 7px 11px;
+	background-color: #e70048;
+	font-size: 13px;
+	font-weight: 500;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	vertical-align: baseline;
+	line-height: 1.1;
 }
 .blog-page-sec .blog-grid-items{
 	padding-bottom: 15px;
@@ -79,33 +100,34 @@
 .bgi-img{
 	width: 100%;
 	height: 100%;
-	border-radius: 2px;
+	border-radius: 3px;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.blog-grid-des{
-	/* padding: 45px 72px 40px 33px;	 */
-}
 .post-date{
+	margin-bottom: 10px;
+	position: relative;
+	line-height: 1;
+	display: inline-block;
+	vertical-align: baseline;	
+}
+.post-date span{
 	font-weight: 700;
 	color: #EE3E15;
-	font-size: 16px;
-	margin-bottom: 12px;
+	font-size: 16px;	
 	padding-left: 22px;
-	position: relative;
 	display: inline-block;
 	vertical-align: baseline;
-	line-height: 1.1;
+	line-height: 1;
 }
-.post-date:after{
+.post-date i{
 	position: absolute;
 	content: "";
-	background-image: url('../images/date-icon.svg');
-	background-repeat: no-repeat;
 	width: 13px;
 	height: 14px;
-	margin-top: -1px;
+	background-size: contain;
+	margin-top: -3px;
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
