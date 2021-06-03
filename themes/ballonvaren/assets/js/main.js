@@ -316,7 +316,7 @@ if( $('.humbergar').length ){
     }
   }
 
-  if(windowWidth <= 768){
+  if(windowWidth <= 767){
     if( $('.dfpBlogSlider').length ){
       $('.dfpBlogSlider').slick({
         dots: true,

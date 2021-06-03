@@ -894,6 +894,9 @@ Gallery design
 	#news-details .default-page-con {
 	    padding-bottom: 175px;
 	}
+	#news-details .news-details-btm-bg {
+	    bottom: 570px;
+	}
 }
 
 
@@ -955,6 +958,9 @@ Gallery design
 	}
 	#news-details {
 	    padding-bottom: 70px;
+	}
+	#news-details .news-details-btm-bg {
+	    bottom: 1080px;
 	}
 }
 
@@ -1156,6 +1162,10 @@ Gallery design
 	#news-details {
 	    padding-bottom: 50px;
 	}
+	#news-details .news-details-btm-bg {
+	    bottom: 680px;
+	}
+
 }
 
 
@@ -1348,6 +1358,9 @@ Gallery design
 	}
 	#news-details {
 	    padding-bottom: 10px;
+	}
+	#news-details .news-details-btm-bg {
+	    bottom: 760px;
 	}
 	
 }
