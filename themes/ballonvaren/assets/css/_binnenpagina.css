@@ -830,6 +830,9 @@ Gallery design
 	#news-details .blog-grd-top-img img {
 	    max-width: 150px;
 	}
+	.dfp-grd-module {
+	    padding-bottom: 45px;
+	}
 
 }
 
@@ -946,6 +949,9 @@ Gallery design
 	}
 	#news-details .blog-grds-item{
 		width: 50%;
+	}
+	.dfp-grd-module {
+	    padding-bottom: 25px;
 	}
 }
 @media(max-width: 850px){
@@ -1087,6 +1093,7 @@ Gallery design
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-bottom: 20px;
+		margin-bottom: 0;
 	}
 	.fl-btn a{
 		max-width: 100%;
@@ -1197,7 +1204,8 @@ Gallery design
 	    width: 54px;
 	}
 	.default-page-con hr{
-		margin-bottom: 22px;
+		margin-bottom: 20px;
+		padding-top: 0;
 	}
 	.fl-dft-lftimg-rgtdes-rgt{
 		padding-left: 15px;
@@ -1256,20 +1264,24 @@ Gallery design
 	.full-img-module {
 	    padding-bottom: 20px;
 	}
-	.grd-module .blg-grds-item ul{
-		margin-left: 0!important;
-		margin-right: 0!important;
-		padding-left: 0!important;
+	.dfp-grd-module .dfp-grd-items ul{
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
 	}
-	.grd-module .blg-grds-item ul li {
-	    padding-bottom: 20px!important;
-	    width: 100%!important;
-	    padding-left: 0!important;
-	    padding-right: 0!important;
-	    display: none;
+	.dfp-grd-module .dfp-grd-items ul li{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		display: none;
 	}
-	.grd-module .blg-grds-item ul li:first-child{
-		display: block!important;
+	.dfp-grd-module .dfp-grd-items ul li:first-child{
+		display: block;
+	}
+	.blog-grid-item{
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 }
