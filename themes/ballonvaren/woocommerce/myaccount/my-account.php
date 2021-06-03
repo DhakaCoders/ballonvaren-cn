@@ -38,10 +38,10 @@ defined( 'ABSPATH' ) || exit;
 		    $current_user = wp_get_current_user();
 		    $username = !empty($current_user->display_name)? $current_user->display_name : $current_user->user_firstname;
 		?>
-			<h1><?php printf( __( '%s', THEME_NAME ), esc_html( $username ) ); ?></h1>
-			<p>Welkom bij uw account!</p>
-			<div class="dashboar-text show-sm">
-				<p>Vanaf uw accountdashboard kunt u uw recente bestellingen bekijken, uw verzend- en factuuradressen beheren en uw wachtwoord en accountgegevens bewerken.</p>
+		<h1><?php _e( 'Welkom bij uw account', 'woocommerce' ); ?></h1>
+			<p><?php printf( __( 'Hallo, %s', THEME_NAME ), esc_html( $username ) ); ?></p>
+			<div class="dashboar-text">
+				<p>Vanaf jouw accountdashboard kun je de recente bestellingen bekijken, verzend- en factuuradressen beheren en jouw wachtwoord en accountgegevens bewerken.</p>
 			</div>
 		<?php } ?>
 
