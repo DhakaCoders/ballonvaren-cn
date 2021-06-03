@@ -27,6 +27,13 @@
 	h6,.fl-h6{
 		font-size: 16px;
 	}
+	.fl-red-btn,
+	.fl-navyblue-btn,
+	.fl-cyan-btn,
+	.fl-transparent-btn,
+	a.red-color-arrow-btn{
+		font-size: 15px;
+	}
 }
 @media (max-width: 1499px) {
     .container { 
@@ -76,6 +83,13 @@
 	}
 	h5,.fl-h5{
 		font-size: 21px;
+	}
+	.fl-red-btn,
+	.fl-navyblue-btn,
+	.fl-cyan-btn,
+	.fl-transparent-btn,
+	a.red-color-arrow-btn{
+		font-size: 14px;
 	}
 }
 
@@ -157,13 +171,6 @@
 	h4,.fl-h4{
 		font-size: 25px;
 	}
-	.fl-red-btn,
-	.fl-navyblue-btn,
-	.fl-cyan-btn,
-	.fl-transparent-btn,
-	a.red-color-arrow-btn{
-		font-size: 15px;
-	}
 }
 
 @media(max-width: 575px){
@@ -189,13 +196,7 @@
 }
 
 @media(max-width: 479px){
-	.fl-red-btn,
-	.fl-navyblue-btn,
-	.fl-cyan-btn,
-	.fl-transparent-btn,
-	a.red-color-arrow-btn{
-		font-size: 14px;
-	}
+
 
 }
 

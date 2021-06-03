@@ -228,7 +228,76 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Niaz*/
+//products counter
+if( $('.qty').length ){
+  $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
 
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
+
+if( $('.qty1').length ){
+  $('.qty1').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
 
 
 /*start of Milon*/
@@ -291,6 +360,23 @@ if (windowWidth <= 767) {
     }
   }
 
+  if (windowWidth <= 640){
+    if( $('.exprnsSlider').length ){
+      $('.exprnsSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
+  
+
 
 
 /*start of Shariful*/
@@ -312,6 +398,21 @@ if( $('.humbergar').length ){
     if($('.xs-lang-icon').length){
       $('.xs-lang-icon').click(function(){
         $(this).parents().toggleClass('xs-lang');
+      });
+    }
+  }
+
+  if(windowWidth <= 767){
+    if( $('.dfpBlogSlider').length ){
+      $('.dfpBlogSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
       });
     }
   }
