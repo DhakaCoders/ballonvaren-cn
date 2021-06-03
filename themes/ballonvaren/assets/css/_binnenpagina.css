@@ -146,7 +146,7 @@ hr{
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.ac-fancy-module:hover .fancy-img{
+.fancy-module:hover .fancy-img{
     transform: scale(1.1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -260,6 +260,17 @@ Gallery design
 	margin-bottom: 24px;
 }
 
+.top-gallery-module .has-inline .gallery-icon-img{
+	border-radius: 0;
+}
+.has-inline .gallery-icon-img{
+	height: 412px;
+	border-radius: 3px;
+}
+
+.has-inline .gallery-item img{
+	display: none;
+}
 .gallery-item img {
 	width: 100%;
 	border-radius: 3px;
