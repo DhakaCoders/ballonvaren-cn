@@ -333,6 +333,21 @@ if( $('.humbergar').length ){
     }
   }
 
+  if(windowWidth <= 767){
+    if( $('.dfpBlogSlider').length ){
+      $('.dfpBlogSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
 
 
     new WOW().init();
