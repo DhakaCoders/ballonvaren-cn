@@ -229,7 +229,144 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 /*start of Niaz*/
 
+//products counter
+if( $('.qty').length ){
+  $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
 
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
+
+if( $('.qty1').length ){
+  $('.qty1').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
+
+if( $('.main-img-crtl').length ){
+ $('.main-img-crtl').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  autoplay:true,
+  asNavFor: '.thumbnails-cntlr .thumbnails',
+   prevArrow: $('.fl-singgle-pro-prev'),
+  nextArrow: $('.fl-singgle-pro-next'),
+});
+$('.thumbnails-cntlr .thumbnails').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.main-img-crtl',
+  dots: false,
+  arrows: true,
+  autoplay:true,
+  focusOnSelect: true
+});
+}
+
+/**
+Slick slider
+*/
+if( $('.hasRelatedProduct').length ){
+    $('.hasRelatedProduct').slick({
+      dots: false,
+      arrows:false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
 
 /*start of Milon*/
 $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -291,6 +428,23 @@ if (windowWidth <= 767) {
     }
   }
 
+  if (windowWidth <= 640){
+    if( $('.exprnsSlider').length ){
+      $('.exprnsSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
+  
+
 
 
 /*start of Shariful*/
@@ -312,6 +466,21 @@ if( $('.humbergar').length ){
     if($('.xs-lang-icon').length){
       $('.xs-lang-icon').click(function(){
         $(this).parents().toggleClass('xs-lang');
+      });
+    }
+  }
+
+  if(windowWidth <= 767){
+    if( $('.dfpBlogSlider').length ){
+      $('.dfpBlogSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
       });
     }
   }
