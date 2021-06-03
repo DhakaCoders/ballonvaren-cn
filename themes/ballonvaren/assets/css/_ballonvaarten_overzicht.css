@@ -981,6 +981,9 @@
     	height: 40px;
     	width: 180px;
     }
+    .archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title, .single-product .fl-pro-grd-title{
+    	font-size: 21px;
+    }
 }
 
 @media (max-width: 359px) {
