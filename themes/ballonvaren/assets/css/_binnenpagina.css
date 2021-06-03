@@ -833,6 +833,13 @@ Gallery design
 	.dfp-grd-module {
 	    padding-bottom: 45px;
 	}
+	.ballon-rides-lft-top-img {
+	    top: -125px;
+	    left: -75px;
+	}
+	.ballon-rides-lft-top-img img{
+		max-width: 200px;
+	}
 
 }
 
