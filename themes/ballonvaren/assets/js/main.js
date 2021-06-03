@@ -291,6 +291,23 @@ if (windowWidth <= 767) {
     }
   }
 
+  if (windowWidth <= 640){
+    if( $('.exprnsSlider').length ){
+      $('.exprnsSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
+  
+
 
 
 /*start of Shariful*/
@@ -312,6 +329,21 @@ if( $('.humbergar').length ){
     if($('.xs-lang-icon').length){
       $('.xs-lang-icon').click(function(){
         $(this).parents().toggleClass('xs-lang');
+      });
+    }
+  }
+
+  if(windowWidth <= 767){
+    if( $('.dfpBlogSlider').length ){
+      $('.dfpBlogSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
       });
     }
   }
