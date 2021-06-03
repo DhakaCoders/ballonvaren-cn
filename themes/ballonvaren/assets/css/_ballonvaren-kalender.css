@@ -199,6 +199,13 @@
 	    padding-right: 55px;
 	    padding-top: 60px;
 	}
+	.absolute-img-two img {
+	    height: 230px;
+	    width: 200px;
+	}	
+	.absolute-img-two {
+	    margin-right: -120px;
+	}
 
 }
 
@@ -210,12 +217,21 @@
 }
 
 @media (max-width: 1399px) {
-
+	.calender-innr {
+	    padding-right: 60px;
+	}
 }
 
 
 @media(max-width: 1299px){
-
+	.absolute-img-two img {
+	    height: 200px;
+	    width: 165px;
+	}
+	.absolute-img-two {
+	    margin-right: -100px;
+	}
+	
 }
 
 @media(max-width: 1199px){
