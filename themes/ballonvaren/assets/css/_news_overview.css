@@ -131,6 +131,8 @@
 }
 .bgi-des p{
 	line-height: 1.5;
+}
+.bgi-des p:last-of-type{
 	margin-bottom: 0;
 }
 
