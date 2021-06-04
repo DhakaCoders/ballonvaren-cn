@@ -5,22 +5,6 @@
 }
 
 
-.white-sky-bg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 250px;
-    z-index: -1;
-}
-
-/*.white-sky-inline-bg{
-    height: 552px;
-    position: absolute;
-    width: 100%;
-}*/
-
-
 .inline-bg-img > img{
 	display: none;
 }
@@ -384,9 +368,7 @@
 	.events-grid-sec {
 	    padding-top: 47px;
 	}
-	./*white-sky-bg*/{
-		padding-bottom: 295px;
-	}
+
 
 
 }
@@ -399,12 +381,7 @@
 	.inline-bg-img {
 	    height: 540px;
 	}
-	./*white-sky-bg*/ {
-	    padding-bottom: 275px;
-	}
-	./*white-sky-bg*/ {
-	    padding-bottom: 275px;
-	}
+
 	
 }
 
