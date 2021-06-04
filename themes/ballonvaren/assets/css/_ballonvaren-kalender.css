@@ -264,6 +264,7 @@
 	color: #EE3E15;
 	display: inline-block;
 	margin-bottom: 30px;
+	padding-left: 10px;
 }
 
 .event-grid-item-inr p{
@@ -347,6 +348,10 @@
 	.absolute-img-two img {
 	    height: 210px;
 	    width: 185px;
+	}
+	.event-grid-item-inr span {
+	    font-size: 14px;
+	    margin-bottom: 15px;
 	}
 
 }
