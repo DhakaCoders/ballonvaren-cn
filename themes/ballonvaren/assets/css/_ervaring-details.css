@@ -1,5 +1,8 @@
+.relatate-product-hide{
+	padding-bottom: 70px;
+}
 .eveline-vernaeve-sec{
-	padding-bottom: 150px;
+	padding-bottom: 310px;
 	position: relative;
 }
 .eveline-vernaeve-sec:after{
@@ -107,15 +110,13 @@
 }
 
 .ervaring-details-sec{
-	
+		
 	
 }
 .white-sky-bg-cntlr{
 	position: relative;
-	padding-top: 150px;
-	margin-top: -150px;
 }
-.ervaring-details-sec .container{
+.white-sky-bg-cntlr .container{
 	position: relative;
 	z-index: 3;
 }
@@ -126,7 +127,7 @@
 	top: 0;
 	z-index: 2;
 	height: 382px;
-	top: -200px;
+	top: -380px;
 }
 .white-sky-inline-bg{
 	background-repeat: repeat-x;
