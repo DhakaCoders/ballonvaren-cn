@@ -1347,7 +1347,7 @@ Gallery design
 	.dfp-grd-module .dfp-grd-items ul li:first-child{
 		display: block;
 	}
-	.blog-grid-item{
+	.dfp-grd-module .blog-grid-item{
 		max-width: 300px;
 		width: 100%;
 		margin: 0 auto;
