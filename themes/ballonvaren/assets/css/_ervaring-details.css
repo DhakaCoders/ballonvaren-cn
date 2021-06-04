@@ -11,23 +11,10 @@
 	height: 743px;
 	left: 0;
 	right: 0;
-	bottom: -60px;
+	bottom: 0;
 	z-index: -1;
 }
-.eveline-vernaeve-sec:before{
-	position: absolute;
-    content: "";
-    background-image: url(../images/white-sky-bg.svg);
-    background-size: auto;
-    background-position: 100% 100%;
-    background-repeat: repeat-x;
-    height: 551.95px;
-    left: 0;
-    right: 0;
-    z-index: 0;
-	bottom: -250px;
-}
-.eveline-vernaeve-sec.container{
+.eveline-vernaeve-sec .container{
 	position: relative;
 	z-index: 3;
 }
@@ -117,6 +104,11 @@
 }
 .eveline-vernaeve-sec-cntlr .fancy-module{
 	margin-bottom: 36px;
+}
+
+.ervaring-details-sec{
+	padding-top: 300px;
+	position: relative;
 }
 
 
