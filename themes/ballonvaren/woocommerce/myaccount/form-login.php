@@ -225,21 +225,21 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 				<h3>Persoonlijke gegevens</h3>
 				<div class="form-row form-row-wide" id="billing_personal_recom">
 					<span class="woocommerce-input-wrapper">
-						<span><input type="radio" id="personal_recom" name="billing_personal_recom" value="Persoonlijke aanbevelingen">&nbsp;Persoonlijke aanbevelingen</span>
+						<input type="radio" id="personal_recom" name="billing_personal_recom" value="Persoonlijke aanbevelingen">&nbsp;Persoonlijke aanbevelingen
 					</span>
 					<p>Informatie en aanbevelingen over diensten en artikelen die passen bij jouw eerdere bestellingen. En soms vragen we om je mening over onze producten en diensten.</p>
 				</div>
-				<div class="form-row form-row-wide" id="billing_personal_recom">
+				<div class="form-row form-row-wide" id="billing_acttion_insp">
 					<span class="woocommerce-input-wrapper">
-						<span><input type="radio" id="personal_recom" name="billing_personal_recom" value="Persoonlijke aanbevelingen">&nbsp;Persoonlijke aanbevelingen</span>
+						<input type="radio" id="acttion_insp" name="billing_acttion_insp" value="Acties en inspiratie">&nbsp;Acties en inspiratie
 					</span>
-					<p>Informatie en aanbevelingen over diensten en artikelen die passen bij jouw eerdere bestellingen. En soms vragen we om je mening over onze producten en diensten.</p>
+					<p>Voordeel- en winacties, bergen inspiratie, maar ook verrassende aanbevelingen op basis van wat je bekijkt en koopt. Zo loop je nooit iets mis!</p>
 				</div>
 			</div>
 			<div class="register-btn">
 				<div class="reg-btn-crtl">
 					<p>
-						<button type="submit" name="user-register" id="register_action_btn" value="<?php esc_attr_e( 'doorgaan', 'woocommerce' ); ?>"><?php esc_html_e( 'Doorgaan', 'woocommerce' ); ?></button>
+						<button type="submit" name="user-register" id="register_action_btn" value="<?php esc_attr_e( 'Doorgaan', 'woocommerce' ); ?>"><?php esc_html_e( 'Doorgaan', 'woocommerce' ); ?></button>
 						<input type="hidden" name="user_register_nonce" value="<?php echo wp_create_nonce('user-register-nonce'); ?>"/>
 					</p>
 					<p class="form-row html-text">
@@ -327,44 +327,6 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 	</div>
 </div>
-	<section class="login-btm-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="login-info-crtl">
-						<div class="login-info-inr loginInfoSlider">
-							<div class="loginInfoSlideItem">
-								<div class="loginInfoItem">
-									<div class="loginInfoHdr mHc">
-										<span>01</span>
-										<h5 class="fl-h5">Vragen?</h5>
-									</div>
-									<p>We maken tijd om voor uw reservatie op àl uw vragen te antwoorden</p>
-								</div>
-								<div class="loginInfoItem">
-									<div class="loginInfoHdr mHc">
-										<span>02</span>
-										<h5 class="fl-h5">Briefing</h5>
-									</div>
-									<p>We geven voor het opstijgen een uitgebreide briefing</p>
-								</div>
-								<div class="loginInfoItem">
-									<div class="loginInfoHdr mHc">
-										<span>03</span>
-										<h5 class="fl-h5">Hoog comfort</h5>
-									</div>
-									<p>U vaart mee in ruime comfortabele manden</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="white-sky-bg">
-			<span class="white-sky-inline-bg" style="background-image: url('assets/images/white-sky-bg.png');"></span>
-		</div>
-	</section>
 <?php endif; ?>
 <?php endif; ?>
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
