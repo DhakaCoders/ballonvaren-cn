@@ -574,6 +574,10 @@ Gallery design
 	padding-bottom: 35px;
 }
 
+.full-img img{
+	border-radius: 3px;
+}
+
 .dfp-grd-module{
 	padding-bottom: 65px;
 }
