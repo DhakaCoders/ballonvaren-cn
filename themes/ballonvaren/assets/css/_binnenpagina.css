@@ -1313,6 +1313,10 @@ Gallery design
 	.top-gallery-module .gallery-columns-2 .gallery-item{
 		display: none;
 	}
+	.top-gallery-module .gallery{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.top-gallery-module .gallery-columns-2 .gallery-item:first-child{
 		display: block;
 		width: 100%;
