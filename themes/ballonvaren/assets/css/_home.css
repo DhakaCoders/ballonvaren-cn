@@ -1,0 +1,42 @@
+.home-banner-grid-items{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -60px;
+}
+.home-banner-grid-item{
+	width: 33.3333%;
+	padding: 0 60px;
+	text-align: center;
+}
+.home-bnr-item-hdr{
+	position: relative;
+	margin-bottom: 20px;
+}
+.home-bnr-item-hdr span{
+	font-size: 72px;
+	font-weight: 300;
+	color: #ECF1F4;
+	letter-spacing: 0.03em;
+	line-height: 1;
+	display: inline-block;
+	vertical-align: baseline;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.home-banner-grid-item .home-bnr-item-hdr .bnr-grid-title{
+	text-transform: uppercase;
+	color: #2C113E;
+	padding-top: 34px;
+	display: inline-block;
+	vertical-align: baseline;
+	z-index: 2;
+	position: relative;
+	margin-bottom: 0px;
+}
+.home-banner-grid-item p{
+	
+}
