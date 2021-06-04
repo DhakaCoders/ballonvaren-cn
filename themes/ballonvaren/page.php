@@ -34,4 +34,5 @@
     </div>
   </div>
 </section>
+<?php get_template_part('templates/login', 'bottom'); ?>
 <?php get_footer();?>

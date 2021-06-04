@@ -136,6 +136,20 @@
 	width: 100%;
 	position: absolute;
 }
+.ervng-dtls-onverted-icon{
+	display: none;
+	right: 0;
+	position: absolute;
+	top: -146px;
+	z-index: 2;
+}
+.ervng-dtls-onverted-green-icon{
+	position: absolute;
+	left: 16px;
+	top: -70px;
+	z-index: 2;
+	display: none;
+}
 
 
 
@@ -220,6 +234,13 @@
 	.white-sky-bg{
 		height: 172px;
 		top: -171px;
+	}
+	.ervng-dtls-onverted-icon{
+		display: block;
+	}
+	.ervng-dtls-onverted-green-icon{
+		display: block;
+
 	}
 }
 @media(max-width: 575px){
