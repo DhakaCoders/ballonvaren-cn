@@ -115,7 +115,7 @@
 
 	color: #2C113E;
 }
-.eveline-vernaeve-sec-cntlr .ac-fancy-module{
+.eveline-vernaeve-sec-cntlr .fancy-module{
 	margin-bottom: 36px;
 }
 
@@ -155,11 +155,12 @@
 		
 	}
 	.exprnsSlider.slick-dotted.slick-slider{
-		margin-bottom: 40px;
+		margin-bottom: 0;
 	}
 	.exprnsSlider .exprns-ovrvw-item-wrap{
 		display: none;
-		margin-bottom: 38px;
+		margin-bottom: 94px;
+		margin-top: 33px;
 	}
 	.exprnsSlider .exprns-ovrvw-item-wrap:first-of-type{
 		display: block;
@@ -167,8 +168,15 @@
 	.exprnsSlider.slick-slider .exprns-ovrvw-item-wrap{
 		display: block;
 	}
+	.exprnsSlider.slick-slider ul.slick-dots{
+		position: absolute;
+		bottom: 40px;
+	}
 	.exprnsSlider.slick-slider .slick-dots li.slick-active{
 		background: #EE3E15!important;
+	}
+	.experience-overview-title.fl-h3{
+		margin-bottom: 0;
 	}
 }
 @media(max-width: 575px){
