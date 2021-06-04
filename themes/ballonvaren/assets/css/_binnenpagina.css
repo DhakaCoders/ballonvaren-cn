@@ -1406,6 +1406,23 @@ Gallery design
 	#news-details .news-details-btm-bg {
 	    bottom: 760px;
 	}
+
+	.btn-module {
+	    margin-left: 0;
+	    margin-right: 0;
+	    display: block;
+	}
+	.fl-btn{
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.fl-btn a.fl-red-btn,
+	.fl-btn a.fl-navyblue-btn,
+	.fl-btn a.fl-cyan-btn{
+		max-width: 100%;
+		width: 100%;
+	}
 	
 }
 

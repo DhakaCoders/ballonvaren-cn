@@ -356,60 +356,61 @@ form
 /*common button*/
 
 .fl-red-btn{
-	width: 210px;
-	height: 48px;
 	background: #EE3E15;
 	color: #fff;
 	border-radius: 3px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #EE3E15;
+	padding: 12px 30px;
+	min-width: 210px;
+	text-align: center;
 }
 .fl-red-btn:hover{
 	background: transparent;
 	color: #EE3E15;
 }
 .fl-navyblue-btn{
-	width: 210px;
-	height: 48px;
+	/*width: 210px;
+	height: 48px;*/
 	background: #2C113E;
 	color: #fff;
 	border-radius: 3px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #2C113E;
+	padding: 12px 30px;
+	min-width: 210px;
+	text-align: center;
 }
 .fl-navyblue-btn:hover{
 	background: transparent;
 	color: #2C113E;
 }
 .fl-cyan-btn{
-	width: 210px;
-	height: 48px;
+	/*width: 210px;
+	height: 48px;*/
 	background: #1DB4B2;
 	color: #fff;
 	border-radius: 3px;
-	display: flex;
+	/*display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;*/
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #1DB4B2;
+	padding: 12px 30px;
+	min-width: 210px;
+	text-align: center;
 }
 .fl-cyan-btn:hover{
 	background: transparent;
