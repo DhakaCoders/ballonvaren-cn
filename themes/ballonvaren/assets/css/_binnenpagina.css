@@ -15,7 +15,7 @@
 	position: relative;
 }
 .default-page-con {
-	padding-bottom: 75px;
+	padding-bottom: 65px;
 	padding-top: 0;
 }
 
@@ -499,7 +499,7 @@ Gallery design
 	border: none;
 	color: #909BA5;
 	font-weight: 700;
-	padding: 15px 0;
+	padding: 18px 0 14px;
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -555,13 +555,17 @@ Gallery design
 .btn-module{
 	margin-left: -12px;
 	margin-right: -12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .fl-btn{
 	display: inline-block;
 	vertical-align: baseline;
 	padding-left: 12px;
 	padding-right: 12px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 
@@ -1123,17 +1127,17 @@ Gallery design
 	.dfp-twogrd-module{
 		display: none;
 	}
-	.fl-btn{
+	/*.fl-btn{
 		display: block;
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-bottom: 20px;
 		margin-bottom: 0;
-	}
-	.fl-btn a{
+	}*/
+	/*.fl-btn a{
 		max-width: 100%;
 		width: 100%;
-	}
+	}*/
 	.fl-dft-lftimg-rgtdes-rgt{
 		padding-left: 15px;
 	}
