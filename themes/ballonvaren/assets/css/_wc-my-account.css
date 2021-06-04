@@ -621,6 +621,9 @@ body.woocommerce-account .woocommerce .u-column1 h4, body.woocommerce-account .w
     background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
     opacity: 0.7;
 }
+.login-btm-section{
+    position: relative;
+}
 
 /*  ----------------------------- my new account page ------------------------- */
 
