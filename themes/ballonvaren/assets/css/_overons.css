@@ -17,7 +17,7 @@ overons-msnry-grd-sec-wrp
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
-	min-height: 750px;
+	/*min-height: 750px;*/
 	height: 100%;
 }
 .overons-msnry-grd-item{
@@ -228,7 +228,7 @@ overons-team-sec-wrp
 	    padding-bottom: 235px;
 	}
 	.overons-msnry-grd-wrp{
-		min-height: 720px;
+		/*min-height: 720px;*/
 	}
 	.msnrytgi1 .overons-msnry-grd-item-img {
 	    min-height: 230px;
@@ -284,7 +284,7 @@ overons-team-sec-wrp
 	    height: 265px;
 	}
 	.overons-msnry-grd-wrp{
-		min-height: 660px;
+		/*min-height: 660px;*/
 	}
 	.overons-team-module {
 	    padding: 40px 70px;
