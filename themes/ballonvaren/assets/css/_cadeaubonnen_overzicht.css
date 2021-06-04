@@ -47,6 +47,9 @@
 .gift-card .fl-pro-grd-des{
 	padding: 40px 23px 30px;
 }
+.gift-card .fl-pro-grd-des > ul{
+	padding-bottom: 27px;
+}
 .fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi{
 	font-size: 36px;
 	font-weight: 700;	
