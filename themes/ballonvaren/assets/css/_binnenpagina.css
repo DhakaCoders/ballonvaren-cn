@@ -1327,6 +1327,7 @@ Gallery design
 	}
 	.top-gallery-module .gallery-columns-2 .gallery-item .gallery-icon-img{
 		height: 225px;
+		display: none;
 	}
 	.top-gallery-module .gallery-wrap {
 	    padding-bottom: 5px;
@@ -1336,6 +1337,9 @@ Gallery design
 	}
 	.top-gallery-module{
 		padding-bottom: 0;
+	}
+	.has-inline .gallery-item img {
+	    display: block;
 	}
 	.full-img-module {
 	    padding-bottom: 20px;
@@ -1376,6 +1380,7 @@ Gallery design
 	}
 	.has-inline .gallery-icon-img {
 	    height: 160px;
+	    display: none;
 	}
 	.default-page-con h2 {
 	    margin-bottom: 15px;
