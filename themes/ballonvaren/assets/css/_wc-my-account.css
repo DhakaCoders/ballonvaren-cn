@@ -452,7 +452,7 @@ body.woocommerce-account .register-field-error{
 body.woocommerce-account .woocommerce-form{
     border:none;
     margin:0;
-    border-top: 1px solid #E9E8E7;
+    border-top: 1px solid #ECF1F4;
     padding-left:0px;
 /*    margin-right: 24px;*/
     padding-right: 0;
@@ -518,9 +518,9 @@ body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
     opacity:1;
 }
 body.woocommerce-account .login-register-wrap a{
-    color: #0275D8;
+    color: #909BA5;
     text-decoration: underline;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 body.woocommerce-account .login-register-wrap a:hover {
@@ -530,26 +530,27 @@ body.woocommerce-account .login-register-wrap a:hover {
 body.woocommerce-account .woocommerce form .form-row label, 
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label{
-    color: #243444;
-    font-weight:600;
+    color: #2C113E;
+    font-weight:700;
 }
 body.woocommerce-account .woocommerce button[type=submit],
 body.woocommerce-account .woocommerce button[type=button]{
     margin-left: 0px!important;
-    padding: 16px 15px!important;
+    padding: 15px 15px!important;
     line-height: 1;
-    width: 170px;
+    width: 220px;
     border-radius: 0px!important;
-    height:50px;
+    height:48px;
 }
-body.woocommerce-account .woocommerce #register_next{
-    width: 200px;
-}
+/*body.woocommerce-account .woocommerce #register_next{
+    width: 220px;
+}*/
 body.woocommerce-account .woocommerce form .form-row label,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row label{
     padding-bottom: 9px;
     display: inline-block;
+    text-transform: uppercase;
 }
 body.woocommerce-account .woocommerce-notices-wrapper{
     margin-bottom: 80px;
@@ -605,6 +606,16 @@ body.woocommerce-account .woocommerce .u-column1.col-1,
 body.woocommerce-account .woocommerce .u-column2.col-2{
     padding-right: 0;
     padding-left:0;
+}
+body.woocommerce-account .page-title h1{
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #ECF1F4;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+}
+body.woocommerce-account .woocommerce .u-column1 h4, body.woocommerce-account .woocommerce .u-column2 h4{
+    text-transform:uppercase;
 }
 
 /*  ----------------------------- my new account page ------------------------- */

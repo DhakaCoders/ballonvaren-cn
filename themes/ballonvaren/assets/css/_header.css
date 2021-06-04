@@ -295,8 +295,8 @@
 	fill: #2C113E;
 }
 .hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn{
-	width: 160px;
-	height: 55px;
+	min-width: 160px;
+	padding: 16px 30px;
 }
 .hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn:hover,
 .xs-contact-menu ul li.xs-contact-btn a.fl-navyblue-btn:hover{
@@ -465,8 +465,8 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 
 @media(max-width: 1699px){
 	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn {
-	    width: 110px;
-	    height: 48px;
+	    min-width: 110px;
+	    padding: 12px 30px;
 	    font-size: 15px;
 	}
 	.hdr-contact-menu ul li {
@@ -512,8 +512,8 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	    padding-right: 10px;
 	}
 	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn {
-	    width: 120px;
-	    height: 40px;
+	    min-width: 120px;
+	    padding: 9px 15px;
 	    font-size: 14px;
 	}
 	.hdr-top-menu ul li a{
@@ -556,8 +556,8 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	    padding-right: 6px;
 	}
 	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn {
-	    width: 100px;
-	    height: 40px;
+	    min-width: 100px;
+	    padding: 9px 15px;
 	    font-size: 12px;
 	}
 }
@@ -596,16 +596,16 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		height: 20px;
 	}
 	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn{
-		height: 32px;
-		width: 85px;
+		padding: 5px 15px;
+		min-width: 85px;
 	}
 	nav.main-nav > ul{
-		margin-left: -4px;
-		margin-right: -4px;
+		margin-left: -3px;
+		margin-right: -3px;
 	}
 	nav.main-nav > ul > li {
-	    padding-left: 4px;
-	    padding-right: 4px;
+	    padding-left: 3px;
+	    padding-right: 3px;
 	}
 }
 

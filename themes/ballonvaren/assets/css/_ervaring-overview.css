@@ -161,9 +161,9 @@
 	}
 }
 @media(max-width: 575px){
-	.experience-overview-sec{
+	/*.experience-overview-cntlr{
 		overflow: hidden;
-	}
+	}*/
 	.exprns-ovrvw-grid-cntlr{
 		margin: 0 ;
 		margin: 0 -20px;

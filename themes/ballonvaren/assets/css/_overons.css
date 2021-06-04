@@ -7,10 +7,8 @@ overons-msnry-grd-sec-wrp
 	position: relative;
 	padding-bottom: 285px;
 }
-.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
-    height: 1200px;
-    background: url(../images/overons-angle-bg.jpg);
-    bottom: -245px;
+.overons-msnry-grd-sec-wrp .contact-white-sky-bg{
+	height: 980px;
 }
 .overons-msnry-grd-wrp{
 	display: flex;
@@ -368,6 +366,10 @@ overons-team-sec-wrp
 	.overons-team-parachute-btm {
 	    bottom: 70px;
 	    left: 0;
+	}
+	.overons-msnry-grd-sec-wrp .contact-white-sky-bg {
+	    bottom: 0;
+	    height: 850px !important;
 	}
 
 
