@@ -95,7 +95,8 @@
 	height: 278px;
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 35px;	
+	margin-bottom: 35px;
+	border-radius: 3px;	
 }
 .bgi-img{
 	width: 100%;
