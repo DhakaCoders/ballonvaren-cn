@@ -617,6 +617,10 @@ body.woocommerce-account .page-title h1{
 body.woocommerce-account .woocommerce .u-column1 h4, body.woocommerce-account .woocommerce .u-column2 h4{
     text-transform:uppercase;
 }
+.woocommerce-account .page-grd-sec-wrp {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
+    opacity: 0.7;
+}
 
 /*  ----------------------------- my new account page ------------------------- */
 
