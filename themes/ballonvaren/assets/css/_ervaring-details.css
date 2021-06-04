@@ -107,8 +107,27 @@
 }
 
 .ervaring-details-sec{
-	padding-top: 300px;
+	
 	position: relative;
+}
+.ervaring-details-sec .container{
+	position: relative;
+	z-index: 2;
+}
+.white-sky-bgm{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	z-index: 1;
+	height: 525px;
+}
+.white-sky-inline-bgm{
+	background-repeat: repeat-x;
+	background-position: bottom center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 

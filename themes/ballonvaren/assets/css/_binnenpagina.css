@@ -32,16 +32,12 @@
 	line-height: 1.1;
 }
 .default-page-con h2{
-	color: #2C113E;
 	letter-spacing: -0.02em;
-	padding-top: 15px;
-	margin-bottom: 25px;
+	/*padding-top: 15px;*/
+	margin-bottom: 20px;
 }
 .default-page-con h4{
-	color: #2C113E;
 	letter-spacing: -0.02em;
-	font-weight: 700;
-	margin-bottom: 40px;
 }
 .dfp-promo-module-title{
 	color: #2C113E;
@@ -131,7 +127,7 @@ hr{
 }
 
 
-.fancy-module{
+.fl-fancy-module{
 	overflow: hidden;
 	max-width: 100%;
     width: 100%;
@@ -139,7 +135,7 @@ hr{
     position: relative;
     margin-bottom: 45px;
 }
-.fancy-img{
+.fl-fancy-img{
     width: 100%;
     height: 100%;
     transition: all 0.5s;
@@ -152,7 +148,7 @@ hr{
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-.ms-video-play-cntlr{
+.fl-video-play-cntlr{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -240,7 +236,7 @@ Gallery design
 
 .gallery-wrap{
 	padding-top: 7px;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 }
 .gallery {
 	margin-left: -12px;
@@ -330,8 +326,9 @@ Gallery design
 }
 
 
-.top-gallery-module{
-	padding-bottom: 15px;
+
+.top-gallery-module .gallery-wrap {
+    padding-bottom: 15px;
 }
 
 
@@ -869,7 +866,7 @@ Gallery design
 	.default-page-con h2{
 		padding-top: 0;
 	}
-	.fancy-module{
+	.fl-fancy-module{
 		margin-bottom: 35px;
 		height: 550px;
 	}
@@ -933,12 +930,12 @@ Gallery design
 	ul li::before{
 		margin-top: -3px;
 	}
-	.fancy-module {
+	.fl-fancy-module {
 	    margin-bottom: 30px;
 	    height: 480px;
 	}
-	.ms-video-play-cntlr,
-	.ms-video-play-cntlr i svg{
+	.fl-video-play-cntlr,
+	.fl-video-play-cntlr i svg{
 		width: 75px;
 		height: 75px;
 	}
@@ -1063,7 +1060,7 @@ Gallery design
 	.gallery-wrap{
 		padding-bottom: 0;
 	}
-	.fancy-module{
+	.fl-fancy-module{
 		height: 400px;
 		margin-bottom: 20px;
 	}
@@ -1083,8 +1080,8 @@ Gallery design
 	.gallery-wrap{
 		padding-top: 0;
 	}
-	.ms-video-play-cntlr,
-	.ms-video-play-cntlr i svg{
+	.fl-video-play-cntlr,
+	.fl-video-play-cntlr i svg{
 		width: 60px;
     	height: 60px;
 	}
@@ -1256,11 +1253,11 @@ Gallery design
 	.dfp-cta-module {
 	    margin-bottom: 20px;
 	}
-	.fancy-module{
+	.fl-fancy-module{
 		height: 300px;
 	}
-	.ms-video-play-cntlr,
-	.ms-video-play-cntlr i svg {
+	.fl-video-play-cntlr,
+	.fl-video-play-cntlr i svg {
 	    height: 54px;
 	    width: 54px;
 	}
@@ -1323,6 +1320,13 @@ Gallery design
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.top-gallery-module .gallery-columns-2 .gallery-item:first-child .gallery-icon-img{
+		max-width: 335px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*.gallery-icon-img*/
 	.top-gallery-module{
 		padding-bottom: 10px;
 	}
@@ -1375,7 +1379,7 @@ Gallery design
 	.fl-dft-lftimg-rgtdes-lft {
 	    min-height: 150px;
 	}
-	.fancy-module{
+	.fl-fancy-module{
 		height: 225px;
 	}
 	.gallery-icon-img {
