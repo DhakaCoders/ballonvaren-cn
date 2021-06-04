@@ -11,23 +11,10 @@
 	height: 743px;
 	left: 0;
 	right: 0;
-	bottom: -60px;
+	bottom: 0;
 	z-index: -1;
 }
-.eveline-vernaeve-sec:before{
-	position: absolute;
-    content: "";
-    background-image: url(../images/white-sky-bg.svg);
-    background-size: auto;
-    background-position: 100% 100%;
-    background-repeat: repeat-x;
-    height: 551.95px;
-    left: 0;
-    right: 0;
-    z-index: 0;
-	bottom: -250px;
-}
-.eveline-vernaeve-sec.container{
+.eveline-vernaeve-sec .container{
 	position: relative;
 	z-index: 3;
 }
@@ -115,8 +102,13 @@
 
 	color: #2C113E;
 }
-.eveline-vernaeve-sec-cntlr .ac-fancy-module{
+.eveline-vernaeve-sec-cntlr .fancy-module{
 	margin-bottom: 36px;
+}
+
+.ervaring-details-sec{
+	padding-top: 300px;
+	position: relative;
 }
 
 
@@ -155,11 +147,12 @@
 		
 	}
 	.exprnsSlider.slick-dotted.slick-slider{
-		margin-bottom: 40px;
+		margin-bottom: 0;
 	}
 	.exprnsSlider .exprns-ovrvw-item-wrap{
 		display: none;
-		margin-bottom: 38px;
+		margin-bottom: 94px;
+		margin-top: 33px;
 	}
 	.exprnsSlider .exprns-ovrvw-item-wrap:first-of-type{
 		display: block;
@@ -167,8 +160,15 @@
 	.exprnsSlider.slick-slider .exprns-ovrvw-item-wrap{
 		display: block;
 	}
+	.exprnsSlider.slick-slider ul.slick-dots{
+		position: absolute;
+		bottom: 40px;
+	}
 	.exprnsSlider.slick-slider .slick-dots li.slick-active{
 		background: #EE3E15!important;
+	}
+	.experience-overview-title.fl-h3{
+		margin-bottom: 0;
 	}
 }
 @media(max-width: 575px){
