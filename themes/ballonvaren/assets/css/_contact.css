@@ -92,6 +92,7 @@
 	margin-bottom: 23px;
 	position: relative;
 }
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.FullWidthField{
 	width: 100%;
 }
@@ -120,7 +121,7 @@
 	width: 100%;
 	max-width: 100%;
 	height: 48px;
-	background: transparent;
+	background: #fff;
     border: 1px solid #ECF1F4;
 	box-sizing: border-box;
 	padding: 15px 15px 16px;
@@ -139,7 +140,30 @@
     width: 100% !important;
 }
 
-.contact-form-wrp .wpforms-field-container .wpforms-field-select-calendar select,
+/*.contact-form-wrp .wpforms-field-container .wpforms-field-select .dropdown.bootstrap-select{
+	outline: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 48px !important;
+    background: #fff !important;
+    border: 1px solid #ECF1F4;
+    padding: 15px 15px 15px;
+    font-size: 16px !important;
+    line-height: 1;
+	color: #909BA5;
+    font-weight: 400 !important;
+    border-radius: 0;
+    position: relative;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border-radius: 3px;
+}*/
+
+/*.contact-form-wrp .wpforms-field-container .wpforms-field-select-calendar select,
 .contact-form-wrp .wpforms-field-select select{
     outline: 0;
     -moz-appearance: none;
@@ -173,16 +197,184 @@
     background-repeat: no-repeat !important;
     background-position: 97% center !important;
 }
+.contact-form-wrp .wpforms-field-select .dropdown-toggle::before{
+	content: none !important;
+}
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea{
 	width: 100%;
 	margin-bottom: 15px;
+}*/
+
+.wpforms-field-select .dropdown-menu{
+	margin: 0;
+	background-color: #0a2138;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	padding-bottom: 15px;
 }
+.wpforms-field-select .caret {
+	border:0;
+	position: relative;
+}
+.wpforms-field-select .dropdown-menu > .active > a,
+.wpforms-field-select .dropdown-menu > .active > a:focus,
+.wpforms-field-select .dropdown-menu > .active > a:hover {
+	color: #ee3e15;
+	background-color: transparent !important;
+	outline: 0;
+}
+.wpforms-field-select .bootstrap-select .dropdown-menu li a.active span {
+    border-bottom: 0;
+    padding-bottom: 0;
+    text-transform: initial;
+}
+.wpforms-field-select .btn-default.active,
+.wpforms-field-select .btn-default:active,
+.wpforms-field-select .open > .dropdown-toggle.btn-default {
+	color: #fff;
+}
+.wpforms-field-select .btn {
+	background:#fff !important;
+    padding: 15px 15px;
+    font-size: 16px !important;
+    line-height: 18px !important;
+    color: #909BA5;
+    font-weight: 400;
+    border: 1px solid #ECF1F4 !important;
+    border-radius: 3px !important;
+    height: 48px;
+    text-transform: initial !important;
+    min-height: 100%;
+}
+.wpforms-field-select .bootstrap-select .dropdown-toggle:focus {
+	outline: none;
+	outline: none !important;
+	outline-offset: 0;
+}
+.wpforms-field-select .dropdown-menu > li > a:focus,
+.wpforms-field-select .dropdown-menu > li > a:hover {
+	color: #fff;
+	background: #0a2138;
+}
+
+.wpforms-field-select .btn-default.active.focus,
+.wpforms-field-select .btn-default.active:focus,
+.wpforms-field-select .btn-default.active:hover,
+.wpforms-field-select .btn-default:active.focus,
+.wpforms-field-select .btn-default:active:focus,
+.wpforms-field-select .btn-default:active:hover,
+.wpforms-field-select .open > .dropdown-toggle.btn-default.focus,
+.wpforms-field-select .open > .dropdown-toggle.btn-default:focus,
+.wpforms-field-select .open > .dropdown-toggle.btn-default:hover {
+	background-color: #0a2138 !important;
+	color: #fff;
+}
+.wpforms-field-select .btn-default.active,
+.wpforms-field-select .btn-default:active,
+.wpforms-field-select .open > .dropdown-toggle.btn-default {
+	background-color: #0a2138;
+}
+
+.wpforms-field-select .btn-default:hover{
+	background-color: #fff;
+}
+.wpforms-field-select .dropdown-menu {
+    min-width: 100% !important;
+    padding: 0;
+    margin: 0;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    color: #909BA5 !important;
+    border-radius: 0;
+    border: 0 !important;
+    border-top: 0;
+    background: #fff !important;
+    box-shadow: 0px 30px 84px rgba(44, 17, 62, 0.09);
+	border-radius: 3px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.wpforms-field-select .bootstrap-select .dropdown-toggle:focus{
+	outline: none;
+	outline: none;
+	outline-offset: 0;
+}
+.wpforms-field-select .dropdown-menu > li > a {
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #909BA5;
+}
+.wpforms-field-select .dropdown-menu > li > a.active{
+	color: #909BA5;
+}
+.wpforms-field-select .dropdown-menu > .active > a,
+.wpforms-field-select .dropdown-menu > .active > a:focus,
+.wpforms-field-select .dropdown-menu > .active > a:hover{
+	background-color: #fff;
+	outline: 0;
+}
+.wpforms-field-select .btn-default.active,
+.wpforms-field-select .btn-default:active,
+.wpforms-field-select .open > .dropdown-toggle.btn-default{
+	color: #909BA5 !important;
+	background-color: #fff;
+	border-bottom-color:#fff !important;
+	border-color: #d1d1d1;
+}
+.wpforms-field-select .btn.active{
+	background-image: none;
+	outline: 0; 
+	-webkit-box-shadow:none; 
+	box-shadow:none;
+}
+.wpforms-field-select .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 100%;
+}
+.wpforms-field-select .caret{
+	border: 0;
+}
+.wpforms-field-select .dropdown-toggle:before{
+	content: none !important;
+}
+.wpforms-field-select .dropdown-toggle::after {
+    content: "";
+    padding-right: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: url(../images/select-angle-icon.svg) !important;
+    background-size: 9px 6px !important;
+    width: 9px !important;
+    height: 6px !important;
+    border: 0 !important;
+}
+.wpforms-field-select .btn-light:not(:disabled):not(.disabled).active,
+.wpforms-field-select .btn-light:not(:disabled):not(.disabled):active,
+.wpforms-field-select .show>.btn-light.dropdown-toggle{
+	color: #909BA5 !important;
+}
+.wpforms-field-select .bootstrap-select.show .dropdown-toggle::before {
+    content: none !important;
+}
+.wpforms-field-select .btn-default.focus,
+.wpforms-field-select .btn-default:focus {
+	background-color: #fff;
+}
+.wpforms-field-select .dropdown-menu > li > a:hover {
+	color: #ee3e15;
+	text-decoration: none;
+	background-color: #fff;
+}
+
 
 
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
 	width: 100%;
 	height: 229px;
-	background:transparent;
+	background:#fff;
 	border: 1px solid #ECF1F4;
 	box-sizing: border-box;
 	color: #8C8CA1;;
@@ -740,6 +932,16 @@ boek-je-form-sec-wrp
 	}
 	.contact-form-info-title-1{
 		text-transform: inherit;
+	}
+	.wpforms-field-select .dropdown-menu {
+	    min-width: 50px !important;
+	    width: 50px !important;
+	    text-align: center;
+	    left: auto !important;
+	    right: 0 !important;
+	}
+	.wpforms-field-select .dropdown-menu > li > a {
+	    padding: 8px 10px;
 	}
 }
 
