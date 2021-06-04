@@ -23,6 +23,19 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+strong,b{
+	font-weight: 700;
+}
+
+a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #909BA5;
+}
+a:hover{
+	color: #EE3E15;
+}
+
 p{
 	line-height: 1.2;
 	margin-bottom: 15px;
@@ -208,18 +221,7 @@ ul.ab-top-menu li:before,
 
 
 
-strong{
-	font-weight: 700;
-}
 
-a{
-	display: inline-block;
-	vertical-align: baseline;
-	color: #909BA5;
-}
-a:hover{
-	color: #EE3E15;
-}
 
 
 
