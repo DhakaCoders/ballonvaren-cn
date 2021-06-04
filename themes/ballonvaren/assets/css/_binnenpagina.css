@@ -1389,6 +1389,9 @@ Gallery design
 	.default-page-con h2 {
 	    margin-bottom: 15px;
 	}
+	.top-gallery-module .gallery-item img{
+		border-radius: 0;
+	}
 
 }
 
