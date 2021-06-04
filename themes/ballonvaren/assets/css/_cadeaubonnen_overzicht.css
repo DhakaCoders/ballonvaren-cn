@@ -20,11 +20,20 @@
 	flex-direction: column;
 	justify-content: center;
 	padding: 0 23px;
-	    border-radius: 3px 3px 0px 0px
+	border-radius: 3px 3px 0px 0px
 }
 .fl-pro-gift-cntlr .fl-gift-price{
 	padding-bottom: 7px;
 }
+.gift-card .fl-pro-grd-price span.woocommerce-Price-amount bdi span, 
+.gift-card .fl-pro-grd-price del span.woocommerce-Price-amount bdi span, 
+.gift-card .fl-pro-grd-price ins span.woocommerce-Price-amount bdi span, 
+.gift-card .single-product .single-price-total span.woocommerce-Price-amount bdi, 
+.gift-card .single-product .single-price-total del span.woocommerce-Price-amount bdi span, 
+.gift-card .single-product .single-price-total ins span.woocommerce-Price-amount bdi span{
+	margin-left: 0!important;
+}
+
 .fl-pro-gift-cntlr i{
 	display: inline-block;
 	vertical-align: baseline;
