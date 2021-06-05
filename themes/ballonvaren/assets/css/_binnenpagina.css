@@ -683,7 +683,7 @@ Gallery design
 #news-details .social-media{
 	text-align: right;
 	padding-top: 45px;
-	border-top: 1px solid #ECF1F4;
+	border-top: 2px solid #ECF1F4;
 }
 #news-details .social-media span{
 	display: inline-block;
@@ -743,11 +743,21 @@ Gallery design
 .news-details .blog-grd-top-img{
 	position: absolute;
 	top: -350px;
-	right: -212px;
+	right: -200px;
 }
 
 .news-details{
 	padding-bottom: 85px;
+}
+
+
+
+#news-details .gallery-wrap {
+    padding-bottom: 10px;
+}
+#news-details .fl-fancy-module{
+	padding-top: 10px;
+	margin-bottom: 50px;
 }
 
 
@@ -849,12 +859,13 @@ Gallery design
 	#ballonvaren-voor-bedrijven .default-page-con h4{
 		font-size: 31px;
 	}
+	.news-details .blog-grd-top-img {
+	    right: -160px;
+	}
 }
 
 @media(max-width: 1599px){
-	#news-details .default-page-con {
-	    padding-bottom: 200px;
-	}
+	
 	#news-details .blog-grd-top-img {
 	    top: -240px;
 	    right: -118px;
@@ -874,6 +885,16 @@ Gallery design
 	}
 	#ballonvaren-voor-bedrijven .default-page-con h4{
 		font-size: 30px;
+	}
+	#news-details {
+	    padding-bottom: 200px;
+	}
+	.news-details .white-sky-bg {
+	    top: -270px;
+	}
+	.news-details .blog-grd-top-img {
+	    top: -295px;
+	    right: -145px;
 	}
 	
 }
@@ -906,6 +927,14 @@ Gallery design
 	}
 	#ballonvaren-voor-bedrijven .default-page-con h4{
 		font-size: 29px;
+	}
+
+	.news-details .blog-grd-top-img {
+	    top: -235px;
+	    right: -62px;
+	}
+	.news-details .blog-grd-top-img img{
+		max-width: 170px;
 	}
 
 
@@ -966,11 +995,18 @@ Gallery design
 	#news-details .blog-grd-top-img img {
 	    max-width: 125px;
 	}
-	#news-details .default-page-con {
-	    padding-bottom: 175px;
-	}
 	#news-details .news-details-btm-bg {
 	    bottom: 570px;
+	}
+	.news-details .white-sky-bg {
+	    top: -255px;
+	}
+	.news-details .blog-grd-top-img {
+	    top: -200px;
+	    right: -10px;
+	}
+	.news-details .blog-grd-top-img img {
+	    max-width: 140px;
 	}
 	#ballonvaren-voor-bedrijven .gallery-wrap {
 	    padding-top: 20px;
@@ -982,6 +1018,10 @@ Gallery design
 	.ballon-rides-lft-top-img img {
 	    max-width: 170px;
 	}
+	.news-details {
+	    padding-bottom: 60px;
+	}
+
 }
 
 
@@ -1028,9 +1068,6 @@ Gallery design
 	.gallery-wrap {
 	    padding-bottom: 15px;
 	}
-	#news-details .default-page-con {
-	    padding-bottom: 160px;
-	}
 	#news-details .blog-grd-top-img {
 	    top: -150px;
 	    right: -25px;
@@ -1045,10 +1082,36 @@ Gallery design
 	    padding-bottom: 25px;
 	}
 	#news-details {
-	    padding-bottom: 70px;
+	    padding-bottom: 180px;
 	}
 	#news-details .news-details-btm-bg {
 	    bottom: 1080px;
+	}
+	#news-details .fl-fancy-module {
+	    margin-bottom: 42px;
+	}
+	.news-details .white-sky-bg {
+	    top: -195px;
+	}
+
+	.news-details .blog-grd-top-img {
+	    top: -165px;
+	    right: -10px;
+	}
+	.news-details .blog-grd-top-img img {
+	    max-width: 120px;
+	}
+	.news-details .blog-grds-item:nth-child(3n+1){
+		clear: none;
+	}
+	.news-details .blog-grds-item:nth-child(2n+1){
+		clear: left;
+	}
+	.news-details .blog-grds-item{
+		width: 50%;
+	}
+	.news-details {
+	    padding-bottom: 40px;
 	}
 	.has-inline .gallery-icon-img {
 	    height: 350px;
@@ -1248,9 +1311,6 @@ Gallery design
 	.fl-dft-lftimg-rgtdes{
 		padding-bottom: 25px;
 	}
-	#news-details .default-page-con {
-	    padding-bottom: 150px;
-	}
 	#news-details .blog-grd-top-img {
 	    top: -140px;
 	    right: -35px;
@@ -1292,10 +1352,42 @@ Gallery design
 	    background: #EE3E15!important;
 	}
 	#news-details {
-	    padding-bottom: 50px;
+	    padding-bottom: 165px;
 	}
 	#news-details .news-details-btm-bg {
 	    bottom: 680px;
+	}
+	#news-details .fl-fancy-module {
+	    margin-bottom: 35px;
+	}
+	.news-details .white-sky-bg{
+		top: -170px;
+	}
+	.news-details .blog-grd-top-img{
+		top: -140px;
+	}
+	.news-details .blog-grd-top-img img{
+		max-width: 105px;
+	}
+	.news-details .blog-grds-item:nth-child(2n+1){
+		clear: none;
+	}
+	.news-details .blog-grds-item-ctlr{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.news-details .blog-grds-item{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 32px;
+	}
+	.news-details .blog-grid-item{
+		padding-bottom: 35px;
+		border-bottom: 2px solid #ECF1F4;
+	}
+	.news-details {
+	    padding-bottom: 10px;
 	}
 	.has-inline .gallery-icon-img {
 	    height: 250px;
@@ -1537,10 +1629,19 @@ Gallery design
 	    padding-top: 30px;
 	}
 	#news-details {
-	    padding-bottom: 30px;
+	    padding-bottom: 150px;
 	}
 	#news-details .social-media span{
 		margin-right: 7px;
+	}
+	#news-details .default-page-con h5 {
+	    margin-bottom: 30px;
+	}
+	#news-details .fl-fancy-module {
+	    margin-bottom: 30px;
+	}
+	.news-details .white-sky-bg{
+		top: -155px;
 	}
 	.has-inline .gallery-icon-img {
 	    height: 160px;
@@ -1617,9 +1718,6 @@ Gallery design
 	}
 	.glry-col-2 .gallery-icon-img {
 	    height: 100px;
-	}
-	#news-details {
-	    padding-bottom: 10px;
 	}
 	#news-details .news-details-btm-bg {
 	    bottom: 760px;
