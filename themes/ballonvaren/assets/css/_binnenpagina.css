@@ -757,7 +757,7 @@ Gallery design
 .dft-blockquote{
 	padding-bottom: 55px;
 	margin-bottom: 55px;
-	border-bottom: 1px solid #ECF1F4;
+	border-bottom: 2px solid #ECF1F4;
 }
 .dft-blockquote blockquote{
 	padding-left: 45px;
@@ -766,7 +766,7 @@ Gallery design
 	font-style: italic;
 	margin-bottom: 0;
 }
-.dft-blockquote blockquote span{
+.dft-blockquote blockquote em{
 	font-style: italic;
 	display: inline-block;
 	padding-top: 25px;
@@ -787,7 +787,7 @@ Gallery design
 
 .ballon-rides-module{
 	position: relative;
-	margin-top: 55px;
+	margin-top: 45px;
 }
 .ballon-rides-lft-top-img{
 	position: absolute;
@@ -796,7 +796,7 @@ Gallery design
 }
 
 #ballonvaren-voor-bedrijven .dfp-cta-module.orange {
-    margin-bottom: 85px;
+    margin-bottom: 90px;
 }
 #ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr,
 #ballonvaren-voor-bedrijven#vip .exprns-ovrvw-grid-ctlr{
@@ -814,6 +814,18 @@ Gallery design
 
 #ballonvaren-voor-bedrijven .default-page-con{
 	padding-bottom: 75px;
+}
+
+#ballonvaren-voor-bedrijven .top-gallery-module .gallery-wrap {
+    padding-bottom: 25px;
+    padding-top: 0;
+}
+
+#ballonvaren-voor-bedrijven .fl-fancy-module{
+	padding-top: 25px;
+}
+#ballonvaren-voor-bedrijven .gallery-wrap{
+	padding-top: 25px;
 }
 
 
