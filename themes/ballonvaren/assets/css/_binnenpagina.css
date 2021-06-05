@@ -1313,6 +1313,7 @@ Gallery design
 	.fl-dft-lftimg-rgtdes-rgt img{
 		display: block;
 		width: 100%;
+		border-radius: 3px;
 	}
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
 		padding-right: 0;
@@ -1334,7 +1335,7 @@ Gallery design
 		display: none;
 	}
 	.top-gallery-module .gallery-wrap {
-	    padding-bottom: 5px;
+	    padding-bottom: 0;
 	}
 	.top-gallery-module {
 	    padding-bottom: 0;
