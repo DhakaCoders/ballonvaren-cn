@@ -1241,6 +1241,9 @@ Gallery design
 	#vip .ballon-rides-lft-top-img {
 	    top: -60px;
 	}
+	.dfp-text-module p br{
+		display: none;
+	}
 
 }
 

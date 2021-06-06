@@ -42,8 +42,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
     <div class="register-field-error">
 		<div class="error-msg">
           <span>
-            <i><svg class="error-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff">
-            <use xlink:href="#error-icon-svg"></use> </svg></i>
+            <i><svg class="error-msg-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff">
+            <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
             Oh snap! Het formulier lijkt niet correct!</span>
         </div>
 	</div>
