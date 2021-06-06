@@ -225,7 +225,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Sabbir*/
-
+if (windowWidth <= 479){
+if( $('.bnProcessGridItemsSlider').length ){
+    $('.bnProcessGridItemsSlider').slick({
+      dots: true,
+      arrows:false,
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,      
+    });
+}
+}
 
 /*start of Niaz*/
 
