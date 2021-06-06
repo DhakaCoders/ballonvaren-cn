@@ -13,6 +13,8 @@
 							</div>
 							<p>We maken tijd om voor uw reservatie op àl uw vragen te antwoorden</p>
 						</div>
+					</div>
+					<div class="loginInfoSlideItem">
 						<div class="loginInfoItem">
 							<div class="loginInfoHdr mHc">
 								<span>02</span>
@@ -20,6 +22,8 @@
 							</div>
 							<p>We geven voor het opstijgen een uitgebreide briefing</p>
 						</div>
+					</div>
+					<div class="loginInfoSlideItem">
 						<div class="loginInfoItem">
 							<div class="loginInfoHdr mHc">
 								<span>03</span>
@@ -33,8 +37,9 @@
 		</div>
 	</div>
 </div>
+
 <div class="white-sky-bg">
-	<span class="white-sky-inline-bg" style="background-image: url('assets/images/white-sky-bg.png');"></span>
+	<span class="white-sky-inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/white-sky-bg.png');"></span>
 </div>
 </section>
 <?php } ?>
