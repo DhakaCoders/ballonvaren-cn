@@ -393,7 +393,7 @@
 
 @media(max-width: 1199px){
 	.inline-bg-img {
-	    height: 540px;
+	    height: 525px;
 	}
 	.events-grid-sec .white-sky-bg {
 	    top: -258px;
@@ -414,11 +414,67 @@
 }
 
 @media(max-width: 991px){
+	.events-grid-sec .white-sky-bg {
+	    top: -190px;
+	}
+	.off-days-sec:before {
+	    height: 505px;
+	}
+	.absolute-img-two {
+	    margin-right: 0px;
+	    margin-top: 445px;
+	}
+	
+	.absolute-img-two img {
+	    height: auto;
+	    width: 120px;
+	}
 
+	.inline-bg-img {
+	    height: 475px;
+	}
+	.bv-calender-dsc-inner h2 {
+	    font-size: 32px;
+	}
+	
+	
 }
 
 @media(max-width: 767px){
-
+	.bv-calender-inner {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.bv-calender-dsc-inner {
+	    padding-right: 0;
+	    padding-top: 0;
+	}
+	.bv-calender-dsc {
+	    margin-bottom: 30px;
+	}
+	.absolute-img-one{
+		display: none;
+	}
+	.bv-calender-img, .bv-calender-dsc{
+		max-width: 100%;
+	}
+	.off-days-sec:before {
+	    height: 670px;
+	}
+	.off-days-sec {
+		padding-bottom: 180px;
+	}
+	.events-grid-sec .white-sky-bg {
+	    top: -170px;
+	}
+	.bv-calender-dsc-inner h2 {
+	    font-size: 30px;
+	}
+	.absolute-img-two {
+	    margin-right: 0;
+	    margin-top: 460px;
+	}
+	
 }
 
 @media(max-width: 575px){
