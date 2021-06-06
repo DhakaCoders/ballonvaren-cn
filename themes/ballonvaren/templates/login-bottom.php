@@ -42,4 +42,7 @@
 	<span class="white-sky-inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/white-sky-bg.png');"></span>
 </div>
 </section>
+
+
+
 <?php } ?>
