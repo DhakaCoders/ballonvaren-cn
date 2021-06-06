@@ -62,21 +62,21 @@
 	overflow: hidden;
 	padding-bottom: 71px;
 }
-.home-banner-grid-items{
+.process-grid-items{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -12px!important;
 }
-.home-banner-grid-item{
+.process-grid-item{
 	width: 33.3333%!important;
 	padding: 0 12px 67px!important;
 	text-align: center;
 }
-.home-bnr-item-hdr{
+.process-item-hdr{
 	position: relative;
 	margin-bottom: 20px;
 }
-.home-bnr-item-hdr span{
+.process-item-hdr span{
 	font-size: 72px;
 	font-weight: 300;
 	color: #ECF1F4;
@@ -91,7 +91,7 @@
 	-ms-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 }
-.home-banner-grid-item .home-bnr-item-hdr .bnr-grid-title{
+.process-grid-item .process-item-hdr .process-grid-title{
 	text-transform: uppercase;
 	color: #2C113E;
 	padding-top: 40px;
@@ -101,7 +101,7 @@
 	position: relative;
 	margin-bottom: 0px;
 }
-.home-banner-grid-item p{
+.process-grid-item p{
 	margin-bottom: 0;
 }
 
