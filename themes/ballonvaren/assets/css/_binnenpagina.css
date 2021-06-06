@@ -1343,12 +1343,12 @@ Gallery design
 		padding-bottom: 35px;
 		border-bottom: 1px solid #ECF1F4;
 	}
-	#news-details .slick-slider .slick-dots li{
+	.news-details .slick-slider .slick-dots li{
 		width: 12px!important;
 	    height: 12px!important;
 	    background: #ECF1F4!important;
 	}
-	#news-details .slick-slider .slick-dots li.slick-active {
+	.news-details .slick-slider .slick-dots li.slick-active {
 	    background: #EE3E15!important;
 	}
 	#news-details {
@@ -1385,6 +1385,10 @@ Gallery design
 	.news-details .blog-grid-item{
 		padding-bottom: 35px;
 		border-bottom: 2px solid #ECF1F4;
+		max-width: 335px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.news-details {
 	    padding-bottom: 10px;
@@ -1619,7 +1623,7 @@ Gallery design
 		margin: 0 auto;
 	}
 	#news-details .top-gallery-module {
-	    padding-bottom: 10px;
+	    padding-bottom: 0;
 	}
 	#news-details .fancy-module{
 		padding-top: 15px;
