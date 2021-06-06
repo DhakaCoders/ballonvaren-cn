@@ -1,6 +1,16 @@
+.banner-sec{
+	position: relative;
+	margin-bottom: 140px;
+}
+.banner-sec .hdr-color-border:after{
+
+}
 .banner-bg{
 	min-height: 912px;
 	position: relative;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 225px;
 }
 .cloud-bg {
     position: absolute;
@@ -8,6 +18,45 @@
     bottom: -278px;
     left: 0;
     right: 0;
+}
+.banner-inner{
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+.banner-sub-hdr-title, .banner-hdr-title, .banner-sub-hdr-title-2{
+	color: #fff;
+	text-transform: uppercase;
+}
+.banner-sub-hdr-title{	
+	font-size: 64px;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+.banner-hdr-title{
+	font-size: 144px;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+.banner-sub-hdr-title-2{
+	margin-bottom: 36px;
+}
+.banner-inner p{
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 0;
+}
+.find-more-btn{
+	padding-top: 35px;
+}
+.bnr-find-more-btn{
+	min-width: 334px;
+	padding: 18px 71px;
+}
+.bnr-ballon{
+	position: absolute;
+	bottom: 22px;
+	left: 217px;
 }
 .home-banner-grid{
 	overflow: hidden;
