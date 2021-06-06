@@ -614,6 +614,8 @@ function cbv_wc_custom_class( $classes ) {
     }else{
         if( is_account_page() && is_user_logged_in() && (!is_wc_endpoint_url( 'orders' ) ||  is_wc_endpoint_url( 'edit-account' ))) {
             $classes[] = 'loggedin-deshboard-crtl';
+        }elseif( is_account_page() && !is_user_logged_in() && !isset($_GET['action']) ){
+            $classes[]='account-login-page';
         }
     }
     if( is_cart() && WC()->cart->cart_contents_count == 0){
