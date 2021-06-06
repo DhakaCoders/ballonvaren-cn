@@ -1,20 +1,11 @@
-<?php 
-	$cta = get_field('cta', 'options');
-	if( $cta ):
-?>
-<li class="fl-product-grd-full show-sm">
-	<div class="dfp-cta-module clearfix">
-	<div class="cta-ctlr inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/cta-bg.jpg');">
-	<?php 
-		if( !empty($cta['titel']) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $cta['titel']);
-		if( !empty($cta['beschrijving']) ) echo wpautop( $cta['beschrijving'] );
-		$knop = $cta['knop'];
-		if( is_array( $knop ) &&  !empty( $knop['url'] ) ){
-		  printf('<div class="cta-btn"><a href="%s" target="%s">%s</a></div>', $knop['url'], $knop['target'], $knop['title']); 
-		}
-	?>
-
-	</div>
-	</div>
+<li class="cadeaubonnen-page-link">
+  <div class="cadeaubonnen-page-link-bg">
+    <div class="cadeaubonnen-pg-lnk-cntrl">
+      <h4 class="fl-h4 cad-pg-lnk-title">cadeaubonnen</h4>
+      <p>Ut purus ipsum, interdum quis libero et, tincidunt tincidunt ante.</p>
+      <p>Etiam vitae ultrices purus. Praesent<br> sodales nisl vel mauris cursus viverra. Quisque ut pharetra urna. </p>
+      <a href="#" class="fl-transparent-btn cad-pg-lnk-btn">CADEAUBONNEN</a>
+    </div>
+      <i><img src="assets/images/absolute-ballon-3.svg" alt=""></i>
+  </div>    
 </li>
-<?php endif; ?>

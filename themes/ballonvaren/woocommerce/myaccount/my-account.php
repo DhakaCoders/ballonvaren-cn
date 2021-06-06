@@ -26,21 +26,23 @@ defined( 'ABSPATH' ) || exit;
 <div class="myaccount-crtl">
 	<div class="account-page-title">
 		<?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
-			<div class="back-to-dashboard-btn-cntlr"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
+			<div class="back-to-dashboard-btn-cntlr show-sm"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
 			<h1>Bestellingen</h1>
 		<?php }elseif( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false ){ ?>
-			<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
+			<div class="back-to-dashboard-btn-cntlr show-sm"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
 			<h1>Winkelmandje</h1>
 		<?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
-			<div class="back-to-dashboard-btn-cntlr"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
+			<div class="back-to-dashboard-btn-cntlr show-sm"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
 			<h1>Account Info</h1>
 		<?php }else{ 
 		    $current_user = wp_get_current_user();
 		    $username = !empty($current_user->display_name)? $current_user->display_name : $current_user->user_firstname;
 		?>
-			<p class="loggedin-text"><?php printf( __( 'Hallo, <span>%s</span>', THEME_NAME ), esc_html( $username ) ); ?></p>
-			<h1>Welkom bij uw account</h1>
-			<p>Vanaf uw accountdashboard kunt u uw recente bestellingen bekijken, uw verzend- en factuuradressen beheren en uw wachtwoord en accountgegevens bewerken.</p>
+		<h1><?php _e( 'Welkom bij uw account', 'woocommerce' ); ?></h1>
+			<p><?php printf( __( 'Hallo, %s', THEME_NAME ), esc_html( $username ) ); ?></p>
+			<div class="dashboar-text">
+				<p>Vanaf jouw accountdashboard kun je de recente bestellingen bekijken, verzend- en factuuradressen beheren en jouw wachtwoord en accountgegevens bewerken.</p>
+			</div>
 		<?php } ?>
 
 		<div class="woocommerce-account-grds-cntlr clearfix">

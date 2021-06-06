@@ -37,80 +37,110 @@ defined( 'ABSPATH' ) || exit;
 			</p>
 
 		<?php else : ?>
-		<div class="checkout-page-title thankyou-page clearfix">
-			<div class="checkoutpt-left">
-				<h1><?php the_title(); ?></h1>
-			</div>
-			<div class="checkoutpt-right">
-				<div class="progressbar-crtl">
-			        <div class="n-checkout-progress-wrap">
-			          <div class="checkout-progress-cntlr">
-			            <div class="checkout-progress">
-			              <div class="checkout-progress-bar">
-			                <span class="ckour-pro-bar-active ckour-pro-bar-1"></span>
-			                <span class="ckour-pro-bar-active ckour-pro-bar-2"></span>
-			                <span class="ckour-pro-bar-active ckour-pro-bar-3 active"></span>
-			              </div>
-			              <div class="chckout-prgrs-col chckout-prgrs-col-1 ">
-			                <strong class="chckout-prgrs-number">1</strong> 
-			                <h6 class="chckout-prgrs-title">Winkelmandje</h6>
-			              </div>
-
-			              <div class="chckout-prgrs-col chckout-prgrs-col-2">
-			                <strong class="chckout-prgrs-number">2</strong> 
-			                <h6 class="chckout-prgrs-title">Klantgegevens <br>
-			                en Betaling</h6>
-			              </div>
-
-			              <div class="chckout-prgrs-col chckout-prgrs-col-3 active">
-			                <strong class="chckout-prgrs-number">3</strong> 
-			                <h6 class="chckout-prgrs-title">Bevestiging</h6>
-			              </div>
-
-			            </div>
-			          </div>
-			        </div>
-				</div>
-			</div>
+		<section class="checkout-sec">
+		<div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+		    <div class="checkout-cntrl">
+		      <div class="checkout-hdr">
+		        <div class="chkout-logo">
+		          <img src="<?php echo THEME_URI; ?>/assets/images/checkout-logo.png" alt="">
+		        </div>
+		        <h3 class="fl-h3 chkout-title"><?php esc_html_e( 'Bedankt', 'woocommerce' ); ?> <span><?php echo $order->get_billing_first_name(); ?></span> <?php esc_html_e( 'voor je bestelling', 'woocommerce' ); ?></h3>
+		        <p><?php esc_html_e( 'Bestelnummer', 'woocommerce' ); ?>:<span>#<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span></p>
+		        <h6 class="fl-h6 chkout-subtitle"><?php esc_html_e( 'Een bevestigingsmail  komt zodadelijk jouw richting uit.', 'woocommerce' ); ?></h6> 
+		      </div>
+				<?php 
+	            	$smedias = get_field('social_media', 'options'); 
+	            	$thankyou = get_field('orderthankyou', 'options'); 
+	            ?>
+		      <div class="chkout-service">
+		      	<?php if( $thankyou['afbeelding'] ): ?>
+		        <div class="srv-fea-img">
+		          <a><?php echo cbv_get_image_tag($thankyou['afbeelding'], 'thankyou'); ?></a>
+		        </div>
+		    	<?php endif; ?>
+		        <div class="srv-cont">
+		          <?php if($thankyou): ?>
+		          <div class="chk-acc">
+		            <div class="chk-acc-bg">
+		              <div class="chk-acc-hdr">
+		                <?php if( !empty($thankyou['sec_titel']) ) printf('<h4 class="fl-h4 chk-acc-title">%s</h4>', $thankyou['sec_titel']); ?>
+		              </div>
+		              <?php if($blok1 = $thankyou['blok_1']): ?>
+		              <div class="chk-acc-tp">
+		                <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont.svg" alt="">
+		                <?php 
+	                      	if( !empty($blok1['titel']) ) printf('<h6 class="fl-h6 chk-tp-title">%s</h6>', $blok1['titel']); 
+	                      	if( !empty($blok1['beschrijving']) ) echo wpautop($blok1['beschrijving']); 
+                        ?>
+		              </div>
+		          	  <?php endif; ?>
+		          	  <?php if($blok2 = $thankyou['blok_2']): ?>
+		              <div class="chk-acc-btm">
+		                <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont-2.svg" alt="">
+                        <?php 
+	                      	if( !empty($blok2['titel']) ) printf('<h6 class="fl-h6 chk-tp-title">%s</h6>', $blok2['titel']); 
+	                      	if( !empty($blok2['beschrijving']) ) echo wpautop($blok2['beschrijving']); 
+	                    ?>
+		              </div>
+		              <?php endif; ?>
+		            </div>  
+		          </div>
+		          <div class="chkout-scl">
+		            <div class="chkout-scl-bg">
+		              <div class="chkout-scl-hdr">
+		              	<?php 
+		              		if( $socialinfo =  $thankyou['socialinfo'] ):
+		              		if( !empty($socialinfo['titel']) ) printf('<h4 class="fl-h4 chk-scl-title">%s</h4>', $socialinfo['titel']);
+		              		if( !empty($socialinfo['beschrijving']) ) echo wpautop($socialinfo['beschrijving']);
+		              		endif;
+		              	?>
+		              </div>  
+		              <?php if(!empty($smedias)):  ?>
+		              <div class="chk-scl-blg">
+		              	<?php if( !empty($smedias['facebook_url']) ): ?>
+		                <div class="chk-scl-itm fb">
+		                  <a href="<?php echo $smedias['facebook_url']; ?>" class="overlay-link"></a>
+		                  <i class="fab fa-facebook-f"></i>
+		                  <span><?php esc_html_e( 'facebook', 'woocommerce' ); ?></span>
+		                </div>
+		            	<?php endif; ?>
+		            	<?php if( !empty($smedias['instagram_url']) ): ?>
+		                <div class="chk-scl-itm inst">
+		                  <a href="<?php echo $smedias['instagram_url']; ?>" class="overlay-link"></a>
+		                  <i class="fab fa-instagram"></i>
+		                  <span><?php esc_html_e( 'Instagram', 'woocommerce' ); ?></span>
+		                </div>
+		                <?php endif; ?>
+		                <?php if( !empty($smedias['twitter_url']) ): ?>
+		                <div class="chk-scl-itm twitter">
+		                  <a href="<?php echo $smedias['twitter_url']; ?>" class="overlay-link"></a>
+		                  <i class="fab fa-twitter"></i>
+		                  <span><?php esc_html_e( 'Twitter', 'woocommerce' ); ?></span>
+		                </div>
+		                <?php endif; ?>
+		                <?php if( !empty($smedias['linkedin_url']) ): ?>
+		                <div class="chk-scl-itm linkedin">
+		                  <a href="<?php echo $smedias['linkedin_url']; ?>" class="overlay-link"></a>
+		                  <i class="fab fa-linkedin-in"></i>
+		                  <span><?php esc_html_e( 'Linkedin', 'woocommerce' ); ?></span>
+		                </div>
+		                <?php endif; ?>
+		              </div>
+		              <?php endif; ?>
+		            </div>
+		          </div>
+		      	  <?php endif; ?>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
 		</div>
-			<section class="thank-you-section">
-			  <div class="container">
-			    <div class="row">
-			      <div class="col-md-12">
-			        <div class="thank-you-sec-cntlr">
-			          <div class="thnk-you-des">
-			            <i><img src="<?php echo THEME_URI; ?>/assets/images/thankyou-pg-logo.svg" alt="logo"></i>
-			            <h1 class="fl-h2 thank-you-des-title">Bedankt <span>&lt;<?php echo $order->get_billing_first_name(); ?>&gt;</span> voor je bestelling</h1>
-			            <a href="#">Bestelnummer: #<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
-			            <p>Een bevestigingsmail <br> komt zodadelijk jouw richting uit.</p>
-			          </div>
-			          <div class="thnk-y-social-des" style="background:url(<?php echo THEME_URI; ?>/assets/images/thank-you-social-bg.jpg);">
-			            <div class="thnk-you-social-des-cntlr" >
-			              <h5 class="fl-h5 thnk-you-social-des-title"><?php esc_html_e( 'Social Media', 'woocommerce' ); ?></h5>
-			              <p>Interdum, nunc id blandit porttitor, velit purus posuere turpis.</p>
-			               <?php 
-							$smedias = get_field('social_media', 'options');
-			                if(!empty($smedias)):  
-			               ?>
-			              <div class="thnkY-social-link">
-			                <ul class="reset-list">
-			                  <?php foreach($smedias as $smedia): ?>
-				                  <li>
-				                    <a target="_blank" href="<?php echo $smedia['url']; ?>">
-				                        <?php echo $smedia['icon']; ?>
-				                    </a>
-				                  </li>
-				                <?php endforeach; ?>
-			                </ul>
-			              </div>
-			          	  <?php endif; ?>
-			            </div>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</section>
+		</div>
+		</section>
+
+
 		<?php endif; ?>
 
 	<?php else : ?>

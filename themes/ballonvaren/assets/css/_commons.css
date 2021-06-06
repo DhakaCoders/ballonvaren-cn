@@ -23,8 +23,21 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+strong,b{
+	font-weight: 700;
+}
+
+a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #909BA5;
+}
+a:hover{
+	color: #EE3E15;
+}
+
 p{
-	line-height: 1.2;
+	line-height: 1.5;
 	margin-bottom: 15px;
 }
 ::selection {
@@ -208,18 +221,7 @@ ul.ab-top-menu li:before,
 
 
 
-strong{
-	font-weight: 700;
-}
 
-a{
-	display: inline-block;
-	vertical-align: baseline;
-	color: #909BA5;
-}
-a:hover{
-	color: #EE3E15;
-}
 
 
 
@@ -354,60 +356,61 @@ form
 /*common button*/
 
 .fl-red-btn{
-	width: 210px;
-	height: 48px;
 	background: #EE3E15;
 	color: #fff;
 	border-radius: 3px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #EE3E15;
+	padding: 12px 30px;
+	min-width: 210px;
+	text-align: center;
 }
 .fl-red-btn:hover{
 	background: transparent;
 	color: #EE3E15;
 }
 .fl-navyblue-btn{
-	width: 210px;
-	height: 48px;
+	/*width: 210px;
+	height: 48px;*/
 	background: #2C113E;
 	color: #fff;
 	border-radius: 3px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #2C113E;
+	padding: 12px 30px;
+	min-width: 210px;
+	text-align: center;
 }
 .fl-navyblue-btn:hover{
 	background: transparent;
 	color: #2C113E;
 }
 .fl-cyan-btn{
-	width: 210px;
-	height: 48px;
+	/*width: 210px;
+	height: 48px;*/
 	background: #1DB4B2;
 	color: #fff;
 	border-radius: 3px;
-	display: flex;
+	/*display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;*/
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #1DB4B2;
+	padding: 12px 30px;
+	min-width: 210px;
+	text-align: center;
 }
 .fl-cyan-btn:hover{
 	background: transparent;
@@ -446,7 +449,10 @@ a.red-color-arrow-btn{
 }
 a.red-color-arrow-btn i{
 	position: absolute;
-	margin-top: -1px;
+	width: 7px;
+	height: 11px;
+	background-size: contain;
+	margin-top: -3px;
 	right: 5px;
 	top: 50%;
 	transform: translateY(-50%);

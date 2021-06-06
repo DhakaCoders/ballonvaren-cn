@@ -36,14 +36,15 @@ ul.select2-results__options li{
 .woocommerce button[type=submit],
 .woocommerce-orders .orders-crtl .contact-info a.order-contact-btn,
 body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit]{
-	background: #2285E3!important;
+	background: #1DB4B2!important;
     text-transform: uppercase;
-    border: 2px solid #2285E3!important;
+    border: 2px solid #1DB4B2!important;
     color: #fff!important;
-    border-radius: 0px!important;
+    border-radius: 3px!important;
     font-size: 16px!important;
     font-weight:700;
-    font-family: Work Sans;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.04em;
 }
 .woocommerce .checkout-button.button:hover,
 .woocommerce #respond input#submit:hover, 
@@ -62,7 +63,6 @@ body.woocommerce-cart .product-quantity .quantity.qty1 span:hover,
 .popup-bottom-btn a:hover,
 .cart-btn-qty .quantity.qty span.plus:hover,
 .cart-btn-qty .quantity.qty span:hover,
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover,
 .contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover{
 	background-color: #D9534F!important;
 	color: #fff!important;
@@ -178,7 +178,7 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 	max-width: 100%;
 	height: 48px;
 	background: #FFFFFF;
-	border: 1px solid #EDEDED;
+	border: 1px solid #ECF1F4;
 	border-width:1px!important;
 	box-sizing: border-box;
 	padding: 5px 16px 5px;
@@ -189,7 +189,7 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	border-radius: 0px;
+	border-radius: 3px;
 }
 .woocommerce input[type="text"]:focus,
 .woocommerce input[type="email"]:focus,

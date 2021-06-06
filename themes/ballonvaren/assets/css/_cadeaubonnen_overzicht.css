@@ -1,5 +1,4 @@
 .cadeaubonnen-overzicht-sec{
-	padding-top: 64px;
 	padding-bottom: 84px;
 }
 .cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
@@ -21,10 +20,20 @@
 	flex-direction: column;
 	justify-content: center;
 	padding: 0 23px;
+	border-radius: 3px 3px 0px 0px
 }
 .fl-pro-gift-cntlr .fl-gift-price{
 	padding-bottom: 7px;
 }
+.gift-card .fl-pro-grd-price span.woocommerce-Price-amount bdi span, 
+.gift-card .fl-pro-grd-price del span.woocommerce-Price-amount bdi span, 
+.gift-card .fl-pro-grd-price ins span.woocommerce-Price-amount bdi span, 
+.gift-card .single-product .single-price-total span.woocommerce-Price-amount bdi, 
+.gift-card .single-product .single-price-total del span.woocommerce-Price-amount bdi span, 
+.gift-card .single-product .single-price-total ins span.woocommerce-Price-amount bdi span{
+	margin-left: 0!important;
+}
+
 .fl-pro-gift-cntlr i{
 	display: inline-block;
 	vertical-align: baseline;
@@ -35,7 +44,13 @@
 	vertical-align: baseline;
 	line-height: 1;
 }
-.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-Price-amount bdi{
+.gift-card .fl-pro-grd-des{
+	padding: 40px 23px 30px;
+}
+.gift-card .fl-pro-grd-des > ul{
+	padding-bottom: 27px;
+}
+.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi{
 	font-size: 36px;
 	font-weight: 700;	
 	color: #fff;
@@ -43,9 +58,10 @@
 	display: inline-block;
 	vertical-align: baseline;
 }
-.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol{
+.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
 	font-weight: 700;
 	padding-right: 12px;
+	font-size: 36px;
 }
 .fl-pro-gift-cntlr span{
 	display: inline-block;
@@ -57,4 +73,156 @@
 }
 .fl-gift-btn{
 	width: 100%
+}
+
+/* == responsive == */
+
+@media (max-width: 1699px){	
+	.cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
+		margin-bottom: 57px;
+	}
+	.cadeaubonnen-overzicht-sec{
+		padding-bottom: 66px;
+	}
+	.fl-pro-gift-cntlr{
+		min-height: 217px;
+	}
+	.fl-pro-gift-cntlr i{
+		padding-bottom: 34px;
+	}
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi,
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
+		font-size: 34px;
+	}
+	.fl-pro-gift-cntlr span{
+		font-size: 29px;
+	}
+}
+@media (max-width: 1499px) {
+   .cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
+		margin-bottom: 50px;
+	}
+   .fl-pro-gift-cntlr{
+		min-height: 209px;
+	}
+   .fl-pro-gift-cntlr i{
+		padding-bottom: 32px;
+	}
+   .fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi,
+   .fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
+		font-size: 32px;
+	}
+	.fl-pro-gift-cntlr span{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1399px) {
+	.cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
+		margin-bottom: 45px;
+	}
+	.fl-pro-gift-cntlr{
+		min-height: 200px;
+		padding: 0 20px;
+	}
+	.fl-pro-gift-cntlr i{
+		padding-bottom: 30px;
+	}
+	.gift-card .fl-pro-grd-des{
+		padding: 38px 20px 30px;
+	}
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi,
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
+		font-size: 30px;
+	}
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
+		padding-right: 10px;
+	}
+	.fl-pro-gift-cntlr span{
+		font-size: 27px;
+	}
+}
+
+@media(max-width: 991px){
+	.gift-card .header{
+		margin-bottom: 0;
+	}
+	.cadeaubonnen-overzicht-sec{
+		padding-bottom: 46px;
+	}
+	.fl-pro-gift-cntlr{
+		min-height: 190px;
+		padding: 0 15px;
+	}
+	.fl-pro-gift-cntlr i{
+		padding-bottom: 28px;
+	}
+	.gift-card .fl-pro-grd-des{
+		padding: 36px 15px 30px;
+	}
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi,
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
+		font-size: 29px;
+	}
+	.fl-pro-gift-cntlr span{
+		font-size: 25px;
+	}
+}
+
+@media(max-width: 767px){
+	.gift-card .fl-pro-grd-des{
+		padding: 38px 20px 30px;
+	}
+	.cadeaubonnen-overzicht-sec{
+		padding-bottom: 36px;
+	}
+	.fl-pro-gift-cntlr{
+		min-height: 200px;
+		padding: 0 20px;
+	}
+	.fl-pro-gift-cntlr i{
+		padding-bottom: 32px;
+	}
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi, .fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
+		font-size: 32px;
+	}
+	.fl-pro-gift-cntlr span{
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 639px) {
+
+}
+
+@media(max-width: 575px){
+	.cadeaubonnen-overzicht-sec{
+		padding-top: 54px;
+		padding-bottom: 43px;
+	}
+	.gift-card .fl-pro-grd-des{
+		padding: 40px 23px 30px;
+	}
+	.fl-pro-gift-cntlr{
+		min-height: 226px;
+		padding: 0 23px;
+	}
+	.fl-pro-gift-cntlr i{
+		padding-bottom: 36px;
+	}
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi, .fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
+		font-size: 36px;
+	}
+	.fl-pro-gift-cntlr span{
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }

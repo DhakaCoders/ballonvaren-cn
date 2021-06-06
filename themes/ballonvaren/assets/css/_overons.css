@@ -5,17 +5,17 @@ overons-msnry-grd-sec-wrp
 */
 .overons-msnry-grd-sec-wrp{
 	position: relative;
-	padding-bottom: 315px;
+	padding-bottom: 285px;
 }
-.overons-msnry-grd-sec-wrp .contact-form-angle-bg{
-	height: 600px;
+.overons-msnry-grd-sec-wrp .contact-white-sky-bg{
+	height: 980px;
 }
 .overons-msnry-grd-wrp{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
-	min-height: 750px;
+	/*min-height: 750px;*/
 	height: 100%;
 }
 .overons-msnry-grd-item{
@@ -56,11 +56,9 @@ overons-msnry-grd-sec-wrp
 	float: right;
 	padding-left: 105px;
 }
-
+.overons-msnry-grd-lft .fl-h1,
 .overons-msnry-grd-dsc .fl-h1{
 	display: block;
-	font-size: 48px;
-	line-height: 1;
 	color: #2C113E;
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -83,6 +81,12 @@ overons-team-sec-wrp
 */
 .overons-team-sec-wrp{
 	position: relative;
+	padding-bottom: 100px;
+}
+.ovs-team-entry-hdr{
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
 }
 .ovs-team-entry-hdr .fl-h3{
 	font-size: 36px;
@@ -97,25 +101,17 @@ overons-team-sec-wrp
 .overons-team-parachute-tp {
     position: absolute;
     top: -305px;
-    right: -110px;
-    background: url(../images/overons-team-parachute-tp-icon.png);
-    background-repeat: no-repeat;
-    background-size: 212px 288px;
-    width: 212px;
-    height: 288px;
+    right: -90px;
 }
 .overons-team-img{
-	height: 600px !important;
 	margin-bottom: 100px;
 }
-.overons-team-module{
-	background:#FDCA35;
-	padding: 60px 20px;
+.overons-team-module {
+    background: #FDCA35;
+    padding: 60px 80px;
 }
 .overons-team-module .fl-h4{
 	display: block;
-	font-size: 30px;
-	line-height: 1;
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 15px;
@@ -142,9 +138,256 @@ overons-team-sec-wrp
     position: absolute;
     bottom: 60px;
     left: -125px;
-    background: url(../images/overons-team-parachute-btm-icon.png);
-    background-repeat: no-repeat;
-    background-size: 236px 280px;
-    width: 236px;
-    height: 280px;
+}
+
+/*
+---------------------
+ Responsive Css
+---------------------
+*/
+
+@media (max-width: 1699px){
+	
+}
+
+
+@media (max-width: 1499px) {
+	.msnrytgi1 .overons-msnry-grd-item-img{
+		min-height: 230px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img{
+		height: 360px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img{
+		min-height: 425px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img{
+		height: 295px;
+	}
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.overons-team-parachute-tp {
+	    top: -290px;
+	    right: -40px;
+	    background-size: 180px 260px;
+	    width: 180px;
+	    height: 260px;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 60px;
+	    left: -60px;
+	}
+	.overons-msnry-grd-rgt {
+	    padding-left: 65px;
+	}
+	.boek-parachute-icon {
+	    right: -55px;
+	    bottom: -40px;
+	    width: 100px;
+	    height: 130px;
+	    background-size: 100px 130px;
+	}
+}
+
+@media(max-width: 1199px){
+	.boek-parachute-icon {
+	    right: -15px;
+	    bottom: -40px;
+	    width: 80px;
+	    height: 110px;
+	    background-size: 80px 110px;
+	}
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 120px;
+	}
+	.overons-team-parachute-tp {
+	    top: -270px;
+	    right: 0;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 60px;
+	    left: -15px;
+	}
+	.overons-team-sec-wrp {
+	    padding-bottom: 80px;
+	}
+	.overons-team-img {
+	    margin-bottom: 80px;
+	}
+	.overons-msnry-grd-dsc p br{
+		display: none;
+	}
+	.overons-msnry-grd-sec-wrp {
+	    padding-bottom: 235px;
+	}
+	.overons-msnry-grd-wrp{
+		/*min-height: 720px;*/
+	}
+	.msnrytgi1 .overons-msnry-grd-item-img {
+	    min-height: 230px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img {
+	    height: 360px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img {
+	    min-height: 425px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img {
+	    height: 295px;
+	}
+	.overons-team-module {
+	    padding: 50px 70px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.boek-parachute-icon {
+	    right: -15px;
+	    bottom: -40px;
+	    width: 65px;
+	    height: 85px;
+	    background-size: 65px 85px;
+	}
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 80px;
+	}
+	.overons-msnry-grd-rgt {
+	    padding-left: 40px;
+	}
+	.overons-team-sec-wrp{
+	    padding-bottom: 60px;
+	}
+	.overons-team-img {
+	    margin-bottom: 70px;
+	}
+	.overons-msnry-grd-sec-wrp {
+	    padding-bottom: 185px;
+	}
+	.msnrytgi1 .overons-msnry-grd-item-img {
+	    min-height: 200px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img {
+	    height: 330px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img {
+	    min-height: 395px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img {
+	    height: 265px;
+	}
+	.overons-msnry-grd-wrp{
+		/*min-height: 660px;*/
+	}
+	.overons-team-module {
+	    padding: 40px 70px;
+	}
+	
+	
+}
+
+@media(max-width: 767px){
+	.boek-je-form-bg-cntlr {
+	    padding-bottom: 50px;
+	}
+	.overons-team-sec-wrp {
+	    padding-bottom: 35px;
+	}
+	.overons-team-img {
+	    margin-bottom: 60px;
+	}
+	.overons-msnry-grd-sec-wrp {
+	    padding-bottom: 150px;
+	}
+	.overons-msnry-grd-lft {
+	    width: 100%;
+	    margin: 0 -8px;
+	}
+	.overons-msnry-grd-rgt {
+	    padding-left: 0;
+	    width: 100%;
+	    padding-top: 20px;
+	}
+	.msnrytgi1 .overons-msnry-grd-item-img {
+	    min-height: 160px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img {
+	    height: 240px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img {
+	    min-height: 280px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img {
+	    height: 200px;
+	}
+	.msnrytgi3 {
+	    margin-top: -80px;
+	}
+	.overons-msnry-grd-item {
+	    width: 50%;
+	    padding: 0 8px 20px;
+	}
+	.overons-msnry-grd-dsc .fl-h2 {
+	    color: #2C113E;
+	    margin-bottom: 25px;
+	}
+	.overons-team-module {
+	    padding: 30px 20px;
+	}
+	.overons-team-module-cntlr{
+		padding-top: 50px;
+		border-top: 1px solid#ECF1F4;
+	}
+	.overons-team-module .fl-h4{
+		text-transform: inherit;
+	}
+	.overons-team-module p {
+	    margin-bottom: 20px;
+	}
+	.overons-msnry-grd-dsc a{
+		display: none;
+	}
+	.overons-team-parachute-tp {
+	    top: -155px;
+	    right: 0;
+	    background-size: 160px 240px;
+	    width: auto;
+	    height: auto;
+	}
+	.overons-msnry-grd-sec-wrp .contact-form-angle-bg {
+	    height: 1000px;
+	    bottom: -110px;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 70px;
+	    left: 0;
+	}
+	.overons-msnry-grd-sec-wrp .contact-white-sky-bg {
+	    bottom: 0;
+	    height: 850px !important;
+	}
+
+
+}
+
+@media(max-width: 575px){
+	.overons-team-img {
+	    margin-bottom: 60px;
+	}
+	
+
+}
+
+@media(max-width: 479px){
+	
+
+}
+
+@media(max-width: 359px){
+
 }

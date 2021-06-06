@@ -367,26 +367,9 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
 .pro-item-desc  .pro-item-descWrap .product-price {
     margin-bottom: 7px;
 }
-.fl-pro-grd-price > del,
-.fl-pro-grd-price > ins,
-small.woocommerce-price-suffix,
-.xoo-cp-pprice del,
-.product-price del,
-.product-price ins,
-.fl-pro-grd-price > span.woocommerce-Price-amount,
-.qty-price-wrap > del,
-.qty-price-wrap ins{
-	margin-right: 2px!important;
-	margin-left: 2px!important;
-}
-/*.product-price del > span,
-.xoo-cp-pprice del > span,
-.fl-pro-grd-price del > span{
-	margin-right: 5px!important;
-}*/
-/*.woocommerce-price-suffix{
-	margin-left: 3px;
-}*/
+
+/* == responsive == */
+
 @media(max-width:1199px){
 	.xoo-cp-container h5{
 		font-size:28px;
