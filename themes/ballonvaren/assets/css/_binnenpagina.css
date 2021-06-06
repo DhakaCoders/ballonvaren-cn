@@ -832,13 +832,15 @@ Gallery design
 #ballonvaren-voor-bedrijven .dfp-cta-module.orange {
     margin-bottom: 90px;
 }
-#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr,
-#ballonvaren-voor-bedrijven#vip .exprns-ovrvw-grid-ctlr{
+.exprns-ovrvw-grid-module .exprns-ovrvw-grid-ctlr,
+.exprns-ovrvw-grid-module .exprns-ovrvw-grid-ctlr{
 	margin-left: -12px;
 	margin-right: -12px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-#ballonvaren-voor-bedrijven .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap{
-	float: left;
+.exprns-ovrvw-grid-module .exprns-ovrvw-grid-ctlr .exprns-ovrvw-item-wrap{
 	width: 50%;
 	padding-left: 12px;
 	padding-right: 12px;
@@ -920,6 +922,9 @@ Gallery design
 	#ballonvaren-voor-bedrijven .default-page-con p {
 	    margin-bottom: 50px;
 	}
+	#ballonvaren-voor-bedrijven .dfp-cta-module p {
+	    margin-bottom: 20px;
+	}
 }
 
 @media(max-width: 1499px){
@@ -989,6 +994,9 @@ Gallery design
 	}
 	#ballonvaren-voor-bedrijven .default-page-con p {
 	    margin-bottom: 45px;
+	}
+	#ballonvaren-voor-bedrijven .dfp-cta-module p {
+	    margin-bottom: 20px;
 	}
 
 
@@ -1077,6 +1085,9 @@ Gallery design
 	}
 	#ballonvaren-voor-bedrijven .default-page-con p {
 	    margin-bottom: 40px;
+	}
+	#ballonvaren-voor-bedrijven .dfp-cta-module p {
+	    margin-bottom: 20px;
 	}
 
 }
@@ -1209,6 +1220,9 @@ Gallery design
 	}
 	#ballonvaren-voor-bedrijven .default-page-con p {
 	    margin-bottom: 35px;
+	}
+	#ballonvaren-voor-bedrijven .dfp-cta-module p {
+	    margin-bottom: 20px;
 	}
 
 }
@@ -1482,8 +1496,9 @@ Gallery design
 	    margin-top: 30px;
 	}
 	.ballon-rides-lft-top-img {
-	    top: -45px;
-	    left: -25px;
+	    top: inherit;
+	    left: -65px;
+	    bottom: -38px;
 	}
 	.ballon-rides-lft-top-img img {
 	    max-width: 112px;
@@ -1512,6 +1527,9 @@ Gallery design
 	}
 	#ballonvaren-voor-bedrijven .default-page-con p {
 	    margin-bottom: 25px;
+	}
+	#ballonvaren-voor-bedrijven .dfp-cta-module p {
+	    margin-bottom: 20px;
 	}
 }
 
@@ -1746,11 +1764,7 @@ Gallery design
 	.ballon-rides-module {
 	    margin-top: 25px;
 	}
-	.ballon-rides-lft-top-img {
-	    top: inherit;
-	    left: -65px;
-	    bottom: -38px;
-	}
+	
 	#ballonvaren-voor-bedrijven .cta-ctlr {
 	    padding: 40px 25px 35px;
 	}
@@ -1762,6 +1776,9 @@ Gallery design
 	}
 	#ballonvaren-voor-bedrijven .default-page-con p {
 	    margin-bottom: 20px;
+	}
+	#ballonvaren-voor-bedrijven .dfp-cta-module p {
+	    margin-bottom: 15px;
 	}
 
 }
