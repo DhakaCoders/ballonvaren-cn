@@ -370,7 +370,7 @@
 	    width: 155px;
 	}
 	.absolute-img-two {
-	    margin-right: -90px;
+	    margin-right: -60px;
 	    margin-top: 500px;
 	}
 	.off-days-sec:before {
@@ -398,6 +398,15 @@
 	}
 	.inline-bg-img {
 	    height: 540px;
+	}
+	.events-grid-sec .white-sky-bg {
+	    top: -258px;
+	}
+		.absolute-img-two {
+	    margin-right: -50px;
+	}
+	.off-days-sec:before {
+	    height: 545px;
 	}
 
 	
