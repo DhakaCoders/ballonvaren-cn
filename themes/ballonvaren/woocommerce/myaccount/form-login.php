@@ -40,7 +40,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 	
 	<?php endif; ?>
     <div class="register-field-error">
-		<div class="contact-er-msg">
+		<div class="error-msg">
           <span>
             <i><svg class="error-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff">
             <use xlink:href="#error-icon-svg"></use> </svg></i>
