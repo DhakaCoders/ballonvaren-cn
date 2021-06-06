@@ -393,7 +393,7 @@
 
 @media(max-width: 1199px){
 	.inline-bg-img {
-	    height: 540px;
+	    height: 525px;
 	}
 	.events-grid-sec .white-sky-bg {
 	    top: -258px;
@@ -414,7 +414,30 @@
 }
 
 @media(max-width: 991px){
+	.events-grid-sec .white-sky-bg {
+	    top: -190px;
+	}
+	.off-days-sec:before {
+	    height: 505px;
+	}
+	.absolute-img-two {
+	    margin-right: 0px;
+	    margin-top: 465px;
+	}
+	
+	.absolute-img-two img {
+	    height: auto;
+	    width: 120px;
+	}
 
+	.inline-bg-img {
+	    height: 500px;
+	}
+	.bv-calender-dsc-inner h2 {
+	    font-size: 32px;
+	}
+	
+	
 }
 
 @media(max-width: 767px){
