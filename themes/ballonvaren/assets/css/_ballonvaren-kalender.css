@@ -392,10 +392,6 @@
 }
 
 @media(max-width: 1199px){
-	.absolute-img-two img {
-	    height: auto;
-	    width: 130px;
-	}
 	.inline-bg-img {
 	    height: 540px;
 	}
@@ -403,10 +399,15 @@
 	    top: -258px;
 	}
 		.absolute-img-two {
-	    margin-right: -50px;
+	    margin-right: 0px;
+	    margin-top: 490px;
 	}
 	.off-days-sec:before {
 	    height: 545px;
+	}
+	.absolute-img-two img {
+	    height: auto;
+	    width: 125px;
 	}
 
 	
