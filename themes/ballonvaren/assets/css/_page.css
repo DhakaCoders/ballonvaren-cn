@@ -89,11 +89,11 @@
 .breadcrumb-cntlr ul{
 	display: flex;
 	align-items: center;
-	margin: 0 -16px;
+	margin: 0 -15px;
 
 }
 .breadcrumb-cntlr ul li{
-	padding: 0 16px;
+	padding: 0 15px;
 	position: relative;
 }
 .breadcrumb-cntlr ul li:after{
