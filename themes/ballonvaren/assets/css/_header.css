@@ -637,6 +637,10 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		padding-bottom: 35px;
 		margin-bottom: 45px;
 	}
+	.hambergar-icon,
+	.close-icon{
+		cursor: pointer;
+	}
 	.hambergar-icon i,
 	.close-icon i{
 		display: block;
@@ -851,14 +855,21 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		opacity: 1;
 		padding-top: 0;
 	}
-	.fl-lang-cntlr:hover ul li.lang-active{
-		background: inherit;
-	}
 	.fl-lang-cntlr:hover ul{
-		position: inherit;
+		height: 45px;
 	}
+	.fl-lang-cntlr:hover ul li.lang-active{
+		background: none;
+		opacity: 0;
+	}
+	/*.fl-lang-cntlr:hover ul{
+		position: initial;
+	}*/
 	.fl-lang-cntlr:hover ul li{
-		position: inherit;
+		opacity: 0!important;
+	}
+	.xs-lang.fl-lang-cntlr ul li{
+		opacity: 1!important;
 	}
 	.logo {
 	    margin-top: 0;
@@ -895,13 +906,6 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	}
 	.xs-lang .xs-lang-icon{
 		transform: rotate(-180deg);
-	}
-	.fl-lang-cntlr:focus ul{
-		position: static;
-	}
-	.fl-lang-cntlr:focus ul li{
-		position: inherit;
-		opacity: 0!important;
 	}
 }
 
