@@ -231,7 +231,7 @@ if( $('.bnProcessGridItemsSlider').length ){
       dots: true,
       arrows:false,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,

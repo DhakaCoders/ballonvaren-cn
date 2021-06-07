@@ -355,6 +355,7 @@ Gallery design
 .cta-title{
 	color: #fff!important;
 	margin-bottom: 12px!important;
+	text-transform: uppercase;
 }
 .dfp-cta-module p{
 	margin-bottom: 20px;
@@ -1315,9 +1316,9 @@ Gallery design
 	.dfp-des-rgt{
 		padding-right: 20px;
 	}
-	.dfp-text-module{
+	/*.dfp-text-module{
 		padding-right: 10px;
-	}
+	}*/
 	.default-page-con ul li::before, 
 	ul li::before{
 		margin-top: -2px;
@@ -1540,7 +1541,7 @@ Gallery design
 	#ballonvaren-voor-bedrijven .default-page-con {
 	    padding-bottom: 55px;
 	}
-	#ballonvaren-voor-bedrijven .exprns-ovrvw-item {
+	.exprns-ovrvw-grid-module .exprns-ovrvw-item {
 	    max-width: 412px;
 	    width: 100%;
 	    margin-left: auto;
@@ -1813,11 +1814,17 @@ Gallery design
 	#ballonvaren-voor-bedrijven .dfp-cta-module p {
 	    margin-bottom: 15px;
 	}
+	.exprns-ovrvw-grid-module .exprns-ovrvw-item-desc {
+	    margin-bottom: 30px;
+	}
 	#vip .dfp-text-module p:last-child {
 	    margin-bottom: 15px;
 	}
 	#vip .ballon-rides-module {
 	    margin-top: 15px;
+	}
+	#vip .default-page-con h2{
+		font-size: 26px;
 	}
 
 }
@@ -1858,6 +1865,9 @@ Gallery design
 	.fl-btn a.fl-cyan-btn{
 		max-width: 100%;
 		width: 100%;
+	}
+	.dfp-grd-module .blog-grid-des .bgi-title {
+	    margin-bottom: 25px;
 	}
 	
 }
