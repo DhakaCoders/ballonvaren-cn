@@ -231,7 +231,7 @@ if( $('.bnProcessGridItemsSlider').length ){
       dots: true,
       arrows:false,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
@@ -241,6 +241,13 @@ if( $('.bnProcessGridItemsSlider').length ){
 }
 
 /*start of Niaz*/
+
+$(".type-order-format .woocommerce-input-wrapper span").each(function(){
+        $(this).append('<div class="radio-custom"></div>')
+  });
+$(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
+        $(this).append('<div class="checkbox-custom"></div>')
+  });
 
 //products counter
 if( $('.qty').length ){
