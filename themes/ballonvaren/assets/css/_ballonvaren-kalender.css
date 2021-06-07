@@ -386,6 +386,9 @@
 	.bv-calender-dsc-inner h2 {
 	    font-size: 32px;
 	}
+	.events-grid-item-inner ul li .event-grid-item-inr {
+	    padding: 24px 25px 27px;
+	}
 	
 	
 }
@@ -451,9 +454,12 @@
 		.events-grid-item-inner ul li:last-of-type{
 		padding-bottom: 0;
 	}
-		.events-grid-item-inner ul li {
+	.events-grid-item-inner ul{
+		margin: -15px 0;
+	}
+	.events-grid-item-inner ul li {
 	    max-width: 100%;
-	    padding: 15px 20px;
+	    padding: 15px 0;
 	}
 
 }
