@@ -734,6 +734,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.xs-mobile-menu-cntlr .fl-lang ul li.lang-active a, 
 	.xs-mobile-menu-cntlr .fl-lang ul li a {
 	    font-size: 14px;
+	    color: #2C113E;
 	}
 	.xs-social-menu{
 		padding-top: 15px;
@@ -750,14 +751,13 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		padding-right: 6px;
 	}
 	.xs-contact-menu ul li.xs-cart a.fl-red-btn{
-		width: 160px;
-		height: 48px;
+		min-width: 160px;
 		font-size: 14px;
+		padding: 12px 15px;
 		font-weight: 900;
 	}
 	.xs-contact-menu ul li.xs-contact-btn a.fl-navyblue-btn{
-		width: 160px;
-		height: 48px;
+		min-width: 160px;
 		font-size: 14px;
 		font-weight: 900;
 	}
@@ -870,7 +870,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		position: absolute;
 		top: 24px;
 		right: 0;
-		background: url('../images/bottom-arrow.svg');
+		background: url('../images/xs-bottom-arrow.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 7px;
@@ -886,13 +886,15 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.xs-mobile-menu-cntlr .fl-lang-cntlr:after {
 	    top: 21px;
 	}
+	.allWork .xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children > a:before{
+		margin-top: 5px;
+	}
 }
 
 @media(max-width: 479px){
 	.xs-contact-menu ul li.xs-cart a.fl-red-btn,
 	.xs-contact-menu ul li.xs-contact-btn a.fl-navyblue-btn{
-		width: 130px;
-		height: 40px;
+		min-width: 130px;
 		font-size: 12px;
 	}
 	.xs-mobile-menu-cntlr .fl-lang-cntlr{
