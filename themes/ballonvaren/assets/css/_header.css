@@ -845,6 +845,21 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.xs-mobile-menu-cntlr .fl-lang-cntlr.xs-lang:after{
 		transform: rotate(-180deg);
 	}
+	.xs-lang .fl-lang-cntlr ul li.lang-active,
+	.xs-lang .fl-lang-cntlr ul li{
+		position: relative;
+		opacity: 1;
+		padding-top: 0;
+	}
+	.fl-lang-cntlr:hover ul li.lang-active{
+		background: inherit;
+	}
+	.fl-lang-cntlr:hover ul{
+		position: inherit;
+	}
+	.fl-lang-cntlr:hover ul li{
+		position: inherit;
+	}
 	.logo {
 	    margin-top: 0;
 	}
@@ -876,6 +891,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		height: 7px;
 		width: 11px;
 		margin-right: -3px;
+		z-index: 30;
 	}
 	.xs-lang .xs-lang-icon{
 		transform: rotate(-180deg);
