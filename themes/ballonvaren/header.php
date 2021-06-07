@@ -165,6 +165,18 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+$logoObj = get_field('hdlogo', 'options');
+if( is_array($logoObj) ){
+  $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+}else{
+  $logo_tag = '';
+}
+
+$smedias = get_field('social_media', 'options');
+
+
+?> 
 <header class="header">
   <span class="hdr-color-border"></span>
   <div class="container-xlg">
@@ -172,19 +184,27 @@
         <div class="col-md-12">
           <div class="header-inr clearfix">
             <div class="hdr-lft">
+              <?php if( !empty($logo_tag) ): ?>
               <div class="logo">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
+                </a>
               </div>
+              <?php endif; ?>
             </div>
             <div class="hdr-rgt">
               <div class="hdr-topbar hide-md">
                 <div class="hdr-topbar-inr">
                   <div class="hdr-top-menu">
-                    <ul class="reset-list">
-                      <li><a href="#">nieuws</a></li>
-                      <li><a href="#">ervaringen</a></li>
-                      <li><a href="#">cadeaubon</a></li>
-                    </ul>
+                    <?php 
+                      $tmenuOptions = array( 
+                          'theme_location' => 'cbv_top_menu', 
+                          'menu_class' => 'reset-list',
+                          'container' => '',
+                          'container_class' => ''
+                        );
+                      wp_nav_menu( $tmenuOptions ); 
+                    ?>
                   </div>
                   <div class="hdr-language">
                     <div class="fl-lang reset-slect">
@@ -251,21 +271,15 @@
               <div class="hdr-menu">
                 <div class="hdr-main-menu hide-md">
                   <nav class="main-nav">
-                    <ul class="clearfix reset-list">
-                      <li class="active"><a href="#">over ons</a></li>
-                      <li class="menu-item-has-children">
-                        <a href="#">ballonvaarten</a>
-                        <ul class="sub-menu" style="">
-                          <li><a href="#">sub menu 1</a></li>
-                          <li><a href="#">sub menu 2</a></li>
-                          <li><a href="#">sub menu 3</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">boek je ballonblucht</a></li>
-                      <li><a href="#">kelender</a></li>
-                      <li><a href="#">voor bedrijven</a></li>
-                      <li><a href="#">onze luchtballonnen</a></li>
-                    </ul>
+                  <?php 
+                    $menuOptions = array( 
+                        'theme_location' => 'cbv_main_menu', 
+                        'menu_class' => 'clearfix reset-list',
+                        'container' => '',
+                        'container_class' => ''
+                      );
+                    wp_nav_menu( $menuOptions ); 
+                  ?>
                   </nav>
                 </div>
                 <div class="hdr-contact-menu hide-md">
@@ -307,25 +321,15 @@
       <div class="xs-menu-cntlr">
         <div class="xs-menu">
           <nav class="main-nav">
-            <ul class="clearfix reset-list">
-              <li><a href="#">Home</a></li>
-              <li class="active"><a href="#">over ons</a></li>
-              <li class="menu-item-has-children">
-                <a href="#">Ballonvaarten</a>
-                <ul class="sub-menu" style="">
-                  <li><a href="#">sub menu 1</a></li>
-                  <li><a href="#">sub menu 2</a></li>
-                  <li><a href="#">sub menu 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Boek je ballonvlucht</a></li>
-              <li><a href="#">Ballonvaren kalender</a></li>
-              <li><a href="#">Ballonvaren voor bedrijven</a></li>
-              <li><a href="#">Onze luchtballonnen</a></li>
-              <li><a href="#">Cadeaubon</a></li>
-              <li><a href="#">Ervaringen</a></li>
-              <li><a href="#">Nieuws</a></li>
-            </ul>
+            <?php 
+              $menuOptions = array( 
+                  'theme_location' => 'cbv_main_menu', 
+                  'menu_class' => 'clearfix reset-list',
+                  'container' => '',
+                  'container_class' => ''
+                );
+              wp_nav_menu( $menuOptions ); 
+            ?>
           </nav>
         </div>
         <div class="xs-social-menu">

@@ -1,3 +1,19 @@
+<?php 
+  $logoObj = get_field('ftlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+  $address = get_field('address', 'options');
+  $gmurl = get_field('url', 'options');
+  $telefoon = get_field('telefoon', 'options');
+  $email = get_field('emailadres', 'options');
+  $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
+  $smedias = get_field('social_media', 'options');
+  $ftgalerij = get_field('ft_galerij', 'options');
+  $copyright_text = get_field('copyright_text', 'options');
+?>
 <footer class="footer-wrp">
   <div class="container">
     <div class="row">
@@ -6,8 +22,8 @@
           <div class="ftr-top-cntlr clearfix">
             <div class="ftr-top-col ftr-top-col1">
               <div class="ftr-top-logo">
-                <a href="#">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-logo.svg" alt="">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
                 </a>
               </div>
               <div class="ftr-top-payment-method hide-sm">
@@ -36,31 +52,28 @@
               </div>
             </div>
             <div class="ftr-top-col ftr-top-col2">
-              <h6 class="fl-h6 ftr-top-col-title">Navigatie</h6>
+              <h6 class="fl-h6 ftr-top-col-title"><?php _e( 'Navigatie', 'ballonvaren' ); ?></h6>
               <div class="ftr-top-col-menu ftr-menu-des">
-                <ul class="reset-list">
-                  <li><a href="#">Home</a></li>
-                  
-                  <li><a href="#">Over ons</a></li>
-                  
-                  <li><a href="#">Ballonvaarten</a></li>
-                  
-                  <li><a href="#">Boek je ballonvlucht</a></li>
-                  
-                  <li><a href="#">Kalender</a></li>
-                  <li><a href="#">Voor bedrijven</a></li>
-                  <li><a href="#">Onze luchtballonnen</a></li>
-                </ul>
-                <ul class="reset-list">
-                  <li><a href="#">Cadeaubon</a></li>
-                  <li><a href="#">Ervaringen</a></li>
-                  <li><a href="#">Nieuws</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+              <?php 
+                $fmenuOptions1 = array( 
+                    'theme_location' => 'cbv_fta_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptions1 );
+                $fmenuOptions2 = array( 
+                    'theme_location' => 'cbv_ftb_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $fmenuOptions2 );
+              ?> 
               </div>
             </div>
             <div class="ftr-top-col ftr-top-col3">
-              <h6 class="fl-h6 ftr-top-col-title">Contact</h6>
+              <h6 class="fl-h6 ftr-top-col-title"><?php _e( 'Contact', 'ballonvaren' ); ?></h6>
               <div class="ftr-top-col-details ftr-menu-des">
                 <div class="ftr-top-col-addr">
                 <a target="_blank" href="#">Atlantic Ballooning BVBA<br>
@@ -151,15 +164,18 @@
                 </ul>
               </div>
             <div class="ftr-copyright">
-              <p> &copy; 2021 Atlantic Ballooning BVBA</p>
+              <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?> 
             </div>
             <div class="ftr-btm-menu">
-              <ul class="reset-list">
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Algemene voorwaarden</a></li>
-              </ul>
+              <?php 
+                $copyrightmenu = array( 
+                    'theme_location' => 'cbv_copyright_menu', 
+                    'menu_class' => 'reset-list',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $copyrightmenu );
+              ?> 
             </div>
             <div class="ftr-developed-by">
               <p>Website laten maken door <a target="_blank" href="#">conversal</a></p>
