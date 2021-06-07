@@ -889,15 +889,26 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.allWork .xs-mobile-menu-cntlr nav.main-nav > ul > li.menu-item-has-children > a:before{
 		margin-top: 5px;
 	}
+	.xs-lang-icon{
+		top: 22px;
+	}
 }
 
 @media(max-width: 479px){
 	.xs-contact-menu ul li.xs-cart a.fl-red-btn,
 	.xs-contact-menu ul li.xs-contact-btn a.fl-navyblue-btn{
-		min-width: 130px;
+		min-width: 135px;
 		font-size: 12px;
 	}
 	.xs-mobile-menu-cntlr .fl-lang-cntlr{
 		padding-left: 15px;
+	}
+	.xs-contact-menu ul{
+		margin-left: -2px;
+		margin-right: -2px;
+	}
+	.xs-contact-menu ul li{
+		padding-left: 2px;
+		padding-right: 2px;
 	}
 }
