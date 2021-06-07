@@ -440,9 +440,7 @@
 	.events-grid-item-inner ul li .event-grid-item-inr {
 	    padding: 33px 30px 27px;
 	}
-	.events-grid-cntlr {
-	    /*padding-bottom: 50px;*/
-	}
+
 }
 
 @media(max-width: 575px){
