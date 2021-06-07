@@ -355,6 +355,7 @@ Gallery design
 .cta-title{
 	color: #fff!important;
 	margin-bottom: 12px!important;
+	text-transform: uppercase;
 }
 .dfp-cta-module p{
 	margin-bottom: 20px;
@@ -1861,6 +1862,9 @@ Gallery design
 	.fl-btn a.fl-cyan-btn{
 		max-width: 100%;
 		width: 100%;
+	}
+	.dfp-grd-module .blog-grid-des .bgi-title {
+	    margin-bottom: 25px;
 	}
 	
 }
