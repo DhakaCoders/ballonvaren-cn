@@ -485,7 +485,7 @@ if( $('.humbergar').length ){
   if (windowWidth <= 992){
     if($('.xs-lang-icon').length){
       $('.xs-lang-icon').click(function(){
-        $(this).parents().toggleClass('xs-lang');
+        $(this).parent().toggleClass('xs-lang');
       });
     }
   }
