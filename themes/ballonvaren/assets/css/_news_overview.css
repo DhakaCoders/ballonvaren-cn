@@ -49,8 +49,7 @@
 }
 .blog-grid-items ul li{
 	padding: 0 12px 59px!important;
-	width: 33.3333%!important;
-	position: relative;
+	width: 33.3333%!important;	
 }
 .onsale-tag{
 	position: absolute;
@@ -80,6 +79,7 @@
 .blog-grid-item{
 	background: #fff;
 	overflow: hidden;
+	position: relative;
 }
 .blog-grid-items .slick-track .blog-grid-des.mHc{
 	height: auto!important;
