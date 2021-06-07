@@ -27,28 +27,17 @@
                 </a>
               </div>
               <div class="ftr-top-payment-method hide-sm">
+                <?php if( $ftgalerij ): ?>
                 <ul class="reset-list">
+                  <?php foreach( $ftgalerij as $ftgalID ): ?>
                   <li>
                     <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-001.jpg" alt="">
+                      <?php echo cbv_get_image_tag($ftgalID); ?>
                     </div>
                   </li>
-                  <li>
-                    <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-002.jpg" alt="">
-                    </div>
-                  </li>
-                  <li>
-                    <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-003.jpg" alt="">
-                    </div>
-                  </li>
-                  <li>
-                    <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-004.jpg" alt="">
-                    </div>
-                  </li>
+                  <?php endforeach; ?>
                 </ul>
+                <?php endif; ?>
               </div>
             </div>
             <div class="ftr-top-col ftr-top-col2">
@@ -84,81 +73,80 @@
               </div>
               <div class="ftr-top-col-socials hdr-social-media has-svg">
                 <ul class="reset-list">
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="facebook-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#facebook-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="messenger-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#messenger-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="twitter-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#twitter-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="linkedin-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#linkedin-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="instagram-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#instagram-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                    </ul>
+                  <?php if( !empty($smedias['facebook_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
+                      <i>
+                        <svg class="facebook-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#facebook-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['messenger_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['messenger_url']; ?>">
+                      <i>
+                        <svg class="messenger-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#messenger-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['twitter_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
+                      <i>
+                        <svg class="twitter-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#twitter-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['linkedin_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
+                      <i>
+                        <svg class="linkedin-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#linkedin-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['instagram_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
+                      <i>
+                        <svg class="instagram-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#instagram-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                <?php endif; ?>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="ftr-btm-cntlr">
-            <div class="ftr-top-payment-method show-sm">
+            <?php if( $ftgalerij ): ?>
+              <div class="ftr-top-payment-method show-sm">
                 <ul class="reset-list">
+                  <?php foreach( $ftgalerij as $ftgalID ): ?>
                   <li>
                     <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-001.jpg" alt="">
+                      <?php echo cbv_get_image_tag($ftgalID); ?>
                     </div>
                   </li>
-                  <li>
-                    <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-002.jpg" alt="">
-                    </div>
-                  </li>
-                  <li>
-                    <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-003.jpg" alt="">
-                    </div>
-                  </li>
-                  <li>
-                    <div class="payment-method-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/payment-method-logo-004.jpg" alt="">
-                    </div>
-                  </li>
+                  <?php endforeach; ?>
                 </ul>
               </div>
+            <?php endif; ?>
             <div class="ftr-copyright">
               <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?> 
             </div>
