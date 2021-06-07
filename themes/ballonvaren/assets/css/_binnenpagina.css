@@ -1540,7 +1540,7 @@ Gallery design
 	#ballonvaren-voor-bedrijven .default-page-con {
 	    padding-bottom: 55px;
 	}
-	#ballonvaren-voor-bedrijven .exprns-ovrvw-item {
+	.exprns-ovrvw-grid-module .exprns-ovrvw-item {
 	    max-width: 412px;
 	    width: 100%;
 	    margin-left: auto;
