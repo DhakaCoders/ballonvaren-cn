@@ -75,16 +75,12 @@
             <div class="ftr-top-col ftr-top-col3">
               <h6 class="fl-h6 ftr-top-col-title"><?php _e( 'Contact', 'ballonvaren' ); ?></h6>
               <div class="ftr-top-col-details ftr-menu-des">
-                <div class="ftr-top-col-addr">
-                <a target="_blank" href="#">Atlantic Ballooning BVBA<br>
-                Palingstraat 87, B-9070 Destelbergen (kantoor)</a>
-                </div>
-                <div class="ftr-top-col-tel">
-                  <span>Tel: <a href="tel:093566484">09 356 64 84</a></span> 
-                </div>
-                <div class="ftr-top-col-mail">
-                  <span>E-mail: <a href="mailto:info@ballonvaren.be">info@ballonvaren.be</a></span> 
-                </div>
+              <?php 
+                if( !empty($address) ) printf('<div class="ftr-top-col-addr"><a href="%s" target="_blank">%s</a></div>', $gmaplink, $address);
+                if( !empty($telefoon) ) printf('<div class="ftr-top-col-tel"><span>Tel: <a href="tel:%s">%s</a></span></div>', phone_preg($telefoon),  $telefoon); 
+                if( !empty($email) ) printf('<div class="ftr-top-col-mail"><span>E-mail: <a href="mailto:%s">%s</a></span></div> ', $email, $email);  
+              ?>
+
               </div>
               <div class="ftr-top-col-socials hdr-social-media has-svg">
                 <ul class="reset-list">
