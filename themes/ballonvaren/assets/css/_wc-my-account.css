@@ -63,7 +63,7 @@ body.woocommerce-account .account-page-title h1 + p{
     margin-bottom: 24px;
 }
 body.woocommerce-account .woocommerce-account-grds-cntlr{
-    padding-top: 47px;
+    /*padding-top: 47px;*/
     margin-bottom: 75px;
 
 }
@@ -88,9 +88,9 @@ body.woocommerce-account .default-page-con h1 + p{
     font-weight: 500;
 }
 body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
-    border-top: 1px solid #ECF1F4;
+    /*border-top: 1px solid #ECF1F4;*/
     margin-top: 30px;
-    padding-top: 68px;
+    /*padding-top: 68px;*/
     padding-bottom: 195px;
     margin-bottom: 0;
 }
@@ -216,7 +216,6 @@ body.loggedin-winkelmandje-crtl .default-page-con h1{
 }
 .back-to-dashboard-btn-cntlr{
     margin-bottom: 25px;
-    display: none;
 }
 .back-to-dashboard-btn-cntlr a:after{
     content: "";
