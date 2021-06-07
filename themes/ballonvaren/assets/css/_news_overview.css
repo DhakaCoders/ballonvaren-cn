@@ -1,3 +1,6 @@
+.blog-page .header{
+	margin-bottom: 0;
+}
 /* .blog-page-sec{
 	padding-top: 35px;
 } */
@@ -224,9 +227,6 @@
 }
 
 @media (max-width: 991px) {
-	.blog-page .header{
-		margin-bottom: 0;
-	}
 	.blog-page .breadcrumb-sec,
 	.gift-card .breadcrumb-sec,
 	.archive .breadcrumb-sec{
