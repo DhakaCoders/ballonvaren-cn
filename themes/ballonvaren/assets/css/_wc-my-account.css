@@ -1113,6 +1113,9 @@ body.woocommerce-account .register-btn button[type="submit"]{
 }
 .register-pay-logo-wrap .payment-logo-crtl ul li{
     padding: 5px 0 8px 18px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .register-btn .reg-btn-crtl {
     margin-bottom: 22px;}
@@ -1698,6 +1701,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce-notices-wrapper{
         margin-bottom: 60px;
     }
+    body.hide-account-title .woocommerce-notices-wrapper{
+        margin-bottom:0px;
+    }
 }
 
 @media(max-width: 1499px){
@@ -1852,6 +1858,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce-account .register-title h3, 
     .login-info h3{
         font-size: 21px;
+    }
+    .page-grd-sec-wrp {
+        padding-top: 30px;
     }
     body.woocommerce-checkout .checkout-page-title h1{
         font-size:28px;
@@ -2025,6 +2034,9 @@ body.woocommerce-checkout section.checkout-top-sec{
         font-size: 14px;
     }
     /* -------------------- myaccount login-register-page ----------------------*/
+    .page-grd-sec-wrp{
+        padding-top:0px;
+    }
     body.woocommerce-account .account-page-title{
         padding-top: 0px;
     }
@@ -2053,7 +2065,8 @@ body.woocommerce-checkout section.checkout-top-sec{
         margin-bottom:13px;
     }
     .signup-notification,
-    body.woocommerce-account .woocommerce .u-column1 h4 + div{
+    body.woocommerce-account .woocommerce .u-column1 h4 + div,
+    .register-top-title{
         border-bottom: 1px solid #ECF1F4;
     }
     body.woocommerce-account #login_register #customer_login .u-column1 h4 + div{
