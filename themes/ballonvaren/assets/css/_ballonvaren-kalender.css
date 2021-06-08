@@ -83,7 +83,6 @@
 }
 .events-grid-sec{
 	padding-top: 120px;
-	padding-bottom: 65px;
 	position: relative;
 }
 .events-grid-cntlr{
@@ -157,7 +156,10 @@
 .element-grid-heading{
 	margin-bottom: 13px;
 }
-.event-grid-item-inr span{
+.event-date {
+	position: relative;
+}
+.event-date span{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
@@ -165,7 +167,15 @@
 	color: #EE3E15;
 	display: inline-block;
 	margin-bottom: 30px;
-	padding-left: 10px;
+	padding-left: 33px;
+}
+.event-date i {
+}
+.event-date i{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .event-grid-item-inr p{
 	font-size: 16px;
@@ -224,7 +234,7 @@
 	.event-grid-item-inr p {
 	    font-size: 15px;
 	}
-	.event-grid-item-inr span {
+	.event-date span {
 	    font-size: 15px;
 	    margin-bottom: 25px;
 	}
@@ -243,7 +253,7 @@
 	    height: auto;
 	    width: 185px;
 	}
-	.event-grid-item-inr span {
+	.event-date span {
 	    font-size: 14px;
 	    margin-bottom: 15px;
 	}
@@ -302,7 +312,7 @@
 	.events-grid-item-inner ul li .event-grid-item-inr {
 	    padding: 24px 20px 27px;
 	}
-	.event-grid-item-inr span {
+	.event-date span {
 	    margin-bottom: 10px;
 	}
 }
