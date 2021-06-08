@@ -1,9 +1,9 @@
 .blog-page .header{
 	margin-bottom: 0;
 }
-/* .blog-page-sec{
-	padding-top: 35px;
-} */
+.blog-page-sec{
+	padding-bottom: 30px;
+}
 .news-overview-page-entry-hdr .page-entry-header{
 	margin-bottom: 34px;
 }
@@ -168,6 +168,10 @@
 .fl-pagi-blog-cntrl{
 	padding-top: 56px;
 	border-top: 1px solid #ECF1F4;	
+}
+.blog-page-sec .fl-pagi-cntlr,
+.product-page-cntlr .fl-pagi-cntlr{
+	padding-bottom: 34px;
 }
 
 
