@@ -40,10 +40,10 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 	
 	<?php endif; ?>
     <div class="register-field-error">
-		<div class="contact-er-msg">
+		<div class="error-msg">
           <span>
-            <i><svg class="error-icon-svg" width="18" height="18" viewBox="0 0 18 18" fill="#ffffff">
-            <use xlink:href="#error-icon-svg"></use> </svg></i>
+            <i><svg class="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+            <use xlink:href="#error-msg-icon-svg"></use> </svg></i>
             Oh snap! Het formulier lijkt niet correct!</span>
         </div>
 	</div>
@@ -225,13 +225,13 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 				<h3>Persoonlijke gegevens</h3>
 				<div class="form-row form-row-wide" id="billing_personal_recom">
 					<span class="woocommerce-input-wrapper">
-						<input type="radio" id="personal_recom" name="billing_personal_recom" value="Persoonlijke aanbevelingen">&nbsp;Persoonlijke aanbevelingen
+						<input type="checkbox" id="personal_recom" name="billing_personal_recom" value="Persoonlijke aanbevelingen">&nbsp;Persoonlijke aanbevelingen
 					</span>
 					<p>Informatie en aanbevelingen over diensten en artikelen die passen bij jouw eerdere bestellingen. En soms vragen we om je mening over onze producten en diensten.</p>
 				</div>
 				<div class="form-row form-row-wide" id="billing_acttion_insp">
 					<span class="woocommerce-input-wrapper">
-						<input type="radio" id="acttion_insp" name="billing_acttion_insp" value="Acties en inspiratie">&nbsp;Acties en inspiratie
+						<input type="checkbox" id="acttion_insp" name="billing_acttion_insp" value="Acties en inspiratie">&nbsp;Acties en inspiratie
 					</span>
 					<p>Voordeel- en winacties, bergen inspiratie, maar ook verrassende aanbevelingen op basis van wat je bekijkt en koopt. Zo loop je nooit iets mis!</p>
 				</div>

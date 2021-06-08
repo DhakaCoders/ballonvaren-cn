@@ -225,9 +225,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Sabbir*/
-
+if (windowWidth <= 479){
+if( $('.bnProcessGridItemsSlider').length ){
+    $('.bnProcessGridItemsSlider').slick({
+      dots: true,
+      arrows:false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1,      
+    });
+}
+}
 
 /*start of Niaz*/
+
+$(".type-order-format .woocommerce-input-wrapper span").each(function(){
+        $(this).append('<div class="radio-custom"></div>')
+  });
+$(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
+        $(this).append('<div class="checkbox-custom"></div>')
+  });
 
 //products counter
 if( $('.qty').length ){
@@ -465,7 +485,7 @@ if( $('.humbergar').length ){
   if (windowWidth <= 992){
     if($('.xs-lang-icon').length){
       $('.xs-lang-icon').click(function(){
-        $(this).parents().toggleClass('xs-lang');
+        $(this).parent().toggleClass('xs-lang');
       });
     }
   }

@@ -128,6 +128,7 @@
 }
 .fl-product-grd {
 	background: #fff;
+	position: relative;
 }
 .dft-hm-product-module .hmProdctGrdsSlideItme .fl-product-grd{
 	border: 4px solid #F8F8F8;
@@ -177,6 +178,10 @@
     padding-bottom: 24px;
 }
 .fl-pro-grd-price{
+	text-transform: uppercase;
+	color: #1DB4B2;
+	font-weight: 500;
+	font-size: 16px;
 	padding-bottom: 24px;
 	border-bottom: 1px solid #ECF1F4;
 	margin-bottom: 30px;
@@ -208,7 +213,7 @@
 .xoo-cp-pprice del span.woocommerce-Price-amount bdi,
 .xoo-cp-pprice del span.woocommerce-Price-amount bdi span {
 	position: relative;
-    color:#1DB4B2!important;
+    color:#909BA5!important;
 }
 .single-product .single-price-total del + ins span.woocommerce-Price-amount bdi,
 .single-product .single-price-total del + ins span.woocommerce-Price-amount bdi span,
@@ -225,7 +230,7 @@
 .xoo-cp-pprice del span.woocommerce-Price-amount bdi:after{
 	position: absolute;
 	content: "";
-	background: #ee3e15;
+	background: #909BA5;
 	width: 100%;
 	height: 1px;
 	left: 0;
@@ -619,6 +624,15 @@
 	.fl-pagi-cntlr{
 		padding-bottom: 62px;
 	}
+	.fl-pro-grd-price,
+	.fl-pro-grd-price span.woocommerce-Price-amount bdi, 
+	.fl-pro-grd-price span.woocommerce-Price-amount bdi span, 
+	.fl-pro-grd-price del span.woocommerce-Price-amount bdi, 
+	.fl-pro-grd-price del span.woocommerce-Price-amount bdi span, 
+	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi, 
+	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span{
+		font-size: 15px!important;
+	}
 }
 
 @media (max-width: 1599px) {
@@ -688,6 +702,16 @@
 		width: 190px;
 		height: 48px;
 	}
+	.fl-pro-grd-price,
+	.fl-pro-grd-price span.woocommerce-Price-amount bdi, 
+	.fl-pro-grd-price span.woocommerce-Price-amount bdi span, 
+	.fl-pro-grd-price del span.woocommerce-Price-amount bdi, 
+	.fl-pro-grd-price del span.woocommerce-Price-amount bdi span, 
+	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi, 
+	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span{
+		font-size: 14px!important;
+	}
+
 }
 
 @media (max-width: 1299px) {
@@ -822,10 +846,11 @@
 	.product-categories .cat-item.current-cat a:after, .sidebar-widget #cat_filterform ul li lable:after{
         top: 1px;
     }
-    .fl-products-cntlr ul.products{
+    .archive .fl-products-cntlr ul.products{
     	margin: 0 0!important;
+    	padding-bottom: 53px!important;
     }
-    .fl-products-cntlr ul.products > li{
+    .archive .fl-products-cntlr ul.products > li{
     	width: 100%!important;
     	padding: 0 0 40px!important;
     }
