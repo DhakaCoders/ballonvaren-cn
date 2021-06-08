@@ -71,6 +71,7 @@
 .bn-process-grid-items{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin: 0 -12px;
 	position: relative;
 	z-index: 2;

@@ -992,6 +992,9 @@
     .archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title, .single-product .fl-pro-grd-title{
     	font-size: 21px;
     }
+    .fl-pagi-cntlr ul li{
+		padding: 0 13px;
+	}
 }
 
 @media (max-width: 359px) {
