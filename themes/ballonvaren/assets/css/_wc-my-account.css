@@ -51,7 +51,7 @@ body.woocommerce-account .account-page-title h1{
     border-bottom: 1px solid #ECF1F4;
     padding-bottom: 30px;
     text-transform: uppercase;
-    margin-bottom: 67px;
+    margin-bottom: 60px;
     letter-spacing: -0.02em;
 }
 body.woocommerce-account .account-page-title h1 + p{
@@ -107,11 +107,11 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     margin-bottom: 11px;
 }
 body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-    width: 34.1%;
+    width: 34%;
     padding-right: 24px;
 }
 body.woocommerce-account .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-    width:65.9%;
+    width:66%;
 }
 body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a:after{
     content: "";
@@ -183,18 +183,12 @@ body.woocommerce-orders .innerpage-con-wrap{
     max-width:100%;
     width: 100%;
 }
-body.woocommerce-edit-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-    max-width:32%;
-}
 
-body.woocommerce-edit-account .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-    max-width:68%;
-}
 body.woocommerce-edit-account .account-page-title h1,
 body.woocommerce-orders .account-page-title h1,
 body.loggedin-winkelmandje-crtl .default-page-con h1{
     border-bottom: 1px solid #ECEEEF!important;
-    padding-bottom:16px!important;
+    padding-bottom:26px!important;
 }
 
 /* -------------- back-button ----------------*/
@@ -394,7 +388,6 @@ body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
 body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend{
     border-bottom: 1px solid #ece9e9;
     margin-bottom: 32px;
-    text-transform: uppercase;
 }
 body.woocommerce-edit-account .woocommerce-EditAccountForm > p {
     text-align: right;
@@ -410,8 +403,47 @@ body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="subm
     clear: both;
 }
 
+/*body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::placeholder{
+    color:red!important;
+    opacity: 1;
+}
 
-
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::-webkit-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::-webkit-input-placeholder{
+    color:red!important;
+    opacity: 1;
+}
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]::-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]::-moz-placeholder{
+    color:red!important;
+    opacity: 1;
+}
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]:-ms-input-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]:-ms-input-placeholder{
+    color:red!important;
+    opacity: 1;
+}
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="text"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="tel"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="number"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="email"]:-moz-placeholder,
+body.woocommerce-edit-account .woocommerce form.woocommerce-EditAccountForm .form-row input[type="password"]:-moz-placeholder{
+    color:red!important;
+    opacity: 1;
+}*/
 
 
 /* ---------------------- my account login ragister page---------------------------*/
@@ -485,7 +517,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
 }
 
 
-body.woocommerce-account .woocommerce input[type="text"]::placeholder, 
+/*body.woocommerce-account .woocommerce input[type="text"]::placeholder, 
 body.woocommerce-account .woocommerce input[type="email"]::placeholder,
 body.woocommerce-account .woocommerce input[type="tel"]::placeholder, 
 body.woocommerce-account .woocommerce input[type="password"]::placeholder, 
@@ -525,7 +557,7 @@ body.woocommerce-account .woocommerce input[type="password"]::-webkit-input-plac
 body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
     color:#909BA5!important;
     opacity:1;
-}
+}*/
 body.woocommerce-account .login-register-wrap a{
     color: #909BA5;
     text-decoration: underline;

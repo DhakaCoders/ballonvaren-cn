@@ -219,51 +219,61 @@ $smedias = get_field('social_media', 'options');
                   </div>
                   <div class="hdr-social-media has-svg">
                     <ul class="reset-list">
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="facebook-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#facebook-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="messenger-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#messenger-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="twitter-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#twitter-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="linkedin-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#linkedin-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="#">
-                          <i>
-                            <svg class="instagram-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                              <use xlink:href="#instagram-svg"></use> 
-                            </svg>
-                          </i>
-                        </a>
-                      </li>
+                  <?php if( !empty($smedias['facebook_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
+                      <i>
+                        <svg class="facebook-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#facebook-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['messenger_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['messenger_url']; ?>">
+                      <i>
+                        <svg class="messenger-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#messenger-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['twitter_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
+                      <i>
+                        <svg class="twitter-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#twitter-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['linkedin_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
+                      <i>
+                        <svg class="linkedin-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#linkedin-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['instagram_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
+                      <i>
+                        <svg class="instagram-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#instagram-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                <?php endif; ?>
                     </ul>
                   </div>
                 </div> 
@@ -285,7 +295,7 @@ $smedias = get_field('social_media', 'options');
                 <div class="hdr-contact-menu hide-md">
                   <ul class="reset-list">
                     <li class="hdr-cart">
-                      <a href="#">
+                      <a href="<?php echo wc_get_cart_url(); ?>">
                         <i>
                           <svg class="cart-icon-svg" width="26" height="28" viewBox="0 0 26 28" fill="#EE3E15">
                             <use xlink:href="#cart-icon-svg"></use> 
@@ -294,7 +304,7 @@ $smedias = get_field('social_media', 'options');
                       </a>
                     </li>
                     <li class="hdr-contact-btn">
-                      <a class="fl-navyblue-btn" href="#">contact</a>
+                      <a class="fl-navyblue-btn" href="<?php echo esc_url( home_url('contact') ); ?>"><?php _e( 'contact', 'ballonvaren' ); ?></a>
                     </li>
                   </ul>
                 </div>
@@ -302,11 +312,11 @@ $smedias = get_field('social_media', 'options');
                   <div class="humbergar">
                     <div class="hambergar-icon">
                       <i><img src="<?php echo THEME_URI; ?>/assets/images/humbergar-icon.svg"></i>
-                      <span>menu</span>
+                      <span><?php _e( 'menu', 'ballonvaren' ); ?></span>
                     </div>
                     <div class="close-icon">
                       <i><img src="<?php echo THEME_URI; ?>/assets/images/xs-close-icon.svg"></i>
-                      <span>SLUIT</span>
+                      <span><?php _e( 'SLUIT', 'ballonvaren' ); ?></span>
                     </div>
                   </div>
                 </div>
@@ -335,51 +345,61 @@ $smedias = get_field('social_media', 'options');
         <div class="xs-social-menu">
           <div class="hdr-social-media has-svg">
             <ul class="reset-list">
-              <li>
-                <a target="_blank" href="#">
-                  <i>
-                    <svg class="facebook-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                      <use xlink:href="#facebook-svg"></use> 
-                    </svg>
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="#">
-                  <i>
-                    <svg class="messenger-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                      <use xlink:href="#messenger-svg"></use> 
-                    </svg>
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="#">
-                  <i>
-                    <svg class="twitter-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                      <use xlink:href="#twitter-svg"></use> 
-                    </svg>
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="#">
-                  <i>
-                    <svg class="linkedin-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                      <use xlink:href="#linkedin-svg"></use> 
-                    </svg>
-                  </i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="#">
-                  <i>
-                    <svg class="instagram-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
-                      <use xlink:href="#instagram-svg"></use> 
-                    </svg>
-                  </i>
-                </a>
-              </li>
+                <?php if( !empty($smedias['facebook_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
+                      <i>
+                        <svg class="facebook-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#facebook-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['messenger_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['messenger_url']; ?>">
+                      <i>
+                        <svg class="messenger-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#messenger-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['twitter_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
+                      <i>
+                        <svg class="twitter-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#twitter-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['linkedin_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
+                      <i>
+                        <svg class="linkedin-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#linkedin-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['instagram_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
+                      <i>
+                        <svg class="instagram-svg" width="24" height="24" viewBox="0 0 24 24" fill="#909BA5">
+                          <use xlink:href="#instagram-svg"></use> 
+                        </svg>
+                      </i>
+                    </a>
+                  </li>
+                <?php endif; ?>
             </ul>
           </div>
           <div class="hdr-language">
@@ -398,10 +418,10 @@ $smedias = get_field('social_media', 'options');
         <div class="xs-contact-menu">
           <ul class="reset-list">
             <li class="xs-cart">
-              <a class="fl-red-btn" href="#">Winkelmandje</a>
+              <a class="fl-red-btn" href="<?php echo wc_get_cart_url(); ?>"><?php _e( 'Winkelmandje', 'ballonvaren' ); ?></a>
             </li>
             <li class="xs-contact-btn">
-              <a class="fl-navyblue-btn" href="#">CONTACT</a>
+              <a class="fl-navyblue-btn" href="<?php echo esc_url( home_url('contact') ); ?>"><?php _e( 'CONTACT', 'ballonvaren' ); ?></a>
             </li>
           </ul>
         </div>
