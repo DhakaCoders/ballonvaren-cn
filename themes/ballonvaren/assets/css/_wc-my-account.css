@@ -1765,7 +1765,7 @@ body.woocommerce-checkout section.checkout-top-sec{
 
     /*  ----------------------------- myaccount login-register page ------------------------- */
     body.woocommerce-account .register-btn button[type="submit"]{
-        padding: 15px 106px!important;
+        padding: 15px 15px!important;
     }
     body.account-login-page .page-grd-sec-wrp{
         padding-bottom:210px;
@@ -2195,6 +2195,16 @@ body.woocommerce-checkout section.checkout-top-sec{
     .login-info-inr.slick-initialized .loginInfoSlideItem{
         display:block;
     }
+    body.hide-account-title .personal-info h3{
+        margin-top:30px;
+        margin-bottom: 10px;
+    }
+    body.woocommerce-account.hide-account-title #billing_personal_recom{
+        margin-bottom:6px;
+    }
+    body.woocommerce-account.hide-account-title .reg-btn-crtl p{
+        margin-bottom:5px!important;
+    }
     /*  ----------------------------- my  new account  page ------------------------- */
     .woocommerce input[type="text"], .woocommerce input[type="email"],
     .woocommerce input[type="tel"], 
@@ -2222,6 +2232,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.hide-account-title.woocommerce-account .register-title h3{
         padding-bottom: 17px!important;
         margin-bottom: 20px;
+    }
+    body.hide-account-title.woocommerce-account #billing_first_name_field{
+        margin-bottom:10px;
     }
     body.woocommerce-account.hide-account-title .woocommerce form .form-row {
         margin-bottom: 15px;
@@ -2263,8 +2276,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.hide-account-title #billing_last_name_field label{
         display: none;
     }
-    body.woocommerce-account .register-title h3, .login-info h3 {
-        font-size: 19px;
+    body.woocommerce-account .register-title h3, .login-info h3,
+    body.hide-account-title .personal-info h3{
+        font-size: 22px;
     }
     .woocommerce-input-wrapper span {
         padding-left: 25px;
@@ -2758,9 +2772,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     /*  ----------------------------- my account new page ------------------------- */
 
-    body.woocommerce-account .register-title h3, .login-info h3 {
+   /* body.woocommerce-account .register-title h3, .login-info h3 {
         font-size: 16px;
-    }
+    }*/
     .same-as-shipping-address, 
     .login-info p:first-child, 
     .woocommerce-form .form-row .woocommerce-form__label-for-checkbox{
