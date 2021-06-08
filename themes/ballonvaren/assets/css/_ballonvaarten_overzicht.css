@@ -128,6 +128,7 @@
 }
 .fl-product-grd {
 	background: #fff;
+	position: relative;
 }
 .dft-hm-product-module .hmProdctGrdsSlideItme .fl-product-grd{
 	border: 4px solid #F8F8F8;
@@ -822,10 +823,11 @@
 	.product-categories .cat-item.current-cat a:after, .sidebar-widget #cat_filterform ul li lable:after{
         top: 1px;
     }
-    .fl-products-cntlr ul.products{
+    .archive .fl-products-cntlr ul.products{
     	margin: 0 0!important;
+    	padding-bottom: 53px!important;
     }
-    .fl-products-cntlr ul.products > li{
+    .archive .fl-products-cntlr ul.products > li{
     	width: 100%!important;
     	padding: 0 0 40px!important;
     }

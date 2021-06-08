@@ -56,16 +56,16 @@
 	padding: 0 12px 59px!important;
 	width: 33.3333%!important;	
 }
-.blog-grid-tag{
+.blog-grid-tag, .onsale-tag{
 	position: absolute;
 	z-index: 2;
 	top: 10px;
 	left: 10px;
 }
-.spotlight .blog-grid-tag span{
+.spotlight .blog-grid-tag span, .spotlight .onsale-tag span{
 	background-color: #fdc935;
 }
-.blog-grid-tag span{
+.blog-grid-tag span, .onsale-tag span{
 	padding: 7px 11px;
 	background-color: #e70048;
 	font-size: 13px;
