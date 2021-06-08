@@ -1,3 +1,6 @@
+.product-page-cntlr {
+	padding-bottom: 30px;
+}
 .ballonvaarten-overzicht-page-entry-hdr .page-entry-header{
 	margin-bottom: 32px;
 }
@@ -621,8 +624,9 @@
 		top: -65px;
 		height: 277px;
 	}
-	.fl-pagi-cntlr{
-		padding-bottom: 62px;
+	.blog-page-sec .fl-pagi-cntlr,
+	.product-page-cntlr .fl-pagi-cntlr{
+		padding-bottom: 32px;
 	}
 	.fl-pro-grd-price,
 	.fl-pro-grd-price span.woocommerce-Price-amount bdi, 
@@ -656,8 +660,9 @@
 		padding-top: 42px!important;
 		margin-bottom: 42px!important;
 	}
-	.fl-pagi-cntlr{
-		padding-bottom: 60px;
+	.blog-page-sec .fl-pagi-cntlr,
+	.product-page-cntlr .fl-pagi-cntlr{
+		padding-bottom: 30px;
 	}
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 50px 41px;
@@ -695,8 +700,9 @@
 		height: 247px;
 		left: -125px;
 	}
-	.fl-pagi-cntlr{
-		padding-bottom: 58px;
+	.blog-page-sec .fl-pagi-cntlr,
+	.product-page-cntlr .fl-pagi-cntlr{
+		padding-bottom: 28px;
 	}
 	.cad-pg-lnk-btn{
 		width: 190px;
@@ -744,8 +750,9 @@
 		padding-top: 26px!important;
 		margin-bottom: 26px!important;
 	}
-	.fl-pagi-cntlr{
-		padding-bottom: 56px;
+	.blog-page-sec .fl-pagi-cntlr,
+	.product-page-cntlr .fl-pagi-cntlr{
+		padding-bottom: 26px;
 	}
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 40px 41px;
@@ -790,8 +797,9 @@
 		height: 217px;
 		left: -109px;
 	}
-	.fl-pagi-cntlr{
-		padding-bottom: 54px;
+	.blog-page-sec .fl-pagi-cntlr,
+	.product-page-cntlr .fl-pagi-cntlr{
+		padding-bottom: 24px;
 	}
 }
 
@@ -816,8 +824,9 @@
 		margin-bottom: 10px!important;
 		width: 100%!important;
 	}
-	.fl-pagi-cntlr{
-		padding-bottom: 52px;
+	.blog-page-sec .fl-pagi-cntlr,
+	.product-page-cntlr .fl-pagi-cntlr{
+		padding-bottom: 22px;
 	}
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 33px 41px;
@@ -893,8 +902,9 @@
     .cadeaubonnen-pg-lnk-cntrl p:last-of-type{
 		display: block;
 	}
-    .fl-pagi-cntlr{
-		padding-bottom: 50px;
+    .blog-page-sec .fl-pagi-cntlr,
+    .product-page-cntlr .fl-pagi-cntlr{
+		padding-bottom: 17px;
 	}
 	.cad-pg-lnk-btn{
 		height: 45px;
