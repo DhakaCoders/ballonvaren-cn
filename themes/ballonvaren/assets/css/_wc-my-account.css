@@ -2118,7 +2118,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce input[type="password"], 
     body.woocommerce-account .woocommerce textarea{
         height:48px;
-        border-width: 2px!important;
+        /*border-width: 2px!important;*/
 
     }
 
@@ -2206,13 +2206,21 @@ body.woocommerce-checkout section.checkout-top-sec{
         /*border-width: 2px!important;*/
     }
     body.hide-account-title .register-top-title{
-        margin-bottom: 0px;
+        margin-bottom: 27px;
+    }
+    body.hide-account-title .register-top-title p{
+        margin-bottom: 22px;
+    }
+    body.woocommerce-account .register-top-title h3{
+        border-bottom:none;
+        margin-bottom:0px;
+        padding-bottom:25px;
     }
     body.woocommerce-account.hide-account-title .register-field-error{
         margin-bottom:45px;
     }
     body.hide-account-title.woocommerce-account .register-title h3{
-        padding-bottom: 20px!important;
+        padding-bottom: 17px!important;
         margin-bottom: 20px;
     }
     body.woocommerce-account.hide-account-title .woocommerce form .form-row {
