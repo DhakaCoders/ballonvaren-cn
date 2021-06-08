@@ -1504,7 +1504,8 @@ Gallery design
 
 	#news-details .dfp-promo-module-title,
 	#vip .dfp-promo-module-title,
-	#vip .cta-title{
+	#vip .cta-title,
+	#ballonvaren-voor-bedrijven .cta-title{
 		text-transform: inherit;
 	}
 
