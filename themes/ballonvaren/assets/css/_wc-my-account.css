@@ -687,6 +687,9 @@ body.account-login-page .page-grd-sec-wrp .container{
 body.woocommerce-account #login_register #customer_login .u-column2 .signup-notification p{
     margin-bottom: 24px;
 }
+.page-grd-sec-wrp {
+    padding-top: 102px;
+}
 /*  ----------------------------- my new account page ------------------------- */
 
 body.hide-account-title .woocommerce-notices-wrapper{
@@ -944,8 +947,8 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 }
 
 .checkbox-custom{
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     border:1px solid #BFBFBF;
     /*box-shadow: inset 0px 2px 2px -1px rgb(74 74 104 / 10%);*/
     border-radius: 3px;
@@ -989,7 +992,7 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
 .login-info p:first-child,
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox{
     position: relative;
-    padding-left: 30px;
+    padding-left: 25px;
     font-size: 16px;
 }
 .same-as-shipping-address input,
@@ -1749,13 +1752,14 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.account-login-page .page-grd-sec-wrp{
         padding-bottom:210px;
     }
+    body.woocommerce-account .page-title h1{
+        margin-bottom:50px;
+    }
     /*  .loggedin-deshboard-crtl .innerpage-con-wrap, 
     .hide-account-title .innerpage-con-wrap{
         max-width:800px;
     }*/
-    body.woocommerce-account .woocommerce-notices-wrapper {
-        margin-bottom: 40px;
-    }
+ 
     /* ------------------- woocommerce-cart -------------------*/
     .woocommerce-cart .woocommerce .cart-is-emtpy strong{
         font-size:40px;
@@ -1842,6 +1846,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.account-login-page .page-grd-sec-wrp{
         padding-bottom:160px;
+    }
+    body.woocommerce-account .woocommerce-notices-wrapper{
+        margin-bottom: 0px;
     }
     /* ------------------ edit account page ------------------------ */
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
@@ -2030,8 +2037,15 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-account #login_register #customer_login .u-column2 h4,
     body.woocommerce-account #login_register #customer_login .u-column1 h4{
-        font-size: 24px;
+        font-size: 30px;
         margin-bottom:13px;
+    }
+    .signup-notification,
+    body.woocommerce-account .woocommerce .u-column1 h4 + div{
+        border-bottom: 1px solid #ECF1F4;
+    }
+    body.woocommerce-account #login_register #customer_login .u-column1 h4 + div{
+        padding-bottom: 5px;
     }
     body.loggedin-deshboard-crtl article.default-page-con {
         padding-left: 12px!important;
@@ -2049,18 +2063,21 @@ body.woocommerce-checkout section.checkout-top-sec{
         padding-top:0px;
     }
     body.woocommerce-account .woocommerce-form#mail_checker{
-        padding-top: 16px;
+        padding-top: 0px;
     }
     body.woocommerce-account .page-title{
         display: none;
     }
     body.woocommerce-account .woocommerce-form{
         margin:0;
-        padding-bottom:50px;
+        padding-bottom:35px;
     }
     body.woocommerce-account .woocommerce-form{
         border-top:none;
-        padding-top: 5px;
+        padding-top: 0px;
+    }
+    #register_next{
+        margin-top: 24px!important;
     }
     body.woocommerce-account #login_register #customer_login{
         padding-bottom:0px;
@@ -2159,9 +2176,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce input[type="password"], 
     .woocommerce textarea,
     body.woocommerce-account .woocommerce form .form-row select{
-        padding-left: 15px;
-        font-size:14px;
-        border-width: 2px!important;
+        /*padding-left: 15px;*/
+        /*font-size:14px;*/
+        /*border-width: 2px!important;*/
     }
     body.hide-account-title .register-top-title{
         margin-bottom: 0px;
@@ -2653,20 +2670,20 @@ body.woocommerce-checkout section.checkout-top-sec{
     .chckout-prgrs-title{
         font-size: 12px;
     }
-    .woocommerce input[type="text"], .woocommerce input[type="email"],
+  /*  .woocommerce input[type="text"], .woocommerce input[type="email"],
     .woocommerce input[type="tel"], 
     .woocommerce input[type="password"], 
     .woocommerce textarea,
     body.woocommerce-account .woocommerce form .form-row select{
         font-size:12px;
-    }
+    }*/
     body.woocommerce-edit-account .default-page-con{
         padding-top:0px!important;
     }
     body.woocommerce-account .woocommerce button[type=submit], 
     body.woocommerce-account .woocommerce button[type=button]{
         width:100%!important;
-        font-size: 12px!important;
+        /*font-size: 12px!important;*/
     }
     body.woocommerce-account #customer_login .u-column1.col-1 > h2, 
     body.woocommerce-account #customer_login .u-column2.col-2 > h2{
