@@ -169,13 +169,12 @@
 	margin-bottom: 30px;
 	padding-left: 33px;
 }
-.event-date i {
-}
 .event-date i{
 	display: inline-block;
 	position: absolute;
 	left: 0;
 	top: 0;
+	margin-top: -1px;
 }
 .event-grid-item-inr p{
 	font-size: 16px;
