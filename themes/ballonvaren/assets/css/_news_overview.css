@@ -169,7 +169,8 @@
 	padding-top: 56px;
 	border-top: 1px solid #ECF1F4;	
 }
-.blog-page-sec .fl-pagi-cntlr{
+.blog-page-sec .fl-pagi-cntlr,
+.product-page-cntlr .fl-pagi-cntlr{
 	padding-bottom: 34px;
 }
 
