@@ -631,7 +631,7 @@
 	.fl-pro-grd-price del span.woocommerce-Price-amount bdi span, 
 	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi, 
 	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span{
-		font-size: 15px;
+		font-size: 15px!important;
 	}
 }
 
@@ -709,7 +709,7 @@
 	.fl-pro-grd-price del span.woocommerce-Price-amount bdi span, 
 	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi, 
 	.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span{
-		font-size: 14px;
+		font-size: 14px!important;
 	}
 
 }
