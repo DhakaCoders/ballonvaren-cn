@@ -161,7 +161,7 @@
 .fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
 .single-product .fl-pro-grd-title{
 	font-size: 24px;
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 	line-height: 1.1;
     font-weight: 700;
 	color: #2C113E;
@@ -180,14 +180,18 @@
 .dft-hm-product-module .fl-pro-grd-price{
     padding-bottom: 24px;
 }
-.fl-pro-grd-price{
+.fl-pro-grd-price{	
+	padding-bottom: 24px;
+	border-bottom: 1px solid #ECF1F4;
+	margin-bottom: 30px;
+}
+.fl-pro-grd-price span.Vanaf{
 	text-transform: uppercase;
 	color: #1DB4B2;
 	font-weight: 500;
 	font-size: 16px;
-	padding-bottom: 24px;
-	border-bottom: 1px solid #ECF1F4;
-	margin-bottom: 30px;
+	margin-right: 2px;
+	line-height: 1;
 }
 .fl-pro-grd-price span.woocommerce-Price-amount bdi,
 .fl-pro-grd-price span.woocommerce-Price-amount bdi span,
@@ -207,7 +211,7 @@
 .single-product .single-price-total span.woocommerce-Price-amount bdi,
 .single-product .single-price-total del span.woocommerce-Price-amount bdi span,
  .single-product .single-price-total ins span.woocommerce-Price-amount bdi span {
-	margin:  0 5px!important;
+	margin-right: 4px!important;
 }
 .fl-pro-grd-price del span.woocommerce-Price-amount bdi,
 .fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
@@ -628,7 +632,7 @@
 	.product-page-cntlr .fl-pagi-cntlr{
 		padding-bottom: 32px;
 	}
-	.fl-pro-grd-price,
+	.fl-pro-grd-price span.Vanaf,
 	.fl-pro-grd-price span.woocommerce-Price-amount bdi, 
 	.fl-pro-grd-price span.woocommerce-Price-amount bdi span, 
 	.fl-pro-grd-price del span.woocommerce-Price-amount bdi, 
@@ -682,11 +686,23 @@
 	.fl-products-cntlr ul.products > li{
 		padding: 0 8px 40px!important;
 	}
+	.fl-pro-grd-price{
+		padding-bottom: 22px;
+		margin-bottom: 27px;
+	}
+	.archive .fl-pro-grd-des{
+		padding: 27px 17px 30px;
+	}
 	.archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title, .single-product .fl-pro-grd-title{
 		font-size: 20px;
 	}
 	.fl-pro-grd-des p{
 		font-size: 15px;
+	}
+	.fl-pro-grd-des > ul > li:after{
+		width: 9px;
+		height: 9px;
+		top: 4px;
 	}
 	.fl-products-cntlr ul li.cadeaubonnen-page-link{
 		padding-top: 34px!important;
@@ -708,7 +724,7 @@
 		width: 190px;
 		height: 48px;
 	}
-	.fl-pro-grd-price,
+	.fl-pro-grd-price span.Vanaf,
 	.fl-pro-grd-price span.woocommerce-Price-amount bdi, 
 	.fl-pro-grd-price span.woocommerce-Price-amount bdi span, 
 	.fl-pro-grd-price del span.woocommerce-Price-amount bdi, 
