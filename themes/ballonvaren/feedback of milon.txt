@@ -2,61 +2,100 @@ Contact
 ----------------------
 Desktop-->
 
-1. https://prnt.sc/13pe2dd
+1. https://prnt.sc/13pe2dd  
 	ai class ta change kore daw, bcoz ata akta common module.
-	 '.error-msg' ata class name daw
+	 '.error-msg' ata class name daw  
+
+	 -- > done
 
 2. https://prnt.sc/13pe6s7
 	error-msg box take hide kore dile top a gap thake, so gap ta erro-msg ar bottom a dite hobe.
-	bcoz ata first time thakbena , error hole show hobe ai div ta. 
+	bcoz ata first time thakbena , error hole show hobe ai div ta.  
+
+	<--- due
 
 3. i) https://prnt.sc/13peznx
    ii) https://prnt.sc/13pf3hs
 
-   img tag a use koro, r .svg img hobe
+   img tag a use koro, r .svg img hobe   
+
+   -- > done
 
 4. https://prnt.sc/13pf5nz
 	ai markup ta live site thake dekhe niye update koro. ai fix ta bar bar korte hosche keno? 
-	https://wordpress-520010-1818899.cloudwaysapps.com/contact/
+	https://wordpress-520010-1818899.cloudwaysapps.com/contact/ 
+
+	<--- due
 
 
 5. https://prnt.sc/13pfb15
 	wp-forms thake validation a ki span tag dey? 
 
-	live site thake dekhe update koro -- https://wordpress-520010-1818899.cloudwaysapps.com/contact/
+	live site thake dekhe update koro -- https://wordpress-520010-1818899.cloudwaysapps.com/contact/  
+
+	-- > done
 
 
 6. https://prnt.sc/13pfjv8
-	aktu upore uthbe. ata daw
+	aktu upore uthbe. ata daw 
+
+	-- > done
 
 
 
 7. https://prnt.sc/13pfsiz
 	i) hover a opacity badh diye fill color ata daw. 
-	ii) sob social icon a target blank hobe always , ata amader mone rakhte hobe.
+	ii) sob social icon a target blank hobe always , ata amader mone rakhte hobe.  
+
+	-- > done
 
 
 8. https://prnt.sc/13pfw4p
 	hover a always logo thake color dite hoy. 
-	logo ar black or orange 2 ta try koro , jeta valo lage rakho.
+	logo ar black or orange 2 ta try koro , jeta valo lage rakho. 
+
+	-- > done
 
 
 9. https://prnt.sc/13pfyeu
-	aikhane opacity te beshi hoye geche , ata rakho.
+	aikhane opacity te beshi hoye geche , ata rakho. 
+
+	-- > done
 	
 
 
 10. https://prnt.sc/13pg69b
-	bg ta design ar moto match koreni.
+	bg ta design ar moto match koreni. 
+
+	-- > done
 
 
 11. https://prnt.sc/13pg9h2
-	heading tar j j media te  responsive kora ache se se media ta dimention akare sub heading taro responsive korte hobe.
+	heading tar j j media te  responsive kora ache se se media ta dimention akare sub heading taro responsive korte hobe. 
+
+	-- > done
 
 
 
 12. https://prnt.sc/13pqbj7
 	normal desktop look a ai gap ta aktu komay rakhte hobe.
+
+	-- > done
+
+
+
+new--->
+
+1. ager 2 and 4 fix kora hoyni keno?
+
+2. https://prnt.sc/14om5fj
+
+	ai bg ta porer map section use korte hobe. jodi map section ta hide kore deoa hoy tahole sky bg ta niche neme thake.
+	section hide hole jeno sky bg tao chole jay
+	https://prnt.sc/14omaua
+
+
+
 
 
 Overons
@@ -66,29 +105,57 @@ Desktop-->
 1. https://prnt.sc/13pojr8
 	button ar text thik nei.
 
+	-- > done
+
 2. https://prnt.sc/13pozjs
 	img tag a use hobe and .svg img use hobe
+
+	-- > done
 
 
 3. https://prnt.sc/13pp6bc
 	ai bg ta mileni kata poreche. 
 
+	-- > done
 
 4. https://prnt.sc/13ppiou
 	text bere gele img ar vitore dhuke jay 
 
+	-- > done
+
 5. https://prnt.sc/13pplhr
 	i) img tag a use kore dekho j kono problem hosche naki ? jodi na hoy tahole img tag a daw
 	ii) ai img ta jpg use kore dekho problem na hole jpg use koro.
+
+	<--- due
 
 
 6. https://prnt.sc/13pq6vc
 	normal desktop view ar jonno ai img gulor height komate hobe. img kata poreche.
 	1499px a komao.
 
+	-- > done
+
 
 7. https://prnt.sc/13pq8wk
 	text barale lege jasche. 'br' tag badh diye max-width diye center a rakho.
+	-- > done
+
+
+new--->
+1. due --- ager 5 no
+
+2. https://prnt.sc/14onjhl
+	ai bg ta porer map section use korte hobe. jodi map section ta hide kore deoa hoy tahole sky bg ta niche neme thake.
+	section hide hole jeno sky bg tao chole jay
+	https://prnt.sc/14omaua
+
+3. https://prnt.sc/14oxsv3
+	radius missing
+
+4. https://prnt.sc/14oy7y2
+	hover korle amon daw
+
 
 
 
@@ -98,5 +165,14 @@ Desktop-->
 
 1. ager fixing ar moddhe ja ja pore
 
+
+New--- 
+
+1. ager page gulor fixing ar moddhe ja ja pore
+
+2. https://prnt.sc/14oyhed
+	hover color amon daw - https://prnt.sc/14oy7y2
+
+	
 
 N.B----->  sob fix hoye gele , browser check and responsive check kore dekhte hobe.

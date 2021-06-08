@@ -406,10 +406,10 @@ $('.wpforms-error').on('click', function(){
 /*start of Momin*/
 //Masonry
 
-      if( $('.onze-luch-grid').length ){
-        $('.onze-luch-grid').masonry({
+      if( $('.bn-masonry-gallery-grid').length ){
+        $('.bn-masonry-gallery-grid').masonry({
           // options
-          itemSelector: '.onze-luch-grid-item',
+          itemSelector: '.bn-masonry-gallery-grid-item',
         });
       };
 

@@ -425,6 +425,9 @@ body.woocommerce-cart.woocommerce-page .product-price > small{
 /**
 Empty cart
 */
+body.empty-cart .page-grd-sec-wrp{
+    padding-bottom: 115px;
+}
 .cart-is-emtpy{
 	padding-top: 70px;
 }
@@ -442,6 +445,7 @@ Empty cart
 	color: #243444;
 	margin-top: 48px;
 	margin-bottom: 24px;
+	text-transform: uppercase;
 }
 .cart-is-emtpy + .return-to-shop a {
     display: inline-block;
