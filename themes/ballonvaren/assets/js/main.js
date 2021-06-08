@@ -402,7 +402,6 @@ $('.wpforms-error').on('click', function(){
 /*start of Jahir*/
 
 
-
 /*start of Momin*/
 //Masonry
 
