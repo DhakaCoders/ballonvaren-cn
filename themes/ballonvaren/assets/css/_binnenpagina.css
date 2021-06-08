@@ -1502,6 +1502,12 @@ Gallery design
 	    height: 250px;
 	}
 
+	#news-details .dfp-promo-module-title,
+	#vip .dfp-promo-module-title,
+	#vip .cta-title{
+		text-transform: inherit;
+	}
+
 	#ballonvaren-voor-bedrijven .top-gallery-module .gallery-wrap {
 	    padding-bottom: 15px;
 	}
