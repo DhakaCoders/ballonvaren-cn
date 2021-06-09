@@ -245,7 +245,7 @@ if( $('.bnProcessGridItemsSlider').length ){
 $(".type-order-format .woocommerce-input-wrapper span").each(function(){
         $(this).append('<div class="radio-custom"></div>')
   });
-$(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
+$(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox,#billing_personal_recom .woocommerce-input-wrapper,#billing_acttion_insp .woocommerce-input-wrapper").each(function(){
         $(this).append('<div class="checkbox-custom"></div>')
   });
 
@@ -402,14 +402,13 @@ $('.wpforms-error').on('click', function(){
 /*start of Jahir*/
 
 
-
 /*start of Momin*/
 //Masonry
 
-      if( $('.onze-luch-grid').length ){
-        $('.onze-luch-grid').masonry({
+      if( $('.bn-masonry-gallery-grid').length ){
+        $('.bn-masonry-gallery-grid').masonry({
           // options
-          itemSelector: '.onze-luch-grid-item',
+          itemSelector: '.bn-masonry-gallery-grid-item',
         });
       };
 

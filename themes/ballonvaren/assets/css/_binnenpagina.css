@@ -785,6 +785,16 @@ Gallery design
 	height: 11px;
 }
 
+.news-details .blog-grds-inr{
+	position: relative;
+}
+.news-details .blog-grd-top-lft-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -50px;
+}
+
 
 
 /*ballonvaren voor bedrijven*/
@@ -1490,6 +1500,13 @@ Gallery design
 	}
 	.has-inline .gallery-icon-img {
 	    height: 250px;
+	}
+
+	#news-details .dfp-promo-module-title,
+	#vip .dfp-promo-module-title,
+	#vip .cta-title,
+	#ballonvaren-voor-bedrijven .cta-title{
+		text-transform: inherit;
 	}
 
 	#ballonvaren-voor-bedrijven .top-gallery-module .gallery-wrap {

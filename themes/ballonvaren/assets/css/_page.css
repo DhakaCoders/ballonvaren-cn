@@ -54,7 +54,8 @@
 .fl-pagi-cntlr ul li{
 	padding: 0 22px; 
 }
-.fl-pagi-cntlr ul li span.current{
+.fl-pagi-cntlr ul li span.current,
+.fl-pagi-cntlr ul li a.current{
 	background-color: #EE3E15;
 	color: #fff;
 	width: 28px;
@@ -70,6 +71,7 @@
     vertical-align: baseline;
     color: #243444;
     font-weight: 700;
+    font-size: 16px;
     letter-spacing: 0.04em;
     color: #909BA5;
 }
@@ -159,6 +161,13 @@
 	background-size: contain;
 }*/
 
+
+@media(max-width: 1399px){
+	.fl-pagi-cntlr ul li a, .fl-pagi-cntlr ul li span{
+		font-size: 15px;
+	}
+}
+
 @media(max-width: 1199px){
 	.breadcrumb-cntlr ul {
 		margin: 0 -15px;
@@ -171,5 +180,8 @@
 @media(max-width: 767px){
 	.breadcrumb-sec{
 		display: none;
+	}
+	.fl-pagi-cntlr ul li a, .fl-pagi-cntlr ul li span{
+		font-size: 14px;
 	}
 }
