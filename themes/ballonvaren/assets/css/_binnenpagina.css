@@ -176,6 +176,7 @@ hr{
 }
 .fl-dft-lftimg-rgtdes-lft{
 	min-height: 275px;
+	border-radius: 3px;
 }
 .fl-dft-lftimg-rgtdes-lft-img-scale{
 	position: relative;
