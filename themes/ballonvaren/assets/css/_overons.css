@@ -15,7 +15,6 @@ overons-msnry-grd-sec-wrp
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
-	/*min-height: 750px;*/
 	height: 100%;
 }
 .overons-msnry-grd-item{
@@ -109,6 +108,7 @@ overons-team-sec-wrp
 .overons-team-module {
     background: #FDCA35;
     padding: 60px 80px;
+    border-radius: 3px;
 }
 .overons-team-module .fl-h4{
 	display: block;
@@ -130,8 +130,9 @@ overons-team-sec-wrp
 }
 .boek-je-form-sec-wrp .fl-transparent-btn:hover,
 .overons-team-module a.fl-transparent-btn:hover{
-	border-color:#2C113E;
-	background:#2C113E; 
+	border-color:#fff;
+	background:#fff; 
+	color: #2C113E;
 }
 
 .overons-team-parachute-btm{

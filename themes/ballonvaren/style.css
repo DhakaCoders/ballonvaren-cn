@@ -14,3 +14,10 @@ Text Domain: ballonvaren
 @import url('assets/css/main.css');
 
 
+.calender-cntlr{
+	background: #ccc;
+}
+.calender-cntlr input{
+	border: 2px solid #000;
+	height: 50px;
+}
