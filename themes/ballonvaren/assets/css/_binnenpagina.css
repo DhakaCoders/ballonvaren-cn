@@ -1007,7 +1007,7 @@ Gallery design
 	}
 
 	.news-details .blog-grd-top-img {
-	    top: -235px;
+	    top: -228px;
 	    right: -62px;
 	}
 	.news-details .blog-grd-top-img img{
@@ -1098,7 +1098,7 @@ Gallery design
 	    top: -255px;
 	}
 	.news-details .blog-grd-top-img {
-	    top: -200px;
+	    top: -190px;
 	    right: -10px;
 	}
 	.news-details .blog-grd-top-img img {
@@ -1498,6 +1498,7 @@ Gallery design
 	}
 	.news-details .blog-grd-top-img{
 		top: -140px;
+		right: -40px;
 	}
 	.news-details .blog-grd-top-img img{
 		max-width: 105px;
