@@ -733,6 +733,7 @@ Gallery design
     max-width: 787px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 .news-details .page-entry-header h3{
 	text-align: center;
