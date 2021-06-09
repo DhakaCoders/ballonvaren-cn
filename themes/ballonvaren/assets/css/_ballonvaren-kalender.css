@@ -67,14 +67,14 @@
 	position: relative;
 	height: 629px;
 }
-.absolute-img-one{
+.bv-clndr-absolute-img-one{
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	margin-bottom: 152px;
     margin-left: -50px;
 }
-.absolute-img-two{
+.bv-clndr-absolute-img-two{
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -185,6 +185,15 @@
 .events-grid-item-inner ul li .event-grid-item .event-grid-item-inr p:last-of-type {
     margin-bottom: 0;
 }
+/*.space-bottom{
+	padding-bottom: 180px;
+}
+.space-bottom .events-grid-sec{
+	
+}*/
+.off-days-events-grid-cntlr .has-no-events{
+	padding-bottom: 30px;
+}
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 @media (max-width: 1699px){
@@ -192,11 +201,11 @@
 	    padding-right: 55px;
 	    padding-top: 60px;
 	}
-	.absolute-img-two img {
+	.bv-clndr-absolute-img-two img {
 	    height: auto;
 	    width: 200px;
 	}	
-	.absolute-img-two {
+	.bv-clndr-absolute-img-two {
 	    margin-right: -120px;
 	    margin-top: 515px;
 	}
@@ -247,10 +256,10 @@
 	.inline-bg-img {
 	    height: 585px;
 	}
-	.absolute-img-two {
+	.bv-clndr-absolute-img-two {
 	    margin-right: -110px;
 	}
-	.absolute-img-two img {
+	.bv-clndr-absolute-img-two img {
 	    height: auto;
 	    width: 185px;
 	}
@@ -266,11 +275,11 @@
 	}
 }
 @media(max-width: 1299px){
-	.absolute-img-two img {
+	.bv-clndr-absolute-img-two img {
 	    height: auto;
 	    width: 155px;
 	}
-	.absolute-img-two {
+	.bv-clndr-absolute-img-two {
 	    margin-right: -60px;
 	    margin-top: 500px;
 	}
@@ -296,14 +305,14 @@
 	.events-grid-sec .white-sky-bg {
 	    top: -258px;
 	}
-	.absolute-img-two {
+	.bv-clndr-absolute-img-two {
 	    margin-right: 0px;
 	    margin-top: 490px;
 	}
 	.off-days-sec:before {
 	    height: 545px;
 	}
-	.absolute-img-two img {
+	.bv-clndr-absolute-img-two img {
 	    height: auto;
 	    width: 125px;
 	}
@@ -324,12 +333,12 @@
 	.off-days-sec:before {
 	    height: 505px;
 	}
-	.absolute-img-two {
+	.bv-clndr-absolute-img-two {
 	    margin-right: 0px;
 	    margin-top: 445px;
 	}
 	
-	.absolute-img-two img {
+	.bv-clndr-absolute-img-two img {
 	    height: auto;
 	    width: 120px;
 	}
@@ -356,7 +365,7 @@
 	.bv-calender-dsc {
 	    margin-bottom: 30px;
 	}
-	.absolute-img-one{
+	.bv-clndr-absolute-img-one{
 		display: none;
 	}
 	.bv-calender-img, .bv-calender-dsc{
@@ -381,7 +390,7 @@
 	.bv-calender-dsc-inner h2 {
 	    font-size: 30px;
 	}
-	.absolute-img-two {
+	.bv-clndr-absolute-img-two {
 	    margin-right: 0;
 	    margin-top: 460px;
 	}
