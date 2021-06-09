@@ -730,6 +730,10 @@ Gallery design
 .news-details .page-entry-header {
     border-bottom: none;
     margin-bottom: 0;
+    max-width: 787px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 .news-details .page-entry-header h3{
 	text-align: center;
