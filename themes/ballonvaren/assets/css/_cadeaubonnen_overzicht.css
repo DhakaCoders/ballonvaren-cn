@@ -169,7 +169,7 @@
 		padding-bottom: 28px;
 	}
 	.gift-card .fl-pro-grd-des{
-		padding: 36px 15px 30px;
+		padding: 28px 15px 28px;
 	}
 	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi,
 	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol{
@@ -181,9 +181,6 @@
 }
 
 @media(max-width: 767px){
-	.gift-card .fl-pro-grd-des{
-		padding: 38px 20px 30px;
-	}
 	.cadeaubonnen-overzicht-sec{
 		padding-bottom: 36px;
 	}
@@ -212,7 +209,7 @@
 		padding-bottom: 43px;
 	}
 	.gift-card .fl-pro-grd-des{
-		padding: 40px 23px 30px;
+		padding: 33px 23px 29px;
 	}
 	.fl-pro-gift-cntlr{
 		min-height: 226px;
