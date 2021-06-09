@@ -293,6 +293,9 @@ body.woocommerce-orders .orders-crtl .code-text{
     text-transform: uppercase;
     font-family: Work Sans;
 }
+.orders-crtl .my-ac-time{
+    font-size: 14px;
+}
 body.woocommerce-orders .orders-crtl .my-ac-timea{
     margin-bottom:5px;
 }
