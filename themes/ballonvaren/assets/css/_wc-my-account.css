@@ -585,7 +585,7 @@ body.woocommerce-account .woocommerce button[type=button]{
     padding: 15px 15px!important;
     line-height: 1;
     width: 220px;
-    border-radius: 0px!important;
+    border-radius: 3px!important;
     height:48px;
 }
 /*body.woocommerce-account .woocommerce #register_next{
