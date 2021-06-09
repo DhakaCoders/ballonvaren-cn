@@ -80,7 +80,7 @@
 .events-grid-sec{
 	position: relative;
 }
-.events-grid-cntlr{
+.events-grid-item-inner{
 	padding-bottom: 70px;
 }
 .events-grid-item-inner ul{
@@ -392,6 +392,7 @@
 	}
 	.events-grid-item-inner ul li .event-grid-item-inr {
 	    padding: 33px 30px 27px;
+	    padding-right: 15px;
 	}
 	.events-grid-item-inner ul li:first-child{
 		padding-top: 0;
