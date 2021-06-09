@@ -315,7 +315,7 @@ body.woocommerce-cart .product-quantity .quantity.qty1 span{
 	top: 0;
 	left: 0;
 	bottom: 0;
-	background-color: #c6ddef;
+	background-color: #1DB4B2;
 	color: #fff;
 	font-weight: 500;
 	display: flex;
@@ -334,14 +334,14 @@ body.woocommerce-cart .product-quantity .quantity.qty1 span{
 }
 .quantity .minus{
     text-indent: -9999px;
-    background-image: url(../images/minus-white.svg);
+    background-image: url(../images/minus.svg);
     background-position: center center;
     background-repeat: no-repeat;
     
 }
 .quantity .plus{
     text-indent: -9999px;
-    background-image: url('../images/plus-white.svg')!important;
+    background-image: url('../images/plus.svg')!important;
     background-position: center center;
     background-repeat: no-repeat;
     right: 0;
