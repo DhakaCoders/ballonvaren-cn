@@ -123,7 +123,7 @@ if ( $customer_orders ) :
             </div>
             <?php endif; ?>
 			<?php 
-			echo "<div class='order-status color-green'>";
+			echo "<div class='order-status ".esc_html( $order->get_status() )."'>";
 			 echo esc_html( wc_get_order_status_name( $order->get_status() ) );
 			echo "</div>";
 			?>
