@@ -256,6 +256,12 @@ body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
     width: 80px;
     height: auto;
     margin-right: 23px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5 {
     font-size: 20px;
@@ -305,6 +311,8 @@ body.woocommerce-orders  .myac-pro-grd-item .myac-pro-grd-item-inr{
     align-items: center;
     padding-top: 33px;
     padding-bottom: 18px;
+    padding-left: 103px;
+    position: relative;
 }
 body.woocommerce-orders .order-details .order-status{
     padding-left: 30px;
@@ -1760,9 +1768,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
         padding-right: 20px;
     }
-    body.woocommerce-orders .faq-accordion-wrp ul li .orders-crtl{
-        padding-left:20px;
-    }
+
     body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
         margin-right: 20px;
     }
@@ -1821,11 +1827,6 @@ body.woocommerce-checkout section.checkout-top-sec{
         padding:12px 0px;
         font-size:15px;
     }
-   body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation, 
-   body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation,
-   body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-navigation{
-        padding-right:40px!important;
-   }
    .page-grd-sec-wrp {
         padding-top: 70px;
     }
@@ -1867,9 +1868,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn{
         font-size:14px!important;
     }
-    .order-details{
+   /* .order-details{
         margin-bottom:0px!important;
-    }
+    }*/
     body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn {
         font-size: 14px!important;
     }
