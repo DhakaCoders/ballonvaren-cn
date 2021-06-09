@@ -177,7 +177,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 				<p class="form-row form-row-wide" id="billing_email_2_field">
 					<label for="billing_email_2" class="">E-mailadres</label>
 					<span class="woocommerce-input-wrapper">
-						<input type="email" class="input-text " name="billing_email_2" id="billing_email_2" placeholder="" value="<?php echo isset($_POST['billing_email_2'])? $_POST['billing_email_2']:'';?>" placeholder="Bijv. jan@domein.be" required>
+						<input type="email" class="input-text " name="billing_email_2" id="billing_email_2" placeholder="Bijv. jan@domein.be" value="<?php echo isset($_POST['billing_email_2'])? $_POST['billing_email_2']:'';?>" required>
 					</span>
 				</p>
 				<p class="form-row form-row-first billing_gsm_number" id="billing_address_1_field">
@@ -189,7 +189,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 				<p class="form-row form-row-last billing_phone" id="billing_phone_field">
 					<label for="billing_phone" class="">Telefoon</label>
 					<span class="woocommerce-input-wrapper">
-						<input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="Bijv. 09 224 61 11" value="<?php echo isset($_POST['billing_phone'])? $_POST['billing_phone']:$setedtelephone;?>" autocomplete="tel" required>
+						<input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="Bijv. 09 224 61 11" value="<?php echo isset($_POST['billing_phone'])? $_POST['billing_phone']:$setedtelephone;?>" autocomplete="tel" placeholder="Bijv. 09 224 61 11" required>
 					</span>
 				</p>
 			</div>
