@@ -299,18 +299,27 @@
 	position: relative;
 }
 .hdr-contact-menu ul li.hdr-cart a span{
-	position: absolute;
-    top: -12px;
+	 position: absolute;
+    top: -15px;
     right: 0;
-    padding: 2px;
-    font-size: 11px;
-    line-height: 11px;
+    font-size: 10px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 3px;
-    background: #909BA5;
-    border-radius: 100%;
+    background: #EE3E15;
+    border-radius: 50% 50%;
     color: #fff;
-    display: inline-block;
-    vertical-align: baseline;
+    height: 18px;
+    width: 18px;
+    letter-spacing: -0.2px;
+    transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.hdr-contact-menu ul li.hdr-cart a:hover span{
+	background: #2C113E;
 }
 .hdr-contact-menu ul li.hdr-cart a:hover svg{
 	fill: #2C113E;
