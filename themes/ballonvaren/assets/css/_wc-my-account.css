@@ -2524,10 +2524,9 @@ body.woocommerce-checkout section.checkout-top-sec{
 
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
         display: none;
+        border-bottom:none;
     }
-    body.woocommerce-edit-account .account-page-title h1{
-        display: none;
-    }
+
     body.woocommerce-edit-account .default-page-con{
         padding-top:0px;
     }
