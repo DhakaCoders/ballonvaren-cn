@@ -256,10 +256,11 @@ body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5 {
     font-size: 20px;
-    color: #243444;
-    font-weight: 600;
+    color: #2C113E;
+    font-weight: 700;
     margin-bottom: 7px;
     line-height: 1.2;
+    font-family: 'Work Sans', sans-serif;
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span,
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span bdi,
@@ -285,13 +286,11 @@ body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
 }
 body.woocommerce-orders .orders-crtl .code-text{
     font-size: 24px;
-    letter-spacing: -0.02em;
-    font-weight: 600;
-    color: #243444;
-    padding-bottom: 23px;
+    font-weight: 700;
+    color: #2C113E;
+    padding-bottom: 13px;
+    border-bottom:1px solid #ECF1F4;;
     margin-top: 12px;
-    text-transform: uppercase;
-    font-family: Work Sans;
 }
 .orders-crtl .my-ac-time{
     font-size: 14px;
@@ -301,20 +300,37 @@ body.woocommerce-orders .orders-crtl .my-ac-timea{
 }
 body.woocommerce-orders  .myac-pro-grd-item .myac-pro-grd-item-inr{
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    padding-top: 33px;
+    padding-bottom: 18px;
 }
-body.woocommerce-orders .order-details .color-green{
-    color: #1DB4B2;
+body.woocommerce-orders .order-details .order-status{
     padding-left: 30px;
     padding-top: 10px;
     position: relative;
     border-top: 1px solid #ECF1F4;
     font-size: 16px;
 }
+body.woocommerce-orders .order-details .cancelled{
+    color: #EE3E15;
+}
+body.woocommerce-orders .order-details .pending{
+    color: #FDCA35;
+}
+body.woocommerce-orders .order-details .processing{
+    color: #1DB4B2;
+}
+body.woocommerce-orders .order-details .cancelled:after{
+    background-image: url(../images/woordr-conifo-icon2.svg);
+}
+
+body.woocommerce-orders .order-details .pending:after{
+    background-image: url(../images/woordr-conifo-icon1.svg);
+}
+body.woocommerce-orders .order-details .processing:after{
+    background-image: url(../images/woordr-conifo-icon.svg);
+}
 body.woocommerce-orders .order-details .order-status:after {
     content: "";
-    background-image: url(../images/woordr-conifo-icon.svg);
     width: 18px;
     height: 24px;
     background-repeat: no-repeat;
