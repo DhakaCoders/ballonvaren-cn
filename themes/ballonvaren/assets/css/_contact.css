@@ -5,26 +5,21 @@
 */
 .contact-form-sec-wrp{
 	padding-bottom: 320px;
-	position: relative;
 }
-/*.contact-form-angle-bg{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -80px;
-    height: 890px;
-    background: url(../images/contact-form-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
+.contact-white-sky-bg-cntlr{
+    position: relative;
+}
 .contact-white-sky-bg {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    top: -800px;
     z-index: -1;
     height: 800px;
+}
+.overons-team-sec-wrp .contact-white-sky-bg {
+    top: -980px;
+    height: 980px;
 }
 .contact-white-sky-inline-bg{
     background-repeat: repeat-x !important;
@@ -61,12 +56,10 @@
 	float: left;
 	padding-right: 105px;
 }
-.contact-form-wrp {
-	padding-top: 28px;
-}
 .error-msg{
 	background:#D9534F;
 	padding: 25px 15px;
+    margin-bottom: 28px;
 }
 .error-msg span {
     color: #fff;
@@ -371,18 +364,18 @@
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.wpforms-field-text p {
+.wpforms-field-description p{
     font-size: 13px;
     line-height: 1;
     color: #909BA5;
     margin-bottom: 15px;
     padding-top: 20px;
 }
-.wpforms-field-text p a{
+.wpforms-field-description p a{
 	color: #909BA5;
 	text-decoration: underline;
 }
-.wpforms-field-text p a:hover{
+.wpforms-field-description p a:hover{
 	color: #EE3E15;
 }
 
@@ -830,12 +823,10 @@ boek-je-form-sec-wrp
 	.contact-form-sec-wrp .page-entry-header p {
 	    margin-bottom: 48px;
 	}
-	.error-msg{
-	    padding: 15px 15px;
-	}
-	.contact-form-wrp {
-	    padding-top: 40px;
-	}
+	.error-msg {
+        padding: 15px 15px;
+        margin-bottom: 40px;
+    }
 	.contact-form-sec-wrp .contact-form-lft{
 		padding-bottom: 150px;
 		position: relative;
@@ -882,8 +873,12 @@ boek-je-form-sec-wrp
 	    padding: 8px 10px;
 	}
     .contact-white-sky-bg {
-        bottom: 260px;
-        height: 700px;
+        top: -920px;
+        height: 600px;
+    }
+    .overons-team-sec-wrp .contact-white-sky-bg {
+        top: -800px;
+        height: 800px;
     }
 }
 
