@@ -1416,12 +1416,7 @@ Gallery design
 	.grd-module .blg-grds-item ul li {
 	    padding-bottom: 40px;
 	}
-	.dfp-twogrd-module{
-		display: none;
-	}
-	.dfp-twogrd-module.home-module{
-		display: block;
-	}
+	
 	.dfp-twogrd-module{
 		margin-left: 0;
 		margin-right: 0;
