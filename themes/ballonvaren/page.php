@@ -24,12 +24,16 @@
 </section>
 
 <section class="page-grd-sec-wrp">
-    <?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
-      <div class="back-to-dashboard-btn-cntlr"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
-    <?php }elseif( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false ){ ?>
-      <div class="back-to-dashboard-btn-cntlr"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
-    <?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
-      <div class="back-to-dashboard-btn-cntlr show-sm"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a></div>
+    <?php if( is_wc_endpoint_url( 'orders' ) || is_wc_endpoint_url( 'edit-account' ) || (strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false) ){ ?>
+      <div class="back-to-dashboard-btn-cntlr">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a>
+            </div>
+          </div>
+        </div>
+      </div>
     <?php } ?>
   <div class="container">
     <div class="row">
