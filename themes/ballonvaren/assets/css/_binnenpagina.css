@@ -134,6 +134,7 @@ hr{
     height: 600px;
     position: relative;
     margin-bottom: 45px;
+    border-radius: 3px;
 }
 .fl-fancy-img{
     width: 100%;
@@ -141,7 +142,7 @@ hr{
     transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	border-radius: 3px;
+	
 }
 .fl-fancy-module:hover .fl-fancy-img{
     transform: scale(1.1);
@@ -459,10 +460,10 @@ Gallery design
   border-radius: 4px;
 }
 
-.table-dsc table tbody tr td:last-child{
+/*.table-dsc table tbody tr td:last-child{
 	padding-left: 0;
 	padding-right: 36px;
-}
+}*/
 
 .table-dsc table tbody tr td:first-child,
 .table-dsc table tbody tr td:last-child{
@@ -480,10 +481,10 @@ Gallery design
 
 }
 
-.table-dsc table tr th:last-child,
+/*.table-dsc table tr th:last-child,
 .table-dsc table tr td:last-child{
     padding-left: 0;
-}
+}*/
 .table-dsc table tr th:last-child span{
 	border-right: none;
 }
@@ -526,7 +527,7 @@ Gallery design
 .table-dsc table thead tr th,
 .table-dsc table tbody tr td{
 	padding-left: 15px;
-	padding-right: 0;
+	padding-right: 15px;
 }
 
 
