@@ -80,16 +80,19 @@ if (!function_exists('add_shorttext_below_title_loop')) {
           }
         $seller_flash = get_field('seller_flash', $product->get_id());
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
+        $gridsrc = cbv_get_image_src( get_post_thumbnail_id($product->get_id()), 'pgrid' );
         $short_desc = $product->get_short_description();
         echo '<div class="fl-product-grd mHc">';
         echo '<div class="fl-product-grd-inr">';
         echo '<div class="fl-pro-grd-img-cntlr">';
         echo '<a href="'.get_permalink( $product->get_id() ).'" class="overlay-link"></a>';
+        echo '<div class="fl-pro-grid-img inline-bg" style="background-image: url('.$gridsrc.');"></div>';
         echo $gridtag;
         echo '</div>';
         echo '<div class="fl-pro-grd-des mHc1">';
         echo '<h4 class="fl-h5 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
         echo '<div class="fl-pro-grd-price">';
+        echo '<span class="Vanaf">Vanaf</span>';
         echo $product->get_price_html();                                                         
         echo '</div>';
         if( !empty($short_desc) ) echo '<div class="fl-pro-grd-cont">'.wpautop($short_desc).'</div>';
@@ -107,7 +110,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         
     }
 }
-add_filter( 'woocommerce_get_price_html', 'njengah_text_before_price' );
+//add_filter( 'woocommerce_get_price_html', 'njengah_text_before_price' );
 function njengah_text_before_price($price){
     $text_to_add_before_price  = 'VANAF'; //change text in bracket to your preferred text         
     return $text_to_add_before_price . $price   ;
