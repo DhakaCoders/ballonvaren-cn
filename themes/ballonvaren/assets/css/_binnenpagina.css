@@ -1072,8 +1072,6 @@ Gallery design
 	    max-width: 80px;
 	}
 	.dfp-twogrd-module {
-	    margin-left: -6px;
-	    margin-right: -6px;
 	    margin-bottom: 45px;
 	}
 	.dfp-book-ctlr,
@@ -1421,17 +1419,29 @@ Gallery design
 	.dfp-twogrd-module{
 		display: none;
 	}
-	/*.fl-btn{
+	.dfp-twogrd-module.home-module{
 		display: block;
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-bottom: 20px;
-		margin-bottom: 0;
-	}*/
-	/*.fl-btn a{
-		max-width: 100%;
-		width: 100%;
-	}*/
+	}
+	.dfp-twogrd-module{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.dfp-booking-grd-ctlr,
+	.dfp-gift-grd-ctlr{
+	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 15px;
+	}
+	.booking-top-img {
+	    top: -95px;
+	    right: -74px;
+	    max-width: 150px;
+	}
+	.booking-btm-img {
+	    left: -72px;
+	    max-width: 115px;
+	}
 	.fl-dft-lftimg-rgtdes-rgt{
 		padding-left: 15px;
 	}
