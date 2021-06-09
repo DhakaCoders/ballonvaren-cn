@@ -95,13 +95,14 @@ if ( $customer_orders ) :
                   <div class="order-items-desc">
                   <h5>
                   	<?php
-            						$exp_title = explode('-', $item->get_name());
-            						if(!empty($exp_title)){
-            							$cart_title = $exp_title[0];
-            						}else{
-            							$cart_title = $item->get_name();
-            						}
-                  	    echo $cart_title; ?>
+    					$exp_title = explode('-', $item->get_name());
+    					if(!empty($exp_title)){
+    						$cart_title = $exp_title[0];
+    					}else{
+    						$cart_title = $item->get_name();
+    					}
+                      	echo $cart_title; 
+                    ?>
                     </h5>
                     <div class="order-comment">
                       <p>Volutpat sagittis, consequat nibh.</p>
@@ -115,9 +116,6 @@ if ( $customer_orders ) :
                     echo '</ul></div>';
                   endif;
                   ?>
-                  <div class="product-price">
-                    <?php echo $product->get_price_html(); ?>
-                  </div>
                   </div>
                 </div>
               </div>
@@ -126,15 +124,14 @@ if ( $customer_orders ) :
             <?php endif; ?>
 			<?php 
 			echo "<div class='order-status color-green'>";
-			echo "<label>Status:</label> ";
-			echo esc_html( wc_get_order_status_name( $order->get_status() ) );
+			 echo esc_html( wc_get_order_status_name( $order->get_status() ) );
 			echo "</div>";
 			?>
           </div>
           <div class="contact-info">
           	<i></i>
           	<div>
-          		<a class="order-contact-btn" href="<?php echo get_link_by_page_template( 'page-contact.php' ); ?>" target="_blank">CONTACT</a>
+          		<a class="order-contact-btn" href="" target="_blank">CONTACT</a>
           	</div>
           </div>
         </div>

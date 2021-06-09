@@ -70,9 +70,13 @@
 .chk-acc{
 	padding-bottom: 20px;
 }
-.chk-acc-bg{
-	background: #2285e3;
-	padding: 55px 47px 18px 42px;
+.chk-acc-tp-cntrl{}
+.chk-acc-tp{
+	background-color: #1DB4B2;
+}
+.chk-acc-btm-cntrl{}
+.chk-acc-btm{
+	background-color: #EE3E15;
 }
 .woocommerce-order-received .chk-acc-tp p,
 .woocommerce-order-received .chk-acc-btm p{
