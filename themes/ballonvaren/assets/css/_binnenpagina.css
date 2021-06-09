@@ -268,6 +268,7 @@ Gallery design
 .has-inline .gallery-icon-img{
 	height: 412px;
 	border-radius: 3px;
+	display: block;
 }
 
 .has-inline .gallery-item img{
@@ -321,6 +322,7 @@ Gallery design
 
 .gallery-icon-img{
 	height: 450px;
+	display: none;
 }
 
 .glry-col-3 .gallery-icon-img{
