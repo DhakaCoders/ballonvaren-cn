@@ -134,6 +134,7 @@ hr{
     height: 600px;
     position: relative;
     margin-bottom: 45px;
+    border-radius: 3px;
 }
 .fl-fancy-img{
     width: 100%;
@@ -141,7 +142,7 @@ hr{
     transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	border-radius: 3px;
+	
 }
 .fl-fancy-module:hover .fl-fancy-img{
     transform: scale(1.1);
@@ -459,15 +460,14 @@ Gallery design
   border-radius: 4px;
 }
 
-.table-dsc table tbody tr td:last-child{
+/*.table-dsc table tbody tr td:last-child{
 	padding-left: 0;
 	padding-right: 36px;
-}
+}*/
 
 .table-dsc table tbody tr td:first-child,
 .table-dsc table tbody tr td:last-child{
 	color: #909BA5;
-	font-weight: 700;
 }
 
 .table-dsc table{
@@ -480,10 +480,10 @@ Gallery design
 
 }
 
-.table-dsc table tr th:last-child,
+/*.table-dsc table tr th:last-child,
 .table-dsc table tr td:last-child{
     padding-left: 0;
-}
+}*/
 .table-dsc table tr th:last-child span{
 	border-right: none;
 }
@@ -526,7 +526,7 @@ Gallery design
 .table-dsc table thead tr th,
 .table-dsc table tbody tr td{
 	padding-left: 15px;
-	padding-right: 0;
+	padding-right: 15px;
 }
 
 
@@ -730,6 +730,10 @@ Gallery design
 .news-details .page-entry-header {
     border-bottom: none;
     margin-bottom: 0;
+    max-width: 787px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 .news-details .page-entry-header h3{
 	text-align: center;
@@ -1003,7 +1007,7 @@ Gallery design
 	}
 
 	.news-details .blog-grd-top-img {
-	    top: -235px;
+	    top: -228px;
 	    right: -62px;
 	}
 	.news-details .blog-grd-top-img img{
@@ -1068,8 +1072,6 @@ Gallery design
 	    max-width: 80px;
 	}
 	.dfp-twogrd-module {
-	    margin-left: -6px;
-	    margin-right: -6px;
 	    margin-bottom: 45px;
 	}
 	.dfp-book-ctlr,
@@ -1094,7 +1096,7 @@ Gallery design
 	    top: -255px;
 	}
 	.news-details .blog-grd-top-img {
-	    top: -200px;
+	    top: -190px;
 	    right: -10px;
 	}
 	.news-details .blog-grd-top-img img {
@@ -1414,20 +1416,27 @@ Gallery design
 	.grd-module .blg-grds-item ul li {
 	    padding-bottom: 40px;
 	}
+	
 	.dfp-twogrd-module{
-		display: none;
+		margin-left: 0;
+		margin-right: 0;
 	}
-	/*.fl-btn{
-		display: block;
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-bottom: 20px;
-		margin-bottom: 0;
-	}*/
-	/*.fl-btn a{
-		max-width: 100%;
-		width: 100%;
-	}*/
+	.dfp-booking-grd-ctlr,
+	.dfp-gift-grd-ctlr{
+	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 15px;
+	}
+	.booking-top-img {
+	    top: -95px;
+	    right: -74px;
+	    max-width: 150px;
+	}
+	.booking-btm-img {
+	    left: -72px;
+	    max-width: 115px;
+	}
 	.fl-dft-lftimg-rgtdes-rgt{
 		padding-left: 15px;
 	}
@@ -1494,6 +1503,7 @@ Gallery design
 	}
 	.news-details .blog-grd-top-img{
 		top: -140px;
+		right: -40px;
 	}
 	.news-details .blog-grd-top-img img{
 		max-width: 105px;
