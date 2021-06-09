@@ -363,9 +363,10 @@ body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn:after{
     content: none;
 }
 body.woocommerce-orders .faq-accordion-wrp ul li .orders-crtl {
-    padding-top: 33px;
-    padding-bottom: 33px;
-    padding-left: 24px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 14px;
+    padding-right: 14px;
     -webkit-box-shadow::0px 30px 84px rgb(44 17 62 / 9%);
     -moz-box-shadow:0px 30px 84px rgb(44 17 62 / 9%);
     box-shadow:0px 30px 84px rgb(44 17 62 / 9%);
@@ -1871,8 +1872,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn {
         font-size: 14px!important;
-        width: 220px;
-        height: 45px;
     }
     .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li {
         height: 45px!important;
@@ -1911,7 +1910,8 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
         padding-right:40px!important;
     }
-    body.woocommerce-edit-account header{
+    body.woocommerce-edit-account header,
+    body.woocommerce-orders header{
         margin-bottom:0px;
     }
     /* ------------------- woocommerce-cart -------------------*/
@@ -2499,7 +2499,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders .account-page-title h1,
     body.loggedin-winkelmandje-crtl .default-page-con h1{
         margin-bottom:40px;
-        font-size: 24px;
+        font-size: 30px;
     }
     body.woocommerce-orders .faq-accordion-wrp ul li .orders-crtl{
         padding-top:30px;
