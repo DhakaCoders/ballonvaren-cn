@@ -48,7 +48,7 @@ body.woocommerce-account .account-page-title h1{
     border-bottom: 1px solid #ECF1F4;
     padding-bottom: 30px;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     letter-spacing: -0.02em;
 }
 body.woocommerce-account .account-page-title h1 + p{
@@ -63,6 +63,9 @@ body.woocommerce-account .woocommerce-account-grds-cntlr{
     /*padding-top: 47px;*/
     margin-bottom: 75px;
 
+}
+body.woocommerce-orders .woocommerce-account-grds-cntlr{
+    margin-bottom:0px;
 }
 
 body.woocommerce-account .woocommerce-account-grds-cntlr .woocommerce-notices-wrapper{
@@ -382,9 +385,6 @@ body.woocommerce-orders .orders-crtl .contact-info i{
     display: none;
 }
 
-body.woocommerce-orders .woocommerce-account-grds-cntlr{
-    padding-top:47px;
-}
 body.woocommerce-orders .order-details .myac-pro-grds{
     border-top: 1px solid #FFFFFF;
     padding-bottom: 15px;
@@ -711,7 +711,8 @@ body.woocommerce-account #login_register #customer_login .u-column2 .signup-noti
 .page-grd-sec-wrp {
     padding-top: 102px;
 }
-body.woocommerce-edit-account .page-grd-sec-wrp{
+body.woocommerce-edit-account .page-grd-sec-wrp,
+body.woocommerce-orders .page-grd-sec-wrp{
     padding-top:0px;
 }
 #billing_personal_recom p, #billing_acttion_insp p {
@@ -2981,7 +2982,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     display: flex;
 }
 .orders-list li {
-    margin-bottom: 30px !important;
+    margin-bottom: 28px !important;
 }
 .order-details {
     border-bottom: 1px solid #ddd;

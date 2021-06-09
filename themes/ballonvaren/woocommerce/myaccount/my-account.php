@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="myaccount-crtl">
 	<div class="account-page-title">
 		<?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
-			<h1>Bestellingen</h1>
+			<h1>geboekte vluchten</h1>
 		<?php }elseif( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false ){ ?>
 			<h1>Winkelmandje</h1>
 		<?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
