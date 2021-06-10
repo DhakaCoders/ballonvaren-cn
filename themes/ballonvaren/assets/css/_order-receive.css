@@ -24,13 +24,17 @@
 .checkout-hdr{
 	padding-bottom: 48px;
 }
+.checkout-hdr .chkout-title{
+	font-size: 48px;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #2C113E;
+	line-height: 1.1;
+	margin-bottom: 28px;
+}
 .pwoocommerce-order-received .default-page-con h3{
 	border-bottom: none!important;
 	padding-bottom: 0!important;
-}
-.checkout-hdr .chkout-title{
-	margin-bottom: 30px;
-	font-size: 30px!important;
 }
 .checkout-hdr p{
 	margin-bottom: 0;
@@ -184,8 +188,18 @@
 /* =============== */
 
 @media (max-width: 1699px) {
+	.chkout-logo{
+		padding-bottom: 46px;
+	}
 	.checkout-sec{
 		padding-top: 94px;
+	}
+	.checkout-hdr{
+		padding-bottom: 40px;
+	}
+	.checkout-hdr .chkout-title{
+		font-size: 44px;
+		margin-bottom: 24px;
 	}
 	.chk-acc-tp, .chk-acc-btm{
 		padding: 31px 20px;
@@ -193,38 +207,41 @@
 	.chkout-service{
 		padding-bottom: 110px;
 	}
-}
 
+}
+/* 
 @media (max-width: 1599px) {
 	
 }
 
 @media (max-width: 1499px) {
-	.checkout-hdr .chkout-title{
-		font-size: 29px!important;
-	}
+
 }
 
 @media (max-width: 1399px) {
 
-}
+} */
 
 @media (max-width: 1199px) {
 	.checkout-sec{
 		padding-top: 87px;
 	}
+	.chkout-logo{
+		padding-bottom: 38px;
+	}
 	.woocommerce-order-received .innerpage-con-wrap{
 		padding-top: 80px!important;
 		padding-bottom: 74px!important;
+	}
+	.checkout-hdr .chkout-title{
+		font-size: 40px;
+		margin-bottom: 20px;
 	}
 	.chkout-service{
 		padding-bottom: 100px;
 	}
 	.srv-cont {
     	width: 33%;
-	}
-	.checkout-hdr .chkout-title{
-		font-size: 27px!important;
 	}
 	.woocommerce-order-received .chk-tp-title, .woocommerce-order-received .chk-btm-title{
 		font-size: 26px
@@ -237,6 +254,9 @@
 @media (max-width: 991px) {
 	.woocommerce-order-received .checkout-cntrl{
 		margin: 0;
+	}
+	.chkout-logo{
+		padding-bottom: 30px;
 	}
 	.chkout-service{
 		padding-bottom: 90px;
@@ -252,7 +272,7 @@
 		padding: 45px 27px 23px 29px;
 	}
 	.checkout-hdr .chkout-title{
-		font-size: 26px!important;
+		font-size: 36px;
 	}
 }
 
@@ -267,6 +287,10 @@
 	.woocommerce-order-received .innerpage-con-wrap{
 		padding-top: 60px!important;
 		padding-bottom: 54px!important;
+	}
+	.checkout-hdr .chkout-title{
+		font-size: 32px;
+		margin-bottom: 16px;
 	}
 	.chkout-service{
 		display: block;
@@ -289,13 +313,7 @@
 		margin-bottom: 29px;
 	}
 	.chkout-logo{
-		padding-bottom: 38px;
-	}
-	.checkout-hdr .chkout-title{
-		font-size: 24px;
-		line-height: 1.1;
-		margin-bottom: 20px;
-		font-size: 25px!important;
+		padding-bottom: 22px;
 	}
 	.srv-cont{
 		margin: auto;
@@ -334,7 +352,10 @@
 		padding-bottom: 48px!important;
 	}
 	.checkout-hdr .chkout-title{
-		font-size: 24px!important;
+		font-size: 30px;
+	}
+	.checkout-hdr .chkout-title span {
+    	display: inline-block;
 	}
 	.chkout-service{
 		padding-bottom: 60px;
