@@ -587,6 +587,14 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 @media(max-width: 991px){
 	.cart-crtl .cart-table-crtl{
 		width: 100%;
+		padding-top: 10px;
+		border-top: 1px solid #ECF1F4
+	}
+	.woocommerce-cart .page-grd-sec-wrp{
+		padding-top: 20px;
+	}
+	.woocommerce-cart .woocommerce-notices-wrapper{
+		margin-bottom: 0!important;
 	}
 	.cart-crtl .cart-total-crtl{
 		width: 100%;
