@@ -22,12 +22,12 @@
     position: absolute;
     content: "";
     width: 100%;
-    height: 770px;
+    height: 765px;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
-    margin-bottom: -200px;
+    margin-bottom: -195px;
 }
 .bv-calender-inner{
 	display: flex;
@@ -74,12 +74,12 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	margin-top: 547px;
+	margin-top: 540px;
 	margin-right: -140px;
 }
 .events-grid-sec{
 	position: relative;
-	padding-top: 191px;
+	padding-top: 190px;
 }
 .events-grid-item-inner{
 	padding-bottom: 70px;
@@ -182,13 +182,14 @@
     margin-bottom: 0;
 }
 .has-no-events{
-	padding-bottom: 200px;
+	padding-bottom: 195px;
 }
 .has-no-events .events-grid-sec{
 	display: none;
 }
 .events-grid-sec .white-sky-bg {
-    top: -181px;
+    top: -185px;
+    height: 382px;
 }
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
@@ -206,8 +207,7 @@
 	    margin-top: 510px;
 	}
 	.off-days-sec:before {
-	    height: 630px;
-	    margin-bottom: -117px;
+	    height: 710px;
 	}
 	.no-events-show .off-days-sec {
 	    padding-bottom: 150px;
@@ -229,74 +229,8 @@
 	}
 }
 
-/*@media (max-width: 1499px) {
-	.bv-calender-dsc-inner {
-	    padding-right: 85px;
-	    padding-top: 60px;
-	}
-	.event-grid-heading{
-		font-size: 22px!important;
-	}
-	.events-grid-item-inner ul li .event-grid-item-inr {
-	    padding: 28px 27px 32px;
-	}
-	.events-grid-item-inner ul li .event-grid-item-inr:before{
-		height: 75px;
-	}
-	.event-grid-item-inr p {
-	}
-	.event-date span {
-	    font-size: 15px;
-	    margin-bottom: 25px;
-	}
-	.events-grid-sec .white-sky-bg {
-	    top: -181px; 
-	    height: 382px;
-	}
-}
-@media (max-width: 1399px) {
-	.bv-calender-dsc-inner {
-	    padding-right: 60px;
-	}
-	.inline-bg-img {
-	    height: 585px;
-	}
-	.bv-clndr-absolute-img-two {
-	    margin-right: -110px;
-	}
-	.bv-clndr-absolute-img-two img {
-	    height: auto;
-	    width: 185px;
-	}
-	.event-date span {
-	    font-size: 14px;
-	    margin-bottom: 15px;
-	}
-	.bv-calender-dsc-inner h2{
-		font-size: 33px;
-	}
-	.off-days-sec .white-sky-bg {
-	    top: 520px;
-	}
-}
-@media(max-width: 1299px){
-	.bv-clndr-absolute-img-two img {
-	    height: auto;
-	    width: 157px;
-	}
-	.bv-clndr-absolute-img-two {
-	    margin-right: -68px;
-	    margin-top: 536px;
-	}
-	.off-days-sec:before {
-	    height: 665px;
-	}
-	.inline-bg-img {
-	    height: 570px;
-	}
-}*/
 
-@media(max-width: 1199px){
+/*@media(max-width: 1199px){
 	.inline-bg-img {
 	    height: 525px;
 	}
@@ -441,3 +375,4 @@
 	}
 
 }
+*/
