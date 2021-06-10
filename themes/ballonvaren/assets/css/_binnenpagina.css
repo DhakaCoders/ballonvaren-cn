@@ -727,7 +727,7 @@ Gallery design
     color: #fff;
 }
 
-.news-details .page-entry-header {
+.sec-entry-header {
     border-bottom: none;
     margin-bottom: 0;
     max-width: 787px;
@@ -735,10 +735,9 @@ Gallery design
     margin: 0 auto;
     text-align: center;
 }
-.news-details .page-entry-header h3{
+.sec-entry-header h3{
 	text-align: center;
 	margin-bottom: 35px;
-	color: #2C113E;
 	text-transform: uppercase;
 }
 
@@ -996,7 +995,7 @@ Gallery design
 	    padding-bottom: 45px;
 	}
 	.ballon-rides-lft-top-img {
-	    top: -125px;
+	    top: -100px;
 	    left: -85px;
 	}
 	.ballon-rides-lft-top-img img{
@@ -1929,6 +1928,13 @@ Gallery design
 	}
 	.dfp-grd-module .blog-grid-des .bgi-title {
 	    margin-bottom: 25px;
+	}
+	.news-details .blog-grd-top-img {
+	    top: -125px;
+	    right: -40px;
+	}
+	.news-details .blog-grd-top-img img {
+	    max-width: 90px;
 	}
 	
 }
