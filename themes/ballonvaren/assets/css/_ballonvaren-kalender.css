@@ -43,7 +43,6 @@
 .bv-calnender{
 	background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
 	opacity: 0.7;
-	height: 370px;
 }
 .bv-calender-img{
 	max-width: 49%;
@@ -243,6 +242,7 @@
 	    height: auto;
 	    width: 150px;
 	}
+	
 }
 @media(max-width: 1299px){
 	.bv-clndr-absolute-img-two {
