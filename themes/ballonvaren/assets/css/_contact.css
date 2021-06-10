@@ -768,6 +768,9 @@ boek-je-form-sec-wrp
 	.page-entry-header .fl-h1 span{
 		font-size: 18px;
 	}
+    .boek-je-form-sec-wrp .contact-form-info-cntlr {
+        padding: 50px 30px 40px 30px;
+    }
 
 
 }
@@ -796,6 +799,9 @@ boek-je-form-sec-wrp
 	    width: 140px;
 	    height: auto;
 	}
+    .boek-je-form-sec-wrp .contact-form-info-cntlr {
+        padding: 40px 30px 35px 30px;
+    }
 	
 }
 
@@ -879,6 +885,9 @@ boek-je-form-sec-wrp
     .overons-team-sec-wrp .contact-white-sky-bg {
         top: -800px;
         height: 800px;
+    }
+    .boek-je-form-sec-wrp .contact-form-info-cntlr {
+        padding: 30px 30px 30px 30px;
     }
 }
 
