@@ -679,50 +679,42 @@ boek-je-form-sec-wrp
 
 @media (max-width: 1699px){
 	.contact-form-lft {
-		width: 72%;
-	    padding-right: 80px;
-	}
-	.contact-form-rgt {
-	    width: 28%;
-	}
-	.page-entry-header .fl-h1 span{
-		font-size: 21px;
-	}
-	.contact-form-sec-wrp {
-	    padding-bottom: 280px;
-	}
-}
-
-
-@media (max-width: 1499px) {
-	.contact-form-lft {
 		width: 68%;
-	    padding-right: 70px;
+	    padding-right: 80px;
 	}
 	.contact-form-rgt {
 	    width: 32%;
 	}
-	.page-entry-header .fl-h1 span{
-		font-size: 20px;
-	}
-}
-
-@media(max-width: 1399px){
 	.page-entry-header .fl-h1 span{
 		font-size: 19px;
 	}
 	.contact-form-sec-wrp {
 	    padding-bottom: 240px;
 	}
+    
+}
+
+
+@media (max-width: 1499px) {
+	
+}
+
+@media(max-width: 1399px){
+    .contact-parachute-icon {
+        right: -80px;
+        top: -265px;
+        width: 200px;
+        height: 240px;
+    }
 }
 
 @media(max-width: 1299px){
-	.contact-parachute-icon {
-	    right: -60px;
-	    top: -265px;
-	    width: 200px;
-	    height: 240px;
-	}
+	.contact-google-parachute {
+        left: -30px;
+    }
+    .contact-parachute-icon {
+        right: -30px;
+    }
 
 }
 
