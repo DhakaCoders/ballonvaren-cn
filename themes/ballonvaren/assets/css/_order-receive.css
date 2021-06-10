@@ -1,3 +1,6 @@
+.checkout-sec{
+	padding-top: 99px;
+}
 .woocommerce-order-received .innerpage-con-wrap{
 	padding-top: 100px!important;
 	padding-bottom: 94px!important;
@@ -12,24 +15,26 @@
 .checkout-hdr{
 	text-align: center;
 }
-.chkout-logo{
-	padding-bottom: 25px; 
+.chkout-logo {
+    padding-bottom: 54px;
+    max-width: 554px;
+    height: auto;
+    margin: auto;
 }
 .checkout-hdr{
-	padding-bottom: 54px;
+	padding-bottom: 48px;
 }
 .pwoocommerce-order-received .default-page-con h3{
 	border-bottom: none!important;
 	padding-bottom: 0!important;
 }
 .checkout-hdr .chkout-title{
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	font-size: 30px!important;
 }
 .checkout-hdr p{
-	margin-bottom: 30px;
+	margin-bottom: 0;
 }
-
 .checkout-hdr p span{
 	padding-left: 6px;
 }
@@ -77,18 +82,19 @@
 .chk-acc-tp-cntrl{
 	padding-bottom: 22px;
 }
+.chk-acc-tp, .chk-acc-btm{
+	padding: 36px 28px;
+} 
 .chk-acc-tp{
 	background-color: #1DB4B2;
-	padding: 36px 28px;
 }
 .chk-acc-btm-cntrl{}
 .chk-acc-btm{
 	background-color: #EE3E15;
-	padding: 37px 28px;
 }
 .woocommerce-order-received .chk-acc-tp p,
 .woocommerce-order-received .chk-acc-btm p{
-	margin-bottom: 20px;
+	margin-bottom: 0;
 }
 .chk-acc-tp img , .chk-acc-btm img{
 	margin-bottom: 10px;
@@ -178,7 +184,15 @@
 /* =============== */
 
 @media (max-width: 1699px) {
-	
+	.checkout-sec{
+		padding-top: 94px;
+	}
+	.chk-acc-tp, .chk-acc-btm{
+		padding: 31px 20px;
+	}
+	.chkout-service{
+		padding-bottom: 110px;
+	}
 }
 
 @media (max-width: 1599px) {
@@ -192,25 +206,19 @@
 }
 
 @media (max-width: 1399px) {
-	.woocommerce-order-received .innerpage-con-wrap{
-		padding-top: 90px!important;
-		padding-bottom: 84px!important;
-	}
-	.chk-acc-bg{
-		padding: 45px 34px 23px 30px;
-	}
-	.chkout-scl-bg{
-		padding: 45px 35px 32px 20px;
-	}
-	.checkout-hdr .chkout-title{
-		font-size: 28px!important;
-	}
+
 }
 
 @media (max-width: 1199px) {
+	.checkout-sec{
+		padding-top: 87px;
+	}
 	.woocommerce-order-received .innerpage-con-wrap{
 		padding-top: 80px!important;
 		padding-bottom: 74px!important;
+	}
+	.chkout-service{
+		padding-bottom: 100px;
 	}
 	.srv-cont {
     	width: 33%;
@@ -218,9 +226,24 @@
 	.checkout-hdr .chkout-title{
 		font-size: 27px!important;
 	}
+	.woocommerce-order-received .chk-tp-title, .woocommerce-order-received .chk-btm-title{
+		font-size: 26px
+	}
+	.chk-acc-tp, .chk-acc-btm{
+		padding: 28px 15px;
+	}
 }
 
 @media (max-width: 991px) {
+	.woocommerce-order-received .checkout-cntrl{
+		margin: 0;
+	}
+	.chkout-service{
+		padding-bottom: 90px;
+	}
+	.srv-fea-img-cntrl{
+		margin-right: 15px;
+	}
 	.woocommerce-order-received .innerpage-con-wrap{
 		padding-top: 70px!important;
 		padding-bottom: 64px!important;
@@ -245,8 +268,25 @@
 		padding-top: 60px!important;
 		padding-bottom: 54px!important;
 	}
+	.chkout-service{
+		display: block;
+		padding-bottom: 80px;
+	}
+	.srv-fea-img-cntrl{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.chk-acc-tp-cntrl{
+		padding-bottom: 20px;
+	}
+	.chk-acc-tp, .chk-acc-btm{
+		padding: 36px 21px;
+	}
 	.checkout-hdr{
-		padding-bottom: 45px;
+		padding-bottom: 26px;
+		border-bottom: 1px solid #ECEEEF;
+		margin-bottom: 29px;
 	}
 	.chkout-logo{
 		padding-bottom: 38px;
@@ -257,19 +297,13 @@
 		margin-bottom: 20px;
 		font-size: 25px!important;
 	}
-	.checkout-hdr p{
-		margin-bottom: 19px;
-	}
-	.srv-fea-img{
-		display: none;
-	}
 	.srv-cont{
 		margin: auto;
 		max-width: 100%;
 		width: auto;
 	}
 	.chk-acc{
-		padding-bottom: 16px;	
+		padding-bottom: 47px;	
 	}
 	.chk-acc-bg{
 		padding: 55px 42px 23px 40px;
@@ -283,14 +317,14 @@
 	.chk-acc-title{
 		text-align: center;
 	}
-	.chk-scl-itm{
-		margin-bottom: 20px;	
-	}	
 }
 
 @media (max-width: 639px) {
 	.woocommerce-order-received .chk-acc-tp p{
 		padding-bottom: 6px;
+	}
+	.chkout-service{
+		padding-bottom: 70px;
 	}
 }
 
@@ -302,6 +336,9 @@
 	.checkout-hdr .chkout-title{
 		font-size: 24px!important;
 	}
+	.chkout-service{
+		padding-bottom: 60px;
+	}
 }
 
 
@@ -311,6 +348,9 @@
 	}
 	.woocommerce-order-received .chk-acc-tp p{
 		padding-bottom: 12px;
+	}
+	.chkout-service{
+		padding-bottom: 50px;
 	}
 }
 
