@@ -336,9 +336,13 @@
 	width: 200px;
 	height: 50px;
 }
-.cad-pg-lnk-btn:hover{
-	/* background-color: #ef3e15; */
-	border-color: #2C113E;
+.cad-pg-lnk-btn{
+
+}
+.cad-pg-lnk-btn:hover {
+    background-color: #ffffff;
+    color: #fdca35;    
+    border-radius: 4px;
 }
 
 /* producteen-ons */
@@ -833,9 +837,6 @@
 	}	
 	.fl-pro-grd-price span.woocommerce-Price-amount bdi, .fl-pro-grd-price span.woocommerce-Price-amount bdi span, .fl-pro-grd-price del span.woocommerce-Price-amount bdi, .fl-pro-grd-price del span.woocommerce-Price-amount bdi span, .fl-pro-grd-price ins span.woocommerce-Price-amount bdi, .fl-pro-grd-price ins span.woocommerce-Price-amount bdi span{
 		font-size: 13px!important;
-	}
-	.fl-pro-grd-price span.woocommerce-Price-amount bdi span, .fl-pro-grd-price del span.woocommerce-Price-amount bdi span, .fl-pro-grd-price ins span.woocommerce-Price-amount bdi span, .single-product .single-price-total span.woocommerce-Price-amount bdi, .single-product .single-price-total del span.woocommerce-Price-amount bdi span, .single-product .single-price-total ins span.woocommerce-Price-amount bdi span{
-		margin: 0 4px!important;
 	}
 	.archive .fl-pro-grd-img-cntlr,
 	.archive .fl-pro-grid-img{

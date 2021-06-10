@@ -42,20 +42,20 @@
 }
 
 /* == pagination == */
-.fl-pagi-cntlr{
+.fl-pagination-ctlr{
 	padding-bottom: 64px;
 }
-.fl-pagi-cntlr ul{
+.fl-pagination-ctlr ul{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 -22px;
 }
-.fl-pagi-cntlr ul li{
+.fl-pagination-ctlr ul li{
 	padding: 0 22px; 
 }
-.fl-pagi-cntlr ul li span.current,
-.fl-pagi-cntlr ul li a.current{
+.fl-pagination-ctlr ul li span.current,
+.fl-pagination-ctlr ul li a.current{
 	background-color: #EE3E15;
 	color: #fff;
 	width: 28px;
@@ -64,9 +64,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 1px;
 }
-.fl-pagi-cntlr ul li a, .fl-pagi-cntlr ul li span{
+.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
 	display: inline-block;
     vertical-align: baseline;
     color: #243444;
@@ -75,7 +74,7 @@
     letter-spacing: 0.04em;
     color: #909BA5;
 }
-.fl-pagi-cntlr ul li a:hover{
+.fl-pagination-ctlr ul li a:hover{
 	color: #EE3E15;
 }
 
@@ -163,7 +162,7 @@
 
 
 @media(max-width: 1399px){
-	.fl-pagi-cntlr ul li a, .fl-pagi-cntlr ul li span{
+	.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
 		font-size: 15px;
 	}
 }
@@ -181,7 +180,7 @@
 	.breadcrumb-sec{
 		display: none;
 	}
-	.fl-pagi-cntlr ul li a, .fl-pagi-cntlr ul li span{
+	.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
 		font-size: 14px;
 	}
 }
