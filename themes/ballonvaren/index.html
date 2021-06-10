@@ -23,6 +23,27 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $('.date-picker').datepicker( {
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'MM yy',
+            onClose: function(dateText, inst) { 
+                $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+            }
+            });
+        });
+    </script>
+    <style>
+    .ui-datepicker-calendar {
+        display: none;
+    }
+    </style>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -70,6 +91,12 @@
   </div>    
 </section>
 
+
+
+
+
+    <label for="startDate">Date :</label>
+    <input name="startDate" id="startDate" class="date-picker" />
 
 
 <section class="main-content">
@@ -123,10 +150,12 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
 <script src="assets/slick.slider/slick.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/wow.min.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

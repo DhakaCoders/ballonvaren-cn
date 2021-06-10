@@ -1,5 +1,4 @@
 .off-days-sec {
-    padding-bottom: 65px;
     position: relative;
 }
 .inline-bg-img > img{
@@ -13,9 +12,6 @@
     z-index: 9;
     position: relative;
 }
-.events-grid-sec .white-sky-bg{
-	top: -260px
-}
 .events-grid-sec .container{
 	position: relative;
 	z-index: 99999;
@@ -26,12 +22,12 @@
     position: absolute;
     content: "";
     width: 100%;
-    height: 690px;
+    height: 770px;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
-    margin-bottom: -55px;
+    margin-bottom: -200px;
 }
 .bv-calender-inner{
 	display: flex;
@@ -82,10 +78,10 @@
 	margin-right: -140px;
 }
 .events-grid-sec{
-	padding-top: 120px;
 	position: relative;
+	padding-top: 180px;
 }
-.events-grid-cntlr{
+.events-grid-item-inner{
 	padding-bottom: 70px;
 }
 .events-grid-item-inner ul{
@@ -155,7 +151,7 @@
 .event-grid-item-inr h3:hover a{
 	color: #EE3E15;
 }
-.element-grid-heading{
+.event-grid-heading{
 	margin-bottom: 13px;
 }
 .event-date {
@@ -185,14 +181,14 @@
 .events-grid-item-inner ul li .event-grid-item .event-grid-item-inr p:last-of-type {
     margin-bottom: 0;
 }
-/*.space-bottom{
-	padding-bottom: 180px;
+.has-no-events{
+	padding-bottom: 200px;
 }
-.space-bottom .events-grid-sec{
-	
-}*/
-.off-days-events-grid-cntlr .has-no-events{
-	padding-bottom: 30px;
+.has-no-events .events-grid-sec{
+	display: none;
+}
+.events-grid-sec .white-sky-bg {
+    top: -181px;
 }
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
@@ -210,11 +206,10 @@
 	    margin-top: 515px;
 	}
 	.off-days-sec:before {
-	    height: 615px;
-	    margin-bottom: -15px;
+	    height: 740px;
 	}
-	.events-grid-sec{
-		padding-top: 80px;
+	.no-events-show .off-days-sec {
+	    padding-bottom: 150px;
 	}
 	.inline-bg-img {
 	    height: 600px;
@@ -225,6 +220,9 @@
 	.off-days-sec .white-sky-bg {
 	    top: 538px;
 	}
+	.events-grid-sec{
+		padding-top: 150px;
+	}
 }
 
 @media (max-width: 1499px) {
@@ -232,8 +230,8 @@
 	    padding-right: 85px;
 	    padding-top: 60px;
 	}
-	.element-grid-heading{
-		font-size: 21px!important;
+	.event-grid-heading{
+		font-size: 22px!important;
 	}
 	.events-grid-item-inner ul li .event-grid-item-inr {
 	    padding: 28px 27px 32px;
@@ -242,11 +240,15 @@
 		height: 75px;
 	}
 	.event-grid-item-inr p {
-	    font-size: 15px;
+	    /*font-size: 15px;*/
 	}
 	.event-date span {
 	    font-size: 15px;
 	    margin-bottom: 25px;
+	}
+	.events-grid-sec .white-sky-bg {
+	    top: -181px; 
+	    height: 382px;
 	}
 }
 @media (max-width: 1399px) {
@@ -277,24 +279,17 @@
 @media(max-width: 1299px){
 	.bv-clndr-absolute-img-two img {
 	    height: auto;
-	    width: 155px;
+	    width: 157px;
 	}
 	.bv-clndr-absolute-img-two {
-	    margin-right: -60px;
-	    margin-top: 500px;
+	    margin-right: -68px;
+	    margin-top: 536px;
 	}
 	.off-days-sec:before {
-	    height: 575px;
-	    margin-bottom: 0px;
+	    height: 665px;
 	}
 	.inline-bg-img {
 	    height: 570px;
-	}
-	.events-grid-sec {
-	    padding-top: 65px;
-	}
-	.events-grid-sec {
-	    padding-top: 47px;
 	}
 }
 
@@ -303,21 +298,18 @@
 	    height: 525px;
 	}
 	.events-grid-sec .white-sky-bg {
-	    top: -258px;
+	    /*top: -258px;*/
 	}
 	.bv-clndr-absolute-img-two {
-	    margin-right: 0px;
-	    margin-top: 490px;
+	    margin-right: -13px;
+	    margin-top: 495px;
 	}
 	.off-days-sec:before {
-	    height: 545px;
+	    height: 585px;
 	}
 	.bv-clndr-absolute-img-two img {
 	    height: auto;
 	    width: 125px;
-	}
-	.element-grid-heading {
-	    font-size: 20px!important;
 	}
 	.events-grid-item-inner ul li .event-grid-item-inr {
 	    padding: 24px 20px 27px;
@@ -325,13 +317,19 @@
 	.event-date span {
 	    margin-bottom: 10px;
 	}
+	.no-events-show .off-days-sec {
+	    padding-bottom: 117px;
+	}
+	.events-grid-sec {
+	    padding-top: 120px;
+	}
 }
 @media(max-width: 991px){
 	.events-grid-sec .white-sky-bg {
-	    top: -190px;
+	    top: -182px;
 	}
 	.off-days-sec:before {
-	    height: 505px;
+	    height: 535px;
 	}
 	.bv-clndr-absolute-img-two {
 	    margin-right: 0px;
@@ -381,7 +379,6 @@
 		padding-bottom: 180px;
 	}
 	.events-grid-sec {
-	    padding-top: 20px;
 	    padding-bottom: 0;
 	}
 	.events-grid-sec .white-sky-bg {
@@ -406,6 +403,7 @@
 	}
 	.events-grid-item-inner ul li .event-grid-item-inr {
 	    padding: 33px 30px 27px;
+	    padding-right: 15px;
 	}
 	.events-grid-item-inner ul li:first-child{
 		padding-top: 0;
@@ -436,5 +434,8 @@
 }
 
 @media(max-width: 359px){
+	.event-grid-heading {
+	    font-size: 20px!important;
+	}
 
 }

@@ -1,14 +1,18 @@
 
 @media (max-width: 1699px){
 	.container { 
-		max-width: 1200px;
+		max-width: 1160px;
 	}
 	.container-xlg{
-		max-width: 1630px;
+		max-width: 1300px;
+	}
+	.block-1440{
+		max-width: 1140px;
 	}
 	.block-1285{
-		max-width: 1170px;
+		max-width: 1000px;
 	}
+	
 	h1,.fl-h1{
 		font-size: 46px;
 	}
@@ -36,15 +40,6 @@
 	}
 }
 @media (max-width: 1499px) {
-    .container { 
-		max-width: 1130px;
-	}
-	.container-xlg{
-		max-width: 1430px;
-	}
-	.block-1285{
-		max-width: 1100px;
-	}
 	h1,.fl-h1{
 		font-size: 45px;
 	}
@@ -63,18 +58,7 @@
 }
 
 @media (max-width: 1399px) {
-	.container { 
-		max-width: 1100px;
-	}
-	.container-xlg{
-		max-width: 1330px;
-	}
-	.block-1285{
-		max-width: 1070px;
-	}
-	.block-1440{
-		max-width: 1140px;
-	}
+
 	h1,.fl-h1{
 		font-size: 44px;
 	}
@@ -100,11 +84,6 @@
 }
 
 
-@media(max-width: 1299px){
-	.container-xlg{
-		max-width: 1130px;
-	}
-}
 
 @media(max-width: 1199px){
 	.hide-lg{
