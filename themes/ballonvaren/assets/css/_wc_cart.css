@@ -14,9 +14,13 @@ body.woocommerce-cart .page-title h1{
 	text-transform: uppercase;
 	color: #243444;
 }
+.woocommerce-cart .page-grd-sec-wrp{
+	padding-top: 97px;
+}
 .cart-crtl{
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 82px;
 }
 .cart-crtl .cart-table-crtl{
 	width: 66.32%;
@@ -135,6 +139,9 @@ body.woocommerce-cart .woocommerce table.shop_table td{
 	border: none;
 	padding: 14px 0!important;
 }
+body.woocommerce-cart .woocommerce table.shop_table td.product-price {
+    padding-right: 30px!important;
+}
 .woocommerce-cart-form__cart-item .product-price .woocommerce-Price-amount {
 	margin-right: 5px;
 }
@@ -207,7 +214,8 @@ body.woocommerce-cart table.shop_table tbody tr td.actions{
 	display: none;
 }
 body.woocommerce-cart .cart-table-crtl table.shop_table{
-	padding-bottom: 28px;
+	padding-bottom: 0;
+	margin-bottom: 0!important;
 }
 body.woocommerce-cart .cart_totals h2{
 	margin-bottom: 30px;
@@ -275,7 +283,8 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::placeholder {
   color: #909BA5;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button {    
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button,
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button] {    
 	width: 100%;
 	margin-left: 0;
 	display: inline-block;
@@ -289,7 +298,8 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
     border: none!important;
     text-align: right;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover{
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover,
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button]:hover{
     color: #EE3E15!important;
     background: initial!important;
     border: none!important;
@@ -317,7 +327,7 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button{
 	background-color: #1DB4B2;
 	border-radius: 3px;
 	border-color: #1DB4B2!important;
-	padding: 14px 70px!important;
+	padding: 14px 15px!important;
 	font-size: 16px!important;
 	color: #fff;
 	text-transform: uppercase;
@@ -556,6 +566,9 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 @media(max-width: 1199px){
 	body.woocommerce-cart .cart_totals{
 		padding-left: 60px;
+	}
+	body.woocommerce-cart .product-thumbnail .product-name{
+		padding-left: 15px;
 	}
 }
 
