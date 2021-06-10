@@ -938,6 +938,10 @@ Gallery design
 	.news-details .white-sky-bg {
 	    top: -298px;
 	}
+	.ballon-rides-lft-top-img {
+	    top: -70px;
+	    left: -85px;
+	}
 
 }
 
@@ -1017,7 +1021,7 @@ Gallery design
 	    padding-bottom: 45px;
 	}
 	.ballon-rides-lft-top-img {
-	    top: -100px;
+	    top: -70px;
 	    left: -85px;
 	}
 	.ballon-rides-lft-top-img img{
