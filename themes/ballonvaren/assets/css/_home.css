@@ -318,9 +318,8 @@
 	.hm-dfp-gift-grd-smpl-img-cntlr{
 		margin-bottom: 15px;
 		height: 220px;
-	}
-	.hm-dfp-gift-grd-smpl-img-cntlr > img{
-		display: none;
+		border-radius: 3px;
+		overflow: hidden;
 	}
 	.hm-dfp-gift-grd-smpl-img{
 		height: 100%;
