@@ -56,7 +56,12 @@
 }
 .bnr-find-more-btn{
 	min-width: 334px;
-	padding: 18px 71px;
+	padding: 18px 20px;
+}
+.find-more-btn .fl-red-btn:hover{
+	background: #2C113E!important;
+	border-color: #2C113E!important;
+	color: #fff!important;
 }
 .bnr-ballon{
 	position: absolute;
@@ -407,9 +412,7 @@
 		min-width: 280px;
 		padding: 18px 20px;
 	}
-	.bnr-find-more-btn .fl-red-btn:hover{
-		background: #2C113E!important;
-	}
+	
 	.cloud-bg img:nth-child(1){
 		display: none;
 	}

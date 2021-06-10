@@ -138,7 +138,7 @@ overons-team-sec-wrp
 .overons-team-parachute-btm{
     position: absolute;
     bottom: 60px;
-    left: -125px;
+    left: -130px;
 }
 
 /*
@@ -148,11 +148,6 @@ overons-team-sec-wrp
 */
 
 @media (max-width: 1699px){
-	
-}
-
-
-@media (max-width: 1499px) {
 	.msnrytgi1 .overons-msnry-grd-item-img{
 		min-height: 230px;
 	}
@@ -165,33 +160,43 @@ overons-team-sec-wrp
 	.msnrytgi4 .overons-msnry-grd-item-img{
 		height: 295px;
 	}
+	.overons-msnry-grd-rgt {
+	    padding-left: 65px;
+	}
+}
+
+
+@media (max-width: 1499px) {
+	
 }
 
 @media(max-width: 1399px){
-	
+	.overons-team-parachute-tp {
+	    top: -305px;
+	    right: -50px;
+	}
+	.overons-team-parachute-btm {
+	    left: -65px;
+	    width: 200px;
+	}
 }
 
 @media(max-width: 1299px){
 	.overons-team-parachute-tp {
 	    top: -290px;
-	    right: -40px;
-	    background-size: 180px 260px;
+	    right: -10px;
 	    width: 180px;
-	    height: 260px;
 	}
 	.overons-team-parachute-btm {
-	    bottom: 60px;
-	    left: -60px;
-	}
-	.overons-msnry-grd-rgt {
-	    padding-left: 65px;
+	    bottom: 80px;
+	    left: -15px;
+	    width: 180px;
 	}
 	.boek-parachute-icon {
 	    right: -55px;
 	    bottom: -40px;
 	    width: 100px;
 	    height: 130px;
-	    background-size: 100px 130px;
 	}
 }
 
@@ -200,19 +205,17 @@ overons-team-sec-wrp
 	    right: -15px;
 	    bottom: -40px;
 	    width: 80px;
-	    height: 110px;
-	    background-size: 80px 110px;
 	}
 	.boek-je-form-bg-cntlr {
 	    padding-bottom: 120px;
 	}
 	.overons-team-parachute-tp {
 	    top: -270px;
-	    right: 0;
+	    right: 10px;
 	}
 	.overons-team-parachute-btm {
 	    bottom: 60px;
-	    left: -15px;
+	    left: 0;
 	}
 	.overons-team-sec-wrp {
 	    padding-bottom: 80px;
@@ -225,9 +228,6 @@ overons-team-sec-wrp
 	}
 	.overons-msnry-grd-sec-wrp {
 	    padding-bottom: 235px;
-	}
-	.overons-msnry-grd-wrp{
-		/*min-height: 720px;*/
 	}
 	.msnrytgi1 .overons-msnry-grd-item-img {
 	    min-height: 230px;
@@ -282,9 +282,7 @@ overons-team-sec-wrp
 	.msnrytgi4 .overons-msnry-grd-item-img {
 	    height: 265px;
 	}
-	.overons-msnry-grd-wrp{
-		/*min-height: 660px;*/
-	}
+
 	.overons-team-module {
 	    padding: 40px 70px;
 	}
@@ -371,6 +369,9 @@ overons-team-sec-wrp
 	.overons-msnry-grd-sec-wrp .contact-white-sky-bg {
 	    bottom: 0;
 	    height: 850px !important;
+	}
+	.overons-msnry-grd-lft .fl-h1{
+		padding-left: 5px;
 	}
 
 
