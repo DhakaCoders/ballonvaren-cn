@@ -25,9 +25,8 @@
     height: 765px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -195px;
     z-index: -1;
-    margin-bottom: -195px;
 }
 .bv-calender-inner{
 	display: flex;
