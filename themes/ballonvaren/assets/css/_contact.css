@@ -701,7 +701,7 @@ boek-je-form-sec-wrp
 
 @media(max-width: 1399px){
     .contact-parachute-icon {
-        right: -30px;
+        right: -80px;
         top: -265px;
         width: 200px;
         height: 240px;
@@ -711,6 +711,9 @@ boek-je-form-sec-wrp
 @media(max-width: 1299px){
 	.contact-google-parachute {
         left: -30px;
+    }
+    .contact-parachute-icon {
+        right: -30px;
     }
 
 }
