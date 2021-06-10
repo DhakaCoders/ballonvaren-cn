@@ -25,9 +25,8 @@
     height: 765px;
     left: 0;
     right: 0;
-    bottom: 0;
-    z-index: -1;
-    margin-bottom: -195px;
+    bottom: -195px;
+    z-index: 0;
 }
 .bv-calender-inner{
 	display: flex;
@@ -35,10 +34,16 @@
 .bv-calender-dsc{
 	max-width: 51%;
 	width: 100%;
+	padding-right: 110px;
 }
 .bv-calender-dsc-inner {
-    padding-right: 110px;
     padding-top: 60px;
+    padding-bottom: 35px;
+}
+.bv-calnender{
+	background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
+	opacity: 0.7;
+	height: 370px;
 }
 .bv-calender-img{
 	max-width: 49%;
@@ -195,7 +200,6 @@
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 @media (max-width: 1699px){
 	.bv-calender-dsc-inner {
-	    padding-right: 55px;
 	    padding-top: 60px;
 	}
 	.bv-clndr-absolute-img-two img {
