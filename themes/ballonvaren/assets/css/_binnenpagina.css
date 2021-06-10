@@ -619,6 +619,16 @@ Gallery design
 	top: -100px;
 	right: -100px;
 }
+.xs-booking-top-rgt-img{
+	position: absolute;
+	top: -95px;
+    right: -78px;
+}
+.xs-booking-btm-lft-img{
+	position: absolute;
+	top: -75px;
+    left: -77px;
+}
 .dfp-booking-grd-ctlr{
 	float: left;
 	width: 50%;
