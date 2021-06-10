@@ -324,7 +324,7 @@ if( $('.main-img-crtl').length ){
  $('.main-img-crtl').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
   fade: true,
   autoplay:true,
   asNavFor: '.thumbnails-cntlr .thumbnails',
@@ -336,7 +336,8 @@ $('.thumbnails-cntlr .thumbnails').slick({
   slidesToScroll: 1,
   asNavFor: '.main-img-crtl',
   dots: false,
-  arrows: true,
+  arrows: false,
+  infinite:true,
   autoplay:true,
   focusOnSelect: true
 });
