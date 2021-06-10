@@ -117,7 +117,13 @@ Responsive ---->
 
 	https://prnt.sc/152k2j8 - xs ao beshi hoyeche
 
-6. 
+6. https://prnt.sc/152lgir
+	ai sky bg ta 575px a design ar moto mileni
+
+7. https://prnt.sc/152ligj
+	left and right padding match koreni.
+
+
 
 
 
@@ -180,6 +186,24 @@ new--->
 4. https://prnt.sc/14oy7y2
 	hover korle amon daw
 
+
+
+
+
+Responsive ----->
+
+1. https://prnt.sc/152lrte
+	ai img ta clear aseni. 
+
+2. https://prnt.sc/152luib
+	text bere gele dhuke jasche
+
+3. https://prnt.sc/152lv44
+	ai img ta ai module ar under a hobe. ai module ta hide kore dile jeno img tao chole jay.
+
+4. https://prnt.sc/152ly4v
+	p ar vitore a nile problem hosche. > use korte hobe. 
+	
 
 
 
