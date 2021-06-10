@@ -202,6 +202,9 @@
 	.bnr-ballon{
 		left: 40px;
 	}
+	.hm-news-details-sec.news-details .white-sky-bg{
+		top: -283px;
+	}
 }
 
 @media (max-width: 1399px) {
