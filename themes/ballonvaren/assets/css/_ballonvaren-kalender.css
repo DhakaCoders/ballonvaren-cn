@@ -25,9 +25,8 @@
     height: 765px;
     left: 0;
     right: 0;
-    bottom: 0;
-    z-index: -1;
-    margin-bottom: -195px;
+    bottom: -195px;
+    z-index: 0;
 }
 .bv-calender-inner{
 	display: flex;
@@ -35,10 +34,15 @@
 .bv-calender-dsc{
 	max-width: 51%;
 	width: 100%;
+	padding-right: 110px;
 }
 .bv-calender-dsc-inner {
-    padding-right: 110px;
     padding-top: 60px;
+    padding-bottom: 35px;
+}
+.bv-calnender{
+	background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
+	opacity: 0.7;
 }
 .bv-calender-img{
 	max-width: 49%;
@@ -195,7 +199,6 @@
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 @media (max-width: 1699px){
 	.bv-calender-dsc-inner {
-	    padding-right: 55px;
 	    padding-top: 60px;
 	}
 	.bv-clndr-absolute-img-two img {
@@ -232,18 +235,29 @@
 
 @media(max-width: 1399px){
 	.bv-clndr-absolute-img-two {
-	    margin-right: -31px;
-	    margin-top: 516px;
+	    margin-right: -85px;
+	    margin-top: 542px;
 	}
 	.bv-clndr-absolute-img-two img {
 	    height: auto;
-	    width: 170px;
+	    width: 150px;
 	}
 	
 }
+@media(max-width: 1299px){
+	.bv-clndr-absolute-img-two {
+	    margin-right: -34px;
+	    margin-top: 542px;
+	}
+}
 
 @media(max-width: 1199px){
-	.inline-bg-img {
+	.bv-clndr-absolute-img-two {
+	    margin-right: 0;
+	    margin-top: 542px;
+	}
+	
+/*	.inline-bg-img {
 	    height: 525px;
 	}
 	.events-grid-sec .white-sky-bg {
@@ -270,9 +284,9 @@
 	}
 	.events-grid-sec {
 	    padding-top: 120px;
-	}
+	}*/
 }
-@media(max-width: 991px){
+/*@media(max-width: 991px){
 	.events-grid-sec .white-sky-bg {
 	    top: -182px;
 	}
@@ -387,4 +401,4 @@
 	}
 
 }
-
+*/
