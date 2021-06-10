@@ -880,8 +880,8 @@ boek-je-form-sec-wrp
         height: 600px;
     }
     .overons-team-sec-wrp .contact-white-sky-bg {
-        top: -650px;
-        height: 800px;
+        top: -835px;
+        height: 840px;
     }
     .boek-je-form-sec-wrp .contact-form-info-cntlr {
         padding: 30px 30px 30px 30px;
@@ -892,6 +892,9 @@ boek-je-form-sec-wrp
     }
     .contact-form-info-cntlr {
         padding: 35px 30px 35px 30px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea{
+        margin-bottom: 20px;
     }
 }
 
@@ -926,6 +929,10 @@ boek-je-form-sec-wrp
 	    margin-bottom: 0;
 	    padding-top: 18px;
 	}
+    .overons-team-sec-wrp .contact-white-sky-bg {
+        top: -650px;
+        height: 800px;
+    }
 	
 
 }
