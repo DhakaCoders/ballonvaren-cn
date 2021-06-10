@@ -904,6 +904,10 @@ Gallery design
 	margin-bottom: 20px;
 }
 
+.dft-blockquote blockquote > p{
+	margin-bottom: 0!important;
+}
+
 
 
 /*vip*/
