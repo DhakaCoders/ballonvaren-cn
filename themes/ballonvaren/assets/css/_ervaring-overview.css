@@ -84,7 +84,7 @@
 
 
 /*responsive*/
-@media(max-width: 1499px){
+@media(max-width: 1699px){
 	.exprns-ovrvw-item-desc p{
 		font-size: 18px;
 	}
@@ -94,9 +94,6 @@
 	.exprns-ovrvw-item{
 		padding: 45px 28px 43px 28px;
 	}
-	/*.exprns-ovrvw-item-btn a.red-color-arrow-btn i{
-		margin-top: -5px!important;
-	}*/
 }
 @media(max-width: 1199px){
 	.exprns-ovrvw-grid-cntlr{
