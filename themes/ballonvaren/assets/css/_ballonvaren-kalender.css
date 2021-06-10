@@ -230,7 +230,19 @@
 }
 
 
-/*@media(max-width: 1199px){
+@media(max-width: 1399px){
+	.bv-clndr-absolute-img-two {
+	    margin-right: -31px;
+	    margin-top: 516px;
+	}
+	.bv-clndr-absolute-img-two img {
+	    height: auto;
+	    width: 170px;
+	}
+	
+}
+
+@media(max-width: 1199px){
 	.inline-bg-img {
 	    height: 525px;
 	}
@@ -375,4 +387,4 @@
 	}
 
 }
-*/
+
