@@ -74,12 +74,12 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	margin-top: 540px;
+	margin-top: 547px;
 	margin-right: -140px;
 }
 .events-grid-sec{
 	position: relative;
-	padding-top: 180px;
+	padding-top: 191px;
 }
 .events-grid-item-inner{
 	padding-bottom: 70px;
@@ -199,20 +199,21 @@
 	}
 	.bv-clndr-absolute-img-two img {
 	    height: auto;
-	    width: 200px;
+	    width: 180px;
 	}	
 	.bv-clndr-absolute-img-two {
-	    margin-right: -120px;
-	    margin-top: 515px;
+	    margin-right: -107px;
+	    margin-top: 510px;
 	}
 	.off-days-sec:before {
-	    height: 740px;
+	    height: 630px;
+	    margin-bottom: -117px;
 	}
 	.no-events-show .off-days-sec {
 	    padding-bottom: 150px;
 	}
 	.inline-bg-img {
-	    height: 600px;
+	    height: 570px;
 	}
 	.events-grid-item-inner ul li .event-grid-item-inr{
 		padding: 31px 29px 35px;
@@ -223,9 +224,12 @@
 	.events-grid-sec{
 		padding-top: 150px;
 	}
+	.event-date span{
+		margin-bottom: 15px;
+	}
 }
 
-@media (max-width: 1499px) {
+/*@media (max-width: 1499px) {
 	.bv-calender-dsc-inner {
 	    padding-right: 85px;
 	    padding-top: 60px;
@@ -240,7 +244,6 @@
 		height: 75px;
 	}
 	.event-grid-item-inr p {
-	    /*font-size: 15px;*/
 	}
 	.event-date span {
 	    font-size: 15px;
@@ -291,14 +294,13 @@
 	.inline-bg-img {
 	    height: 570px;
 	}
-}
+}*/
 
 @media(max-width: 1199px){
 	.inline-bg-img {
 	    height: 525px;
 	}
 	.events-grid-sec .white-sky-bg {
-	    /*top: -258px;*/
 	}
 	.bv-clndr-absolute-img-two {
 	    margin-right: -13px;
