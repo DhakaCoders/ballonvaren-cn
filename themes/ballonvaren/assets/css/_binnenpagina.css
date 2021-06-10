@@ -1281,6 +1281,10 @@ Gallery design
 	.dfp-grd-module .blog-grid-img {
 	    height: 260px;
 	}
+	.dfp-booking-grd,
+	.dfp-gift-grd{
+		padding: 45px 30px 45px;
+	}
 
 }
 
@@ -1626,6 +1630,9 @@ Gallery design
 	}
 	.dfp-grd-module .blog-grid-img {
 	    height: 226px;
+	}
+	.dfp-booking-grd, .dfp-gift-grd {
+	    padding: 28px 30px 28px;
 	}
 }
 
