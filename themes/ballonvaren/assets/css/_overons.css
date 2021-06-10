@@ -17,6 +17,10 @@ overons-msnry-grd-sec-wrp
 	position: relative;
 	height: 100%;
 }
+.overons-msnry-grd-cntlr{
+	margin: 0 -12px;
+	overflow: hidden;
+}
 .overons-msnry-grd-item{
 	/*position: absolute;
 	top: 0;
@@ -47,8 +51,6 @@ overons-msnry-grd-sec-wrp
 .overons-msnry-grd-lft {
     width: 42%;
     float: left;
-    margin-left: -12px;
-    margin-right: -12px;
 }
 .overons-msnry-grd-rgt{
 	width: 58%;
@@ -305,7 +307,10 @@ overons-team-sec-wrp
 	}
 	.overons-msnry-grd-lft {
 	    width: 100%;
+	}
+	.overons-msnry-grd-cntlr {
 	    margin: 0 -8px;
+	    overflow: hidden;
 	}
 	.overons-msnry-grd-rgt {
 	    padding-left: 0;
@@ -373,6 +378,10 @@ overons-team-sec-wrp
 	.overons-msnry-grd-lft .fl-h1{
 		padding-left: 6px;
 	}
+	.overons-msnry-grd-wrp{
+		display: block;
+	}
+
 
 
 }
