@@ -70,15 +70,12 @@ ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
+	top: 0;
 	width: 10px;
 	height: 10px;
 	background: #EE3E15;
 	border-radius: 100%;
-	margin-top: -2px;
+	margin-top: 10px;
 }
 ul li.refGridItem:before{
 	display: none;
@@ -1156,10 +1153,6 @@ Gallery design
 	.glry-col-3 .gallery-icon-img {
 	    height: 240px;
 	}
-	.default-page-con ul li::before, 
-	ul li::before{
-		margin-top: -3px;
-	}
 	.fl-fancy-module {
 	    margin-bottom: 30px;
 	    height: 480px;
@@ -1369,10 +1362,6 @@ Gallery design
 	/*.dfp-text-module{
 		padding-right: 10px;
 	}*/
-	.default-page-con ul li::before, 
-	ul li::before{
-		margin-top: -2px;
-	}
 	.gallery-wrap{
 		padding-bottom: 0;
 	}
@@ -1688,7 +1677,7 @@ Gallery design
 	    line-height: 18px;
 	}
 	.default-page-con ul li::before, ul li::before{
-		margin-top: -4px;
+		margin-top: 5px;
 	}
 	.default-page-con h1, .default-page-con h2, .default-page-con h3, .default-page-con h4, .default-page-con h5 {
 	    margin-bottom: 20px;

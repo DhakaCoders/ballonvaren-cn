@@ -198,6 +198,9 @@
 	.banner-inner p{
 		font-size: 19px;
 	}
+	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
+		padding-top: 115px;
+	}
 }
 
 @media (max-width: 1499px) {
@@ -253,13 +256,11 @@
 	.banner-sub-hdr-title-2{
 		margin-bottom: 30px;
 	}
-}
-
-@media (max-width: 1099px) {
-	.cloud-bg{
-		top: -275px;
+	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
+		padding-top: 90px;
 	}
 }
+
 
 @media (max-width: 991px) {
 	.banner-sub-hdr-title{
@@ -273,6 +274,9 @@
 	}
 	.banner-inner p{
 		font-size: 17px;
+	}
+	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
+		padding-top: 70px;
 	}
 	
 }
@@ -298,6 +302,15 @@
 	}
 	.hm-dfp-twogrd-module-cntlr .dfp-twogrd-module{
 		display: block;
+	}
+	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
+		padding-top: 40px;
+	}
+	.hm-overons-msnry-grd-sec-wrp .overons-msnry-grd-dsc a{
+		display: inline-block;
+	}
+	.hm-overons-msnry-grd-dsc{
+		text-align: center;
 	}
 }
 
