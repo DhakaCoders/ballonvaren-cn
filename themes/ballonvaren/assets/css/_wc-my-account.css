@@ -724,6 +724,9 @@ body.woocommerce-account #login_register #customer_login .u-column2 .signup-noti
 .page-grd-sec-wrp {
     padding-top: 102px;
 }
+body.loggedin-deshboard-crtl .page-grd-sec-wrp{
+    padding-bottom:195px;
+}
 body.woocommerce-edit-account .page-grd-sec-wrp,
 body.woocommerce-orders .page-grd-sec-wrp{
     padding-top:0px;
@@ -1833,13 +1836,17 @@ body.woocommerce-checkout section.checkout-top-sec{
     display: flex;
     align-items: center;
 }
-@media(max-width:1599px){
+@media(max-width:1699px){
     body.woocommerce-account .woocommerce-notices-wrapper{
         margin-bottom: 60px;
     }
     body.hide-account-title .woocommerce-notices-wrapper{
         margin-bottom:0px;
     }
+    body.loggedin-deshboard-crtl .page-grd-sec-wrp{
+        padding-bottom:150px;
+    }
+
 }
 
 @media(max-width: 1499px){
@@ -1921,6 +1928,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     /*  --------------------- account-deshbord -------------------------*/
     body.loggedin-winkelmandje-crtl .innerpage-con-wrap{
         max-width: 100%;
+    }
+    body.loggedin-deshboard-crtl .page-grd-sec-wrp{
+        padding-bottom:100px;
     }
     body.loggedin-deshboard-crtl .woocommerce-MyAccount-navigation .nav-text{
         margin-bottom:40px;
@@ -2187,6 +2197,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a{
         font-size: 14px;
     }
+    body.loggedin-deshboard-crtl .page-grd-sec-wrp{
+        padding-bottom:0px;
+    }
     /* -------------------- myaccount login-register-page ----------------------*/
     .page-grd-sec-wrp{
         padding-top:0px;
@@ -2250,10 +2263,11 @@ body.woocommerce-checkout section.checkout-top-sec{
         order:2;
     }
     body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-     order: 1;
-    width: 100%!important;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+        order: 1;
+        width: 100%!important;
+        padding-bottom: 31px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid #ECEEEF;
     }
     body.woocommerce-account .woocommerce-form#mail_checker{
         padding-top: 0px;
