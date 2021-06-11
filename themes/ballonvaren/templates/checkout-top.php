@@ -45,7 +45,7 @@
 	</div>
 </section>
 <?php else: ?>
-<section class="checkout-backbtn-sec show-sm">
+<section class="checkout-backbtn-sec">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
