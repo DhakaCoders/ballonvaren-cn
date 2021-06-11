@@ -446,3 +446,8 @@
 		max-width: 200px;
 	}
 }
+@media(max-width: 359px){
+	.footer-top-sec .hdr-color-border:after{
+		margin-top: -5px;
+	}
+}

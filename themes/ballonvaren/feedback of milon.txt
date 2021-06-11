@@ -97,6 +97,36 @@ new--->
 
 
 
+Responsive ---->
+
+1. https://prnt.sc/152jsrm
+	ai positon ta daw ai media te, then tene dekho abar niche scrollbar ase naki.
+
+2. https://prnt.sc/152ju0w
+	1699px ai font size ta daw
+
+3. https://prnt.sc/152jx8s
+	line-height thik nei. 
+
+4. https://prnt.sc/152jxt9
+	ai heading ar font-size custom korte hobe. 18px hobe desktop and responsive ao. 320px pojonto.
+
+
+5. https://prnt.sc/152jzjx
+	desktop ai gap ta thik nei. beshi hoyeche.
+
+	https://prnt.sc/152k2j8 - xs ao beshi hoyeche
+
+6. https://prnt.sc/152lgir
+	ai sky bg ta 575px a design ar moto mileni
+
+7. https://prnt.sc/152ligj
+	left and right padding match koreni.
+
+
+
+
+
 
 Overons
 ----------------------
@@ -156,6 +186,26 @@ new--->
 4. https://prnt.sc/14oy7y2
 	hover korle amon daw
 
+
+
+
+
+Responsive ----->
+
+1. https://prnt.sc/152lrte
+	ai img ta clear aseni. 
+
+2. https://prnt.sc/152luib
+	text bere gele dhuke jasche
+
+3. https://prnt.sc/152lv44
+	ai img ta ai module ar under a hobe. ai module ta hide kore dile jeno img tao chole jay.
+
+4. https://prnt.sc/152ly4v
+	p ar vitore a nile problem hosche. > use korte hobe. 
+
+
+5. ai page ar baki check kore pore fix dibo , apatoto aigulo koro.
 
 
 

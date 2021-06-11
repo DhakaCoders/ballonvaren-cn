@@ -324,7 +324,7 @@ if( $('.main-img-crtl').length ){
  $('.main-img-crtl').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: false,
   fade: true,
   autoplay:true,
   asNavFor: '.thumbnails-cntlr .thumbnails',
@@ -336,7 +336,8 @@ $('.thumbnails-cntlr .thumbnails').slick({
   slidesToScroll: 1,
   asNavFor: '.main-img-crtl',
   dots: false,
-  arrows: true,
+  arrows: false,
+  infinite:true,
   autoplay:true,
   focusOnSelect: true
 });
@@ -492,7 +493,7 @@ if( $('.humbergar').length ){
     }
   }
 
-  if(windowWidth <= 767){
+  if(windowWidth <= 991){
     if( $('.dfpBlogSlider').length ){
       $('.dfpBlogSlider').slick({
         dots: true,
@@ -501,8 +502,20 @@ if( $('.humbergar').length ){
         autoplay: false,
         autoplaySpeed: 4000,
         speed: 700,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
       });
     }
   }
