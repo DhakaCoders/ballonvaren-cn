@@ -455,18 +455,20 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Additional information',
                 'Subtotal',
                 'Total',
-                'Set an amount'
+                'Set an amount',
+                'Apply coupon'
             ),
             array( 
                 'ik ga bestellen', 
                 'ik ga bestellen', 
-                '1. Persoonlijke gegevens', 
+                'Persoonlijke gegevens', 
                 'Overzicht', 
                 'Afrekenen',
-                '4. Extra Info',
+                'Extra Info',
                 'Subtotaal',
                 'Totaal',
-                'Bedrag'
+                'Bedrag',
+                'VERZILVER'
             ),
             $translated
         );

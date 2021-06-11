@@ -35,7 +35,8 @@
         </div>
       </div>
     <?php } ?>
-  <div class="container">
+    <?php if( is_checkout() ){ get_template_part('templates/checkout', 'top'); } ?>
+   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="page-wrap clearfix">
