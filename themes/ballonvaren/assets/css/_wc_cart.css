@@ -194,11 +194,7 @@ body.woocommerce-cart .product-thumbnail{
 	padding-top: 0!important;
 	padding-bottom: 0!important;
 }
-body.woocommerce-cart .empty-cart-btn{
-	display: none;
-}
 body.woocommerce-cart .empty-cart-btn a{
-	
 	color: #0275D8;
 	text-decoration: underline;
 }
