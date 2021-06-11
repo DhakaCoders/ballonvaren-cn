@@ -159,23 +159,40 @@
 }
 .chk-scl-itm{
 	padding: 0 15px;
+	position: relative;
+	transition: all .5s;
+	-ms-transition: all .5s;
+	-webkit-transition: all .5s;
 }
 .chk-scl-itm:hover i,
 .chk-scl-itm:hover span{
-	color: #2285e3;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
 .chk-scl-itm i{
 	color: #fff;
-	background-color: #909BA5;
-	width: 28px;
-	height: 28px;
+	width: 24px;
+	height: 24px;
 	border-radius: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+	transition: all .5s;
+	-ms-transition: all .5s;
+	-webkit-transition: all .5s;
+}
+.chk-scl-itm i svg{
+	transition: all .5s;
+	-ms-transition: all .5s;
+	-webkit-transition: all .5s;
+}
+.chk-scl-itm:hover i svg{
+	fill: #EE3E15;
+	transition: all .5s;
+	-ms-transition: all .5s;
+	-webkit-transition: all .5s;
 	
 }
 .chk-scl-itm span{
