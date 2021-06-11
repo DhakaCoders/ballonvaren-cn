@@ -190,4 +190,16 @@
 	.fl-pagination-ctlr ul li a, .fl-pagination-ctlr ul li span{
 		font-size: 14px;
 	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 15px;
+	}
+}
+
+@media(max-width: 479px){
+	.fl-pagination-ctlr ul{
+		margin: 0 -12px;
+	}
+	.fl-pagination-ctlr ul li{
+		padding: 0 12px;
+	}
 }
