@@ -93,6 +93,7 @@
 .checkout-page-title .checkoutpt-right{
     /*float: right;*/
     margin-left: auto;
+    display: none;
 }
 .checkout-page-title .progressbar-crtl{
 	width: 440px;
