@@ -30,6 +30,8 @@
 }
 .bv-calender-inner{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .bv-calender-dsc{
 	max-width: 51%;
@@ -46,6 +48,7 @@
 	box-shadow: 0px 0px 61px 15px rgba(240,240,240,1);
 	-webkit-box-shadow: 0px 0px 61px 15px rgba(240,240,240,1);
 	-moz-box-shadow: 0px 0px 61px 15px rgba(240,240,240,1);
+	position: relative;
 }
 .bv-calender-img{
 	max-width: 49%;
@@ -56,6 +59,7 @@
 	font-style: normal;
 	text-transform: uppercase;
 	color: #2C113E;
+	margin-bottom: 40px;
 }
 .bv-calender-dsc-inner p{
 	font-style: normal;
@@ -63,7 +67,6 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #909BA5;
-	margin: 0;
 }
 .inline-bg-img{
 	position: relative;
@@ -197,6 +200,18 @@
     top: -185px;
     height: 382px;
 }
+.calender-inline-bg{
+	position: relative;
+	height: 370px;
+}
+.calender-inline-bg span{
+	display: inline-block;
+}
+.calender-inline-bg span{
+	position: absolute;
+	right: 0;
+	bottom: -119px;
+}
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 /*---------------------------------------------------reponsive--------------------------------------------------------*/
 @media (max-width: 1699px){
@@ -232,6 +247,10 @@
 	.event-date span{
 		margin-bottom: 15px;
 	}
+	.calender-inline-bg {
+	    height: 315px;
+	}
+	
 }
 
 
@@ -252,8 +271,16 @@
 	    margin-top: 542px;
 	}
 	.bv-calender-dsc-inner {
-	    padding-top: 30px;
+	    padding-top: 20px;
+	    padding-bottom: 10px;
 	}
+	.off-days-sec:before {
+	    height: 735px;
+	}
+	.bv-calender-dsc-inner h2{
+		margin-bottom: 15px;
+	}
+	
 }
 
 @media(max-width: 1199px){
@@ -262,7 +289,7 @@
 	    margin-top: 542px;
 	}
 	.events-grid-item-inner ul li .event-grid-item-inr{
-		padding-right: 15px;
+		padding-right: 20px;
 	}
 	.event-grid-heading{
 		font-size: 19px!important;
@@ -282,23 +309,33 @@
 	}
 	.bv-clndr-absolute-img-two {
 	    margin-right: 0;
-	    margin-top: 490px;
+	    margin-top: 470px;
 	}
 	.off-days-sec:before {
-	    height: 680px;
+	    height: 690px;
 	}	
 	.bv-calender-dsc {
 	    padding-right: 60px;
 	}
+	.bv-clndr-absolute-img-one{
+		margin-left: -45px;
+	}
+	.events-grid-sec {
+	    padding-top: 130px;
+	}
+	.calender-inline-bg {
+	    height: 335px;
+	}
+	
 	
 
 }
 @media(max-width: 991px){
 	.inline-bg-img {
-	    height: 440px;
+	    height: 460px;
 	}
 	.off-days-sec:before {
-	    height: 565px;
+	    height: 636px;
 	}
 	.bv-clndr-absolute-img-two {
 	    margin-top: 385px;
@@ -308,89 +345,41 @@
 	    width: 135px;
 	}
 	.events-grid-sec {
-	    padding-top: 135px;
+	    padding-top: 117px;
 	}
 	.bv-clndr-absolute-img-two {
 	    margin-top: 415px;
 	}
+	.bv-calender-dsc-inner p{
+		line-height: 21px;
+	}
+	.calender-inline-bg {
+	    height: 280px;
+	}
 
 }
-/*@media(max-width: 767px){
-	.bv-calender-inner {
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-	.bv-calender-dsc-inner {
-	    padding-right: 0;
-	    padding-top: 0;
-	    display: none;
-	}
+@media(max-width: 767px){
 	.bv-calender-dsc {
-	    margin-bottom: 30px;
+	    padding-right: 0;
+	    max-width: 100%;
 	}
-	.bv-clndr-absolute-img-one{
-		display: none;
+	.bv-calender-iner {
+	    text-align: center;
 	}
-	.bv-calender-img, .bv-calender-dsc{
-		max-width: 100%;
-	}
-	.bv-calender-img{
-		display: none;
-	}
-	.off-days-sec:before {
-	    height: 670px;
-	}
-	.off-days-sec {
-		padding-bottom: 180px;
-	}
-	.events-grid-sec {
-	    padding-bottom: 0;
-	}
-	.events-grid-sec .white-sky-bg {
-	    top: -170px;
-	}
-	.bv-calender-dsc-inner h2 {
-	    font-size: 30px;
-	}
-	.bv-clndr-absolute-img-two {
-	    margin-right: 0;
-	    margin-top: 460px;
-	}
-	.events-grid-item-inner ul {
-	    margin: -20px -13px;
+	.calender-inline-bg {
+	    height: 500px;
 	}
 	.events-grid-item-inner ul li{
-		padding: 20px 13px;
 		max-width: 100%;
 	}
-	.event-grid-item-inr p {
-		line-height: 1.3;
-	}
-	.events-grid-item-inner ul li .event-grid-item-inr {
-	    padding: 33px 30px 27px;
-	    padding-right: 15px;
-	}
-	.events-grid-item-inner ul li:first-child{
-		padding-top: 0;
-	}
-	.events-grid-item-inner ul li:last-of-type{
-		padding-bottom: 0;
-	}
-	.events-grid-item-inner ul{
-		margin: -15px 0;
-	}
-	.events-grid-item-inner ul li {
-	    max-width: 100%;
-	    padding: 15px 0;
-	}
+
+	
 }
 @media(max-width: 575px){
-	.bv-calender-dsc-inner h2 {
-	    font-size: 26px;
+	.calender-inline-bg {
+	    height: 320px;
 	}
-	.event-grid-item-inr p {
-	    line-height: 1.2;
-	}
+
 }
 
 @media(max-width: 479px){
@@ -403,5 +392,5 @@
 	    font-size: 20px!important;
 	}
 
-}*/
+}
 
