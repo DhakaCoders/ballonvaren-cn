@@ -161,7 +161,7 @@
 	color: #EE3E15;
 }
 .event-grid-heading{
-	margin-bottom: 13px;
+	margin-bottom: 20px;
 }
 .event-date {
 	position: relative;
@@ -181,7 +181,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	margin-top: -1px;
+	margin-top: -2px;
 }
 .event-grid-item-inr p{
 	font-size: 16px;
@@ -245,7 +245,7 @@
 		padding-top: 150px;
 	}
 	.event-date span{
-		margin-bottom: 15px;
+		margin-bottom: 24px;
 	}
 	.calender-inline-bg {
 	    height: 315px;
@@ -290,6 +290,7 @@
 	}
 	.events-grid-item-inner ul li .event-grid-item-inr{
 		padding-right: 20px;
+		padding-bottom: 26px;
 	}
 	.event-grid-heading{
 		font-size: 19px!important;
@@ -326,7 +327,13 @@
 	.calender-inline-bg {
 	    height: 335px;
 	}
-	
+	.bv-clndr-absolute-img-one img {
+	    width: 55px;
+	    height: auto;
+	}
+	.bv-clndr-absolute-img-one {
+	    margin-left: -35px;
+	}
 	
 
 }
@@ -371,6 +378,10 @@
 	}
 	.events-grid-item-inner ul li{
 		max-width: 100%;
+		padding: 15px 13px;
+	}
+	.event-grid-heading {
+	    font-size: 22px!important;
 	}
 
 	
