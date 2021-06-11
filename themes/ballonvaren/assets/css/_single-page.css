@@ -1,0 +1,78 @@
+.review-sec{
+	padding-top: 82px;
+	position: relative;
+}
+.review-position-bg {
+    position: absolute;
+    top: -285px;
+    left: 0;
+    right: 0;
+}
+.review-hdr{
+	padding-bottom: 38px;
+	border-bottom: 1px solid #ECF1F4;
+	margin-bottom: 33px;
+}
+.revws-buyer{
+	margin: -17px 0;
+}
+.revw-buyer{
+	padding: 17px 0;
+}
+.revw-hdr-title{
+	letter-spacing: -0.02em;
+	color: #2C113E;
+	font-weight: 700;
+	font-size: 38px;
+	margin-bottom: 35px;
+}
+.review-hdr p{
+	margin-bottom: 0;
+}
+.revw-buyer-details{
+	display: flex;
+	align-items: center;
+	margin-bottom: 19px;
+}
+.buyer-img-cntrl {
+	display: inline-block;
+	vertical-align: baseline;
+	width: 58px;
+	height: 58px;
+	border-radius: 100%;
+}
+.buyer-img-cntrl img{
+	max-height: 58px;
+	width: auto;
+}
+.revw-point{
+	padding-left: 18px;
+}
+.revw-point i{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 3px;
+}
+.revw-date span{
+	font-weight: 500;
+	font-size: 18px;
+}
+.revw-comments p{
+	margin-bottom: 0;
+}
+.review-btn{
+	padding-top: 39px;
+}
+.review-btn a.revw-btn{
+	display: inline-block;
+	vertical-align: baseline;
+	min-width: 337px;
+	padding: 16px 30px;
+}
+
+.single-product .cadeaubonnen-page-link{
+	padding-bottom: 278px;
+}
+.single-product .eveline-vernaeve-cntlr{
+	margin-bottom: 106px;
+}
