@@ -29,7 +29,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<th class="product-name"><strong><?php esc_html_e( 'Producten', 'woocommerce' ); ?></strong></th>
 						<th class="product-price"><?php esc_html_e( 'Prijs', 'woocommerce' ); ?></th>
 						<th class="product-weight"><?php esc_html_e( 'Gewicht', 'woocommerce' ); ?></th>
-						<th class="product-quantity"><?php esc_html_e( 'Aantal', 'woocommerce' ); ?></th>
+						<th class="product-quantity"><?php esc_html_e( 'Hoeveelheid', 'woocommerce' ); ?></th>
 						<th class="product-remove">&nbsp;</th>
 					</tr>
 				</thead>
@@ -57,6 +57,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								}
 								?>
 									<div class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+									<span class="cart-instock">Op voorraad</span>
 									<?php
 									$exp_title = explode('-', $_product->get_name());
 									if(!empty($exp_title)){
@@ -165,6 +166,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<?php do_action( 'woocommerce_after_cart_table' ); ?>
 		</form>
 		<div class="empty-cart-btn"><a href="<?php echo esc_url( wc_get_cart_url() ); ?>?clear-cart=yes"><?php esc_html_e( 'Winkelmand legen', 'woocommerce' ); ?></a></div>
+        <?php do_action('cbv_wc_cross_sell_display'); ?>
 </div>
 	<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 	<div class="cart-total-crtl">

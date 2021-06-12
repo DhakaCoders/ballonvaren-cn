@@ -158,7 +158,7 @@
     top: -324px;
 }
 .hm-overons-msnry-grd-dsc a{
-	margin-top: 8px;
+	margin-top: 8px!important;
 }
 .hm-dfp-twogrd-module-sce{
 
@@ -200,6 +200,9 @@
 	}
 	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
 		padding-top: 115px;
+	}
+	.hm-dfp-twogrd-module-sce .white-sky-bg{
+
 	}
 }
 
@@ -312,6 +315,29 @@
 	.hm-overons-msnry-grd-dsc{
 		text-align: center;
 	}
+	.hm-dfp-gift-grd-smpl-img-cntlr{
+		margin-bottom: 15px;
+		height: 220px;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+	.hm-dfp-gift-grd-smpl-img{
+		height: 100%;
+		width: 100%;
+	}
+	.hm-dfp-twogrd-module-cntlr .dfp-twogrd-module{
+		display: flex;
+		flex-direction: column;
+	}
+	.xs-booking-top-rgt-img{
+		right: -20px!important;
+	}
+	.hm-dfp-twogrd-module-cntlr .dfp-booking-grd, .hm-dfp-twogrd-module-cntlr .dfp-gift-grd {
+		padding: 40px 30px 40px;
+	}
+	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
+		padding-bottom: 150px;
+	}
 }
 
 @media (max-width: 639px) {
@@ -332,6 +358,20 @@
 	}
 	.banner-sub-hdr-title-2{
 		margin-bottom: 24px;
+	}
+	.hm-dfp-twogrd-module-cntlr .dfp-booking-grd, .hm-dfp-twogrd-module-cntlr .dfp-gift-grd {
+		padding: 28px 30px 28px;
+	}
+	.hm-dfp-twogrd-module-cntlr .xs-booking-top-rgt-img {
+		position: absolute;
+		top: -71px;
+	}
+	.hm-dfp-twogrd-module-cntlr .xs-booking-top-rgt-img img{
+		max-height: 150px;
+	}
+	.hm-dfp-twogrd-module-sce .white-sky-bg{
+		height: 130px;
+		top: -129px;
 	}
 }
 

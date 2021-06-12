@@ -125,14 +125,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					?>
 					<div class="checkout-terms">
 						<?php wc_get_template_part( 'checkout/terms' ); ?>
-							<p class="form-row validate-required">
-							<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
-							<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="accept_condition" id="accept_condition" required/>
-								<span class="woocommerce-terms-and-conditions-checkbox-text">
-									Ik geef toestemming voor de verwerking van mijn persoonsgegevens
-								</span>
-							</label>
-						</p>
 					</div>
 					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
 				</div>

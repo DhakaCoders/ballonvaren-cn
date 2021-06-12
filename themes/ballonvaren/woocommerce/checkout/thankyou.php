@@ -67,7 +67,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
               	<?php if($blok1 = $thankyou['blok_1']): ?>
                 <div class="chk-acc-tp-cntrl">
                   <div class="chk-acc-tp">
-                    <img src="<?php echo THEME_URI; ?>assets/images/srv&cont.svg" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont.svg" alt="">
 					<?php 
                       	if( !empty($blok1['titel']) ) printf('<h4 class="fl-h4 chk-tp-title">%s</h4>', $blok1['titel']); 
                       	if( !empty($blok1['beschrijving']) ) echo wpautop($blok1['beschrijving']); 
@@ -78,7 +78,7 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
           	    <?php if($blok2 = $thankyou['blok_2']): ?>
                 <div class="chk-acc-btm-cntrl">
                   <div class="chk-acc-btm">
-                    <img src="<?php echo THEME_URI; ?>assets/images/srv&cont-2.svg" alt="">
+                    <img src="<?php echo THEME_URI; ?>/assets/images/srv&cont-2.svg" alt="">
                     <?php 
                       	if( !empty($blok2['titel']) ) printf('<h4 class="fl-h4 chk-btm-title">%s</h4>', $blok2['titel']); 
                       	if( !empty($blok2['beschrijving']) ) echo wpautop($blok2['beschrijving']); 
@@ -89,26 +89,40 @@ do_action( 'woocommerce_before_thankyou', $order->get_id() );
               </div>
               <div class="chkout-scl">
                 <div class="chkout-scl-hdr">
-                  <h4 class="fl-h4 chk-scl-title">social media</h4>
-                </div>  
+                  <?php 
+                    if( $socialinfo =  $thankyou['socialinfo'] ):
+                    if( !empty($socialinfo['titel']) ) printf('<h4 class="fl-h4 chk-scl-title">%s</h4>', $socialinfo['titel']);
+                    endif;
+                  ?>
+                </div> 
+                <?php if(!empty($smedias)):  ?> 
                 <div class="chk-scl-blg">
+                  <?php if( !empty($smedias['facebook_url']) ): ?>
                   <div class="chk-scl-itm fb">
-                    <!-- <a href="#" class="overlay-link"></a> -->
+                    <a href="<?php echo $smedias['facebook_url']; ?>" class="overlay-link"></a>
                     <i class="fab fa-facebook-f"></i>
                   </div>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['instagram_url']) ): ?>
                   <div class="chk-scl-itm inst">
-                    <!-- <a href="#" class="overlay-link"></a> -->
+                    <a href="<?php echo $smedias['instagram_url']; ?>" class="overlay-link"></a>
                     <i class="fab fa-instagram"></i>
                   </div>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['twitter_url']) ): ?>
                   <div class="chk-scl-itm twitter">
-                    <!-- <a href="#" class="overlay-link"></a> -->
+                    <a href="<?php echo $smedias['twitter_url']; ?>" class="overlay-link"></a>
                     <i class="fab fa-twitter"></i>
                   </div>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['linkedin_url']) ): ?>
                   <div class="chk-scl-itm linkedin">
-                    <!-- <a href="#" class="overlay-link"></a> -->
+                    <a href="<?php echo $smedias['linkedin_url']; ?>" class="overlay-link"></a>
                     <i class="fab fa-linkedin-in"></i>
                   </div>
+                  <?php endif; ?>
                 </div>
+                <?php endif; ?>
               </div>
           		<?php endif; ?>
             </div>

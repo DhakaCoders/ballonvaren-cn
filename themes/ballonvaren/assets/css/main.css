@@ -13,6 +13,7 @@
 @import url('_ballonvaarten_overzicht.css');
 @import url('_cadeaubonnen_overzicht.css');
 @import url('_order-receive.css');
+@import url('_single-page.css');
 
 /*start of Niaz*/
 @import url('_wc_common.css');
@@ -23,6 +24,7 @@
 @import url('_thank-you.css');
 @import url('_wc-product-details.css');
 @import url('_wc-product-popup.css');
+@import url('_checkout-progress.css');
 
 
 
