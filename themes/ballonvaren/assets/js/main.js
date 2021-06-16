@@ -633,7 +633,6 @@ $("#billing_order_type_Particulier").on('change', function(){
     }
 });
 
-
 $('.modal-toggle').on('click', function(e) {
   e.preventDefault();
   $( "<div class='modal-overlay close-toggle' onclick='closePopup()'></div>" ).insertBefore( "#review_form" );
@@ -650,6 +649,7 @@ $('.close-toggle').on('click', function(e) {
 });
 new WOW().init();
 
+    new WOW().init();
 })(jQuery);
 function closePopup(){
   jQuery( ".modal-overlay.close-toggle" ).remove( );
