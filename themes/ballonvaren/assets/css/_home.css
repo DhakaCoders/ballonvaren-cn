@@ -281,6 +281,9 @@
 	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
 		padding-top: 70px;
 	}
+	.off-days-sec.hm-bv-calender-sec{
+		padding-top: 40px;
+	}
 	
 }
 
@@ -306,9 +309,7 @@
 	.hm-dfp-twogrd-module-cntlr .dfp-twogrd-module{
 		display: block;
 	}
-	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
-		padding-top: 40px;
-	}
+	
 	.hm-overons-msnry-grd-sec-wrp .overons-msnry-grd-dsc a{
 		display: inline-block;
 	}
@@ -338,6 +339,23 @@
 	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
 		padding-bottom: 150px;
 	}
+	.off-days-sec.hm-bv-calender-sec{
+		padding-top: 20px;
+	}
+	.hm-dfp-twogrd-module-sce .white-sky-bg {
+		height: 150px;
+		top: -149px;
+	}
+	.bv-calender-dsc-inner{
+		text-align: center;
+	}
+	.hm-news-details-sec.news-details .white-sky-bg{
+		top: -198px;
+	}
+	.hm-blog-grds-item-ctlr.dfpBlogSlider .blog-grid-item{
+		border-bottom: 0!important;
+		padding-bottom: 0!important;
+	}
 }
 
 @media (max-width: 639px) {
@@ -347,9 +365,16 @@
 	.cloud-bg{
 		top: -140px;
 	}
+	.hm-news-details-sec.news-details .white-sky-bg{
+		top: -170px;
+	}
+	
 }
 
 @media (max-width: 575px) {
+	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
+		padding-top: 40px;
+	}
 	.banner-sub-hdr-title{
 		font-size: 40px;
 	}
@@ -372,6 +397,9 @@
 	.hm-dfp-twogrd-module-sce .white-sky-bg{
 		height: 130px;
 		top: -129px;
+	}
+	.off-days-sec.hm-bv-calender-sec{
+		padding-top: 4px;
 	}
 }
 
