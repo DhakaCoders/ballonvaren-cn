@@ -1,0 +1,4 @@
+2021-06-12T06:36:11+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\ballonvaren\ballonvaren-cn\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\ProductCategories.php on line 7
+
+2021-06-12T12:15:04+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\Requests\Transport\cURL.php on line 163
+

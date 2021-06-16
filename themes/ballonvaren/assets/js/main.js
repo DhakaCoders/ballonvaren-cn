@@ -635,7 +635,6 @@ $("#billing_order_type_Particulier").on('change', function(){
 
 
     new WOW().init();
-
 })(jQuery);
 
 function isValidEmailAddress(emailAddress) {
