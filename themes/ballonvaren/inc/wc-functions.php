@@ -200,11 +200,6 @@ if (!function_exists('add_custom_box_product_summary')) {
             echo '<div class="summary-ctrl">';
             echo '<div class="summary-hdr">';
             echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-            if( !empty($sh_desc) ){
-                echo '<div class="short-desc">';
-                echo wpautop( $sh_desc, true );
-                echo '</div>';
-            }
             if( !empty($long_desc) ){
                 echo '<div class="long-desc">';
                 echo '<h2>Beschrijving</h2>';
@@ -643,28 +638,9 @@ add_filter( 'body_class', 'tristup_body_classes' );*/
  * Process the checkout
  **/
 
-add_action('woocommerce_checkout_process', 'cw_custom_process_checkbox');
-function cw_custom_process_checkbox() {
-    global $woocommerce;
-    if (!$_POST['accept_condition'])
-        wc_add_notice( __( 'Please accept conditions to proceed with your order' ), 'error' );
-}
-
-
-add_action('woocommerce_checkout_update_order_meta', 'cw_checkout_order_meta');
-function cw_checkout_order_meta( $order_id ) {
-    if ($_POST['accept_condition']) update_post_meta( $order_id, 'Accept Condition', esc_attr($_POST['accept_condition']));
-}
-
 add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
 function custom_shipping_package_name( $name ) {
     return '';
-}
-
-add_action('woocommerce_giftcard_form', 'cbv_wc_giftcard_form');
-
-function cbv_wc_giftcard_form(){
-    wc_get_template_part('templates/giftcard-form');
 }
 
 add_action('woocommerce_before_add_to_cart_form', 'selected_variation_price_replace_variable_price_range');
