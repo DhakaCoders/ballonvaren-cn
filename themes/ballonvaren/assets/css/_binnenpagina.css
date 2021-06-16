@@ -729,6 +729,11 @@ Gallery design
 	padding-left: 8px;
 	padding-right: 8px;
 }
+#news-details .social-media ul li a,
+#news-details .social-media ul li a i{
+	display: inline-block;
+	vertical-align: baseline;
+}
 
 #news-details .social-media ul li a:hover svg{
 	fill: #EE3E15;
