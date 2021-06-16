@@ -370,7 +370,7 @@ Gallery design
 }
 .cta-btn .fl-transparent-btn{
 	border: 2px solid #fff;
-	padding: 15px 20px;
+	padding: 16px 20px;
 	color: #fff;
 	border-radius: 3px;
 	min-width: 200px;
@@ -728,6 +728,11 @@ Gallery design
 	padding: 0;
 	padding-left: 8px;
 	padding-right: 8px;
+}
+#news-details .social-media ul li a,
+#news-details .social-media ul li a i{
+	display: inline-block;
+	vertical-align: baseline;
 }
 
 #news-details .social-media ul li a:hover svg{
