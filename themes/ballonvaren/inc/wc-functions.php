@@ -213,20 +213,7 @@ if (!function_exists('add_custom_box_product_summary')) {
             }
             echo '</div>';
             echo '<div class="meta-crtl">';
-            echo '<ul>';
-                echo '<li>';
-                    echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>' .esc_html__( 'Categorie: ', 'woocommerce' ). '</strong> ', '</span>' );
-                echo '</li>';
-                cbv_display_some_product_attributes();
-                if ( wc_product_sku_enabled() && !empty($product->get_sku()) && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) :
-                echo '<li>';
-                    echo '<strong>';
-                    esc_html_e( 'SKU:', 'woocommerce' );
-                    echo '</strong>';
-                    echo '<span class="sku">'.( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ).'</span>';
-                echo '</li>';
-                endif;
-            echo '</ul>';
+
             echo '</div>';
             echo '<div class="price-quentity-ctrl">';
               woocommerce_template_single_add_to_cart();
@@ -247,11 +234,12 @@ function cbv_get_single_price(){
     echo '<span class="plus">+</span></div>';
     echo '</div></div>';
     echo '<div class="qty-price-wrap">';
-    echo '<span class="price-pre-title">Totaal: </span>';
+    echo '<div class="price-pre-title">Totaal prijs (incl. btw) </div>';
     echo '<span class="single-price-total">';
     echo $product->get_price_html();
     echo '</span>';
     echo '</div>';
+    echo '<div class="cart-top-text"><p>Wij contacteren jou binnen 24 uur</p></div>';
 }
 
 
@@ -260,40 +248,6 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart
 function bryce_id_add_to_cart_text( $default ) {
         return __( 'In Winkelmand', THEME_NAME );
 }
-
-add_action('woocommerce_product_thumbnails', 'cbv_add_custom_info', 20);
-function cbv_add_custom_info(){
-    global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl hide-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
-        echo '</div>';
-    endif;
-}
-add_action('woocommerce_after_single_product_summary', 'cbv_add_custom_info_for_xs', 5);
-function cbv_add_custom_info_for_xs(){
-    global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl custom-info-xs show-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
-        echo '</div>';
-    endif;
-}
-
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
 function misha_adv_product_options(){
  
