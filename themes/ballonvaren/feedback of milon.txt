@@ -96,7 +96,6 @@ new--->
 
 
 
-
 Responsive ---->
 
 1. https://prnt.sc/152jsrm
@@ -124,6 +123,19 @@ Responsive ---->
 	left and right padding match koreni.
 
 
+
+
+new 2 --->>
+
+1. https://prnt.sc/15lqh80
+	niche neme geche.
+
+2. https://prnt.sc/15lrpax
+	button ar text ta center a nei , ai padding ta daw. then xs a abar dekhte hobe j center a ache kina.
+
+	tomar aro baki page gulo te j button ache segulo o check kore sundor vabe update korte hobe , jodi amon problem thake.
+
+3.
 
 
 
