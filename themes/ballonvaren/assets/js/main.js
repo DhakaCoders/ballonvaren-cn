@@ -225,7 +225,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Sabbir*/
-if (windowWidth <= 479){
+if (windowWidth <= 576){
 if( $('.bnProcessGridItemsSlider').length ){
     $('.bnProcessGridItemsSlider').slick({
       dots: true,

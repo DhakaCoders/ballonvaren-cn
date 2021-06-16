@@ -417,20 +417,20 @@ form
 	color: #1DB4B2;
 }
 .fl-transparent-btn{
-	width: 210px;
-	height: 48px;
+	/*width: 210px;
+	height: 48px;*/
 	background: transparent;
 	color: #2C113E;
 	border: 1px solid #2C113E;
 	border-radius: 3px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
+	padding: 12px 30px;
+	min-width: 210px;
+	text-align: center;
 }
 .fl-transparent-btn:hover{
 	background: #2C113E;

@@ -370,14 +370,12 @@ Gallery design
 }
 .cta-btn .fl-transparent-btn{
 	border: 2px solid #fff;
-	padding: 10px 10px;
+	padding: 16px 20px;
 	color: #fff;
-	margin-left: auto;
-	margin-right: auto;
 	border-radius: 3px;
-	width: 200px;
-	height: 50px;
+	min-width: 200px;
 	font-weight: 900;
+	line-height: 1;
 }
 .cta-btn .fl-transparent-btn:hover{
 	background: #fff;
@@ -586,7 +584,9 @@ Gallery design
 }
 
 .dfp-grd-module{
-	padding-bottom: 65px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #ECF1F4;
+	margin-bottom: 55px;
 }
 .dfp-grd-module .dfp-grd-items ul{
 	margin-left: -12px;
@@ -728,6 +728,11 @@ Gallery design
 	padding: 0;
 	padding-left: 8px;
 	padding-right: 8px;
+}
+#news-details .social-media ul li a,
+#news-details .social-media ul li a i{
+	display: inline-block;
+	vertical-align: baseline;
 }
 
 #news-details .social-media ul li a:hover svg{
@@ -1017,9 +1022,6 @@ Gallery design
 	#news-details .blog-grd-top-img img {
 	    max-width: 150px;
 	}
-	.dfp-grd-module {
-	    padding-bottom: 45px;
-	}
 	.ballon-rides-lft-top-img {
 	    top: -70px;
 	    left: -85px;
@@ -1092,7 +1094,7 @@ Gallery design
 	    max-width: 80px;
 	}
 	.booking-top-img {
-	    top: -57px;
+	    top: -50px;
 	    right: -15px;
 	    max-width: 80px;
 	}
@@ -1208,9 +1210,6 @@ Gallery design
 	}
 	#news-details .blog-grds-item{
 		width: 50%;
-	}
-	.dfp-grd-module {
-	    padding-bottom: 25px;
 	}
 	#news-details {
 	    padding-bottom: 180px;
@@ -1655,6 +1654,10 @@ Gallery design
 	}
 	.dfp-booking-grd, .dfp-gift-grd {
 	    padding: 28px 30px 28px;
+	}
+	.dfp-grd-module {
+	    border-bottom: none;
+	    margin-bottom: 0;
 	}
 }
 

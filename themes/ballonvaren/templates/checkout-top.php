@@ -45,7 +45,7 @@
 	</div>
 </section>
 <?php else: ?>
-<section class="checkout-backbtn-sec">
+<section class="back-to-dashboard-btn-cntlr">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
