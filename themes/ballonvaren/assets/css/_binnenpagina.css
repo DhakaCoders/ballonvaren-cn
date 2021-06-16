@@ -1089,7 +1089,7 @@ Gallery design
 	    max-width: 80px;
 	}
 	.booking-top-img {
-	    top: -57px;
+	    top: -50px;
 	    right: -15px;
 	    max-width: 80px;
 	}
@@ -1205,9 +1205,6 @@ Gallery design
 	}
 	#news-details .blog-grds-item{
 		width: 50%;
-	}
-	.dfp-grd-module {
-	    padding-bottom: 25px;
 	}
 	#news-details {
 	    padding-bottom: 180px;
@@ -1652,6 +1649,10 @@ Gallery design
 	}
 	.dfp-booking-grd, .dfp-gift-grd {
 	    padding: 28px 30px 28px;
+	}
+	.dfp-grd-module {
+	    border-bottom: none;
+	    margin-bottom: 0;
 	}
 }
 
