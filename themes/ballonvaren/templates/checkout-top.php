@@ -1,13 +1,10 @@
 <?php $cURL = wc_get_cart_url(); ?>
 <?php if( is_checkout() && strpos($_SERVER['REQUEST_URI'], "order-received") !== false ): ?>
-<div class="checkout-top-sec">
+<div class="order-sec checkout-top-sec">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="checkout-page-title clearfix">
-				<div class="checkoutpt-left">
-					<h1><?php the_title(); ?></h1>
-				</div>
+				<div class="order checkout-page-title clearfix">
 				<div class="checkoutpt-right">
 					<div class="progressbar-crtl">
 					    <div class="n-checkout-progress-wrap">
