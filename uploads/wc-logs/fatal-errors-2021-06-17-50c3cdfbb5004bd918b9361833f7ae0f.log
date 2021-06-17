@@ -1,2 +1,4 @@
 2021-06-17T07:21:12+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\page.php on line 37
 
+2021-06-17T12:20:04+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\wp-db.php on line 2056
+

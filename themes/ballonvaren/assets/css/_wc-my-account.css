@@ -1268,6 +1268,7 @@ body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_bu
 }
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a span {
     order: 1;
+    margin-right:5px;
 }
 body.loggedin-winkelmandje-crtl .myaccount-cart-crtl ul li a.remove_from_cart_button + a img{
     width: 150px;
@@ -2080,6 +2081,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     .page-grd-sec-wrp {
         padding-top: 30px;
     }
+    body.loggedin-winkelmandje-crtl .page-grd-sec-wrp{
+        padding-top:0;
+    }
     body.woocommerce-checkout .checkout-page-title h1{
         font-size:28px;
     }
@@ -2097,7 +2101,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders header,
     body.hide-account-title header,
     body.woocommerce-checkout header,
-    body.loggedin-deshboard-crtl header{
+    body.loggedin-deshboard-crtl header,
+    body.loggedin-winkelmandje-crtl header,
+    body.woocommerce-checkout  header{
         margin-bottom:0px;
     }
     /* ------------------- woocommerce-cart -------------------*/
@@ -2170,9 +2176,6 @@ body.woocommerce-checkout section.checkout-top-sec{
         min-height: 150px;
     }
     /*-------------loggedin-winkelmandje-crtl---------------*/
-    body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-        padding-right:0px;
-    }
    body.woocommerce-checkout .woocommerce-notices-wrapper{
        margin-top: 40px;
    } 
@@ -2689,6 +2692,9 @@ body.woocommerce-checkout section.checkout-top-sec{
         border-bottom: none!important;
         padding-bottom: 22px!important;
     }
+    body.woocommerce-edit-account .account-page-title h1{
+        padding-bottom: 58px!important;
+    }
     body.woocommerce-account .account-page-title h1 + p{
         font-size:22px;
         margin-bottom: 20px;
@@ -2752,10 +2758,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         padding-top:0px;
     }
     body.woocommerce-edit-account .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        max-width:100%;
-    }
-    body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
-        margin-bottom: 22px!important;
+        width:100%;
     }
     body.woocommerce-account .woocommerce-EditAccountForm legend{
         font-size: 22px;
@@ -2778,6 +2781,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce input[type="password"], 
     .woocommerce textarea{
         border-radius:3px;
+    }
+    body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend{
+        margin-bottom: 26px;
     }
     /* ---------------------- woocommerce-MyAccount-content --------------------------*/
     
@@ -2994,6 +3000,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-checkout .woocommerce-input-wrapper input{
         top:5px;
+    }
+    body.woocommerce-account.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr{
+        margin-bottom:60px;
     }
 }
 
