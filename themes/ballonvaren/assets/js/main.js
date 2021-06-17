@@ -225,7 +225,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Sabbir*/
-if (windowWidth <= 479){
+if (windowWidth <= 576){
 if( $('.bnProcessGridItemsSlider').length ){
     $('.bnProcessGridItemsSlider').slick({
       dots: true,
@@ -633,11 +633,29 @@ $("#billing_order_type_Particulier").on('change', function(){
     }
 });
 
+$('.modal-toggle').on('click', function(e) {
+  e.preventDefault();
+  $( "<div class='modal-overlay close-toggle' onclick='closePopup()'></div>" ).insertBefore( "#review_form" );
+  $( '<button class="modal-close" onclick="closePopup()" href="#">X</button>' ).insertBefore( "#reply-title" );
+  $('#review_form_wrapper').addClass('is-visible');
+});
+
+$('.close-toggle').on('click', function(e) {
+  e.preventDefault();
+  console.log('check');
+  $( ".modal-overlay.close-toggle" ).remove( );
+  $( ".modal-close.close-toggle" ).remove( );
+  $('#review_form_wrapper').removeClass('is-visible');
+});
+new WOW().init();
 
     new WOW().init();
-
 })(jQuery);
-
+function closePopup(){
+  jQuery( ".modal-overlay.close-toggle" ).remove( );
+  jQuery( ".modal-close.close-toggle" ).remove( );
+  jQuery('#review_form_wrapper').removeClass('is-visible');
+}
 function isValidEmailAddress(emailAddress) {
     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
     return pattern.test(emailAddress);

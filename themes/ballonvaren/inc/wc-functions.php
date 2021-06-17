@@ -200,11 +200,6 @@ if (!function_exists('add_custom_box_product_summary')) {
             echo '<div class="summary-ctrl">';
             echo '<div class="summary-hdr">';
             echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-            if( !empty($sh_desc) ){
-                echo '<div class="short-desc">';
-                echo wpautop( $sh_desc, true );
-                echo '</div>';
-            }
             if( !empty($long_desc) ){
                 echo '<div class="long-desc">';
                 echo '<h2>Beschrijving</h2>';
@@ -213,20 +208,7 @@ if (!function_exists('add_custom_box_product_summary')) {
             }
             echo '</div>';
             echo '<div class="meta-crtl">';
-            echo '<ul>';
-                echo '<li>';
-                    echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>' .esc_html__( 'Categorie: ', 'woocommerce' ). '</strong> ', '</span>' );
-                echo '</li>';
-                cbv_display_some_product_attributes();
-                if ( wc_product_sku_enabled() && !empty($product->get_sku()) && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) :
-                echo '<li>';
-                    echo '<strong>';
-                    esc_html_e( 'SKU:', 'woocommerce' );
-                    echo '</strong>';
-                    echo '<span class="sku">'.( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ).'</span>';
-                echo '</li>';
-                endif;
-            echo '</ul>';
+
             echo '</div>';
             echo '<div class="price-quentity-ctrl">';
               woocommerce_template_single_add_to_cart();
@@ -247,11 +229,12 @@ function cbv_get_single_price(){
     echo '<span class="plus">+</span></div>';
     echo '</div></div>';
     echo '<div class="qty-price-wrap">';
-    echo '<span class="price-pre-title">Totaal: </span>';
+    echo '<div class="price-pre-title">Totaal prijs (incl. btw) </div>';
     echo '<span class="single-price-total">';
     echo $product->get_price_html();
     echo '</span>';
     echo '</div>';
+    echo '<div class="cart-top-text"><p>Wij contacteren jou binnen 24 uur</p></div>';
 }
 
 
@@ -260,40 +243,12 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart
 function bryce_id_add_to_cart_text( $default ) {
         return __( 'In Winkelmand', THEME_NAME );
 }
+add_filter( 'woocommerce_after_single_product_summary', 'get_review_form', 10 );
+function get_review_form( $default ) {
+    //wc_get_template_part('single-product/review');
+    get_template_part('templates/wc', 'review');
 
-add_action('woocommerce_product_thumbnails', 'cbv_add_custom_info', 20);
-function cbv_add_custom_info(){
-    global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl hide-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
-        echo '</div>';
-    endif;
 }
-add_action('woocommerce_after_single_product_summary', 'cbv_add_custom_info_for_xs', 5);
-function cbv_add_custom_info_for_xs(){
-    global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl custom-info-xs show-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
-        echo '</div>';
-    endif;
-}
-
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
 function misha_adv_product_options(){
  
@@ -689,28 +644,9 @@ add_filter( 'body_class', 'tristup_body_classes' );*/
  * Process the checkout
  **/
 
-add_action('woocommerce_checkout_process', 'cw_custom_process_checkbox');
-function cw_custom_process_checkbox() {
-    global $woocommerce;
-    if (!$_POST['accept_condition'])
-        wc_add_notice( __( 'Please accept conditions to proceed with your order' ), 'error' );
-}
-
-
-add_action('woocommerce_checkout_update_order_meta', 'cw_checkout_order_meta');
-function cw_checkout_order_meta( $order_id ) {
-    if ($_POST['accept_condition']) update_post_meta( $order_id, 'Accept Condition', esc_attr($_POST['accept_condition']));
-}
-
 add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
 function custom_shipping_package_name( $name ) {
     return '';
-}
-
-add_action('woocommerce_giftcard_form', 'cbv_wc_giftcard_form');
-
-function cbv_wc_giftcard_form(){
-    wc_get_template_part('templates/giftcard-form');
 }
 
 add_action('woocommerce_before_add_to_cart_form', 'selected_variation_price_replace_variable_price_range');
