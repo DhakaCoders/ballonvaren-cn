@@ -29,7 +29,7 @@
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	margin-top: -9px;
+	margin-top: -3px;
 	border: 1px solid #C6DDF0;
 }
 .checkout-progress-bar .ckour-pro-bar-active{
@@ -52,7 +52,7 @@
 	width: 100%;
 }
 .checkout-progress-bar .ckour-pro-bar-active.active{
-	background: #2285E3;
+	background: #1DB4B2;
 }
 .chckout-prgrs-col{
 	width: 33.33%;
@@ -66,12 +66,11 @@
 	text-align: right;
 }
 .chckout-prgrs-number{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
+	font-weight:400;
 	font-size: 14px;
 	line-height: 1;
-	color: #C6DDF0;
-	margin-bottom: 18px;
+	color: #909BA5;
+	margin-bottom: 14px;
 	display: block;
 }
 .chckout-prgrs-title{
@@ -86,7 +85,7 @@
 	text-align: center;
 }
 .chckout-prgrs-col.active .chckout-prgrs-number{
-	color: #2285E3;
+	color: #1DB4B2;
 }
 .checkout-page-title .checkoutpt-left{
     /*float: left;*/
