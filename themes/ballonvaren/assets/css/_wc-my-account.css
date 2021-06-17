@@ -1933,10 +1933,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
         min-height: 200px;
     }
- 
-    body.woocommerce-checkout section.checkout-top-sec{
-        height:170px;
-    }
     body.account-login-page .page-grd-sec-wrp{
         padding-bottom:260px;
     }
