@@ -98,6 +98,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 										<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
 											<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
 										<?php endforeach; ?>
+										<span class="extrainfo-btm-text">* = verplicht</span>
 									</div>
 
 								<?php endif; ?>
