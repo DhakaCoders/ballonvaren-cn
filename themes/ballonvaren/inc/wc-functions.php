@@ -243,6 +243,12 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart
 function bryce_id_add_to_cart_text( $default ) {
         return __( 'In Winkelmand', THEME_NAME );
 }
+add_filter( 'woocommerce_after_single_product_summary', 'get_review_form', 10 );
+function get_review_form( $default ) {
+    //wc_get_template_part('single-product/review');
+    get_template_part('templates/wc', 'review');
+
+}
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
 function misha_adv_product_options(){
  
