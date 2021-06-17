@@ -43,7 +43,7 @@
 	color: #2C113E;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	font-weight: 700;
 	display: block;
 }
@@ -264,6 +264,9 @@ Gallery design
 .top-gallery-module .has-inline-bg .gallery-icon-img{
 	border-radius: 0;
 }
+.top-gallery-module .gallery-wrap{
+	padding-top: 0;
+}
 .has-inline-bg .gallery-icon-img{
 	height: 412px;
 	border-radius: 3px;
@@ -370,7 +373,7 @@ Gallery design
 }
 .cta-btn .fl-transparent-btn{
 	border: 2px solid #fff;
-	padding: 15px 20px;
+	padding: 16px 20px;
 	color: #fff;
 	border-radius: 3px;
 	min-width: 200px;
