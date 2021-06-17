@@ -53,44 +53,7 @@ $form = $intro['shortcode'];
         </div>
         <div class="contact-form-wrp clearfix">
           <div class="wpforms-container">
-            <form class="wpforms-form needs-validation" novalidate>
-              
-              <div class="wpforms-field-container">
-                
-                <div class="wpforms-field XsNameField">
-                  <label class="wpforms-field-label">Naam</label>
-                  <input type="text" name="name" placeholder="Voornaam" required>
-                </div>
-                <div class="wpforms-field NameField">
-                  <input type="text" name="name" placeholder="Naam" required>
-                </div>
-
-                <div class="wpforms-field  FullWidthField">
-                  <label class="wpforms-field-label">telefoonnummer</label>
-                  <input type="text" name="text" placeholder="Bijv. 0493 20 36 20" required>
-                </div>
-
-                <div class="wpforms-field FullWidthField">
-                  <label class="wpforms-field-label">E-mailadres</label>
-                  <input type="email" name="email" class="form-control" required>
-                  <label id="wpforms-222-field_1-error" class="wpforms-error" for="wpforms-222-field_1">Controleer dit veld</label>
-                </div>
-
-                <div class="wpforms-field wpforms-field-textarea">
-                  <label class="wpforms-field-label">Bericht</label>
-                  <textarea name="message" placeholder="Bericht"></textarea>
-                   <div class="wpforms-field-description">
-                    <p>Wij respecteren jouw <a href="#"> privacy.</a> Jouw gegevens worden altijd vertrouwelijk behandeld.</p>
-                  </div>
-                </div>
-              </div><!-- end of .wpforms-field-container-->
-
-
-              <div class="wpforms-submit-container">
-                <button type="submit" name="submit" class="wpforms-submit">VERZENDEN</button>
-              </div>
-
-            </form>
+          	<?php echo do_shortcode($form); ?>
           </div>
         </div>
     	<?php endif; ?>
