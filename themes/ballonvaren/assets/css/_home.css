@@ -205,6 +205,14 @@
 .cloud-svg{
 
 }
+.clouds-cntlr{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -150px;
+	max-width: 100%;
+	width: 100%;
+}
 .cloud-bg .cloud-svg{
 	position: absolute;
 	left: 0;
@@ -485,6 +493,10 @@
 		padding-top: 237px;
 		padding-bottom: 94px;
 		position: relative;
+		z-index: 3;
+	}
+	.bnr-desc-wrap{
+		padding-bottom: 0;
 	}
 	.bn-process-grid-items{
 		display: initial;
