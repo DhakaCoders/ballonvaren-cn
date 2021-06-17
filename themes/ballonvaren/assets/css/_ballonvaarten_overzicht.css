@@ -3,9 +3,10 @@
 }
 .ballonvaarten-overzicht-page-entry-hdr .page-entry-header{
 	margin-bottom: 32px;
+	border-bottom: 2px solid #ECF1F4;
 }
 .ballonvaarten-overzicht-page-entry-hdr .page-entry-header p{
-	margin-bottom: 34px;
+	margin-bottom: 30px;
 }
 .product-entry-hdr{
 	padding-bottom: 50px;
@@ -196,7 +197,7 @@
 }
 .fl-pro-grd-price{	
 	padding-bottom: 24px;
-	border-bottom: 1px solid #ECF1F4;
+	border-bottom: 2px solid #ECF1F4;
 	margin-bottom: 30px;
 }
 .fl-pro-grd-price span.Vanaf{
@@ -332,8 +333,8 @@ del span.woocommerce-Price-amount bdi:after,
 	color: #fff;
 	font-weight: 900;
 	border: 2px solid #fff;
-	width: 200px;
-	height: 50px;
+	min-width: 200px;
+	padding: 13.5px 30px;
 }
 .cad-pg-lnk-btn{
 
@@ -682,10 +683,7 @@ del span.woocommerce-Price-amount bdi:after,
 		height: 9px;
 		top: 4px;
 	}
-	.cad-pg-lnk-btn{
-		width: 190px;
-		height: 48px;
-	}
+	
 	.fl-pro-grd-des > ul{
 		padding-bottom: 27px;
 	}
@@ -768,7 +766,6 @@ del span.woocommerce-Price-amount bdi:after,
 		margin-bottom: 0;
 	}
 	.fl-products-cntlr ul.products {
-		justify-content: center;
 		padding-bottom: 12px;
 		margin: 0 -6px!important;
 	}
@@ -849,6 +846,21 @@ del span.woocommerce-Price-amount bdi:after,
 	    padding-top: 0px!important;
 	    margin-bottom: 0px!important;
 	}
+	.cad-pg-lnk-btn{
+		min-width: 180px;
+		padding: 12.5px 30px;
+	}
+	.ballonvaarten-overzicht-page-entry-hdr .page-entry-header{
+		margin-bottom: 42px;
+	}
+	.ballonvaarten-overzicht-page-entry-hdr .page-entry-header p{
+		margin-bottom: 45px;
+	}
+	.ballonvaarten-overzicht-page-entry-hdr .page-entry-header .fl-h1 span{
+		display: block;
+		padding-left: 0;
+		padding-top: 20px;
+	}
 }
 
 @media (max-width: 639px) {
@@ -885,6 +897,7 @@ del span.woocommerce-Price-amount bdi:after,
 	}
 	.archive .fl-product-grd{
 		max-width: 350px;
+		width: 100%;
 		margin: 0 auto;
 	}
 	.archive .fl-pro-grd-img-cntlr,
@@ -898,10 +911,10 @@ del span.woocommerce-Price-amount bdi:after,
     	width: 100%;
     }
     .archive .fl-pro-grd-des{
-    	padding: 30px 23px 36px;
+    	padding: 25px 23px 37px;
     }
     .archive .fl-pro-grd-price{
-    	padding-bottom: 24px;
+    	padding-bottom: 22px;
     	margin-bottom: 30px;
     }
     .fl-pro-grd-des > ul > li {
@@ -937,9 +950,6 @@ del span.woocommerce-Price-amount bdi:after,
     .blog-page-sec .fl-pagi-cntlr,
     .product-page-cntlr .fl-pagi-cntlr{
 		padding-bottom: 17px;
-	}
-	.cad-pg-lnk-btn{
-		height: 45px;
 	}
 	.fl-pro-grd-des > ul{
 		padding-bottom: 26px;
@@ -1019,10 +1029,7 @@ del span.woocommerce-Price-amount bdi:after,
 	.cadeaubonnen-page-link .cad-pg-lnk-title{
     	font-size: 26px;
     }
-    .cad-pg-lnk-btn{
-    	height: 40px;
-    	width: 180px;
-    }
+    
     .archive .fl-products-cntlr .fl-product-grd .fl-pro-grd-title, .single-product .fl-pro-grd-title{
     	font-size: 21px;
     }
