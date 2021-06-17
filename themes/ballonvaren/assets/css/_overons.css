@@ -131,13 +131,14 @@ overons-team-sec-wrp
 	color: #fff;
 	margin-bottom: 25px;
 }
-.overons-team-module a.fl-transparent-btn{
-	width: 200px;
-	height: 50px;
-	color: #fff;
-	font-weight: 900;
-	border:2px solid #fff;
-	margin: 0 auto;
+.overons-team-module a.fl-transparent-btn {
+    min-width: 200px;
+    height: 50px;
+    color: #fff;
+    font-weight: 900;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    padding: 14px 30px 15px 30px;
 }
 .boek-je-form-sec-wrp .fl-transparent-btn:hover,
 .overons-team-module a.fl-transparent-btn:hover{
@@ -201,7 +202,7 @@ overons-team-sec-wrp
 	    width: 180px;
 	}
 	.overons-team-parachute-btm {
-	    bottom: 80px;
+	    bottom: 110px;
 	    left: -15px;
 	    width: 180px;
 	}
@@ -209,15 +210,14 @@ overons-team-sec-wrp
 	    right: -55px;
 	    bottom: -40px;
 	    width: 100px;
-	    height: 130px;
 	}
 }
 
 @media(max-width: 1199px){
 	.boek-parachute-icon {
 	    right: -15px;
-	    bottom: -40px;
-	    width: 80px;
+	    bottom: -25px;
+	    width: 75px;
 	}
 	.boek-je-form-bg-cntlr {
 	    padding-bottom: 120px;
@@ -227,8 +227,9 @@ overons-team-sec-wrp
 	    right: 10px;
 	}
 	.overons-team-parachute-btm {
-	    bottom: 60px;
-	    left: 0;
+	    bottom: 123px;
+	    left: -10px;
+	    width: 160px;
 	}
 	.overons-team-sec-wrp {
 	    padding-bottom: 80px;
@@ -265,7 +266,9 @@ overons-team-sec-wrp
 	    right: -15px;
 	    bottom: -40px;
 	    width: 65px;
-	    height: 85px;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 90px;
 	}
 	.boek-je-form-bg-cntlr {
 	    padding-bottom: 80px;
@@ -381,7 +384,7 @@ overons-team-sec-wrp
 	    bottom: -110px;
 	}
 	.overons-team-parachute-btm {
-	    bottom: 70px;
+	    bottom: 120px;
 	    left: 0;
 	    width: 60px;
 	}
@@ -395,6 +398,12 @@ overons-team-sec-wrp
 	.overons-msnry-grd-wrp{
 		display: block;
 	}
+	.boek-parachute-icon {
+	    right: auto;
+	    bottom: -10px;
+	    width: 60px;
+	    left: -20px;
+	}
 
 
 
@@ -403,6 +412,9 @@ overons-team-sec-wrp
 @media(max-width: 575px){
 	.overons-team-img {
 	    margin-bottom: 60px;
+	}
+	.overons-team-parachute-btm {
+	    bottom: 140px;
 	}
 	
 
