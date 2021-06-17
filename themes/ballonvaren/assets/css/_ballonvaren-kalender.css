@@ -4,17 +4,9 @@
 .inline-bg-img > img{
 	display: none;
 }
-.off-days-sec .container{
+.bv-calender-sec-cntlr{
 	position: relative;
-	z-index: 9999
-}
-.indexing {
-    z-index: 9;
-    position: relative;
-}
-.events-grid-sec .container{
-	position: relative;
-	z-index: 99999;
+	z-index: 3;
 }
 .off-days-sec:before {
     background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F8 100%), #F8FAFB;
@@ -89,6 +81,10 @@
 .events-grid-sec{
 	position: relative;
 	padding-top: 190px;
+}
+.events-grid-cntlr{
+	position: relative;
+	z-index: 3;
 }
 .events-grid-item-inner{
 	padding-bottom: 70px;
@@ -405,3 +401,9 @@
 
 }
 
+@media(max-width: 320px){
+	.event-grid-heading {
+	    font-size: 20px!important;
+	}
+
+}
