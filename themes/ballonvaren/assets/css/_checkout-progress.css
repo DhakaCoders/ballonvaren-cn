@@ -14,6 +14,7 @@
 .checkout-progress{
 	display: flex;
 	position: relative;
+	margin: 0 -10px;
 }
 .checkout-progress-bar{
 	position: absolute;
@@ -99,7 +100,7 @@
 	width: 440px;
    padding-top:0px;
 }
-@media(max-width: 768px){
+@media(max-width: 767px){
 	.checkout-page-title .progressbar-crtl{
 		padding-top: 0;
 		width: auto;
@@ -107,6 +108,9 @@
 	.checkout-progress-cntlr{
 		margin-left: 0;
 		max-width: 100%;
+	}
+	.checkout-page-title .checkoutpt-right{
+		display: block!important;
 	}
 
 }
