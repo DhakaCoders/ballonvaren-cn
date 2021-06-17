@@ -543,7 +543,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
 
 .woocommerce-billing-fields__field-wrapper .form-row#billing_salutation_field,
 .woocommerce-billing-fields__field-wrapper .form-row#billing_order_type_field{
-    margin-bottom:14px!important;
+    margin-bottom:6px!important;
 }
 .woocommerce-billing-fields__field-wrapper .form-row#billing_salutation_field .woocommerce-input-wrapper label:first-of-type {
     margin-right: 39px;
@@ -987,7 +987,7 @@ body.woocommerce-checkout .checkout-terms{
     border-top: 1px solid #ECEEEF;
     padding-top: 20px;
 }
-body.woocommerce-checkout .checkout-terms p{
+body.woocommerce-checkout .checkout-terms span.required{
     display: none;
 }
 body.woocommerce-checkout  .payment-method-crtl .woocommerce-additional-fields.extra-info,
@@ -1045,7 +1045,7 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 }
 .woocommerce-form__label-for-checkbox span:before{
     content:"";
-    top:8px;
+    top:9px;
 }
 
 .checkbox-custom:after{
@@ -1066,14 +1066,14 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 }
 .woocommerce-form__label-for-checkbox span:after{
     background: url(../images/checkbox-tick-img.svg);
-    width: 17px;
-    height: 11px;
-    left: 1px;
-    top: 2px;
+    width: 12px;
+    height: 9px;
+    left: 3px;
+    top: 4px;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 .same-as-shipping-address input[type=checkbox]:checked ~ .checkbox-custom,
 .login-info p > input[type=checkbox]:checked ~ .checkbox-custom,
@@ -1101,6 +1101,12 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
 #billing_acttion_insp input#acttion_insp:checked ~ .checkbox-custom:after,
 .woocommerce-form__label-for-checkbox input:checked + span:after{
     content: "";
+}
+#ship-to-different-address label span:before{
+    top: 7px;
+}
+#ship-to-different-address label span:after{
+    top: 2px;
 }
 .same-as-shipping-address,
 .login-info p:first-child,
@@ -1316,7 +1322,8 @@ body.woocommerce-checkout .woocommerce-billing-fields h3,
 body.woocommerce-checkout .woocommerce-checkout-review-order h3,
 body.woocommerce-checkout .woocommerce-additional-fields h3{
     font-size: 24px;
-    border-bottom: 1px solid #ECE9E9;
+    border-bottom: 1px solid #ECF1F4;
+
     padding-bottom: 15px;
 }
 #additional_datum_field .woocommerce-input-wrapper{
@@ -1507,7 +1514,7 @@ body.woocommerce-checkout .woocommerce-input-wrapper input {
     top: 3px;
 }
 span.woocommerce-terms-and-conditions-checkbox-text a{
-    text-decoration: none;
+    text-decoration:underline;
     font-weight: 500;
 }
 body.woocommerce-checkout .default-page-con h3{
@@ -1602,7 +1609,7 @@ body.woocommerce-checkout .custom-checkout-order-review button.button.alt {
 }
 span.woocommerce-terms-and-conditions-checkbox-text{
     font-weight: 500;
-    color: #243444;
+    color: #909BA5;
 }
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] {
     background: #1DB4B2!important;
@@ -2276,7 +2283,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     #billing_order_type_field span.woocommerce-input-wrapper input[type=radio]:checked + label:after, 
     #billing_salutation_field span.woocommerce-input-wrapper input[type=radio]:checked + label:after{
-        border-color:#1DB4B2;
+        border-color:#1DB4B2!important;
     }
     #billing_order_type_field span.woocommerce-input-wrapper label:before, 
     #billing_salutation_field span.woocommerce-input-wrapper label:before {
@@ -2289,7 +2296,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     #billing_order_type_field span.woocommerce-input-wrapper label:before, 
     #billing_salutation_field span.woocommerce-input-wrapper label:before{
         left: 4px;
-        top: 1px;
+        top: 1px!important;
     }
     .woocommerce-input-wrapper span .radio-custom:after, 
     body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before, 
@@ -2926,8 +2933,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         display: none;
     }
     body.woocommerce-checkout .checkout-terms {
-        padding-top: 5px;
-        border-top: none;
+        padding-top: 28px;
     }
     body.woocommerce-checkout .custom-checkout-order-review table tr.order-total th, 
     body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td{
@@ -3027,6 +3033,13 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-checkout .col2-set{
         padding-bottom:30px;
+    }
+    body.woocommerce-checkout .payment-method-crtl .woocommerce-additional-fields.extra-info, 
+    body.woocommerce-checkout .payment-method-crtl{
+        padding-top: 18px;
+    }
+    body.woocommerce-checkout .payment-method-crtl .shipping-methods{
+        margin-bottom: 20px;
     }
 }
 
