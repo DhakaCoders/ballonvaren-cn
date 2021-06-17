@@ -40,11 +40,11 @@
 	</div>
 </div>
 <?php else: ?>
-<div class="back-to-dashboard-btn-cntlr">
+<div class="back-to-dashboard-btn-cntlr show-sm">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo $cURL; ?>">Terug naar winkelmandje</a></div>
+				<div class="back-to-dashboard-btn"><a class="backshop-cart" href="<?php echo $cURL; ?>">Terug naar winkelmandje</a></div>
 			</div>	
 		</div>
 	</div>

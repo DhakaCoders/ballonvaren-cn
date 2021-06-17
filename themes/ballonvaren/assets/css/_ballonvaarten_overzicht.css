@@ -307,16 +307,14 @@ del span.woocommerce-Price-amount bdi:after,
 	padding: 64px 41px;
 	color: #fff;
 }
-.cadeaubonnen-page-link  i{
+.cadeaubonnen-page-link i{
 	display: inline-block;
 	vertical-align: baseline;
 	position: absolute;
 	top: -70px;
     left: -144px
 }
-.cadeaubonnen-page-link  i img{
-	height: 100%;
-}
+
 .cad-pg-lnk-title{
 	text-transform: uppercase;
 	color: #fff;
@@ -649,14 +647,8 @@ del span.woocommerce-Price-amount bdi:after,
 		padding-bottom: 20px;
 		margin-bottom: 25px;
 	}
-	.cadeaubonnen-page-link i
-	.cadeaubonnen-page-link i{
-		top: -65px;
-		height: 277px;
-	}
 	.cadeaubonnen-page-link i{
 		top: -63px;
-		height: 262px;
 		left: -135px;
 	}
 	.blog-page-sec .fl-pagi-cntlr,
