@@ -3,8 +3,6 @@
 get_header();
 $thisID = get_the_ID(); 
 $intro = get_field('intro', $thisID);
-$showhidegalerij = get_field('showhidegalerij', $thisID);
-$galerij = get_field('galerij', $thisID);
 $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
 $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' : '';
 ?>
@@ -47,11 +45,13 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
           </div>
           <?php endif; ?>
           <?php 
+          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
           $query = new WP_Query(array(
             'post_type' => 'ervaring',
-            'posts_per_page'=> -1,
+            'posts_per_page'=> 3,
             'orderby' => 'date',
             'order'=> 'desc',
+            'paged'=>$paged
 
           ));
           if( $query->have_posts() ):
@@ -93,18 +93,27 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
             </div>
             <?php endwhile; ?>
           </div>
+          <?php if( $query->max_num_pages > 1 ): ?>
           <div class="fl-pagi-cntlr">
-            <ul class="page-numbers">
-              <li><a class="prev page-numbers" href="#">←</a></li>
-              <li><span aria-current="page" class="page-numbers current">1</span></li>
-              <li><a class="page-numbers" href="#">2</a></li>
-              <li><a class="page-numbers" href="#">3</a></li>
-              <li><a class="page-numbers" href="#">4</a></li>
-              <li><span class="page-numbers dots">…</span></li>
-              <li><a class="page-numbers" href="#">15</a></li>
-              <li><a class="next page-numbers" href="#">→</a></li>
-            </ul>
+            <?php
+              $big = 999999999; // need an unlikely integer
+              $query->query_vars['paged'] > 1 ? $current = $query->query_vars['paged'] : $current = 1;
+
+              echo paginate_links( array(
+                'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                'type'      => 'list',
+                'prev_next' => false,
+                'prev_text' => __(''),
+                'next_text' => __(''),
+                'format'    => '?paged=%#%',
+                'current'   => $current,
+                'total'     => $query->max_num_pages
+              ) );
+            ?>
           </div>
+          <?php endif; ?>
+          <?php else: ?>
+            <div class="notfound"><?php _e( 'Geen resultaat', 'ballonvaren' ); ?>.</div>
           <?php endif; wp_reset_postdata(); ?>
         </div>
       </div>

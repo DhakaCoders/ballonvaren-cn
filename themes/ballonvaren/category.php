@@ -8,6 +8,8 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
 $terms = get_terms( 'category', array(
   'hide_empty' => false,
 ) );
+$queried_object = get_queried_object();
+$current_id = $queried_object->term_id;
 ?>
 <section class="breadcrumb-sec">
   <div class="container">
@@ -53,13 +55,14 @@ $terms = get_terms( 'category', array(
         ?>
         <div class="blog-grid-category">
           <ul class="clearfix reset-list">
-            <li class="active"><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ballonvaren' ); ?></a></li>
+            <li><a href="<?php echo get_permalink($thisID); ?>"><?php _e( 'alle', 'ballonvaren' ); ?></a></li>
             <?php 
-	            $i = 1; foreach ( $terms as $term ) { 
+	            foreach ( $terms as $term ) { 
 	            if($term->slug !='uncategorized'):
+
 	        ?>
-            <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
-            <?php endif; $i++; } ?>
+            <li<?php echo ($term->term_id == $current_id)?' class="active"':'';?>><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
+            <?php endif;  } ?>
           </ul>
         </div>  
         <?php } ?>   

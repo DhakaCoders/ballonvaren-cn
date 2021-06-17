@@ -1,0 +1,20 @@
+2021-06-17T17:03:12+00:00 CRITICAL syntax error, unexpected '$price' (T_VARIABLE) in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\functions.php on line 226
+
+2021-06-17T18:31:20+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single-ervaring.php on line 121
+
+2021-06-17T19:13:47+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single-ervaring.php on line 121
+
+2021-06-17T19:14:46+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single-ervaring.php on line 121
+
+2021-06-17T19:15:10+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single-ervaring.php on line 121
+
+2021-06-17T19:29:33+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single-ervaring.php on line 245
+
+2021-06-17T20:33:21+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\index.php on line 62
+
+2021-06-17T21:35:39+00:00 CRITICAL syntax error, unexpected '}' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single.php on line 51
+
+2021-06-17T21:38:25+00:00 CRITICAL syntax error, unexpected '}' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single.php on line 51
+
+2021-06-17T21:39:47+00:00 CRITICAL syntax error, unexpected '}' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\single.php on line 51
+
