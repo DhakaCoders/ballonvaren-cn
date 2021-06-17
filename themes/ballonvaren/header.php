@@ -301,6 +301,7 @@ $smedias = get_field('social_media', 'options');
                             <use xlink:href="#cart-icon-svg"></use> 
                           </svg>
                         </i>
+                        <span>11</span
                       </a>
                     </li>
                     <li class="hdr-contact-btn">
