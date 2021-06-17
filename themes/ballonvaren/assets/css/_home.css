@@ -19,7 +19,6 @@
 .cloud-bg {
     position: absolute;
     content: "";
-    /* bottom: -278px; */
     left: 0;
     right: 0;
     top: -376px;
@@ -121,9 +120,7 @@
 .xs-process-ballon{
 	display: none;
 }
-.cloud-bg img:nth-child(2){
-	display: none;
-}
+
 
 
 /*start of noyon*/
@@ -172,6 +169,30 @@
 	padding-bottom: 139px;
 }
 
+.cloud-bg{
+	height: 100%;
+	width: 100%;
+}
+.cloud-bg img{
+	position: absolute;
+	bottom: 0;
+	
+	animation: animate calc(8s * var(--i)) linear infinite;
+}
+@keyframes animate{
+	0%{
+		transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+	}
+}
 /* == responsive == */
 @media (max-width: 1799px) {
 	.bnr-ballon{
