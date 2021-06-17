@@ -22,7 +22,7 @@
     </div>
   </div>
 </section>
-<?php if( !is_account_page() ): ?>
+<?php if( !is_wc_page() ): ?>
 <section class="page-heading">
   <div class="container">
     <div class="row">

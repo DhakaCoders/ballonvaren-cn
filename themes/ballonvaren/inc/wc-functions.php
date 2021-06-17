@@ -677,3 +677,9 @@ function selected_variation_price_replace_variable_price_range(){
     endif;
 }
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');
+
+/* Custom conditional tag*/
+
+function is_wc_page(){
+    return is_checkout() || is_account_page();
+}
