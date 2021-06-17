@@ -187,9 +187,11 @@ overons-team-sec-wrp
 	    right: -50px;
 	}
 	.overons-team-parachute-btm {
-	    left: -65px;
-	    width: 200px;
+	    left: -78px;
+	    width: 153px;
+	    bottom: 159px;
 	}
+
 }
 
 @media(max-width: 1299px){

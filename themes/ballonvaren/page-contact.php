@@ -44,6 +44,7 @@ $form = $intro['shortcode'];
     </div>
     <div class="contact-form-block clearfix">
       <div class="contact-form-lft">
+      	<?php if( !empty($form) ): ?>
         <div class="error-msg">
           <span>
             <i><svg class="error-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
@@ -92,6 +93,7 @@ $form = $intro['shortcode'];
             </form>
           </div>
         </div>
+    	<?php endif; ?>
       </div>
       <div class="contact-form-rgt">
         <div class="contact-form-info-cntlr">

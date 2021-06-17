@@ -1,6 +1,6 @@
 <?php $cURL = wc_get_cart_url(); ?>
 <?php if( is_checkout() && strpos($_SERVER['REQUEST_URI'], "order-received") !== false ): ?>
-<section class="checkout-top-sec">
+<div class="checkout-top-sec">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -43,9 +43,9 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 <?php else: ?>
-<section class="back-to-dashboard-btn-cntlr">
+<div class="back-to-dashboard-btn-cntlr">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -53,8 +53,8 @@
 			</div>	
 		</div>
 	</div>
-</section>
-<section class="checkout-top-sec">
+</div>
+<div class="checkout-top-sec">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -99,5 +99,5 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 <?php endif; ?>
