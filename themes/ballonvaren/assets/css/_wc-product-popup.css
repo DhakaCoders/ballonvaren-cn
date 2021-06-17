@@ -1,7 +1,8 @@
 /* review popup design start */
 #review_form {
     background-color: #fff;
-    padding: 75px 85px 83px;
+    padding: 75px 85px 80px;
+    position: relative;
 }
 .comment-form-rating{
 	padding-bottom: 28px;
@@ -35,9 +36,13 @@ p.stars {
     line-height: 1;
     margin-bottom: 0!important;
 }
+p.form-submit {
+    margin-bottom: 0!important;
+}
 #review_form .form-submit input[type=submit]{
 	margin-left: 0!important;
-	width: 260px;
+	max-width: 260px;
+	width: 100%;
     padding: 14px 10px 10px!important;
     display: flex!important;
     justify-content: center;
@@ -86,11 +91,14 @@ p.stars {
     padding-bottom:50px;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-pimg a{
-    display: inline-block;
- 	vertical-align: baseline;
+ 	width: 100%;
+ 	height: 100%;
+ 	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-pimg a img{
-	max-height: 59px!important;
+	max-height: 118px!important;
 	width: auto!important;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des{
@@ -104,19 +112,17 @@ p.stars {
     border-bottom: 2px solid #ECEEEF;
     border-top: 2px solid #ECEEEF;
 }
-.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-1,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-1{
+	max-width: 72%;
+	width: 100%;
+}
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2{
-	max-width: 50%;
-	width: 100%
+	max-width: 28%;
+	width: 100%;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-pimg{
     width: 118px;
-    height: 118px;
-    border: 2px solid #f8f8f8;
-    padding: 8px;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 118px;        
     position: absolute;
 }
 .xoo-cp-content .popup-product-title{
@@ -425,9 +431,31 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
 
 /* == responsive == */
 
+@media(max-width:1399px){
+	#review_form{
+		padding: 65px 70px 65px;
+	}
+	.comment-form-rating label, .comment-form-comment label{
+		font-size: 14px;
+	}
+	#review_form .modal-close{
+		width: 32px;
+		height: 32px;
+	}
+}
+
 @media(max-width:1199px){
+	#review_form{
+		padding: 55px 60px 55px;
+	}
 	.xoo-cp-container h5{
 		font-size:28px;
+	}
+	#review_form .modal-close{
+		width: 30px;
+		height: 30px;
+		top: -15px;
+    	right: -15px;
 	}
 	.xoo-cp-content .popup-product-title{
 		padding-bottom: 6px;
@@ -478,8 +506,20 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
 }
 
 @media(max-width:992px){
+	#review_form{
+		padding: 45px 50px 45px;
+	}
 	span.xoo-cp-close.xoo-cp-icon-cross{
 		right: 21px;
+	}
+	.comment-form-rating {
+    	padding-bottom: 26px;
+	}
+	#review_form .modal-close{
+		width: 27px;
+		height: 27px;
+		top: -14px;
+    	right: -14px;
 	}
 	.xoo-cp-container h5 {
 	    font-size: 24px;
@@ -561,6 +601,21 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
 
 }
 @media(max-width:768px){
+	#review_form{
+		padding: 35px 40px 35px;
+	}
+	.comment-form-rating label, .comment-form-comment label{
+		font-size: 13px;
+	}
+	.comment-form-rating {
+    	padding-bottom: 24px;
+	}
+	#review_form .modal-close{
+		width: 24px;
+		height: 24px;
+		top: -12px;
+    	right: -12px;
+	}
 	.xoo-cp-container {
 	    max-width: 530px;
 	    padding-top:20px;
@@ -574,6 +629,13 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
 	span.xoo-cp-close.xoo-cp-icon-cross{
 		top: 34px;
 		right: 21px;
+	}
+	.woocommerce-Price-amount bdi,
+	.single-product .single-price-total del span.woocommerce-Price-amount bdi, 
+	.single-product .single-price-total del span.woocommerce-Price-amount bdi span, 
+	.single-product .single-price-total ins span.woocommerce-Price-amount bdi, 
+	.single-product .single-price-total ins span.woocommerce-Price-amount bdi span {
+	    font-size: 14px!important;
 	}
 	.xoo-cp-content .single-shortdetails{
 		font-size: 14px;
@@ -692,8 +754,14 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
 }
 
 @media(max-width:575px){
+	#review_form{
+		padding: 34px 26px 30px;
+	}
 	.spotlight-popup-cntlr h5.popup-related{
 		font-size: 20px!important;
+	}
+	.comment-form-rating {
+    	padding-bottom: 22px;
 	}
 	.xoo-cp-container h5{
 	    margin-bottom: 10px;
@@ -775,6 +843,9 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
 
 
 @media(max-width:479px){
+	#review_form{
+		padding: 34px 23px 27px;
+	}
 	.xoo-cp-container {
 	    max-width: 350px;
 	    padding-top: 20px;
@@ -800,4 +871,18 @@ span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
     	height: 17px!important;
     	font-size: 9px!important;
 	}
+	#review_form {
+   		padding: 34px 23px 27px;
+	}
+	.comment-form-comment {
+    	margin-bottom: 24px!important;
+	}
+	#review_form .form-submit input[type=submit] {
+    	max-width: 285px;
+	}
+}
+
+@media (max-width: 359px) {
+	
+	
 }
