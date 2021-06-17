@@ -2,7 +2,10 @@
 	margin-bottom: 0;
 }
 .blog-page-sec{
-	padding-bottom: 30px;
+	padding-bottom: 35px;
+}
+.blog-page-sec .fl-pagination-ctlr{
+	padding-bottom: 35px;
 }
 .news-overview-page-entry-hdr .page-entry-header{
 	margin-bottom: 34px;
@@ -288,7 +291,12 @@
 	.blog-page-sec .blog-grid-items{
 		padding-bottom: 15px;
 	}
-
+	.blog-page-sec{
+		padding-bottom: 30px;
+	}
+	.blog-page-sec .fl-pagination-ctlr{
+		padding-bottom: 30px;
+	}
 }
 
 @media (max-width: 639px) {	
@@ -316,6 +324,12 @@
 		max-width: 350px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.blog-page-sec{
+		padding-bottom: 24px;
+	}
+	.blog-page-sec .fl-pagination-ctlr{
+		padding-bottom: 24px;
 	}
 }
 
