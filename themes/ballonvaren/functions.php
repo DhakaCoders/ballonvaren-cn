@@ -24,6 +24,8 @@ if( !function_exists('cbv_theme_setup') ){
         }
         add_image_size( 'hmbanner', 1846, 856, true );
         add_image_size( 'hmcat', 420, 270, true );
+        add_image_size( 'teamoverons', 1248, 600 );
+        add_image_size( 'onzegallery', 412, '', true );
         
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
