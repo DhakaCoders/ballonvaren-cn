@@ -1,3 +1,61 @@
+/* review popup design start */
+#review_form {
+    background-color: #fff;
+    padding: 75px 85px 83px;
+}
+.comment-form-rating{
+	padding-bottom: 28px;
+}
+.comment-reply-title,
+.comment-form-rating label > span,
+.comment-form-comment label > span {
+    display: none;
+}
+.comment-form-rating label,
+.comment-form-comment label{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
+	text-transform: uppercase;
+	color: #2C113E;
+	margin-bottom: 0;
+}
+.comment-form-comment{
+	margin-bottom: 29px!important;
+}
+.comment-form-comment label{
+	margin-bottom: 2px;
+}
+.comment-form-comment textarea{
+	border-radius: 3px!important;
+	display: inline-block;
+	vertical-align: top;
+}
+p.stars {
+    line-height: 1;
+    margin-bottom: 0!important;
+}
+#review_form .form-submit input[type=submit]{
+	margin-left: 0!important;
+	width: 260px;
+    padding: 14px 10px 10px!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+/* .woocommerce p.stars a */
+.woocommerce #review_form .comment-form-rating p.stars span a.active:before,
+.woocommerce #review_form .comment-form-rating p.stars span a:hover,
+.woocommerce p.stars.selected a:not(.active)::before,
+.woocommerce p.stars:hover a::before{
+	color: #fcca35!important;
+}
+.woocommerce p.stars.selected a.active~a::before,
+.woocommerce p.stars a:hover~a::before{
+	color: #ececec!important;
+}
+/* review popup design end */
+
 .xoo-cp-container{
 	max-width:950px;
 	width: 100%;

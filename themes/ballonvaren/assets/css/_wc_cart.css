@@ -20,7 +20,7 @@ body.woocommerce-cart .page-title h1{
 .cart-crtl{
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 82px;
+	padding-bottom: 80px;
 }
 .cart-crtl .cart-table-crtl{
 	width: 66.32%;
