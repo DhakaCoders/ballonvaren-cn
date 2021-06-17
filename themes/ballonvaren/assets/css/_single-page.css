@@ -120,6 +120,23 @@
   background: none;
   border: 0;
 }
+#review_form .modal-close {
+    position: absolute;
+    z-index: 999999;
+    top: -17px;
+    right: -17px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f00;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .modal-close:hover {
   color: #777;

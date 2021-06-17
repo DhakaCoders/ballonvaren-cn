@@ -227,10 +227,15 @@
 }
 
 @media(max-width: 479px){
-
+	
 
 }
 
 @media(max-width: 359px){
-
+	.fl-pro-gift-cntlr span {
+	    font-size: 26px;
+	}
+	.fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi, .fl-pro-gift-cntlr .fl-gift-price span.woocommerce-gift-Price-amount bdi span.woocommerce-Price-currencySymbol {
+	    font-size: 30px;
+	}
 }

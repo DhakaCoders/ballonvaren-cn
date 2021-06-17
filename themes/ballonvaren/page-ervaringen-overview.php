@@ -38,17 +38,37 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
     <div class="row">
       <div class="col-md-12">
         <div class="experience-overview-cntlr">
+          <?php if($intro): ?>
           <div class="page-entry-header">
-            <h1 class="fl-h1">ERVARING<span>Consectetur sit velit neque.</span></h1>
-            <p>Ornare pretium volutpat faucibus nibh suscipit dictum. Integer ut urna lacus etiam est.</p>
+            <?php 
+              if( !empty($page_title) ) printf( '<h1 class="fl-h1">%s%s</h1>', $page_title, $sub_title );
+              if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
+            ?>
           </div>
+          <?php endif; ?>
+          <?php 
+          $query = new WP_Query(array(
+            'post_type' => 'ervaring',
+            'posts_per_page'=> -1,
+            'orderby' => 'date',
+            'order'=> 'desc',
+
+          ));
+          if( $query->have_posts() ):
+          ?>
           <div class="exprns-ovrvw-grid-cntlr">
+            <?php 
+                while($query->have_posts()): $query->the_post(); 
+                global $post;
+                $imgID = get_post_thumbnail_id(get_the_ID());
+                $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
+            ?>
             <div class="exprns-ovrvw-item-wrap">
               <div class="exprns-ovrvw-item-cntlr">
                 <div class="exprns-ovrvw-item mHc">
                   <div class="exprns-ovrvw-item-img-cntlr">
                     <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
+                      <?php echo $imgtag; ?>
                     </div>
                   </div>
                   <div class="exprns-ovrvw-item-icon">
@@ -56,13 +76,13 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
                       <use xlink:href="#quotation-icon"></use> </svg>
                     </i>
                   </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
+                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
                   <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
+                    <?php the_excerpt(); ?>
                   </div>
                   <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
+                    <a class="red-color-arrow-btn" href="<?php the_permalink(); ?>">
+                      <span><?php _e( 'LEES MEER', 'ballonvaren' ); ?></span>
                       <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
                         <use xlink:href="#red-right-arrow"></use> </svg>
                       </i>
@@ -71,230 +91,7 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
                 </div>
               </div>
             </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="exprns-ovrvw-item-wrap">
-              <div class="exprns-ovrvw-item-cntlr">
-                <div class="exprns-ovrvw-item mHc">
-                  <div class="exprns-ovrvw-item-img-cntlr">
-                    <div class="exprns-ovrvw-item-img">
-                      <img src="assets/images/exprns-ovrvw-item-img-001.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="exprns-ovrvw-item-icon">
-                    <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                      <use xlink:href="#quotation-icon"></use> </svg>
-                    </i>
-                  </div>
-                  <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="#">Eveline Vernaeve</a></h6>
-                  <div class="exprns-ovrvw-item-desc mHc2">
-                    <p>Nogmaals dank aan u en uw team voor de ballonvaart. Het was een leuke ervaring voor mijn echtgenoot en kinderen. We waren allemaal aangenaam verrast van de heel professionele aanpak!</p>
-                  </div>
-                  <div class="exprns-ovrvw-item-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                        <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <?php endwhile; ?>
           </div>
           <div class="fl-pagi-cntlr">
             <ul class="page-numbers">
@@ -308,6 +105,7 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
               <li><a class="next page-numbers" href="#">→</a></li>
             </ul>
           </div>
+          <?php endif; wp_reset_postdata(); ?>
         </div>
       </div>
     </div>

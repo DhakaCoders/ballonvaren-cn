@@ -76,8 +76,12 @@
 .bnr-desc-inr p{
 	font-size: 20px;
 	line-height: 1.4;
+	
+}
+.bnr-desc-inr p:last-of-type{
 	margin-bottom: 0;
 }
+
 .bnr-btn{
 	padding-top: 35px;
 }
@@ -241,6 +245,7 @@
 	height: 124px;
 	width: 100%;
 	background: #FFFFFF;
+	z-index: 2;
 }
 .cloud-bg img{
 	bottom: 123px;
@@ -264,8 +269,6 @@
 	.bnr-ballon{
 		left: 150px;
 	}
-}
-@media (max-width: 1699px) {
 	.bnr-sub-title{
 		font-size: 60px;
 	}
@@ -276,6 +279,9 @@
 		font-size: 23px;
 		margin-bottom: 34px;
 	}
+}
+@media (max-width: 1699px) {
+	
 	.bnr-btn{
 		padding-top: 33px;
 	}
@@ -291,22 +297,6 @@
 	.hm-dfp-twogrd-module-sce .white-sky-bg{
 
 	}
-}
-
-@media (max-width: 1499px) {
-	.bnr-title{
-		font-size: 129px;
-	}
-	.bnr-ballon{
-		left: 40px;
-	}
-	.hm-news-details-sec.news-details .white-sky-bg{
-		top: -259px;
-	}
-	.bnr-desc-wrap{
-		height: 670px;
-		padding-bottom: 100px;
-	}
 	.bnr-sub-title{
 		font-size: 56px;
 	}
@@ -319,24 +309,41 @@
 	}
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
+	.bnr-ballon{
+		left: 40px;
+	}
+	.hm-news-details-sec.news-details .white-sky-bg{
+		top: -259px;
+	}
 	.bnr-desc-wrap{
 		height: 670px;
-		padding-bottom: 150px;
+		padding-bottom: 100px;
+	}
+	
+	.bnr-desc-wrap{
+		height: 670px;
+		padding-bottom: 215px;
 	}
 	.bnr-sub-title{
-		font-size: 50px;
+		font-size: 28px;
+		margin-bottom: 5px;
 	}
 	.bnr-title{
-		font-size: 110px;
+		font-size: 80px;
 	}
-	.bnr-sub-title2{
-		font-size: 22px;
-		margin-bottom: 25px;
+	.bnr-sub-title2.fl-h5{
+		font-size: 18px;
+		margin-bottom: 15px;
 	}
 	.bn-process-grid-item p br{
 		display: none;
 	}
+}
+
+@media (max-width: 1399px) {
+	
+	
 	.bnr-btn{
 		padding-top: 30px;
 	}
@@ -351,36 +358,29 @@
 		width: 100%;
 		height: auto;
 	}
+	.bnr-btn{
+		padding-top: 16px;
+	}
 }
 
 @media (max-width: 1299px) {
-	
+	.hm-dfp-twogrd-module-sce .booking-top-img{
+	    right: -30px;
+	}
 }
 
 @media (max-width: 1199px) {
-	.bnr-sub-title{
-		font-size: 52px;
-	}
-	.bnr-title{
-		font-size: 114px;
-	}
-	.bnr-sub-title2{
-		margin-bottom: 30px;
-	}
 	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
 		padding-top: 90px;
-	}
-	.bnr-sub-title{
-		font-size: 48px;
-	}
-	.bnr-title{
-		font-size: 104px;
 	}
 	.bnr-ballon i img{
 		max-width: 200px;
 	}
 	.bnr-desc-wrap{
-		padding-bottom: 130px;
+		padding-bottom: 150px;
+	}
+	.hm-dfp-twogrd-module-sce .booking-top-img{
+	    right: -15px;
 	}
 }
 
@@ -586,13 +586,14 @@
 		color: #ee3e15;
 		margin-bottom: 22px;
 	}
-	.bn-process-grid-item p br{
-		display: block;
-	}
 	.bnr-desc-inr p{
 		font-size: 15px;
 		color: #9ea8b1;
 	}
+	.bn-process-grid-item p br{
+		display: block;
+	}
+	
 	.bn-process-grid{
 		padding-top: 60px;
 	}
