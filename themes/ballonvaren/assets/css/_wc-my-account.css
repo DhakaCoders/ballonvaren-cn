@@ -2102,7 +2102,8 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.hide-account-title header,
     body.woocommerce-checkout header,
     body.loggedin-deshboard-crtl header,
-     body.loggedin-winkelmandje-crtl header{
+    body.loggedin-winkelmandje-crtl header,
+    body.woocommerce-checkout  header{
         margin-bottom:0px;
     }
     /* ------------------- woocommerce-cart -------------------*/
