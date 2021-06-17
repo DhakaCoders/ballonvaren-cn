@@ -932,7 +932,10 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		margin-top: 5px;
 	}
 	.xs-lang-icon{
-		top: 21px;
+		top: 22px;
+	}
+	.fl-lang ul li{
+		line-height: 22px;
 	}
 }
 
