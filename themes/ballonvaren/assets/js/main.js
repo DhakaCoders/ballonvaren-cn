@@ -479,6 +479,7 @@ if (windowWidth <= 767) {
 if( $('.humbergar').length ){
     $('.humbergar').click(function(){
       $('body').toggleClass('allWork');
+      $('.xs-mobile-menu-cntlr').slideToggle(300);
     });
   }
   if( $('li.menu-item-has-children > a').length ){
