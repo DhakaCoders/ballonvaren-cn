@@ -57,6 +57,7 @@ ul{
 	margin: 0;
 	padding: 0;
 	padding-bottom: 10px;
+	padding-left: 16px;
 }
 .default-page-con ul li,
 ul li {
@@ -86,13 +87,15 @@ ul li.refGridItem:before{
 	counter-reset: my-awesome-counter;
 	-ms-counter-reset: my-awesome-counter;
 	-webkit-counter-reset: my-awesome-counter;
+	padding-left: 18px;
 }
 .default-page-con ol li ,ol li {
 	counter-increment: my-awesome-counter;
 	-ms-counter-increment: my-awesome-counter;
 	-webkit-counter-increment: my-awesome-counter;
-	padding-bottom: 7px;
+	padding: 2px 0 4px 20px;
 	line-height: 24px;
+	position: relative;
 }
 .default-page-con ol li::before,
 ol li::before {
@@ -103,7 +106,10 @@ ol li::before {
 	font-size: 16px;
 	line-height: 16px;
 	text-align: center;
-	padding: 0 8px 0 1px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top: 5px;
 }
 .default-page-con p {
     margin-bottom: 25px;
@@ -1046,7 +1052,7 @@ Gallery design
 
 	.news-details .blog-grd-top-img {
 	    top: -228px;
-	    right: -35px;
+	    right: -55px;
 	}
 	.news-details .blog-grd-top-img img{
 		max-width: 160px;
@@ -1310,9 +1316,6 @@ Gallery design
 	}
 	#vip .ballon-rides-lft-top-img {
 	    top: -60px;
-	}
-	.dfp-text-module p br{
-		display: none;
 	}
 	.dfp-grd-module .blog-grid-img {
 	    height: 260px;
