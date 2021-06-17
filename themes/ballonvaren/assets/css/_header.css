@@ -484,9 +484,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 
 
 
-/*.xs-mobile-menu-cntlr{
+.xs-mobile-menu-cntlr{
 	display: none;
-}*/
+}
 
 
 
@@ -645,7 +645,6 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	.header{
 		padding-top: 25px;
 		padding-bottom: 35px;
-		margin-bottom: 48px;
 	}
 	.hambergar-icon,
 	.close-icon{
@@ -920,6 +919,11 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	}
 }
 
+@media(max-width: 767px){
+	.header{
+		margin-bottom: 48px;
+	}
+}
 @media(max-width: 575px){
 	.xs-mobile-menu-cntlr .fl-lang-cntlr:after {
 	    top: 21px;
