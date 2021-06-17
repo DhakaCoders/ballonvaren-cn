@@ -3,6 +3,7 @@
 }
 .banner-sec{
 	position: relative;
+	overflow: hidden;
 	
 }
 .banner-sec .container{
