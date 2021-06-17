@@ -40,7 +40,7 @@
 	</div>
 </div> -->
 <?php else: ?>
-<div class="back-to-dashboard-btn-cntlr">
+<div class="back-to-dashboard-btn-cntlr show-sm">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
