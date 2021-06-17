@@ -648,22 +648,18 @@ boek-je-form-sec-wrp
 .boek-je-form-sec-wrp .contact-form-info p{
 	margin-bottom: 30px;
 }
-.boek-je-form-sec-wrp .fl-transparent-btn{
-	width: 200px;
-	height: 50px;
-	color: #fff;
-	border:2px solid#fff;
-	margin: 0 auto;
+.boek-je-form-sec-wrp .fl-transparent-btn {
+    min-width: 200px;
+    height: 50px;
+    color: #fff;
+    border: 2px solid#fff;
+    margin: 0 auto;
+    padding: 14px 30px 15px;
 }
-.boek-parachute-icon{
-	position: absolute;
-	right: -80px;
-	bottom: -40px;
-	background:url(../images/boek-parachute-icon.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	width: 125px;
-	height: 148px;
+.boek-parachute-icon {
+    position: absolute;
+    right: -92px;
+    bottom: -45px;
 }
 .boek-je-form-bg-cntlr{
 	background:url(../images/boek-je-form-bg-cntlr.png);
@@ -851,14 +847,7 @@ boek-je-form-sec-wrp
 	.boek-je-form-sec-wrp .contact-form-rgt {
 	    padding-top: 50px;
 	}
-	.boek-parachute-icon {
-	    right: auto;
-	    bottom: -10px;
-	    width: 65px;
-	    height: 85px;
-	    background-size: 65px 85px;
-	    left: -50px;
-	}
+	
 	.page-entry-header .fl-h1 span{
 		font-size: 17px;
 	}
