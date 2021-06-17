@@ -58,68 +58,103 @@ $form = $intro['shortcode'];
         </div>
     	<?php endif; ?>
       </div>
+	<?php 
+          $address = get_field('address', 'options');
+		  $gmurl = get_field('url', 'options');
+		  $telefoon = get_field('telefoon', 'options');
+		  $email = get_field('emailadres', 'options');
+		  $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
+		  $smedias = get_field('social_media', 'options');
+          $continfo = get_field('contactinfo', $thisID);
+    ?>
       <div class="contact-form-rgt">
         <div class="contact-form-info-cntlr">
           <div class="contact-form-info">
-            <h6 class="fl-h6 contact-form-info-title">Contact</h6>
+            <?php if( !empty($continfo['titel']) ) printf('<h6 class="fl-h6 contact-form-info-title">%s</h6>', $continfo['titel']); ?>
             <ul class="reset-list clearfix">
-              <li>
-                <a href="#" target="_blank">Atlantic Ballooning BVBA <br> Palingstraat 87, B-9070 Destelbergen <br> (kantoor)</a>
-              </li>
-              <li>
-                <span>Tel: <a href="tel:09 356 64 84">09 356 64 84</a></span></li>
-                <li>
-                  <span>E-mail: <a href="mailto:info@ballonvaren.be">info@ballonvaren.be</a></span>
-                </li>
+				<?php 
+	                if( !empty($continfo['adres']) ) {
+	                  $contmaplink = !empty($continfo['url'])?$continfo['url']: 'javascript:void()';
+	                  printf('<li><a href="%s" target="_blank">%s</a></li>', $contmaplink, $continfo['adres']);
+	                }
+	                else{
+	                  if( !empty($address) ) printf('<li><a href="%s" target="_blank">%s</a></li>', $gmaplink, $address);
+	                }
+	                if(!empty($continfo['telefoon'])){
+	                  printf('<li><span>Tel:<a href="tel:%s">%s</a></span></li>', phone_preg($continfo['telefoon']),  $continfo['telefoon']);
+	                }else{
+	                  if( !empty($telefoon) ) printf('<li><span>Tel:<a href="tel:%s">%s</a></span></li>', phone_preg($telefoon),  $telefoon);
+	                } 
+	                if(!empty($continfo['emailadres'])){
+	                  printf('<li><span>E-mail:<a href="mailto:%s">%s</a></span></li>', $continfo['emailadres'], $continfo['emailadres']);
+	                }else{
+	                  if( !empty($email) ) printf('<li><span>E-mail:<a href="mailto:%s">%s</a></span></li>', $email, $email);
+	                }
+	            ?>
               </ul>
             </div>
             <div class="contact-form-info-socail has-svg-social">
               <ul class="reset-list clearfix">
-                <li>
-                  <a href="#" target="_blank">
-                    <i><svg class="contact-facebook-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
-                    <use xlink:href="#contact-facebook-icon-svg"></use></svg></i>
-                  </a>
-                  </li>
+                  <?php if( !empty($smedias['facebook_url']) ): ?>
                   <li>
-                    <a href="#" target="_blank">
+                    <a target="_blank" href="<?php echo $smedias['facebook_url']; ?>">
+                      <i><svg class="contact-facebook-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                    <use xlink:href="#contact-facebook-icon-svg"></use></svg></i>
+                    </a>
+                  </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['messenger_url']) ): ?>
+                  <li>
+                    <a target="_blank" href="<?php echo $smedias['messenger_url']; ?>">
                       <i><svg class="contact-msg-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
                     <use xlink:href="#contact-msg-icon-svg"></use></svg></i>
                     </a>
                   </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['twitter_url']) ): ?>
                   <li>
-                    <a href="#" target="_blank">
+                    <a target="_blank" href="<?php echo $smedias['twitter_url']; ?>">
                       <i><svg class="contact-twitter-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
                     <use xlink:href="#contact-twitter-icon-svg"></use></svg></i>
                     </a>
                   </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['linkedin_url']) ): ?>
                   <li>
-                    <a href="#" target="_blank">
-                      <i><svg class="contact-linkedin-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                    <a target="_blank" href="<?php echo $smedias['linkedin_url']; ?>">
+                       <i><svg class="contact-linkedin-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
                      <use xlink:href="#contact-linkedin-icon-svg"></use></svg></i>
                     </a>
                   </li>
+                  <?php endif; ?>
+                  <?php if( !empty($smedias['instagram_url']) ): ?>
                   <li>
-                    <a href="#" target="_blank">
-                      <i><svg class="contact-instagram-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+                    <a target="_blank" href="<?php echo $smedias['instagram_url']; ?>">
+                       <i><svg class="contact-instagram-icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
                     <use xlink:href="#contact-instagram-icon-svg"></use></svg></i>
                     </a>
-                    </li>
+                  </li>
+                <?php endif; ?>
                   </ul>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
 </section>
-
+<?php  
+  $gmap = get_field('gmap', $thisID);
+  if($gmap):
+?>
 <section class="contact-google-map-sec-wrp contact-white-sky-bg-cntlr">
   <div class="contact-white-sky-bg">
     <span class="contact-white-sky-inline-bg hide-sm" style="background: url(<?php echo THEME_URI; ?>/assets/images/contact-form-bg.png);"></span>
     <span class="contact-white-sky-inline-bg show-sm" style="background: url(<?php echo THEME_URI; ?>/assets/images/contact-form-xs-bg.png);"></span>
   </div>
+  <?php if( !empty($gmap['map_embedded']) ): ?>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -128,7 +163,7 @@ $form = $intro['shortcode'];
             <img src="<?php echo THEME_URI; ?>/assets/images/contact-parachute-icon.svg">
           </div>
           <div class="contact-google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10006.95422926144!2d2.7672152436070503!3d51.16860917329277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dca4981458e599%3A0x94ae9cf98c6fb394!2s8434%20Westende-Bad%2C%20Belgium!5e0!3m2!1sen!2sbd!4v1616587380465!5m2!1sen!2sbd" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <?php echo $gmap['map_embedded']; ?>
           </div> 
           <div class="contact-google-parachute">
             <img src="<?php echo THEME_URI; ?>/assets/images/contact-google-parachute.svg">
@@ -137,5 +172,7 @@ $form = $intro['shortcode'];
       </div>
     </div>
   </div>
+  <?php endif; ?>
 </section>
+<?php endif; ?>
 <?php get_footer();?>
