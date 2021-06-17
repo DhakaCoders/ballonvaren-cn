@@ -726,7 +726,8 @@ body.woocommerce-account #login_register #customer_login .u-column2 .signup-noti
     margin-bottom: 24px;
 }
 body.woocommerce-checkout .page-grd-sec-wrp,
-body.hide-account-title .page-grd-sec-wrp{
+body.hide-account-title .page-grd-sec-wrp,
+body.loggedin-deshboard-crtl .page-grd-sec-wrp{
     padding-top: 105px;
 }
 body.loggedin-deshboard-crtl .page-grd-sec-wrp{
@@ -734,7 +735,7 @@ body.loggedin-deshboard-crtl .page-grd-sec-wrp{
 }
 body.woocommerce-edit-account .page-grd-sec-wrp,
 body.woocommerce-orders .page-grd-sec-wrp{
-    padding-top:0px;
+    padding-top:0px!important;
     padding-bottom: 0;
 }
 #billing_personal_recom p, #billing_acttion_insp p {
@@ -2005,7 +2006,8 @@ body.woocommerce-checkout section.checkout-top-sec{
         font-size:15px;
     }
     body.woocommerce-checkout .page-grd-sec-wrp,
-    body.hide-account-title .page-grd-sec-wrp{
+    body.hide-account-title .page-grd-sec-wrp,
+    body.loggedin-deshboard-crtl .page-grd-sec-wrp{
         padding-top: 70px;
     }
     body.woocommerce-account .account-page-title h1{
@@ -2013,6 +2015,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-account .account-page-title h1 + p{
         font-size:28px;
+    }
+    body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
+        padding-top:50px;
     }
     /* --------------- edit account page ---------------*/
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a:after{
@@ -2091,7 +2096,8 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-edit-account header,
     body.woocommerce-orders header,
     body.hide-account-title header,
-    body.woocommerce-checkout header{
+    body.woocommerce-checkout header,
+    body.loggedin-deshboard-crtl header{
         margin-bottom:0px;
     }
     /* ------------------- woocommerce-cart -------------------*/
@@ -2129,9 +2135,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a:after{
         margin-left:0;
     }
-  /*  body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-        padding-right: 40px;
-    }*/
+  
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
         padding-left: 20px;
@@ -2288,7 +2292,8 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     /* -------------------- myaccount login-register-page ----------------------*/
     body.woocommerce-checkout .page-grd-sec-wrp,
-    body.hide-account-title .page-grd-sec-wrp{
+    body.hide-account-title .page-grd-sec-wrp,
+    body.loggedin-deshboard-crtl .page-grd-sec-wrp{
         padding-top:50px;
     }
     body.woocommerce-account .account-page-title{
@@ -2677,7 +2682,8 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account.loggedin-deshboard-crtl .default-page-con p{
         margin-bottom:10px;
     }
-    body.woocommerce-account.loggedin-deshboard-crtl  .account-page-title h1{
+    body.woocommerce-account.loggedin-deshboard-crtl  .account-page-title h1,
+    body.woocommerce-edit-account .account-page-title h1{
         margin-bottom: 0px!important;
         font-size: 30px;
         border-bottom: none!important;
@@ -2799,6 +2805,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         max-width: 500px;
         margin-left: auto;
         margin-right:auto;
+        text-align: center;
     }
     body.woocommerce-account .default-page-con h1 + p{
         font-size: 16px;
@@ -3124,9 +3131,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a {
         font-size: 12px;
-    }
-    body.woocommerce-account.loggedin-deshboard-crtl  .account-page-title h1{
-        font-size:24px;
     }
      #billing_order_type_field span label, #billing_salutation_field span label{
         font-size:12px;
