@@ -301,7 +301,15 @@ $smedias = get_field('social_media', 'options');
                             <use xlink:href="#cart-icon-svg"></use> 
                           </svg>
                         </i>
-                        <span>11</span
+
+                          <?php 
+                            if( WC()->cart->get_cart_contents_count() > 0 ){
+                              echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
+                            }else{
+                              echo sprintf ( '<span>%d</span>', 0 );
+                            }  
+                            ?>
+
                       </a>
                     </li>
                     <li class="hdr-contact-btn">
