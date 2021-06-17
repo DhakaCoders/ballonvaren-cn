@@ -572,9 +572,7 @@ function cbv_wc_custom_class( $classes ) {
     if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false && is_account_page() && is_user_logged_in()){
         $classes[] = 'loggedin-winkelmandje-crtl';
     }else{
-        if( is_account_page() && is_user_logged_in() && (!is_wc_endpoint_url( 'orders' ) ||  is_wc_endpoint_url( 'edit-account' ))) {
-            $classes[] = 'loggedin-deshboard-crtl';
-        }elseif( is_account_page() && !is_user_logged_in() && !isset($_GET['action']) ){
+        if( is_account_page() && !is_user_logged_in() && !isset($_GET['action']) ){
             $classes[]='account-login-page';
         }
     }
