@@ -18,8 +18,7 @@
 	justify-content: center;
 	padding-bottom: 225px;
 }
-.bnr-desc-wrap:after,
-.bnr-desc-cntlr:after{
+.bnr-desc-wrap:after{
 	content: "";
 	display: block;
 	min-height: inherit;
@@ -29,7 +28,6 @@
 	height: 100%;
 	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 }
 .banner-bg{
