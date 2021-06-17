@@ -57,7 +57,7 @@
 				<div class="checkoutpt-left">
 					<h1><?php the_title(); ?></h1>
 				</div>
-				<div class="checkoutpt-right">
+<!-- 				<div class="checkoutpt-right">
 					<div class="checkout-page-bar-crtl">
 						<div class="progressbar-crtl">
 							<div class="n-checkout-progress-wrap">
@@ -89,7 +89,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				</div>
 			</div>
 		</div>
