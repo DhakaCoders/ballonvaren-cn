@@ -1009,6 +1009,9 @@ Gallery design
 	
 }
 @media(max-width: 1399px){
+	.dfp-promo-module-title{
+		margin-bottom: 25px;
+	}
 	.booking-btm-img {
 	    bottom: -38px;
 	    left: -60px;
