@@ -139,7 +139,7 @@ if ( $customer_orders ) :
       <?php endforeach; ?>
     </ul>
   </div>
-<div class="fl-pagi-cntlr order-pagi-crtl">
+<div class="fl-pagination-ctlr">
 <?php
     //we need to display some pagination if there are more total posts than the posts displayed per page
     if($order_count > $posts_per_page ){

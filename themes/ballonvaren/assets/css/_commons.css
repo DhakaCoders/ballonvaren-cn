@@ -365,7 +365,7 @@ form
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #EE3E15;
-	padding: 12px 30px;
+	padding: 12.5px 30px;
 	min-width: 210px;
 	text-align: center;
 }
@@ -385,7 +385,7 @@ form
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #2C113E;
-	padding: 12px 30px;
+	padding: 12.5px 30px;
 	min-width: 210px;
 	text-align: center;
 }
@@ -408,7 +408,7 @@ form
 	text-transform: uppercase;
 	font-weight: 800;
 	border: 2px solid #1DB4B2;
-	padding: 12px 30px;
+	padding: 12.5px 30px;
 	min-width: 210px;
 	text-align: center;
 }
@@ -428,7 +428,7 @@ form
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-weight: 800;
-	padding: 12px 30px;
+	padding: 12.5px 30px;
 	min-width: 210px;
 	text-align: center;
 }
