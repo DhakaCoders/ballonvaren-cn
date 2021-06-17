@@ -802,6 +802,9 @@ del span.woocommerce-Price-amount bdi:after,
 	    left: -25px;
 	    max-width: 125px;
 	}
+	.product-page-cntlr {
+	    padding-bottom: 20px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -860,6 +863,9 @@ del span.woocommerce-Price-amount bdi:after,
 		display: block;
 		padding-left: 0;
 		padding-top: 20px;
+	}
+	.product-page-cntlr {
+	    padding-bottom: 10px;
 	}
 }
 
@@ -953,6 +959,12 @@ del span.woocommerce-Price-amount bdi:after,
 	}
 	.fl-pro-grd-des > ul{
 		padding-bottom: 26px;
+	}
+	.fl-pagination-ctlr {
+	    padding-bottom: 48px;
+	}
+	.product-page-cntlr {
+	    padding-bottom: 0;
 	}
 }
 
