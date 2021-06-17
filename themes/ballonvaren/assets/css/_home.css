@@ -176,20 +176,20 @@
 .cloud-bg img{
 	position: absolute;
 	bottom: 0;
-	
+	transform: scale(1.1);
 	animation: animate calc(8s * var(--i)) linear infinite;
 }
 @keyframes animate{
 	0%{
 		transform: translateX(-100%);
 		-ms-transform: translateX(-100%);
-		-moz-transform: translateX(-100%);
+		-o-transform: translateX(-100%);
 		-webkit-transform: translateX(-100%);
 	}
 	100%{
 		transform: translateX(100%);
 		-ms-transform: translateX(100%);
-		-moz-transform: translateX(100%);
+		-o-transform: translateX(100%);
 		-webkit-transform: translateX(100%);
 	}
 }
