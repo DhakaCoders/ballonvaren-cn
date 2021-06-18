@@ -296,6 +296,20 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	.checkout-hdr .chkout-title{
 		font-size: 36px;
 	}
+	.srv-fea-img-cntrl{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.srv-cont{
+		margin: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	.chkout-service{
+		display: block;
+		padding-bottom: 80px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -314,15 +328,8 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 		font-size: 32px;
 		margin-bottom: 16px;
 	}
-	.chkout-service{
-		display: block;
-		padding-bottom: 80px;
-	}
-	.srv-fea-img-cntrl{
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: 30px;
-	}
+	
+	
 	.chk-acc-tp-cntrl{
 		padding-bottom: 20px;
 	}
@@ -330,20 +337,16 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 		padding: 36px 21px;
 	}
 	.checkout-hdr{
-		padding-bottom: 26px;
+		padding-bottom: 20px;
 		border-bottom: 1px solid #ECEEEF;
-		margin-bottom: 29px;
+		margin-bottom: 28px;
 	}
 	.chkout-logo{
 		padding-bottom: 22px;
 	}
-	.srv-cont{
-		margin: auto;
-		max-width: 100%;
-		width: auto;
-	}
+	
 	.chk-acc{
-		padding-bottom: 47px;	
+		padding-bottom: 50px;	
 	}
 	.chk-acc-bg{
 		padding: 55px 42px 23px 40px;
