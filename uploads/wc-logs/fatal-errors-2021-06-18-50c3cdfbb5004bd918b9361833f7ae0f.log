@@ -1,2 +1,4 @@
 2021-06-18T06:17:57+00:00 CRITICAL Out of memory (allocated 39845888) (tried to allocate 32768 bytes) in D:\xampp\htdocs\projects\2021\ballonvaren\ballonvaren-cn\plugins\woocommerce\packages\woocommerce-blocks\src\StoreApi\Routes\Products.php on line 1
 
+2021-06-18T10:45:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\06\ballonvaren\wp-includes\wp-db.php on line 2056
+
