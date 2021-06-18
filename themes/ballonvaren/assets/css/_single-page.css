@@ -14,11 +14,62 @@
 	border-bottom: 1px solid #ECF1F4;
 	margin-bottom: 33px;
 }
-.revws-buyer{
-	margin: -17px 0;
+ol.commentlist {
+    padding-left: 0;
 }
-.revw-buyer{
-	padding: 17px 0;
+.single-product #reviews #comments ol.commentlist li{
+    margin-bottom: 30px;
+}
+.single-product #reviews #comments ol.commentlist li:last-of-type{
+    margin-bottom: 0;
+}
+.comment_container img {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 58px!important;
+    height: 58px!important;
+    border-radius: 100%;
+    padding: 0!important;
+    background: initial!important;
+    border: none!important;
+}
+.single-product .comment-text{
+    border: none!important;
+    border-radius: initial!important;
+    padding: 0 0 0 0px!important;
+    margin: 0!important;
+}
+.single-product .star-rating{
+    float: left!important;
+    left: 74px;
+    top: 7px;
+}
+.single-product .star-rating span::before{
+    color: #fdca33!important;
+}
+.single-product .description p:last-of-type{
+    margin-bottom: 0!important;
+}
+.single-product .meta strong, .single-product .meta em{
+    font-weight: 500!important;
+}
+.single-product .meta strong, .single-product .meta em, .single-product .meta time{
+    font-weight: 400;
+    font-style: normal!important;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #909BA5;
+    text-transform: capitalize;
+}
+.single-product .comment-text p.meta{
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -11px!important;
+    padding-top: 27px;
+    margin-bottom: 0!important;
+}
+.description {
+    padding-top: 25px;
 }
 .revw-hdr-title{
 	letter-spacing: -0.02em;
@@ -34,17 +85,6 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 19px;
-}
-.buyer-img-cntrl {
-	display: inline-block;
-	vertical-align: baseline;
-	width: 58px;
-	height: 58px;
-	border-radius: 100%;
-}
-.buyer-img-cntrl img{
-	max-height: 58px;
-	width: auto;
 }
 .revw-point{
 	padding-left: 18px;
