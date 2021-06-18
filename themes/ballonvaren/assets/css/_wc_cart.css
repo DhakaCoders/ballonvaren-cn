@@ -410,6 +410,7 @@ body.woocommerce-cart .add-more-product a:after{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+	margin-top: 1px;
 }
 body.woocommerce-cart .add-more-product a:hover:after{
 	background:url('../images/left-arrow-icon-hover.svg');

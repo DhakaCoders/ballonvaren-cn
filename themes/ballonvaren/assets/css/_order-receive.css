@@ -1,9 +1,12 @@
-.checkout-sec{
+/*.checkout-sec{
 	padding-top: 99px;
-}
+}*/
 .woocommerce-order-received .innerpage-con-wrap{
 	padding-top: 100px!important;
 	padding-bottom: 94px!important;
+}
+body.woocommerce-order-received .page-grd-sec-wrp{
+	padding-top: 98px!important;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
@@ -16,7 +19,7 @@
 	text-align: center;
 }
 .chkout-logo {
-    padding-bottom: 54px;
+    padding-bottom: 60px;
     max-width: 554px;
     height: auto;
     margin: auto;
