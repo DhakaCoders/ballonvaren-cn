@@ -242,6 +242,7 @@ body.woocommerce-cart .cart_totals tbody tr th{
 	padding-bottom: 15px!important;
 	font-weight: 400!important;
 	font-size: 16px!important;
+	line-height: 1!important;
 }
 body.woocommerce-cart .cart_totals table.shop_table{
 	margin-bottom: 10px;
