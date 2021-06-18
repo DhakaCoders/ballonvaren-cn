@@ -215,9 +215,9 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	.chkout-logo{
 		padding-bottom: 46px;
 	}
-	.checkout-sec{
+	/*.checkout-sec{
 		padding-top: 94px;
-	}
+	}*/
 	.checkout-hdr{
 		padding-bottom: 40px;
 	}
@@ -247,9 +247,7 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 } */
 
 @media (max-width: 1199px) {
-	.checkout-sec{
-		padding-top: 87px;
-	}
+
 	.chkout-logo{
 		padding-bottom: 38px;
 	}
@@ -358,6 +356,12 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	}
 	.chk-acc-title{
 		text-align: center;
+	}
+	.checkout-sec{
+		padding-top: 80px;
+	}
+	body.woocommerce-order-received .page-grd-sec-wrp {
+	    padding-top: 0!important;
 	}
 }
 
