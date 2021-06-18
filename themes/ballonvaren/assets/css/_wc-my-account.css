@@ -206,6 +206,7 @@ body.loggedin-winkelmandje-crtl .default-page-con h1{
 }
 .back-to-dashboard-btn-cntlr a:hover:after{
     left: -3px;
+    background: url(../images/deshbord-btn-cntlr-arrow-hover.svg);
 }
 .back-to-dashboard-btn-cntlr{
     margin-bottom: 95px;
