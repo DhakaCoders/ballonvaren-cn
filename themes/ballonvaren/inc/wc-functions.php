@@ -578,7 +578,7 @@ if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false && is_account_page
         $classes[] = 'woocommerce-orders';
     }elseif( is_account_page() && is_user_logged_in() &&  is_wc_endpoint_url( 'edit-account' )) {
         $classes[] = 'woocommerce-edit-account';
-    }elseif( is_account_page() && is_user_logged_in() && !is_endpoint()) {
+    }elseif( is_account_page() && is_user_logged_in() && !is_wc_endpoint_url()) {
         $classes[] = 'loggedin-deshboard-crtl';
     }
 
