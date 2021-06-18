@@ -190,7 +190,6 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	border-radius: 6px;
-	text-transform: capitalize;
 }
 .woocommerce input[type="text"]:focus,
 .woocommerce input[type="email"]:focus,

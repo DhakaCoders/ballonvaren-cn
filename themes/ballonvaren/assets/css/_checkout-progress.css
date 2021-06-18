@@ -29,7 +29,7 @@
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	margin-top: -3px;
+	margin-top: -9px;
 	border: 1px solid #C6DDF0;
 }
 .checkout-progress-bar .ckour-pro-bar-active{
@@ -116,5 +116,8 @@
 @media(max-width:575px){
 	.chckout-prgrs-title{
 		font-size:10px;
+	}
+	.checkout-progress-bar{
+		margin-top:-3px;
 	}
 }
