@@ -99,7 +99,7 @@ span.xoo-cp-close.xoo-cp-icon-cross{
 }
 span.xoo-cp-close.xoo-cp-icon-cross:before{
     content: "";
-    background: url(../assets/images/single-pro-popup-cross-icon.svg);
+    background: url(../images/single-pro-popup-cross-icon.svg);
     position: absolute;
     width: 10px;
     height: 10px;
