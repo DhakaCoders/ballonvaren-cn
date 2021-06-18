@@ -2781,10 +2781,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-orders .order-details .order-status{
         font-size:14px;
+        padding-left: 24px;
     }
     body.woocommerce-orders .order-details .order-status:after{
         width: 15px;
-        padding-left: 24px;
+       
     }
   /*  body.woocommerce-orders .myac-pro-grds .myac-pro-grd-item:first-child {
         margin-top: 25px;
