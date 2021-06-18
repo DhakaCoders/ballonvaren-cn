@@ -50,99 +50,67 @@ $share_text = get_the_excerpt();
     </div>
     <?php if(have_rows('inhoud')){  ?>
     <?php while ( have_rows('inhoud') ) : the_row();  ?>
-    <?php if( get_row_layout() == 'galerij' ){ 
-    $galleries = get_sub_field('fc_afbeeldingen');
-    $full_wide = get_sub_field('full_wide');
-    $lightbox = get_sub_field('lightbox');
-    $kolom = get_sub_field('kolom');
-    if( $galleries ): 
+     <?php }elseif( get_row_layout() == 'galerij' ){ 
+      $galleries = get_sub_field('fc_afbeeldingen');
+      $full_wide = get_sub_field('fullwidth');
+      $inline_image = get_sub_field('show_inline_afbeelding');
+      $lightbox = get_sub_field('lightbox');
+      $kolom = get_sub_field('kolom'); 
+      $hasinline_class = ($inline_image)?'has-inline-bg ':'';
+      if($galleries):
     ?>
-    <?php if($full_wide): ?>
-    <div class="block-1285">
-      <div class="top-gallery-module">
-        <div class="gallery-wrap has-inline-bg clearfix">
-          <div class="gallery gallery-columns-2">
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg">
-              </div>
-            </figure>
-
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg">
-              </div>
-            </figure>
+      <?php if($full_wide): ?>
+      <div class="block-1285">
+        <div class="top-gallery-module">
+          <div class="<?php echo $hasinline_class; ?>gallery-wrap clearfix">
+            <div class="gallery gallery-columns-<?php echo $kolom; ?>">
+              <?php foreach( $galleries as $image ): ?>
+              <figure class="gallery-item">
+                <div class="gallery-icon portrait">
+                <?php 
+                  if( $lightbox ){
+                    echo "<a data-fancybox='gallery' href='{$image['url']}'>";
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                    echo "</a>";
+                  }else{
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                  }
+                ?>
+                </div>
+              </figure>
+              <?php endforeach; ?>
+            </div>
           </div>
         </div>
-
-
-        <div class="gallery-wrap clearfix">
+      </div>
+      <?php else: ?>
+      <div class="block-850">
+        <div class="<?php echo $hasinline_class; ?>gallery-wrap clearfix">
           <div class="gallery gallery-columns-2">
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg">
-              </div>
-            </figure>
-
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg">
-              </div>
-            </figure>
+              <?php foreach( $galleries as $image ): ?>
+              <figure class="gallery-item">
+                <div class="gallery-icon portrait">
+                <?php 
+                  if( $lightbox ){
+                    echo "<a data-fancybox='gallery' href='{$image['url']}'>";
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                    echo "</a>";
+                  }else{
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                  }
+                ?>
+                </div>
+              </figure>
+              <?php endforeach; ?>
           </div>
         </div>
-
-
       </div>
-    </div>
-    <?php else: ?>
-    <div class="block-850">
-      <div class="gallery-wrap has-inline-bg clearfix">
-        <div class="gallery gallery-columns-2">
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg">
-            </div>
-          </figure>
-
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg">
-            </div>
-          </figure>
-        </div>
-      </div>
-
-
-      <div class="gallery-wrap clearfix">
-        <div class="gallery gallery-columns-2">
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg">
-            </div>
-          </figure>
-
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg">
-            </div>
-          </figure>
-        </div>
-      </div>
-
-
-    </div>
-    <?php endif; ?>
-    <?php endif; ?>
+      <?php endif; ?>
+      <?php endif; ?>
     <?php 
     }elseif( get_row_layout() == 'teksteditor' ){ 
     $beschrijving = get_sub_field('fc_teksteditor');

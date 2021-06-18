@@ -24,6 +24,9 @@
   </div>
 </section>
 <?php endif; ?>
+  <?php if(have_rows('inhoud')){ 
+    get_template_part('templates/innerpage');
+  }else{ ?>
 <?php if( !is_wc_page() ): ?>
 <section class="page-heading">
   <div class="container">
@@ -37,19 +40,19 @@
   </div>
 </section>
 <?php endif; ?>
-<section class="page-grd-sec-wrp">
+<section class="innerpage-con-wrap">
     <?php if( is_wc_endpoint_url( 'orders' ) || is_wc_endpoint_url( 'edit-account' ) || (strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false) ){ ?>
       <div class="back-to-dashboard-btn-cntlr">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar dashboard</a>
+              <a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>"><?php _e( 'Terug naar dashboard', 'ballonvaren' ); ?></a>
             </div>
           </div>
         </div>
       </div>
     <?php } ?>
-    <?php if( is_checkout() ){ get_template_part('templates/checkout', 'top'); } ?>
+  <?php if( is_checkout() ){ get_template_part('templates/checkout', 'top'); } ?>
    <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -59,6 +62,7 @@
       </div>
     </div>
   </div>
+  <?php } ?>
 </section>
 <?php get_template_part('templates/login', 'bottom'); ?>
 <?php get_footer();?>
