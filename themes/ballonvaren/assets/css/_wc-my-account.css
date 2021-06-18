@@ -557,6 +557,7 @@ body.woocommerce-account .woocommerce input[type="password"]::placeholder,
 body.woocommerce-account .woocommerce textarea::placeholder{
     color:#909BA5!important;
     opacity:1;
+    text-transform: capitalize;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-moz-placeholder, 
 body.woocommerce-account .woocommerce input[type="email"]:-moz-placeholder,
@@ -565,6 +566,7 @@ body.woocommerce-account .woocommerce input[type="password"]:-moz-placeholder,
 body.woocommerce-account .woocommerce textarea:-moz-placeholder{
     color:#909BA5!important;
     opacity:1;
+    text-transform: capitalize;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-ms-input-placeholder, 
 body.woocommerce-account .woocommerce input[type="email"]:-ms-input-placeholderr,
@@ -573,6 +575,7 @@ body.woocommerce-account .woocommerce input[type="password"]:-ms-input-placehold
 body.woocommerce-account .woocommerce textarea:-ms-input-placeholderr{
     color:#909BA5!important;
     opacity:1;
+    text-transform: capitalize;
 }
 
 body.woocommerce-account .woocommerce input[type="text"]::-moz-placeholder, 
@@ -582,6 +585,7 @@ body.woocommerce-account .woocommerce input[type="password"]::-moz-placeholder,
 body.woocommerce-account .woocommerce textarea::-moz-placeholder{
     color:#909BA5!important;
     opacity:1;
+    text-transform: capitalize;
 }
 body.woocommerce-account .woocommerce input[type="text"]::-webkit-input-placeholder 
 body.woocommerce-account .woocommerce input[type="email"]::-webkit-input-placeholder,
@@ -590,6 +594,7 @@ body.woocommerce-account .woocommerce input[type="password"]::-webkit-input-plac
 body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
     color:#909BA5!important;
     opacity:1;
+    text-transform: capitalize;
 }
 body.account-login-page .woocommerce input[type="text"], 
 body.account-login-page .woocommerce input[type="email"], 
