@@ -21,7 +21,7 @@
 	align-items: center; 
 }
 .main-img-crtl .woocommerce-product-gallery__image a img{
-	width: 100%!important;
+	width: auto!important;
     max-height: 436px;
 }
 .thumbnails-cntlr{

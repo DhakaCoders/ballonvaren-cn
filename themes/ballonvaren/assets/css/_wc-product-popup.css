@@ -451,7 +451,6 @@ h3.pro-item-desc-title{
 }
 .cart .qty-price-wrap del span{
 	font-size:20px;
-	text-decoration-line: line-through;
 }
 .product-quantity .product-order-btn button[type="submit"]:hover,
 .product-quantity .product-order-btn a:hover,
