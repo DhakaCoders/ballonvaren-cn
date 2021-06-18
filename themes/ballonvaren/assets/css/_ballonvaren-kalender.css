@@ -37,10 +37,11 @@
 .bv-calnender{
 }
 .bv-calender-iner{
-	box-shadow: 0px 0px 61px 15px rgba(240,240,240,1);
-	-webkit-box-shadow: 0px 0px 61px 15px rgba(240,240,240,1);
-	-moz-box-shadow: 0px 0px 61px 15px rgba(240,240,240,1);
+	box-shadow: 0px 30px 84px rgba(44, 17, 62, 0.09);
+	-webkit-box-shadow: 0px 30px 84px rgba(44, 17, 62, 0.09);
+	-moz-box-shadow: 0px 30px 84px rgba(44, 17, 62, 0.09);
 	position: relative;
+	border-radius: 3px;
 }
 .bv-calender-img{
 	max-width: 49%;
@@ -199,6 +200,7 @@
 .calender-inline-bg{
 	position: relative;
 	height: 370px;
+	border-radius: 3px;
 }
 .calender-inline-bg span{
 	display: inline-block;
@@ -385,8 +387,18 @@
 	.event-grid-heading {
 	    font-size: 22px!important;
 	}
-
+	.events-grid-sec {
+	    padding-top: 173px;
+	}
+	.off-days-sec:before{
+		content: none;
+	}
+	.events-grid-sec .white-sky-bg {
+	    top: -140px;
+	    height: 382px;
+	}
 	
+
 }
 @media(max-width: 575px){
 	.calender-inline-bg {
