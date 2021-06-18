@@ -6,16 +6,15 @@
       <div class="row">
         <div class="col-md-12">
           <div class="eveline-vernaeve-cntlr">
-            <div class="review-hdr-top show-xs">
-                <div class="review-hdr">
-                  <h2 class="fl-h2 revw-hdr-title">Vitae nisl maecenas eu fames.</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
-                </div>
-            </div>
             <div class="overons-msnry-grd-wrp clearfix">
               <div class="overons-msnry-grd-lft clearfix">
                 <div class="overons-msnry-grd-cntlr">
-                 <h1 class="fl-h1 show-sm">OVER ONS</h1>
+                  <div class="review-hdr-top show-sm">
+                    <div class="review-hdr">
+                      <h2 class="fl-h2 revw-hdr-title">Vitae nisl maecenas eu fames.</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
+                    </div>
+                  </div>
                   <div class="overons-msnry-grd-item msnrytgi1">
                     <div class="overons-msnry-grd-item-cntlr">
                       <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/overons-msnry-grd-item-img-1.png);"></div>
