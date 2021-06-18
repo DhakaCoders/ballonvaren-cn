@@ -4,9 +4,10 @@
 }
 .review-position-bg {
     position: absolute;
-    top: -285px;
+    top: -295px;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 .review-hdr{
 	padding-bottom: 38px;
@@ -75,6 +76,8 @@
 }
 .single-product .eveline-vernaeve-cntlr{
 	margin-bottom: 106px;
+    position: relative;
+    z-index: 2;
 }
 /* Review Modal  */
 

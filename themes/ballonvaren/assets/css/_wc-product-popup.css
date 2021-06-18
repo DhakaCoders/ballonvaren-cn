@@ -1,7 +1,4 @@
 /* review popup design start */
-.review-position-bg{
-	display: none;
-}
 #review_form {
     background-color: #fff;
     padding: 75px 85px 80px;
@@ -111,7 +108,7 @@ span.xoo-cp-close.xoo-cp-icon-cross:before{
     -ms-transition: all .5s;
 }
 span.xoo-cp-close.xoo-cp-icon-cross:hover:before{
-    background: url(../assets/images/single-pro-popup-cross-icon-hover1.svg);
+    background: url(../images/single-pro-popup-cross-icon-hover1.svg);
 }
 .xoo-cp-container h5 {
     font-size: 24px;
