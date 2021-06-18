@@ -492,6 +492,38 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 
 
 /*responsive*/
+@media(max-width: 1999px){
+	.logo a{
+		max-width: 250px;
+	}
+	.hdr-contact-menu ul li.hdr-contact-btn a.fl-navyblue-btn {
+	    min-width: 110px;
+	    padding: 12px 15px;
+	    font-size: 14px;
+	}
+	.hdr-contact-menu ul{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.hdr-contact-menu ul li {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+	.hdr-main-menu {
+	    padding-right: 10px;
+	}
+	nav.main-nav > ul{
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	nav.main-nav > ul > li {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+	nav.main-nav > ul > li > a{
+		font-size: 14px;
+	}
+}
 @media(max-width: 1799px){
 	nav.main-nav > ul {
 	    margin-left: -14px;
