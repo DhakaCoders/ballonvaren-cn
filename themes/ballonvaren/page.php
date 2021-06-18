@@ -27,7 +27,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="breadcrumb-cntlr">
+        <div class="bn-page-entry-hdr-cntlr">
           <h1 class="fl-h1"><?php the_title(); ?></h1>
         </div>
       </div>
