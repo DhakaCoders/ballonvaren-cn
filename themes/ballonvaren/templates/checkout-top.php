@@ -1,10 +1,22 @@
 <?php $cURL = wc_get_cart_url(); ?>
 <?php if( is_checkout() && strpos($_SERVER['REQUEST_URI'], "order-received") !== false ): ?>
+<div class="back-to-dashboard-btn-cntlr show-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="back-to-dashboard-btn"><a class="backshop-cart" href="<?php echo $cURL; ?>">Terug naar winkelmandje</a></div>
+			</div>	
+		</div>
+	</div>
+</div>
 <div class="order-sec show-sm">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="checkoutpt-right">
+					<div class="checkoutpt-left">
+						<h1><?php the_title(); ?></h1>
+					</div>
 					<div class="progressbar-crtl">
 					    <div class="n-checkout-progress-wrap">
 					      <div class="checkout-progress-cntlr">
