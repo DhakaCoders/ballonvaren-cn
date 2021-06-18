@@ -715,7 +715,7 @@ body.account-login-page .login-btm-section{
 }
 body.account-login-page .page-grd-sec-wrp{
     position: relative;
-    padding-bottom: 310px;
+    padding-bottom: 280px;
 }
 
 body.account-login-page .page-grd-sec-wrp .container{
@@ -1619,6 +1619,7 @@ body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=
 }
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn{
     text-align:right;
+    margin-top:40px;
 }
 body.woocommerce-checkout .innerpage-con-wrap{
     padding-bottom: 109px;
@@ -1627,7 +1628,7 @@ body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-ro
     margin-bottom: 14px;
 }
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper #order_comments_field{
-    margin-bottom:50px;
+    margin-bottom:10px;
 }
 body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper label{
     color:#525A61;
@@ -2487,6 +2488,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-account .login-info-crtl{
         padding-bottom: 50px;
     }
+    body.account-login-page .login-info-crtl {
+        padding-bottom: 85px;
+    }
     body.woocommerce-account .login-btm-wrap h2{
         margin-bottom: 20px;
     }
@@ -2884,7 +2888,6 @@ body.woocommerce-checkout section.checkout-top-sec{
         padding-top:0px;
         margin-bottom: 78px;
     }
-
     /* ----------------------------- chenk out page -----------------------------*/
     body.woocommerce-checkout section.checkout-top-sec{
         background:#fff;
@@ -2968,6 +2971,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         display: block;
         margin-bottom: 12px;
         padding-bottom: 19px;
+        margin-top: 45px;
     }
     body.woocommerce-checkout .default-page-con h3#ship-to-different-address{
         margin-top: 10px;
@@ -3040,6 +3044,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-checkout .payment-method-crtl .shipping-methods{
         margin-bottom: 20px;
+    }
+    .woocommerce-form__label-for-checkbox span:before {
+        top: 7px;
     }
 }
 
