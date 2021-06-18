@@ -1170,7 +1170,7 @@ body.hide-account-title #billing_acttion_insp .woocommerce-input-wrapper{
 }
 #billing_personal_recom .woocommerce-input-wrapper .checkbox-custom, 
 #billing_acttion_insp .woocommerce-input-wrapper .checkbox-custom{
-    margin-top: 1px;
+    margin-top: 0;
 }
 body.hide-account-title #billing_personal_recom p,
 body.hide-account-title #billing_acttion_insp p{
@@ -1882,7 +1882,7 @@ body.woocommerce-checkout .place-order #pwgc-redeem-form input[type="submit"]{
     margin-top: -2px;
 }
 
-.woocommerce-input-wrapper span .radio-custom:after, 
+/*.woocommerce-input-wrapper span .radio-custom:after, */
 body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before, 
 .shipping-methods .woocommerce-shipping-methods li label:before{
     top: 22px;
