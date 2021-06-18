@@ -20,7 +20,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( $related_products ) : ?>
-<div class="related-products">
+<section class="related-products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 	<div class="related products related-pro-crtl">
 
 			<?php
@@ -48,7 +51,10 @@ if ( $related_products ) : ?>
 			<?php //woocommerce_product_loop_end(); ?>
 
 	</div>
-</div>
+        </div>
+      </div>
+    </div>
+</section>
 	<?php
 endif;
 
