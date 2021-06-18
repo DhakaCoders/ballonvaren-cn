@@ -569,15 +569,24 @@ add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
 add_filter( 'body_class', 'cbv_wc_custom_class' );
 function cbv_wc_custom_class( $classes ) {
     global $woocommerce;
-    if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false && is_account_page() && is_user_logged_in()){
+
+if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false && is_account_page() && is_user_logged_in()){
         $classes[] = 'loggedin-winkelmandje-crtl';
-    }else{
-        if( is_account_page() && !is_user_logged_in() && !isset($_GET['action']) ){
-            $classes[]='account-login-page';
-        }
+    }elseif( is_account_page() && !is_user_logged_in() ){
+        $classes[] = 'login-register';
+    }elseif( is_account_page() && is_user_logged_in() && is_wc_endpoint_url( 'orders' ) ){
+        $classes[] = 'woocommerce-orders';
+    }elseif( is_account_page() && is_user_logged_in() &&  is_wc_endpoint_url( 'edit-account' )) {
+        $classes[] = 'woocommerce-edit-account';
+    }elseif( is_account_page() && is_user_logged_in() && !is_wc_endpoint_url()) {
+        $classes[] = 'loggedin-deshboard-crtl';
     }
+
     if( is_cart() && WC()->cart->cart_contents_count == 0){
         $classes[]='empty-cart';
+    }
+    if( is_account_page() && !is_user_logged_in() && !isset($_GET['action']) ){
+        $classes[]='account-login-page';
     }
     if( isset($_GET['action']) && $_GET['action']=='registration'){
         $classes[]='hide-account-title';

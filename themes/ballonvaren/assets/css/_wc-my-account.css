@@ -206,6 +206,7 @@ body.loggedin-winkelmandje-crtl .default-page-con h1{
 }
 .back-to-dashboard-btn-cntlr a:hover:after{
     left: -3px;
+    background: url(../images/deshbord-btn-cntlr-arrow-hover.svg);
 }
 .back-to-dashboard-btn-cntlr{
     margin-bottom: 95px;
@@ -1999,6 +2000,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.hide-account-title #billing_personal_recom .woocommerce-input-wrapper, 
     body.hide-account-title #billing_acttion_insp .woocommerce-input-wrapper{
         font-size:15px;
+    }
+    body.woocommerce-account .account-page-title h1 + p{
+        font-size:26px;
     }
 
 }
