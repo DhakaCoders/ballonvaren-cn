@@ -1995,7 +1995,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce input[type="password"], 
     .woocommerce textarea,
     #billing_order_type_field span.woocommerce-input-wrapper span, 
-    #billing_salutation_field span.woocommerce-input-wrapper span{
+    #billing_salutation_field span.woocommerce-input-wrapper span,
+    body.hide-account-title #billing_personal_recom .woocommerce-input-wrapper, 
+    body.hide-account-title #billing_acttion_insp .woocommerce-input-wrapper{
         font-size:15px;
     }
 
@@ -2269,6 +2271,10 @@ body.woocommerce-checkout section.checkout-top-sec{
 @media(max-width: 767px){
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 30px;
+    }
+    body.hide-account-title #billing_personal_recom .woocommerce-input-wrapper, 
+    body.hide-account-title #billing_acttion_insp .woocommerce-input-wrapper{
+        font-size:16px;
     }
     body.account-login-page .page-grd-sec-wrp{
         padding-top:0px;
