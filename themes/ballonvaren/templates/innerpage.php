@@ -80,6 +80,24 @@
           <?php if( !empty( $beschrijving ) ) echo wpautop($beschrijving); ?>
         </div>
       </div>
+      <?php }elseif( get_row_layout() == 'tekst_tekst' ){ 
+      $tekst_1 = get_sub_field('tekst_1');
+      $tekst_2 = get_sub_field('tekst_2');
+      ?>
+      <div class="block-850">
+        <div class="dfp-two-des-module clearfix">
+          <?php if($tekst_1): ?>
+          <div class="dfp-des-col">
+            <?php echo wpautop($tekst_1); ?>
+          </div>
+          <?php endif; ?>
+          <?php if($tekst_2): ?>
+          <div class="dfp-des-col">
+            <?php echo wpautop($tekst_2); ?>
+          </div>
+          <?php endif; ?>
+        </div>
+      </div>
       <?php }elseif( get_row_layout() == 'blockquote' ){ 
       $beschrijving = get_sub_field('fc_teksteditor');
       ?>
@@ -119,23 +137,19 @@
       $fc_titel = get_sub_field('fc_titel');
       $fc_tekst = get_sub_field('fc_tekst');
       $fc_knop = get_sub_field('fc_knop');
+      $bgcolor = get_sub_field('background_color');
     ?>
-    <div class="block-1285">
-      <div class="ballon-rides-module">
-        <div class="ballon-rides-lft-top-img">
-          <img src="<?php echo THEME_URI; ?>/assets/images/ballon-rides-lft-top-img.svg">
-        </div>
-        <div class="dfp-cta-module orange clearfix">
-          <div class="cta-ctlr">
-            <?php 
-              if( !empty($fc_titel) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_titel);
-              if( !empty($fc_tekst) ) echo wpautop( $fc_tekst );
+    <div class="block-850">
+      <div class="dfp-cta-module clearfix">
+        <div class="cta-ctlr" style="background: <?php echo $bgcolor; ?>;">
+          <?php 
+            if( !empty($fc_titel) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_titel);
+            if( !empty($fc_tekst) ) echo wpautop( $fc_tekst );
 
-              if( is_array( $fc_knop ) &&  !empty( $fc_knop['url'] ) ){
-                printf('<div class="cta-btn"><a class="fl-transparent-btn" href="%s" target="%s">%s</a></div>', $fc_knop['url'], $fc_knop['target'], $fc_knop['title']); 
-              }
-            ?>
-          </div>
+            if( is_array( $fc_knop ) &&  !empty( $fc_knop['url'] ) ){
+              printf('<div class="cta-btn"><a class="fl-transparent-btn" href="%s" target="%s">%s</a></div>', $fc_knop['url'], $fc_knop['target'], $fc_knop['title']); 
+            }
+          ?>
         </div>
       </div>
     </div>
@@ -150,12 +164,12 @@
         </div>
       </div>
     </div>
-    <?php }elseif( get_row_layout() == 'ervaringen' ){
-    $erIDS = get_sub_field('fc_ervaringen');
+    <?php }elseif( get_row_layout() == 'nieuws' ){
+    $erIDS = get_sub_field('fc_nieuws');
     if( !empty($erIDS) ){
     $ercount = count($erIDS);
     $erQuery = new WP_Query(array(
-    'post_type' => 'ervaring',
+    'post_type' => 'post',
     'posts_per_page'=> $ercount,
     'post__in' => $erIDS,
     'orderby' => 'date',
@@ -170,46 +184,136 @@
     ?>
 
     <div class="block-850">
-      <div class="exprns-ovrvw-grid-module">
-        <div class="exprns-ovrvw-grid-ctlr clearfix">
+      <div class="dfp-grd-module">
+        <div class="dfp-grd-items">
+          <ul class="reset-list clearfix">
           <?php 
             while($erQuery->have_posts()): $erQuery->the_post(); 
               $imgID = get_post_thumbnail_id(get_the_ID());
-              $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
+              $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): '';
           ?>
-          <div class="exprns-ovrvw-item-wrap">
-            <div class="exprns-ovrvw-item-cntlr">
-              <div class="exprns-ovrvw-item mHc">
-                <div class="exprns-ovrvw-item-img-cntlr">
-                  <div class="exprns-ovrvw-item-img">
-                    <?php echo $imgtag; ?>
+            <li>
+              <div class="blog-grid-item">
+                <div class="blog-grid-img">
+                  <a href="<?php the_permalink(); ?>" class="overlay-link"></a>
+                  <div class="bgi-img inline-bg" style="background-image: url('<?php echo $imgsrc; ?>');">                  
                   </div>
-                </div>
-                <div class="exprns-ovrvw-item-icon">
-                  <i><svg class="quotation-icon" width="40" height="38" viewBox="0 0 40 38" fill="#2C113E">
-                    <use xlink:href="#quotation-icon"></use> </svg>
-                  </i>
-                </div>
-                <h6 class="exprns-ovrvw-item-title fl-h6 mHc1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
-                <div class="exprns-ovrvw-item-desc mHc2">
-                  <?php the_excerpt(); ?>
-                </div>
-                <div class="exprns-ovrvw-item-btn">
-                  <a class="red-color-arrow-btn" href="<?php the_permalink(); ?>">
-                    <span><?php _e( 'LEES MEER', 'ballonvaren' ); ?></span>
-                    <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
+                </div>  
+                <div class="blog-grid-des mHc">
+                  <h5 class="fl-h5 bgi-title mHc1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>                      
+                  <div class="bgi-des mHc2">
+                    <?php the_excerpt(); ?>
+                  </div>  
+                  <div class="fl-pro-grd-btn">
+                    <a class="red-color-arrow-btn" href="<?php the_permalink(); ?>">
+                      <span><?php _e( 'LEES MEER', 'ballonvaren' ); ?></span>
+                      <i><svg class="red-right-arrow" width="7" height="11" viewBox="0 0 9 14">
                       <use xlink:href="#red-right-arrow"></use> </svg>
-                    </i>
-                  </a>
-                </div>
+                      </i>
+                    </a>
+                  </div>
+                </div>  
               </div>
-            </div>
-          </div>
+            </li>
           <?php endwhile; ?>
+          </ul>
         </div>
       </div>
     </div>
     <?php endif; wp_reset_postdata(); ?>
+    <?php }elseif( get_row_layout() == 'afbeelding_tekst' ){ 
+      $fc_afbeelding = get_sub_field('fc_afbeelding');
+      $imgsrc = cbv_get_image_src($fc_afbeelding, 'dfpageg1');
+      $fc_tekst = get_sub_field('fc_tekst');
+      $positie_afbeelding = get_sub_field('positie_afbeelding');
+      $imgposcls = ( $positie_afbeelding == 'right' ) ? ' fl-dft-rgtimg-lftdes' : '';
+      ?>
+      <div class="block-850">
+      <div class="fl-dft-overflow-controller">
+        <div class="fl-dft-lftimg-rgtdes clearfix<?php echo $imgposcls; ?>">
+          <div class="fl-dft-lftimg-rgtdes-lft mHc" style="background-image: url(<?php echo $imgsrc; ?>);"></div>
+          <div class="fl-dft-lftimg-rgtdes-rgt mHc">
+            <?php echo wpautop($fc_tekst); ?>
+          </div>
+        </div>
+      </div>
+      </div>
+    <?php }elseif( get_row_layout() == 'book_now' ){
+      $fc_col1 = get_sub_field('col1');
+      $fc_col2 = get_sub_field('col2');
+    ?> 
+    <div class="block-1285">
+      <div class="dfp-twogrd-module hide-sm clearfix">
+        
+        <?php if( $fc_col1 ): ?>
+        <div class="dfp-booking-grd-ctlr">
+          <div class="dfp-booking-grd">
+            <div class="booking-btm-img hide-sm">
+              <img src="<?php echo THEME_URI; ?>/assets/images/booking-btm-img.svg">
+            </div>
+            <div class="xs-booking-top-rgt-img show-sm">
+              <img src="<?php echo THEME_URI; ?>/assets/images/booking-top-img.svg">
+            </div>
+            <?php 
+               if( !empty($fc_col1['fc_titel']) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_col1['fc_titel']);
+              if( !empty($fc_col1['fc_tekst']) ) echo wpautop( $fc_col1['fc_tekst'] );
+              $col1knop = $fc_col1['fc_knop'];
+              if( is_array( $col1knop ) &&  !empty( $col1knop['url'] ) ){
+                printf('<div class="cta-btn"><a class="fl-transparent-btn" href="%s" target="%s">%s</a></div>', $col1knop['url'], $col1knop['target'], $col1knop['title']); 
+              }
+            ?>
+          </div>
+        </div>
+        <?php endif; ?>
+        <?php if( $fc_col2 ): ?>
+        <div class="dfp-gift-grd-ctlr">
+          <div class="dfp-gift-grd">
+            <div class="booking-top-img hide-sm">
+              <img src="<?php echo THEME_URI; ?>/assets/images/booking-top-img.svg">
+            </div>
+            <div class="xs-booking-btm-lft-img show-sm">
+              <img src="<?php echo THEME_URI; ?>/assets/images/booking-btm-img.svg">
+            </div>
+            <?php 
+               if( !empty($fc_col2['fc_titel']) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_col2['fc_titel']);
+              if( !empty($fc_col2['fc_tekst']) ) echo wpautop( $fc_col2['fc_tekst'] );
+              $col2knop = $fc_col2['fc_knop'];
+              if( is_array( $col2knop ) &&  !empty( $col2knop['url'] ) ){
+                printf('<div class="cta-btn"><a class="fl-transparent-btn" href="%s" target="%s">%s</a></div>', $col2knop['url'], $col2knop['target'], $col2knop['title']); 
+              }
+            ?>
+          </div>
+        </div>
+        <?php endif; ?>
+      </div>
+    </div>
+    <?php }elseif( get_row_layout() == 'fcknop' ){
+    $rode_kleur = get_sub_field('rode_kleur');
+    $zwarte_kleur = get_sub_field('zwarte_kleur');
+    $turquoise_kleur = get_sub_field('turquoise_kleur');
+    ?> 
+    <div class="block-850">
+      <div class="dfp-btn-module">
+        <?php 
+        if( is_array( $rode_kleur ) &&  !empty( $rode_kleur['url'] ) ){
+          printf('<div class="fl-btn"><a class="fl-red-btn" href="%s" target="%s">%s</a></div>', $rode_kleur['url'], $rode_kleur['target'], $rode_kleur['title']); 
+        }
+        if( is_array( $zwarte_kleur ) &&  !empty( $zwarte_kleur['url'] ) ){
+          printf('<div class="fl-btn"><a class="fl-navyblue-btn" href="%s" target="%s">%s</a></div>', $zwarte_kleur['url'], $zwarte_kleur['target'], $zwarte_kleur['title']); 
+        }
+        if( is_array( $turquoise_kleur ) &&  !empty( $turquoise_kleur['url'] ) ){
+          printf('<div class="fl-btn"><a class="fl-cyan-btn" href="%s" target="%s">%s</a></div>', $turquoise_kleur['url'], $turquoise_kleur['target'], $turquoise_kleur['title']); 
+        }
+        ?>
+      </div>
+    </div>
+    <?php }elseif( get_row_layout() == 'table' ){
+    $fc_table = get_sub_field('fc_tafel');
+    $fc_titel = !empty(get_sub_field('fc_titel'))?get_sub_field('fc_titel'):'';
+    echo '<div class="block-850">';
+    cbv_table($fc_table, $fc_titel);
+    echo '</div>';
+    ?>
     <?php }elseif( get_row_layout() == 'gap' ){
     $fc_gap = get_sub_field('fc_gap');
     ?>
