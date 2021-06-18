@@ -135,6 +135,12 @@ body.woocommerce-cart .woocommerce table.shop_table td{
 body.woocommerce-cart .woocommerce table.shop_table tr:first-child td{
 	padding-top: 40px!important;
 }
+body.woocommerce-cart .woocommerce .cart_totals table.shop_table tr:first-child td{
+	padding-top: 0px!important;
+}
+body.woocommerce-cart .woocommerce .cart_totals table.shop_table tr.cart-subtotal th{
+	padding-top: 5px!important;
+}
 
 body.woocommerce-cart .woocommerce table.shop_table td.product-price {
     padding-right: 25px!important;
