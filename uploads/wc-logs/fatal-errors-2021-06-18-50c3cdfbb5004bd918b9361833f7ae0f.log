@@ -34,3 +34,14 @@ Stack trace:
 #12 {main}
   thrown in D:\xampp\htdocs\projects\2021\ballonvaren\ballonvaren-cn\themes\ballonvaren\inc\wc-functions.php on line 581
 
+2021-06-18T10:44:51+00:00 CRITICAL Uncaught Error: Call to undefined function is_endpoint() in D:\xampp\htdocs\project\2021\march\ballonvaren\ballonvaren-cn\themes\ballonvaren\inc\wc-functions.php:581
+Stack trace:
+#0 D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\class-wp-hook.php(294): cbv_wc_custom_class(Array)
+#1 D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\post-template.php(836): apply_filters('body_class', Array, Array)
+#3 D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\post-template.php(595): get_body_class(Array)
+#4 D:\xampp\htdocs\project\2021\march\ballonvaren\ballonvaren-cn\themes\ballonvaren\header.php(167): body_class()
+#5 D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\template.php(730): require_once('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\project\2021\march\ballonvaren\wp-includes\template.php(676): load_template('D:\\xampp\\htdocs...', true, Array)
+#7 D:\xampp\htdo in D:\xampp\htdocs\project\2021\march\ballonvaren\ballonvaren-cn\themes\ballonvaren\inc\wc-functions.php on line 581
+
