@@ -1,9 +1,12 @@
-.checkout-sec{
+/*.checkout-sec{
 	padding-top: 99px;
-}
+}*/
 .woocommerce-order-received .innerpage-con-wrap{
 	padding-top: 100px!important;
 	padding-bottom: 94px!important;
+}
+body.woocommerce-order-received .page-grd-sec-wrp{
+	padding-top: 98px!important;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
@@ -16,7 +19,7 @@
 	text-align: center;
 }
 .chkout-logo {
-    padding-bottom: 54px;
+    padding-bottom: 60px;
     max-width: 554px;
     height: auto;
     margin: auto;
@@ -25,12 +28,10 @@
 	padding-bottom: 48px;
 }
 .checkout-hdr .chkout-title{
-	font-size: 48px;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
-	color: #2C113E;
 	line-height: 1.1;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 }
 .pwoocommerce-order-received .default-page-con h3{
 	border-bottom: none!important;
@@ -174,6 +175,7 @@
 	color: #fff;
 	width: 24px;
 	height: 24px;
+	background: #909BA5;
 	border-radius: 100%;
 	display: flex;
 	justify-content: center;
@@ -182,6 +184,9 @@
 	transition: all .5s;
 	-ms-transition: all .5s;
 	-webkit-transition: all .5s;
+}
+.chk-scl-itm i:hover{
+	background: #EE3E15;
 }
 .chk-scl-itm i svg{
 	transition: all .5s;
