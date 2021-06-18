@@ -28,12 +28,10 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	padding-bottom: 48px;
 }
 .checkout-hdr .chkout-title{
-	font-size: 48px;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
-	color: #2C113E;
 	line-height: 1.1;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 }
 .pwoocommerce-order-received .default-page-con h3{
 	border-bottom: none!important;
