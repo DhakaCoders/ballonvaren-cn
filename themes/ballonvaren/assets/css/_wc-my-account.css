@@ -328,7 +328,8 @@ body.woocommerce-orders .order-details .cancelled{
 body.woocommerce-orders .order-details .pending{
     color: #FDCA35;
 }
-body.woocommerce-orders .order-details .processing{
+body.woocommerce-orders .order-details .processing,
+body.woocommerce-orders .order-details .on-hold{
     color: #1DB4B2;
 }
 body.woocommerce-orders .order-details .cancelled:after{
@@ -338,7 +339,8 @@ body.woocommerce-orders .order-details .cancelled:after{
 body.woocommerce-orders .order-details .pending:after{
     background-image: url(../images/woordr-conifo-icon1.svg);
 }
-body.woocommerce-orders .order-details .processing:after{
+body.woocommerce-orders .order-details .processing:after,
+body.woocommerce-orders .order-details .on-hold:after{
     background-image: url(../images/woordr-conifo-icon.svg);
 }
 body.woocommerce-orders .order-details .order-status:after {
@@ -2003,6 +2005,12 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     body.woocommerce-account .account-page-title h1 + p{
         font-size:26px;
+    }
+    body.woocommerce-orders .orders-crtl .code-text{
+        font-size:23px;
+    }
+    body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
+        font-size:19px;
     }
 
 }
