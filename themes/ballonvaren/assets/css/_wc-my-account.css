@@ -2376,6 +2376,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
     body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
         margin-bottom:10px;
+        padding-top: 23px;
     }
     body.woocommerce-account #login_register #customer_login .u-column2{
         max-width: 100%!important;
