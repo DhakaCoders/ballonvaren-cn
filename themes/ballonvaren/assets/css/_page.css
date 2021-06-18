@@ -168,7 +168,13 @@
 .bv-clndr-absolute-img-one,
 .bv-clndr-absolute-img-two,
 .overons-team-parachute-tp,
-.overons-team-parachute-btm{
+.overons-team-parachute-btm,
+.blog-grd-top-img,
+.boek-parachute-icon,
+.ballon-rides-lft-top-img,
+.contact-parachute-icon,
+.contact-google-parachute,
+.cadeaubonnen-page-link i{
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
