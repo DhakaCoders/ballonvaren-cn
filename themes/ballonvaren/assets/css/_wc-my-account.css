@@ -1882,11 +1882,13 @@ body.woocommerce-checkout .place-order #pwgc-redeem-form input[type="submit"]{
     margin-top: 30px!important;
     cursor: pointer;
 }
-.radio-custom, body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:after, 
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:after, 
 .shipping-methods .woocommerce-shipping-methods li label:after {
     margin-top: -2px;
 }
-
+.radio-custom{
+    margin-top:-1px;
+}
 /*.woocommerce-input-wrapper span .radio-custom:after, */
 body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before, 
 .shipping-methods .woocommerce-shipping-methods li label:before{
@@ -1988,7 +1990,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce input[type="email"], 
     .woocommerce input[type="tel"], 
     .woocommerce input[type="password"], 
-    .woocommerce textarea{
+    .woocommerce textarea,
+    #billing_order_type_field span.woocommerce-input-wrapper span, 
+    #billing_salutation_field span.woocommerce-input-wrapper span{
         font-size:15px;
     }
 
