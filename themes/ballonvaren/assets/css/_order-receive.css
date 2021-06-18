@@ -1,9 +1,12 @@
-.checkout-sec{
+/*.checkout-sec{
 	padding-top: 99px;
-}
+}*/
 .woocommerce-order-received .innerpage-con-wrap{
 	padding-top: 100px!important;
 	padding-bottom: 94px!important;
+}
+body.woocommerce-order-received .page-grd-sec-wrp{
+	padding-top: 98px!important;
 }
 .woocommerce-order-received .checkout-cntrl .checkout-hdr h3{
 	border-bottom: none!important;
@@ -16,7 +19,7 @@
 	text-align: center;
 }
 .chkout-logo {
-    padding-bottom: 54px;
+    padding-bottom: 60px;
     max-width: 554px;
     height: auto;
     margin: auto;
@@ -25,12 +28,10 @@
 	padding-bottom: 48px;
 }
 .checkout-hdr .chkout-title{
-	font-size: 48px;
 	letter-spacing: -0.02em;
 	text-transform: uppercase;
-	color: #2C113E;
 	line-height: 1.1;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 }
 .pwoocommerce-order-received .default-page-con h3{
 	border-bottom: none!important;
@@ -81,20 +82,22 @@
 	width: 33%;
 }
 .chk-acc{
-	padding-bottom: 20px;
+	padding-bottom: 23px;
 }
 .chk-acc-tp-cntrl{
 	padding-bottom: 22px;
 }
 .chk-acc-tp, .chk-acc-btm{
-	padding: 36px 28px;
+	padding: 36px 20px;
 } 
 .chk-acc-tp{
 	background-color: #1DB4B2;
+	border-radius: 3px;
 }
-.chk-acc-btm-cntrl{}
+
 .chk-acc-btm{
 	background-color: #EE3E15;
+	border-radius: 3px;
 }
 .woocommerce-order-received .chk-acc-tp p,
 .woocommerce-order-received .chk-acc-btm p{
@@ -130,9 +133,9 @@
 	font-size: 22px;
 	text-align: center;
 	font-weight: 700;
-	padding-bottom: 23px;
+	padding-bottom: 20px;
 	position: relative;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
 	text-transform: capitalize;
 }
 .woocommerce-order-received .chk-scl-title:after{
@@ -212,9 +215,9 @@
 	.chkout-logo{
 		padding-bottom: 46px;
 	}
-	.checkout-sec{
+	/*.checkout-sec{
 		padding-top: 94px;
-	}
+	}*/
 	.checkout-hdr{
 		padding-bottom: 40px;
 	}
@@ -244,9 +247,7 @@
 } */
 
 @media (max-width: 1199px) {
-	.checkout-sec{
-		padding-top: 87px;
-	}
+
 	.chkout-logo{
 		padding-bottom: 38px;
 	}
@@ -295,6 +296,20 @@
 	.checkout-hdr .chkout-title{
 		font-size: 36px;
 	}
+	.srv-fea-img-cntrl{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.srv-cont{
+		margin: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	.chkout-service{
+		display: block;
+		padding-bottom: 80px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -313,15 +328,8 @@
 		font-size: 32px;
 		margin-bottom: 16px;
 	}
-	.chkout-service{
-		display: block;
-		padding-bottom: 80px;
-	}
-	.srv-fea-img-cntrl{
-		width: 100%;
-		margin-right: 0;
-		margin-bottom: 30px;
-	}
+	
+	
 	.chk-acc-tp-cntrl{
 		padding-bottom: 20px;
 	}
@@ -329,20 +337,16 @@
 		padding: 36px 21px;
 	}
 	.checkout-hdr{
-		padding-bottom: 26px;
+		padding-bottom: 20px;
 		border-bottom: 1px solid #ECEEEF;
-		margin-bottom: 29px;
+		margin-bottom: 28px;
 	}
 	.chkout-logo{
 		padding-bottom: 22px;
 	}
-	.srv-cont{
-		margin: auto;
-		max-width: 100%;
-		width: auto;
-	}
+	
 	.chk-acc{
-		padding-bottom: 47px;	
+		padding-bottom: 50px;	
 	}
 	.chk-acc-bg{
 		padding: 55px 42px 23px 40px;
@@ -355,6 +359,12 @@
 	}
 	.chk-acc-title{
 		text-align: center;
+	}
+	.checkout-sec{
+		padding-top: 80px;
+	}
+	body.woocommerce-order-received .page-grd-sec-wrp {
+	    padding-top: 0!important;
 	}
 }
 
