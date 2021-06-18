@@ -2254,6 +2254,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 30px;
     }
+    body.account-login-page .page-grd-sec-wrp{
+        padding-top:0px;
+    }
     .back-to-dashboard-btn-cntlr{
         margin-bottom:50px;
     }
