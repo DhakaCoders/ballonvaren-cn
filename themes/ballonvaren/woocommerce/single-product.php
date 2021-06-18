@@ -26,7 +26,7 @@ get_template_part('templates/breadcrumbs');
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' )); ?>">Terug naar overzicht</a></div>
+			<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' )); ?>"><?php esc_html_e( 'Terug naar overzicht', 'woocommerce' ); ?></a></div>
 		</div>	
 	</div>
 </div>
@@ -78,6 +78,7 @@ get_template_part('templates/breadcrumbs');
     </div>
   </div>
 </section>
+<?php do_action('cbv_product_review'); ?>
 <?php do_action('cbv_related_product'); ?>
 <?php
 get_footer( 'shop' );
