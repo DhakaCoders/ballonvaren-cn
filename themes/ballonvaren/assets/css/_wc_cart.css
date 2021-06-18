@@ -942,6 +942,11 @@ body.woocommerce-cart th.product-remove{
 	body.woocommerce-cart .page-heading{
 		padding-top: 7px;
 	}
+	body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button{
+		font-size: 14px!important;
+		font-weight: 900;
+		padding: 15px 15px!important;
+	}
 }
 
 @media(max-width: 575px){
