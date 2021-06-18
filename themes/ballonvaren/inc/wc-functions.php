@@ -186,6 +186,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 
 add_action('woocommerce_single_product_summary', 'add_custom_box_product_summary', 5);
@@ -243,11 +244,11 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart
 function bryce_id_add_to_cart_text( $default ) {
         return __( 'In Winkelmand', THEME_NAME );
 }
-add_filter( 'woocommerce_after_single_product_summary', 'get_review_form', 10 );
+add_action( 'cbv_related_product', 'woocommerce_output_related_products');
+add_action( 'cbv_product_review', 'get_review_form');
 function get_review_form( $default ) {
     //wc_get_template_part('single-product/review');
     get_template_part('templates/wc', 'review');
-
 }
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
 function misha_adv_product_options(){
