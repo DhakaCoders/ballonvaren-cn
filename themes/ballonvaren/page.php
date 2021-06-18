@@ -1,4 +1,5 @@
 <?php get_header();?>
+<?php if( !is_cart() ): ?>
 <section class="breadcrumb-sec">
   <div class="container">
     <div class="row">
@@ -22,6 +23,7 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 <?php if( !is_wc_page() ): ?>
 <section class="page-heading">
   <div class="container">
