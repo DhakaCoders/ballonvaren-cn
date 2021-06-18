@@ -40,6 +40,9 @@
 	}
 }
 @media (max-width: 1499px) {
+	body{
+		font-size: 15px;
+	}
 	h1,.fl-h1{
 		font-size: 40px;
 	}
@@ -124,6 +127,9 @@
 }
 
 @media(max-width: 767px){
+	body{
+		font-size: 16px;
+	}
 	.hide-sm{
 		display: none!important;
 	}

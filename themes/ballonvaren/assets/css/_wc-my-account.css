@@ -2272,6 +2272,18 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 30px;
     }
+    .woocommerce form .form-row label,
+    .woocommerce input[type="text"], 
+    .woocommerce input[type="email"], 
+    .woocommerce input[type="tel"], 
+    .woocommerce input[type="password"], 
+    .woocommerce textarea,
+    #billing_order_type_field span.woocommerce-input-wrapper span, 
+    #billing_salutation_field span.woocommerce-input-wrapper span,
+    body.hide-account-title #billing_personal_recom .woocommerce-input-wrapper, 
+    body.hide-account-title #billing_acttion_insp .woocommerce-input-wrapper{
+        font-size:14px;
+    }
     body.hide-account-title #billing_personal_recom .woocommerce-input-wrapper, 
     body.hide-account-title #billing_acttion_insp .woocommerce-input-wrapper{
         font-size:16px;
