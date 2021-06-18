@@ -32,132 +32,118 @@ $sidebar = get_field('sidebarsec', $thisID);
   </div>
 </section>
 <section class="innerpage-con-wrap" id="vip">
+  <?php if(have_rows('inhoud')){  ?>
   <article class="default-page-con">
-    <div class="block-850">
-      <div class="dfp-promo-module clearfix">
-        <div>
-          <strong class="dfp-promo-module-title fl-h1">VIP-Arrangement</strong>
+    <?php while ( have_rows('inhoud') ) : the_row();  ?>
+      <?php 
+      if( get_row_layout() == 'introductietekst' ){ 
+        $title = get_sub_field('titel');
+      ?>
+      <div class="block-850">
+        <div class="dfp-promo-module clearfix">
+          <?php 
+            if( !empty($title) ) printf('<div><strong class="dfp-promo-module-title fl-h1">%s</strong></div>', $title); 
+          ?>
         </div>
       </div>
-    </div>
-    <div class="block-1285">
-      <div class="top-gallery-module">
-        <div class="gallery-wrap has-inline-bg clearfix">
-          <div class="gallery gallery-columns-2">
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-13.jpg');"></div>
-                <img src="assets/images/dfp-img-13.jpg">
-              </div>
-            </figure>
+      <?php }elseif( get_row_layout() == 'galerij' ){ 
+        $galleries = get_sub_field('fc_afbeeldingen');
+        $full_wide = get_sub_field('full_wide');
+        $lightbox = get_sub_field('lightbox');
+        $kolom = get_sub_field('kolom'); 
+      ?>
+        <?php if($full_wide): ?>
+        <div class="block-1285">
+          <div class="top-gallery-module">
+            <div class="gallery-wrap has-inline-bg clearfix">
+              <div class="gallery gallery-columns-2">
+                <figure class="gallery-item">
+                  <div class="gallery-icon portrait">
+                    <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-13.jpg');"></div>
+                    <img src="assets/images/dfp-img-13.jpg">
+                  </div>
+                </figure>
 
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-08.jpg');"></div>
-                <img src="assets/images/dfp-img-08.jpg">
+                <figure class="gallery-item">
+                  <div class="gallery-icon portrait">
+                    <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-08.jpg');"></div>
+                    <img src="assets/images/dfp-img-08.jpg">
+                  </div>
+                </figure>
               </div>
-            </figure>
+            </div>
           </div>
         </div>
+        <?php else: ?>
+        <div class="block-850">
+          <div class="gallery-wrap has-inline-bg clearfix">
+            <div class="gallery gallery-columns-2">
+              <figure class="gallery-item">
+                <div class="gallery-icon portrait">
+                  <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
+                  <img src="assets/images/dfp-img-02.jpg">
+                </div>
+              </figure>
 
-        <div class="gallery-wrap clearfix">
-          <div class="gallery gallery-columns-2">
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-13.jpg');"></div>
-                <img src="assets/images/dfp-img-13.jpg">
-              </div>
-            </figure>
-
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-08.jpg');"></div>
-                <img src="assets/images/dfp-img-08.jpg">
-              </div>
-            </figure>
+              <figure class="gallery-item">
+                <div class="gallery-icon portrait">
+                  <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-03.jpg');"></div>
+                  <img src="assets/images/dfp-img-03.jpg">
+                </div>
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="block-850">
-      <div class="dfp-text-module clearfix">
-        <p>Uiteraard kennen wij naast een standaard arrangement, nóg exclusievere arrangementen:</p>
-      </div>
-    </div>
-    <div class="block-850">
-      <div class="dfp-text-module clearfix">
-        <h2 class="fl-h2">Privé-vaart</h2>
-        <p>Vanaf 2 personen. (Informeer naar voorwaarden en prijzen) Omdat wij verschillende formaten ballonnen hebben zijn wij zeer flexibel.</p>
-        <p>Of u nu met 2 of met 40 passagiers bent, wij zorgen ervoor dat u als groep gevaren wordt. Het is dan ook mogelijk om bij in de buurt op te stijgen, uiteraard afhankelijk van de windrichting enz. Zeer leuk en origineel om eens met uw vrienden of familie te doen!</p>
-      </div>
-      <div class="gallery-wrap has-inline-bg clearfix">
-        <div class="gallery gallery-columns-2">
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
-              <img src="assets/images/dfp-img-02.jpg">
-            </div>
-          </figure>
+        <?php endif; ?>
+      <?php }elseif( get_row_layout() == 'teksteditor' ){ 
+        $beschrijving = get_sub_field('fc_teksteditor');
+        ?>
+        <div class="block-850">
+          <div class="dfp-text-module clearfix">
+            <?php if( !empty( $beschrijving ) ) echo wpautop($beschrijving); ?>
+          </div>
+        </div>
+      <?php }elseif( get_row_layout() == 'cta' ){ 
+        $fc_titel = get_sub_field('fc_titel');
+        $fc_tekst = get_sub_field('fc_tekst');
+        $fc_knop = get_sub_field('fc_knop');
+      ?>
+      <div class="block-1285">
+        <div class="ballon-rides-module">
+          <div class="ballon-rides-lft-top-img">
+            <img src="assets/images/ballon-rides-lft-top-img.svg">
+          </div>
+          <div class="dfp-cta-module orange clearfix">
+            <div class="cta-ctlr">
+              <?php 
+                if( !empty($fc_titel) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $fc_titel);
+                if( !empty($fc_tekst) ) echo wpautop( $fc_tekst );
 
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-03.jpg');"></div>
-              <img src="assets/images/dfp-img-03.jpg">
-            </div>
-          </figure>
-        </div>
-      </div>
-
-      <div class="gallery-wrap clearfix">
-        <div class="gallery gallery-columns-2">
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-02.jpg');"></div>
-              <img src="assets/images/dfp-img-02.jpg">
-            </div>
-          </figure>
-
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('assets/images/dfp-img-03.jpg');"></div>
-              <img src="assets/images/dfp-img-03.jpg">
-            </div>
-          </figure>
-        </div>
-      </div>
-    </div>
-    <div class="block-850">
-      <div class="dfp-text-module clearfix">
-        <h2>Varen in een special-shape</h2>
-        <p>We hebben een aantal speciale ballonnen. Ook hierin kunt u meevaren. Hieronder het aantal plaatsen per ‘Special Shape’ :</p>
-        <p>Smurf ballon: 2 personen <br>Garfield ballon: 8 personen</p>
-        <p>Mocht u geïnteresseerd zijn, neemt u dan vooral contact met ons op zodat we u meer kunnen vertellen over mogelijkheden en prijzen.</p>
-        <h2>Love is in the air!</h2>
-        <p>Vraag je vriend of vriendin op een originele manier ten huwelijk, of vier jouw huwelijksjubileum in de lucht! We zullen er een romantische vaart van maken.</p>
-      </div>
-      <div class="full-img-module">
-        <div class="full-img">
-          <img src="assets/images/single-img.jpg">
-        </div>
-      </div>
-      
-    </div>
-    <div class="block-1285">
-      <div class="ballon-rides-module">
-        <div class="ballon-rides-lft-top-img">
-          <img src="assets/images/ballon-rides-lft-top-img.svg">
-        </div>
-        <div class="dfp-cta-module orange clearfix">
-          <div class="cta-ctlr">
-            <h4 class="cta-title fl-h4">Ballonvaarten</h4>
-            <p>Etiam vitae ultrices purus. Praesent sodales nisl vel mauris cursus viverra urna id.</p>
-            <div class="cta-btn">
-              <a class="fl-transparent-btn" href="#">Ballonvaarten</a>
+                if( is_array( $fc_knop ) &&  !empty( $fc_knop['url'] ) ){
+                  printf('<div class="cta-btn"><a class="fl-transparent-btn" href="%s" target="%s">%s</a></div>', $fc_knop['url'], $fc_knop['target'], $fc_knop['title']); 
+                }
+              ?>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <?php }elseif( get_row_layout() == 'afbeelding' ){     
+      $poster = get_sub_field('fc_afbeelding');
+      $postertag = !empty($poster)? cbv_get_image_src($poster, 'dft_poster'): '';
+      ?> 
+      <div class="block-850">
+        <div class="full-img-module">
+          <div class="full-img">
+            <?php echo $postertag; ?>
+          </div>
+        </div>
+        
+      </div>
+      <?php } ?>
+    <?php endwhile; ?>
+
+
+
     <div class="block-850">
       <div class="exprns-ovrvw-grid-module">
         <div class="exprns-ovrvw-grid-ctlr clearfix">
@@ -221,5 +207,6 @@ $sidebar = get_field('sidebarsec', $thisID);
       </div>
     </div>
   </article>
+  <?php } ?>
 </section>
 <?php get_footer();?>

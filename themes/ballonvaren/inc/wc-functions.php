@@ -416,7 +416,7 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
             ),
             array( 
                 'ik ga bestellen', 
-                'ik ga bestellen', 
+                'Ballonvaarten', 
                 'Persoonlijke gegevens', 
                 'Overzicht', 
                 'Afrekenen',
@@ -475,8 +475,8 @@ add_action( 'woocommerce_cart_is_empty', 'woo_if_cart_empty' );
 function woo_if_cart_empty(){
     echo '<div class="cart-is-emtpy">';
         echo '<div class="cie-icon"><img src="'.THEME_URI.'/assets/images/bag-icon.svg"/></div>';
-        echo '<strong>'.__('Uw winkelwagen is leeg!', 'thelene').'</strong>';
-        echo '<p>'.__('Je hebt geen artikelen in je winkelwagen.', 'thelene').'</p>';
+        echo '<strong>'.__('Uw winkelwagen is leeg!', 'ballonvaren').'</strong>';
+        echo '<p>'.__('Je hebt geen artikelen in je winkelwagen.', 'ballonvaren').'</p>';
     echo '</div>';
 }
 
