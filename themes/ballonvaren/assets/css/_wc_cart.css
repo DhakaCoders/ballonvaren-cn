@@ -78,11 +78,10 @@ body.woocommerce-cart .product-quantity .quantity a:hover{
 }
 body.woocommerce-cart .product-quantity .quantity input{
 	background: transparent;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	color: #000;
-	width:33px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #2C113E;
+	width:35px;
 }
 .sidebar-widget .woocommerce-widget-layered-nav-list .radio-btn a{
 	position: relative;
@@ -192,8 +191,8 @@ body.woocommerce-cart .empty-cart-btn a{
 body.woocommerce-cart .empty-cart-btn{
 	text-align: right;
 	padding-top: 20px;
-	border-top: 1px solid #ECEEEF;
-	margin-top: 28px;
+	border-top: 2px solid #ECEEEF;
+	margin-top: 20px;
 
 }
 body.woocommerce-cart .empty-cart-btn a{
