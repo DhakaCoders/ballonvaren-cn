@@ -6,6 +6,12 @@
       <div class="row">
         <div class="col-md-12">
           <div class="eveline-vernaeve-cntlr">
+            <div class="review-hdr-top show-xs">
+                <div class="review-hdr">
+                  <h2 class="fl-h2 revw-hdr-title">Vitae nisl maecenas eu fames.</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
+                </div>
+            </div>
             <div class="overons-msnry-grd-wrp clearfix">
               <div class="overons-msnry-grd-lft clearfix">
                 <div class="overons-msnry-grd-cntlr">
