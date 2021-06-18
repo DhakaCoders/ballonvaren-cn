@@ -1877,6 +1877,16 @@ body.woocommerce-checkout .place-order #pwgc-redeem-form input[type="submit"]{
     margin-top: 30px!important;
     cursor: pointer;
 }
+.radio-custom, body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:after, 
+.shipping-methods .woocommerce-shipping-methods li label:after {
+    margin-top: -2px;
+}
+
+.woocommerce-input-wrapper span .radio-custom:after, 
+body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before, 
+.shipping-methods .woocommerce-shipping-methods li label:before{
+    top: 22px;
+}
 body.woocommerce-checkout #pwgc-redeem-gift-card-form #pwgc-redeem-form label{
     margin-bottom:20px!important;
 }
@@ -2330,7 +2340,7 @@ body.woocommerce-checkout section.checkout-top-sec{
         left: 4px;
         top: 1px!important;
     }
-    .woocommerce-input-wrapper span .radio-custom:after, 
+/*    .woocommerce-input-wrapper span .radio-custom:after, */
     body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul li label:before, 
     .shipping-methods .woocommerce-shipping-methods li label:before, 
     #billing_order_type_field span.woocommerce-input-wrapper label:before, 
@@ -3077,8 +3087,11 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .payment-method-crtl .shipping-methods{
         margin-bottom: 20px;
     }
-    .woocommerce-form__label-for-checkbox span:before {
+    .woocommerce-form__label-for-checkbox span:before{
         top: 7px;
+    }
+    #ship-to-different-address label span:before{
+        top: 6px;
     }
 }
 
