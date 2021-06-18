@@ -38,7 +38,7 @@
                 </div>
               </div>
               <div class="overons-msnry-grd-rgt">
-                <div class="review-hdr">
+                <div class="review-hdr hide-sm">
                   <h2 class="fl-h2 revw-hdr-title">Vitae nisl maecenas eu fames.</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
                 </div>
