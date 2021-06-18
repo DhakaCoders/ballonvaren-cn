@@ -1,6 +1,6 @@
 <?php $cURL = wc_get_cart_url(); ?>
 <?php if( is_checkout() && strpos($_SERVER['REQUEST_URI'], "order-received") !== false ): ?>
-<div class="order-sec show-xs">
+<div class="order-sec show-sm">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
