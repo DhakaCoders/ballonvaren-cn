@@ -1,7 +1,7 @@
 <?php 
-/*Template Name: VIP*/
+/*Template Name: Ballonvaren Voor Bedrijven*/
 get_header();
-$thisID = get_the_ID();
+$thisID = get_the_ID(); 
 ?>
 <section class="breadcrumb-sec">
   <div class="container">
@@ -26,7 +26,7 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
-<section class="innerpage-con-wrap" id="vip">
+<section class="innerpage-con-wrap" id="ballonvaren-voor-bedrijven">
   <?php if(have_rows('inhoud')){  ?>
   <article class="default-page-con">
     <?php while ( have_rows('inhoud') ) : the_row();  ?>
@@ -102,7 +102,7 @@ $thisID = get_the_ID();
         </div>
         <?php endif; ?>
         <?php endif; ?>
-      <?php }elseif( get_row_layout() == 'teksteditor' ){ 
+        <?php }elseif( get_row_layout() == 'teksteditor' ){ 
         $beschrijving = get_sub_field('fc_teksteditor');
         ?>
         <div class="block-850">
@@ -110,6 +110,41 @@ $thisID = get_the_ID();
             <?php if( !empty( $beschrijving ) ) echo wpautop($beschrijving); ?>
           </div>
         </div>
+        <?php }elseif( get_row_layout() == 'blockquote' ){ 
+        $beschrijving = get_sub_field('fc_teksteditor');
+        ?>
+        <div class="block-850">
+          <div class="dfp-text-module clearfix">
+            <div class="dft-blockquote">
+              <blockquote>
+                <p><em> <?php if( !empty( $beschrijving ) ) echo $beschrijving; ?></em></p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <?php }elseif( get_row_layout() == 'poster' ){     
+        $poster = get_sub_field('afbeeldingen');
+        $video_url = get_sub_field('fc_videourl');
+        $postersrc = !empty($poster)? cbv_get_image_src($poster, 'dft_poster'): '';
+        ?> 
+    <div class="block-1285">
+      <div class="fl-fancy-ctlr">
+        <div class="fl-fancy-module" >
+          <div class="fl-fancy-img inline-bg" style="background-image: url(<?php echo $postersrc; ?>);"></div>
+          <?php if( $video_url ): ?>
+          <a class="overlay-link" data-fancybox href="<?php echo $video_url; ?>"></a>
+          <div class="fancy-border"></div>
+          <span class="fl-video-play-cntlr">
+            <i>
+              <svg class="play-icon-svg" width="90" height="90" viewBox="0 0 90 90" fill="#fff">
+                <use xlink:href="#play-icon-svg"></use> 
+              </svg>
+            </i>
+          </span>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
       <?php }elseif( get_row_layout() == 'cta' ){ 
         $fc_titel = get_sub_field('fc_titel');
         $fc_tekst = get_sub_field('fc_tekst');
