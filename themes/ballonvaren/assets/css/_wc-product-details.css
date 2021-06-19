@@ -1140,6 +1140,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.single-product .cadeaubonnen-page-link{
 		padding-bottom: 190px;
 	}
+	.single-product .related-grd-top-rgt-img{
+		position: absolute;
+		top: -35px;
+		right: 0;
+	}
 }
 
 @media (max-width: 639px) {
@@ -1327,6 +1332,10 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.review-position-bg {
     	top: -75px;
+	}
+	.single-product .related-grd-top-rgt-img{
+		top: -40px;
+		z-index: 3;
 	}
 }
 
