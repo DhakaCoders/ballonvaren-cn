@@ -198,20 +198,32 @@
     background-position: 97% center !important;
     text-transform: capitalize;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-select-calenda{
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-select-calendar{
     position: relative;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-select-calenda:before{
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-select-calendar:before {
     content: "" !important;
     position: absolute !important;
-    right: 0 !important;
-    bottom: 0 !important;
+    right: 34px !important;
+    bottom: 18px !important;
     background: url(../images/calenda-icon.svg) !important;
     background-repeat: no-repeat !important;
     background-size: 12px 13px !important;
     width: 12px !important;
     height: 13px !important;
     z-index: 100 !important;
+}
+
+.page-template-page-boek-je .flatpickr-months .flatpickr-month{
+    height: 50px !important;
+}
+.page-template-page-boek-je .flatpickr-months .flatpickr-prev-month, .page-template-page-boek-je .flatpickr-months .flatpickr-next-month {
+    height: 40px !important;
+    top: 11px;
+}
+.page-template-page-boek-je .flatpickr-current-month {
+    padding-top: 0;
+    top: 18px;
 }
 
 
