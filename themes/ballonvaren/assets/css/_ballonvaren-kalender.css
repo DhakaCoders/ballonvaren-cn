@@ -178,7 +178,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	margin-top: -2px;
+	margin-top: -3px;
 }
 .event-grid-item-inr p{
 	font-size: 16px;
@@ -210,8 +210,10 @@
 	right: -20px;
 	bottom: -119px;
 }
-/*---------------------------------------------------reponsive--------------------------------------------------------*/
-/*---------------------------------------------------reponsive--------------------------------------------------------*/
+
+
+
+
 @media (max-width: 1699px){
 	.bv-calender-dsc-inner {
 	    padding-top: 40px;
@@ -258,6 +260,12 @@
 }
 
 
+@media(max-width: 1599px){
+	.event-date span{
+		font-size: 15px;
+	}
+}
+
 @media(max-width: 1399px){
 	.bv-clndr-absolute-img-two {
 	    margin-right: -85px;
@@ -297,9 +305,6 @@
 	.events-grid-item-inner ul li .event-grid-item-inr{
 		padding-right: 20px;
 		padding-bottom: 26px;
-	}
-	.event-grid-heading{
-		font-size: 19px!important;
 	}
 	.events-grid-item-inner ul li{
 		padding: 0 13px 40px;
@@ -366,7 +371,9 @@
 	.calender-inline-bg {
 	    height: 280px;
 	}
-
+	.event-date i{
+		margin-top: -2px;
+	}
 }
 @media(max-width: 767px){
 	.bv-calender-dsc {
@@ -382,9 +389,6 @@
 	.events-grid-item-inner ul li{
 		max-width: 100%;
 		padding: 0 13px 20px;
-	}
-	.event-grid-heading {
-	    font-size: 22px!important;
 	}
 	.events-grid-sec {
 	    padding-top: 173px;
@@ -412,15 +416,9 @@
 }
 
 @media(max-width: 359px){
-	.event-grid-heading {
-	    font-size: 20px!important;
-	}
-
 }
 
 @media(max-width: 320px){
-	.event-grid-heading {
-	    font-size: 20px!important;
-	}
+
 
 }

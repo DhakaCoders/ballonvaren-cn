@@ -519,6 +519,7 @@ Empty cart
 */
 body.empty-cart .page-grd-sec-wrp{
     padding-bottom: 100px;
+    padding-top: 30px;
 }
 .cart-is-emtpy{
 	padding-top: 70px;
@@ -1056,6 +1057,12 @@ body.woocommerce-cart th.product-remove{
 	body.empty-cart .cart-is-emtpy strong{
 		margin-top: 30px;
 		margin-bottom: 15px;
+	}
+	body.empty-cart.woocommerce-cart .woocommerce .cart-is-emtpy .cie-icon img{
+		max-width: 255px;
+	}
+	body.empty-cart .page-grd-sec-wrp{
+		padding-top: 0;
 	}
 }
 

@@ -489,9 +489,6 @@ body.woocommerce-account .default-page-con h1{
     margin-bottom:0;
     font-size:30px;
 }
-body.woocommerce-checkout .checkout-top-sec{
-    padding-top: 95px;
-}
 body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom: 28px;
     margin-bottom:0;    
@@ -1764,7 +1761,7 @@ body.woocommerce-checkout .place-order #pwgc-redeem-form input[type="submit"]{
     width: 210px;
     height: 50px;
     border-radius: 6px;
-    background: #8ccc0c;
+    background: #1DB4B2;
     color: #fff;
     font-weight: 700;
     margin-top: 30px!important;
@@ -1804,7 +1801,7 @@ body.woocommerce-checkout #pwgc-redeem-gift-card-form #pwgc-redeem-form  input[t
     border-color:#fcf8f8;
 }
 body.woocommerce-checkout .place-order #pwgc-redeem-form input[type="submit"]:hover {
-    background: #EC5387!important;
+    background: #EE3E15!important;
 }
 body.woocommerce-checkout .checkout-terms > .validate-required {
     margin-bottom:30px!important;
@@ -1892,6 +1889,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
         font-size:19px;
     }
+
 }
 @media(max-width:1399px){
     body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
@@ -2953,9 +2951,6 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     #ship-to-different-address label span:before{
         top: 6px;
-    }
-    body.woocommerce-checkout .checkout-top-sec {
-        padding-top: 0;
     }
 }
 @media(max-width: 659px){

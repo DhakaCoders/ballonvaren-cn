@@ -77,13 +77,6 @@ ol.commentlist {
 .woocommerce #reviews #comments ol.commentlist li .comment-text p.meta{
     margin-bottom: 10px;
 }
-/*.single-product .comment-text p.meta{
-    display: inline-block;
-    vertical-align: baseline;
-    margin-left: -11px!important;
-    padding-top: 27px;
-    margin-bottom: 0!important;
-}*/
 .single-product .description {
     padding-top: 15px;
     margin-left: -70px;
@@ -197,9 +190,11 @@ ol.commentlist {
     justify-content: center;
     align-items: center;
 }
-
 .modal-close:hover {
   color: #777;
+}
+.single-product .overons-msnry-grd-rgt{
+    padding-top: 55px;
 }
 
 @media (max-width: 1599px){
@@ -211,3 +206,16 @@ ol.commentlist {
     }
 }
 
+@media (max-width: 767px) {
+   .single-product .revw-hdr-title{
+        margin-bottom: 20px;    
+   }
+    .single-product .overons-msnry-grd-lft{
+        padding-bottom: 23px;
+        border-bottom: 2px solid #ECF1F4;
+        margin-bottom: 43px;
+    }
+    .single-product .overons-msnry-grd-rgt{
+        padding-top: 0;
+    }
+}

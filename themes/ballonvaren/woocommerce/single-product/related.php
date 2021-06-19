@@ -21,6 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 <section class="related-products">
+	<div class="related-grd-top-lft-img show-sm">
+    <img src="assets/images/nd-top-lft-img.png">
+  </div>
+  <div class="related-grd-top-rgt-img show-sm">
+    <img src="assets/images/xs-blog-grd-top-img.svg">
+  </div>
+  
 	<div class="white-sky-bg">
     <span class="white-sky-inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/white-sky-bg.png');"></span>
     <span class="white-sky-inline-bg show-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/xs-white-sky-bg.png');"></span>
