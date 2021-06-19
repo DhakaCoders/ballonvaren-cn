@@ -69,7 +69,7 @@
             <p>Etiam vitae ultrices purus. Praesent<br> sodales nisl vel mauris cursus viverra. Quisque ut pharetra urna. </p>
             <a href="#" class="fl-transparent-btn cad-pg-lnk-btn">CADEAUBONNEN</a>
           </div>
-            <i><img src="assets/images/absolute-ballon-3.svg" alt=""></i>
+            <i><img src="<?php echo THEME_URI; ?>/assets/images/absolute-ballon-3.svg" alt=""></i>
         </div> 
       </div>
     </div>
