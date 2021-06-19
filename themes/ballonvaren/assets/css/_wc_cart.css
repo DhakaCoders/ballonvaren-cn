@@ -311,24 +311,30 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code:focus{
 	border-color: #1DB4B2!important;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::-moz-placeholder{
-	color: #909BA5!important;
-	opacity: 1;
-}
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::-webkit-input-placeholder { 
-  color: #909BA5!important;
+
+
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #dadcdd!important;
   opacity: 1;
+  font-weight: 400;
+}
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon input::-moz-placeholder { /* Firefox 19+ */
+  color: #dadcdd!important;
+  opacity: 1;
+  font-weight: 400;
+}
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon input:-ms-input-placeholder { /* IE 10+ */
+  color: #dadcdd!important;
+  opacity: 1;
+  font-weight: 400;
+}
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon input:-moz-placeholder { /* Firefox 18- */
+  color: #dadcdd!important;
+  opacity: 1;
+  font-weight: 400;
 }
 
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code:-ms-input-placeholder { 
-  color: #909BA5!important;
-  opacity: 1;
-}
 
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::-moz-placeholder {
-  color: #909BA5!important;
-  opacity: 1;
-}
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button,
 body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button] {    
 	width: 100%;
