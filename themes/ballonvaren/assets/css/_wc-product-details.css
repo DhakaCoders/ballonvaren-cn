@@ -748,7 +748,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		top: -210px;
 	}
 	.related.products.related-pro-crtl{
-		padding: 90px 0 0;
+		padding-top: 80px;
 	}
 	.related.products.related-pro-crtl h2{
 		margin-bottom: 45px;
@@ -806,7 +806,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		top: -190px;
 	}
 	.related.products.related-pro-crtl{
-		padding: 80px 0 0;
+		padding-top: 50px;
 	}
 	.woocommerce div.product .product_title{
 		font-size: 26px;
@@ -903,9 +903,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.woocommerce div.product div.summary {
 	    margin-bottom: 13px;
 	}
-	.related.products.related-pro-crtl{
+/* 	.related.products.related-pro-crtl{
 		padding-top:50px;
-	}
+	} */
 	.cart .qty-price-wrap del span,
 	.cart .qty-price-wrap del span bdi{
 		font-size:18px!important;
@@ -981,7 +981,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	    top: -150px;
 	}
 	.related.products.related-pro-crtl{
-		padding: 70px 0;
+		padding-top: 40px;
 	}
 	.related.products.related-pro-crtl h2{
 		margin-bottom: 22px;
@@ -1074,9 +1074,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     .related-pro-crtl .hasRelatedProduct ul.slick-dots{
         margin-top:30px;
     }
-    .related.products.related-pro-crtl{
-        padding-bottom:60px;
-    }
     .product-details-page .fl-product .wc-product-title{
         padding-top: 0px;
     }
@@ -1105,7 +1102,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		top: -120px;
 	}
 	.related.products.related-pro-crtl{
-		padding: 60px 0 0;
+		padding-top: 0;
 	}
 	.woocommerce div.product .product_title{
 		font-size: 24px;
