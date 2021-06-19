@@ -492,6 +492,9 @@ body.single-product div.product form.cart .button:before{
 	width: 24px;
 	height: 24px;
 }
+/* .single-product .thumbnails-cntlr .slick-active + .slick-active + .slick-active {
+	padding-right: 12px;
+} */
 .related.products.related-pro-crtl{
 	padding-top: 98px;
 	margin-left: -15px;
