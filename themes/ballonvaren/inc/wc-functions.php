@@ -592,6 +592,11 @@ if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false && is_account_page
     if( isset($_GET['action']) && $_GET['action']=='registration'){
         $classes[]='hide-account-title';
     }
+     if ( is_product_category() || is_product() || is_shop() || is_cart() || is_checkout()
+       || is_woocommerce() || is_product_tag() || is_account_page() || is_wc_endpoint_url()
+       || is_ajax()){
+        $classes[]='woo-page';
+     }
     return $classes;
 }
 
