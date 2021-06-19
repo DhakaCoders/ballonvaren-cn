@@ -179,7 +179,7 @@ if( $('.single-product .hasRelatedProduct').length ){
       dots: false,
       arrows:false,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,
