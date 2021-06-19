@@ -42,6 +42,11 @@
     </div>    
   </div>
   <?php endif; ?>
+  <?php
+	$showhideusps = get_field('showhideusps', HOMEID);
+	if( $showhideusps ):
+	$usps = get_field('usps', HOMEID);
+  ?>
   <div class="bn-process-grid">
     <div class="xs-process-ballon">
       <i><img src="<?php echo THEME_URI; ?>/assets/images/res-process-ballon.svg"></i>
@@ -49,54 +54,24 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <?php if( $usps ): ?>
           <div class="bn-process-grid-items bnProcessGridItemsSlider">
+          	<?php $i=1; foreach( $usps as $usp ): ?>
             <div class="bn-process-grid-item">
               <div class="bn-process-item-hdr mHc1">
-                <span>01</span>
-                <h4 class="fl-h5 bn-process-grid-title">Vragen?</h4>
+                <span><?php echo number_format($i); ?></span>
+                <?php if( !empty($usp['titel']) ) printf( '<h4 class="fl-h5 bn-process-grid-title">%s</h4>', $usp['titel'] ); ?>
               </div>
-              <p>We maken tijd om voor uw reservatie op àl uw<br> vragen te antwoorden</p>
+              <?php if( !empty($usp['beschrijving']) ) echo wpautop($usp['beschrijving']); ?>
             </div>
-            <div class="bn-process-grid-item">
-              <div class="bn-process-item-hdr mHc1">
-                <span>02</span>
-                <h4 class="fl-h5 bn-process-grid-title">Briefing</h4>
-              </div>  
-              <p>We geven voor het opstijgen een uitgebreide<br> briefing</p>
-            </div>
-            <div class="bn-process-grid-item">
-              <div class="bn-process-item-hdr mHc1">
-                <span>03</span>
-                <h4 class="fl-h5 bn-process-grid-title">Hoog comfort</h4>
-              </div>  
-              <p>U vaart mee in ruime comfortabele<br> manden</p>
-            </div>
-            <div class="bn-process-grid-item">
-              <div class="bn-process-item-hdr mHc1">
-                <span>04</span>
-                <h4 class="fl-h5 bn-process-grid-title">Ballonvaart</h4>
-              </div>  
-              <p>We garanderen een prachtige en veilige ballonvaart<br> van minimaal één uur</p>
-            </div>
-            <div class="bn-process-grid-item">
-              <div class="bn-process-item-hdr mHc1">
-                <span>05</span>
-                <h4 class="fl-h5 bn-process-grid-title">Après-ballooning</h4>
-              </div>  
-              <p>Na de vaart nodigen we u uit voor een lekker <br>glaasje met versnaperingen</p>
-            </div>
-            <div class="bn-process-grid-item">
-              <div class="bn-process-item-hdr mHc1">
-                <span>06</span>
-                <h4 class="fl-h5 bn-process-grid-title">Souvenir</h4>
-              </div>  
-              <p>U krijgt een leuk geschenkje mee</p>
-            </div>
+        	<?php $i++; endforeach; ?>
           </div>
+      	  <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
+  <?php endif; ?>
   <span class="hdr-color-border"></span>      
 </section>
 <?php
