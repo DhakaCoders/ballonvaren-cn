@@ -248,7 +248,7 @@ if( $('.single-product .hasRelatedProduct').length ){
       autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [
         {
@@ -257,7 +257,7 @@ if( $('.single-product .hasRelatedProduct').length ){
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -265,7 +265,7 @@ if( $('.single-product .hasRelatedProduct').length ){
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            dots: true
+            dots: false
           }
         },
         {
