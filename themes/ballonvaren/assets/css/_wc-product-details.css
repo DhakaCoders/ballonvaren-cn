@@ -1099,6 +1099,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     .related.products.related-pro-crtl h2 {
         margin-bottom: 25px;
     }
+    .single-product .fl-pro-grd-des{
+    	padding: 34px 23px 9px;
+    }
     .main-img-crtl{
     	box-shadow: initial;
     	margin-bottom: 0!important;
