@@ -156,7 +156,7 @@ function new_loop_shop_per_page( $cols ) {
 
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
 function jk_related_products_args( $args ) {
-$args['posts_per_page'] = 4; // 4 related products
+$args['posts_per_page'] = 9; // 4 related products
 return $args;
 }
 

@@ -144,8 +144,8 @@ $col2 = get_field('col2', HOMEID);
 ?>
 <section class="hm-dfp-twogrd-module-sce white-sky-bg-cntlr">
   <div class="white-sky-bg">
-    <span class="white-sky-inline-bg hide-sm" style="background-image: url('assets/images/hm-white-sky-bg-img.png');"></span>
-    <span class="white-sky-inline-bg show-sm" style="background-image: url('assets/images/xs-white-sky-bg.png');"></span>
+    <span class="white-sky-inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-white-sky-bg-img.png');"></span>
+    <span class="white-sky-inline-bg show-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/xs-white-sky-bg.png');"></span>
   </div>
   <div class="container">
     <div class="row">
@@ -174,7 +174,7 @@ $col2 = get_field('col2', HOMEID);
         	<?php endif; ?>
         	<?php if( $col2 ): ?>
             <div class="hm-dfp-gift-grd-smpl-img-cntlr show-sm">
-              <div class="hm-dfp-gift-grd-smpl-img inline-bg" style="background: url('assets/images/hm-dfp-gift-grd-smpl-img.jpg');"></div>
+              <div class="hm-dfp-gift-grd-smpl-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/hm-dfp-gift-grd-smpl-img.jpg');"></div>
             </div>
 
             <div class="dfp-gift-grd-ctlr">
@@ -274,14 +274,14 @@ if( !empty($news_query) ){
 ?>
 <section class="hm-news-details-sec blog-grds-sec news-details white-sky-bg-cntlr">
   <div class="white-sky-bg">
-    <span class="white-sky-inline-bg hide-sm" style="background-image: url('assets/images/white-sky-bg.png');"></span>
-    <span class="white-sky-inline-bg show-sm" style="background-image: url('assets/images/xs-white-sky-bg.png');"></span>
+    <span class="white-sky-inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/white-sky-bg.png');"></span>
+    <span class="white-sky-inline-bg show-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/xs-white-sky-bg.png');"></span>
   </div>
   <span class="ervng-dtls-onverted-icon">
-    <img src="assets/images/ervng-dtls-onverted-icon.svg" alt="">
+    <img src="<?php echo THEME_URI; ?>/assets/images/ervng-dtls-onverted-icon.svg" alt="">
   </span>
   <span class="ervng-dtls-onverted-green-icon">
-    <img src="assets/images/ervng-dtls-onverted-green-icon.svg" alt="">
+    <img src="<?php echo THEME_URI; ?>/assets/images/ervng-dtls-onverted-green-icon.svg" alt="">
   </span>
   <div class="container">
     <div class="row">
