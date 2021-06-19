@@ -1848,7 +1848,7 @@ body.woocommerce-checkout section.checkout-top-sec{
 
 }
 
-@media(max-width: 1499px){
+@media(max-width: 1599px){
     body.woocommerce-checkout #customer_details .col-2 {
         padding-left: 50px;
     }
