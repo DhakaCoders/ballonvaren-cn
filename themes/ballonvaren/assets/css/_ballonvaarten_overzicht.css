@@ -841,10 +841,9 @@ del span.woocommerce-Price-amount bdi:after,
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 33px 41px;
 	}
-	.cadeaubonnen-page-link i {
+	.archive .cadeaubonnen-page-link i {
 	    top: initial;
 	    left: -20px;
-	    max-width: initial;
 	    bottom: -15px;
 	}
 	.fl-products-cntlr ul.products > li.cadeaubonnen-page-link {
@@ -967,6 +966,12 @@ del span.woocommerce-Price-amount bdi:after,
 	}
 	.product-page-cntlr {
 	    padding-bottom: 0;
+	}
+	.archive .cadeaubonnen-page-link i {
+    	top: initial;
+    	left: -60px;
+    	bottom: -15px;
+    	max-width: 110px;
 	}
 }
 

@@ -374,11 +374,13 @@ if( $('.main-img-crtl').length ){
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  autoplay:false,
+  autoplay:true,
   asNavFor: '.thumbnails-cntlr .thumbnails',
    prevArrow: $('.fl-singgle-pro-prev'),
   nextArrow: $('.fl-singgle-pro-next'),
 });
+}
+if( $('.thumbnails-cntlr .thumbnails').length ){
 $('.thumbnails-cntlr .thumbnails').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -386,7 +388,7 @@ $('.thumbnails-cntlr .thumbnails').slick({
   dots: false,
   arrows: false,
   infinite:true,
-  autoplay:false,
+  autoplay:true,
   focusOnSelect: true,
   responsive: [
         {
