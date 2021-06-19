@@ -142,6 +142,7 @@
 	-webkit-transition: all 0.5s;
 	border-radius: 3px;
 	box-shadow: none !important;
+    text-transform: capitalize !important;
 }
 .contact-form-wrp .wpforms-field-container .wpforms-field-select-calendar,
 .contact-form-wrp .wpforms-field-container .wpforms-field-select{
@@ -201,6 +202,10 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-select-calendar{
     position: relative;
 }
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-select-calendar input:placeholder{
+    text-transform: capitalize !important;
+}
+
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-select-calendar:before {
     content: "" !important;
     position: absolute !important;
@@ -613,7 +618,12 @@ boek-je-form-sec-wrp
 
 
 @media (max-width: 1499px) {
-	
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
+        font-size: 15px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 1399px){
