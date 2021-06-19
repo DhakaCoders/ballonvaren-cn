@@ -1,7 +1,5 @@
 (function($) {
 
-/*Google Map Style*/
-var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
 
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
@@ -221,15 +219,15 @@ if( $('.single-product .hasRelatedProduct').length ){
 
 
 $(".type-order-format .woocommerce-input-wrapper span").each(function(){
-        $(this).append('<div class="radio-custom"></div>')
-  });
+      $(this).append('<div class="radio-custom"></div>')
+});
 $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox,#billing_personal_recom .woocommerce-input-wrapper,#billing_acttion_insp .woocommerce-input-wrapper").each(function(){
-        $(this).append('<div class="checkbox-custom"></div>')
-  });
+      $(this).append('<div class="checkbox-custom"></div>')
+});
 // datepicker 
-  if( $('#additional_datum').length ){
-    $( "#additional_datum" ).datepicker();
-  }
+if( $('#additional_datum').length ){
+  $( "#additional_datum" ).datepicker();
+}
 
 //products counter
 if( $('.qty').length ){
