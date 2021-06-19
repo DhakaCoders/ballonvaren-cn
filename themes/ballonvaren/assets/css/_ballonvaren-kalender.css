@@ -284,7 +284,9 @@
 	.bv-calender-dsc-inner h2{
 		margin-bottom: 15px;
 	}
-	
+	.events-grid-sec{
+		padding-top: 164px;
+	}
 }
 
 @media(max-width: 1199px){
@@ -323,7 +325,7 @@
 		margin-left: -45px;
 	}
 	.events-grid-sec {
-	    padding-top: 130px;
+	    padding-top: 140px;
 	}
 	.calender-inline-bg {
 	    height: 335px;
@@ -353,7 +355,7 @@
 	    width: 135px;
 	}
 	.events-grid-sec {
-	    padding-top: 117px;
+	    padding-top: 130px;
 	}
 	.bv-clndr-absolute-img-two {
 	    margin-top: 415px;
