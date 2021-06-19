@@ -103,6 +103,12 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 .woocommerce-order-received .chk-acc-btm p{
 	margin-bottom: 0;
 }
+.woocommerce-order-received .chk-acc-btm p{
+	max-width: 280px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 .chk-acc-tp img , .chk-acc-btm img{
 	margin-bottom: 10px;
 }
@@ -187,7 +193,7 @@ body.woocommerce-order-received .page-grd-sec-wrp{
 	-ms-transition: all .5s;
 	-webkit-transition: all .5s;
 }
-.chk-scl-itm i:hover{
+.chk-scl-itm:hover i{
 	background: #EE3E15;
 }
 .chk-scl-itm i svg{
