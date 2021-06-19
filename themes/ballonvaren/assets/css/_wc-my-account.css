@@ -489,6 +489,9 @@ body.woocommerce-account .default-page-con h1{
     margin-bottom:0;
     font-size:30px;
 }
+body.woocommerce-checkout .checkout-top-sec{
+    padding-top: 95px;
+}
 body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom: 28px;
     margin-bottom:0;    
@@ -1848,7 +1851,7 @@ body.woocommerce-checkout section.checkout-top-sec{
 
 }
 
-@media(max-width: 1499px){
+@media(max-width: 1599px){
     body.woocommerce-checkout #customer_details .col-2 {
         padding-left: 50px;
     }
@@ -2951,6 +2954,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     #ship-to-different-address label span:before{
         top: 6px;
     }
+    body.woocommerce-checkout .checkout-top-sec {
+        padding-top: 0;
+    }
 }
 @media(max-width: 659px){
     
@@ -3089,13 +3095,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce-cart .woocommerce .cart-is-emtpy .cie-icon img{
         max-width: 100px;
     }
-    body.empty-cart .innerpage-con-wrap{
-        background: url(../images/empty-cart-xs-bg.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: 300px auto;
-        padding-bottom: 40px;
-    }
+   
     p.woocommerce-mini-cart__buttons.buttons a{
         width: 50%!important;
     }

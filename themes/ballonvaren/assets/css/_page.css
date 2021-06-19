@@ -175,7 +175,8 @@
 .ballon-rides-lft-top-img,
 .contact-parachute-icon,
 .contact-google-parachute,
-.cadeaubonnen-page-link i{
+.cadeaubonnen-page-link i,
+.bv-clndr-absolute-img-4{
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
