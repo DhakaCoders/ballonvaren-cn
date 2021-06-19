@@ -683,6 +683,11 @@ body.woocommerce-cart th.product-remove{
 		width: 14px!important;
 		background-size: contain;
 	}
+	body.woocommerce-cart .woocommerce a.remove:hover{
+		height: 16px!important;
+		width: 14px!important;
+		background-size: contain;
+	}
 	body.empty-cart .page-grd-sec-wrp {
 	    padding-bottom: 90px;
 	}
