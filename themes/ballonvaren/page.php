@@ -21,8 +21,7 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </div></section>
 <?php endif; ?>
   <?php if(have_rows('inhoud')){ 
     get_template_part('templates/innerpage');
@@ -40,7 +39,7 @@
   </div>
 </section>
 <?php endif; ?>
-<section class="innerpage-con-wrap">
+<section class="page-grd-sec-wrp">
     <?php if( is_wc_endpoint_url( 'orders' ) || is_wc_endpoint_url( 'edit-account' ) || (strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false) ){ ?>
       <div class="back-to-dashboard-btn-cntlr">
         <div class="container">
