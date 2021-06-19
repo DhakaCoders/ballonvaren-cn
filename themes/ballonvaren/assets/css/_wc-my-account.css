@@ -489,6 +489,9 @@ body.woocommerce-account .default-page-con h1{
     margin-bottom:0;
     font-size:30px;
 }
+body.woocommerce-checkout .checkout-top-sec{
+    padding-top: 95px;
+}
 body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom: 28px;
     margin-bottom:0;    
@@ -2950,6 +2953,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
     #ship-to-different-address label span:before{
         top: 6px;
+    }
+    body.woocommerce-checkout .checkout-top-sec {
+        padding-top: 0;
     }
 }
 @media(max-width: 659px){

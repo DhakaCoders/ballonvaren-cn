@@ -795,6 +795,9 @@ boek-je-form-sec-wrp
     .boek-je-form-sec-wrp .contact-form-info-cntlr {
         padding: 40px 30px 35px 30px;
     }
+    .page-entry-header .fl-h1 span{
+    	font-size: 17px;
+    }
 	
 }
 
@@ -848,9 +851,6 @@ boek-je-form-sec-wrp
 	    padding-top: 50px;
 	}
 	
-	.page-entry-header .fl-h1 span{
-		font-size: 17px;
-	}
 	.contact-form-info-title-1{
 		text-transform: inherit;
 	}
@@ -922,8 +922,8 @@ boek-je-form-sec-wrp
         top: -650px;
         height: 800px;
     }
-    .page-entry-header .fl-h1 span {
-        font-size: 16px;
+    .page-entry-header .fl-h1 span{
+    	font-size: 18px;
     }
 	
 
