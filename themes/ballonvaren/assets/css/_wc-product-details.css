@@ -991,6 +991,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		padding: 0 20px;
 		margin: 0 -20px!important;
 	}
+	.single-product .review-hdr{
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 34px;
+	}
 }
 
 
