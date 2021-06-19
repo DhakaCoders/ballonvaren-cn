@@ -1020,6 +1020,10 @@ body.woocommerce-cart th.product-remove{
 		height: 13px!important;
    		width: 12px!important;
 	}
+	body.woocommerce-cart .bn-page-entry-hdr-cntlr h1{
+		padding-bottom: 25px;
+		margin-bottom: 20px;
+	}
 }
 
 @media(max-width: 575px){
