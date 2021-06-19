@@ -548,6 +548,9 @@ body.empty-cart .woocommerce a:last-child{
 	background: #FDCA35!important;
 	border-color: #FDCA35!important;
 }
+body.empty-cart .innerpage-con-wrap .woocommerce{
+	padding-bottom: 110px;
+}
 .empty-cart .page-title{
 	display: none;
 }
