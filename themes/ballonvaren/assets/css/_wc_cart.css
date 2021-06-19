@@ -311,21 +311,23 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code:focus{
 	border-color: #1DB4B2!important;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::placeholder{
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::-moz-placeholder{
 	color: #909BA5!important;
-	font-size: 16px!important;
-	font-weight: 400;
+	opacity: 1;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::-webkit-input-placeholder { 
   color: #909BA5!important;
+  opacity: 1;
 }
 
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code:-ms-input-placeholder { 
   color: #909BA5!important;
+  opacity: 1;
 }
 
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::placeholder {
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::-moz-placeholder {
   color: #909BA5!important;
+  opacity: 1;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button,
 body.woocommerce-checkout .custom-checkout-order-review .form-row-last button[type=button] {    
@@ -683,6 +685,11 @@ body.woocommerce-cart th.product-remove{
 		width: 14px!important;
 		background-size: contain;
 	}
+	body.woocommerce-cart .woocommerce a.remove:hover{
+		height: 16px!important;
+		width: 14px!important;
+		background-size: contain;
+	}
 	body.empty-cart .page-grd-sec-wrp {
 	    padding-bottom: 90px;
 	}
@@ -886,7 +893,7 @@ body.woocommerce-cart th.product-remove{
 	}
 	body.woocommerce-cart .cart-table-crtl table.shop_table tbody tr td.product-remove > a {
 	    position: absolute;
-	    bottom: 14px;
+	    bottom: 18px;
 	    left: auto;
 	    right: 0;
 	    z-index: 10!important;
@@ -1001,6 +1008,14 @@ body.woocommerce-cart th.product-remove{
 	}
 	body.empty-cart .page-grd-sec-wrp {
 	    padding-bottom: 55px;
+	}
+	body.woocommerce-cart .woocommerce a.remove{
+		height: 13px!important;
+   		width: 12px!important;
+	}
+	body.woocommerce-cart .woocommerce a.remove:hover{
+		height: 13px!important;
+   		width: 12px!important;
 	}
 }
 
