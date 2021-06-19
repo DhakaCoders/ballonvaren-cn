@@ -494,7 +494,15 @@ body.single-product div.product form.cart .button:before{
 }
 .related.products.related-pro-crtl{
 	padding-top: 98px;
+	margin-left: -15px;
+	margin-right: -15px;
 }
+.single-product .hasRelatedProduct .slick-active:first-of-type{
+	padding-left: 27px;
+}
+.single-product .hasRelatedProduct .slick-active + .slick-active + .slick-active {
+	padding-right: 27px;
+} 
 .related-pro-crtl .product,
 .dft-hm-product-module .hmProdctGrdsSlideItme{
     padding: 0 12px;    
