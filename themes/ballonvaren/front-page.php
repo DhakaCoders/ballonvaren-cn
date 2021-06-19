@@ -136,8 +136,117 @@ $page_title = !empty($introtext['titel']) ? $introtext['titel'] : '';
   </div>
 </section>
 <?php endif; ?>
+<?php
+$showhidebooking = get_field('showhidebooking', HOMEID);
+if($showhidebooking): 
+$col1 = get_field('col1', HOMEID);
+$col2 = get_field('col2', HOMEID);
+?>
+<section class="hm-dfp-twogrd-module-sce white-sky-bg-cntlr">
+  <div class="white-sky-bg">
+    <span class="white-sky-inline-bg hide-sm" style="background-image: url('assets/images/hm-white-sky-bg-img.png');"></span>
+    <span class="white-sky-inline-bg show-sm" style="background-image: url('assets/images/xs-white-sky-bg.png');"></span>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="hm-dfp-twogrd-module-cntlr">
+          <div class="dfp-twogrd-module clearfix">
+          	<?php if( $col1 ): ?>
+            <div class="dfp-booking-grd-ctlr">
+              <div class="dfp-booking-grd">
+                <div class="booking-btm-img hide-sm">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/booking-btm-img.svg">
+                </div>
+                <div class="xs-booking-top-rgt-img show-sm">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/booking-top-img-xs.svg">
+                </div>
+				<?php 
+	              if( !empty($col1['titel']) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $col1['titel']);
+	              if( !empty($col1['beschrijving']) ) echo wpautop( $col1['beschrijving'] );
+	              $col1knop = $col1['knop'];
+	              if( is_array( $col1knop ) &&  !empty( $col1knop['url'] ) ){
+	                printf('<div class="cta-btn"><a class="fl-transparent-btn" href="%s" target="%s">%s</a></div>', $col1knop['url'], $col1knop['target'], $col1knop['title']); 
+	              }
+	            ?>
+              </div>
+            </div>
+        	<?php endif; ?>
+        	<?php if( $col2 ): ?>
+            <div class="hm-dfp-gift-grd-smpl-img-cntlr show-sm">
+              <div class="hm-dfp-gift-grd-smpl-img inline-bg" style="background: url('assets/images/hm-dfp-gift-grd-smpl-img.jpg');"></div>
+            </div>
 
-
+            <div class="dfp-gift-grd-ctlr">
+              <div class="dfp-gift-grd">
+                <div class="booking-top-img hide-sm">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/booking-top-img.svg">
+                </div>
+                <div class="xs-booking-btm-lft-img show-sm">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/booking-btm-img.svg">
+                </div>
+				<?php 
+	              if( !empty($col2['titel']) ) printf('<h4 class="cta-title fl-h4">%s</h4>', $col2['titel']);
+	              if( !empty($col2['beschrijving']) ) echo wpautop( $col2['beschrijving'] );
+	              $col2knop = $col2['knop'];
+	              if( is_array( $col2knop ) &&  !empty( $col2knop['url'] ) ){
+	                printf('<div class="cta-btn"><a class="fl-transparent-btn" href="%s" target="%s">%s</a></div>', $col2knop['url'], $col2knop['target'], $col2knop['title']); 
+	              }
+	            ?>
+              </div>
+            </div>
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+<?php
+$showhide_vrije = get_field('showhide_vrije', HOMEID);
+if($showhide_vrije): 
+$dayoff = get_field('vrijedagen', HOMEID);
+if($dayoff):
+?>
+<section class="off-days-sec hm-bv-calender-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bv-calender-sec-cntlr">
+          <div class="bv-calender-inner">
+            <div class="bv-calender-dsc">
+              <div class="bv-calender-dsc-inner">
+                <?php 
+	              if( !empty($dayoff['titel']) ) printf('<h2 class="fl-h3  off-days-heading">%s</h2>', $dayoff['titel']);
+	              if( !empty($dayoff['beschrijving']) ) echo wpautop( $dayoff['beschrijving'] );
+                ?>
+              </div>
+              <div class="bv-calnender">
+                <div class="bv-calender-iner">
+                  <div class="calender-inline-bg  inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/kalender.PNG');">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bv-calender-img hide-sm" >
+              <div class="bv-calender-img-innr">
+                <div class="inline-bg-img  inline-bg" style="background-image: url(<?php if(!empty($dayoff['afbeelding'])) echo cbv_get_image_src($dayoff['afbeelding']); ?>);">
+                  <img src="<?php echo THEME_URI; ?>/assets/images/kalender-img.jpg" alt="">
+                  <span class="bv-clndr-absolute-img-one"><img src="<?php echo THEME_URI; ?>/assets/images/absolute-ballon-1.svg" alt=""></span>
+                  <span class="bv-clndr-absolute-img-two"><img src="<?php echo THEME_URI; ?>/assets/images/absolute-ballon-5.svg" alt=""></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+<?php endif; ?>
 <?php 
 $showhide_nieuws = get_field('showhide_nieuws', HOMEID);
 if($showhide_nieuws):
