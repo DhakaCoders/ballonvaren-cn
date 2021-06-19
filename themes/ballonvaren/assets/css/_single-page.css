@@ -20,6 +20,11 @@ ol.commentlist {
 .single-product #reviews #comments ol.commentlist li{
     margin-bottom: 30px;
 }
+.single-product #reviews #comments ol.commentlist li > div{
+    display: flex;
+    position: relative;
+    padding-left: 70px;
+}
 .single-product #reviews #comments ol.commentlist li:last-of-type{
     margin-bottom: 0;
 }
@@ -39,11 +44,11 @@ ol.commentlist {
     padding: 0 0 0 0px!important;
     margin: 0!important;
 }
-.single-product .star-rating{
+/*.single-product .star-rating{
     float: left!important;
     left: 74px;
     top: 7px;
-}
+}*/
 .single-product .star-rating span::before{
     color: #fdca33!important;
 }
@@ -61,13 +66,13 @@ ol.commentlist {
     color: #909BA5;
     text-transform: capitalize;
 }
-.single-product .comment-text p.meta{
+/*.single-product .comment-text p.meta{
     display: inline-block;
     vertical-align: baseline;
     margin-left: -11px!important;
     padding-top: 27px;
     margin-bottom: 0!important;
-}
+}*/
 .description {
     padding-top: 25px;
 }
