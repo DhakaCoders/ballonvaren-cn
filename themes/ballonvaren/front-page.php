@@ -167,15 +167,25 @@ $page_title = !empty($introtext['titel']) ? $introtext['titel'] : '';
 $showhide_nieuws = get_field('showhide_nieuws', HOMEID);
 if($showhide_nieuws):
 $hnews = get_field('homenieuws', HOMEID);
-$news_query = $hnews['selecteer_nieuws'];
-if(empty($news_query)){
-    $news_query = get_posts( array(
-      'post_type' => 'post',
-      'posts_per_page'=> 6,
-      'orderby' => 'date',
-      'order'=> 'desc',
+$newsIDs = $hnews['selecteer_nieuws'];
+if( !empty($news_query) ){
+	$news_query = new WP_Query(array(
+	  'post_type' => 'post',
+	  'posts_per_page'=> 3,
+	  'post__in' => $newsIDs,
+	  'orderby' => 'date',
+	  'order'=> 'asc',
 
-    ) );
+	));
+    
+}else{
+	$news_query = new WP_Query(array(
+	  'post_type' => 'post',
+	  'posts_per_page'=> 6,
+	  'orderby' => 'date',
+	  'order'=> 'desc',
+
+	));
 }
 ?>
 <section class="hm-news-details-sec blog-grds-sec news-details white-sky-bg-cntlr">
@@ -199,13 +209,14 @@ if(empty($news_query)){
                 if( !empty($hnews['beschrijving']) ) echo wpautop( $hnews['beschrijving'] );
             ?>
           </div>
-          <?php if($news_query): ?>
+          <?php if($news_query->have_posts()): ?>
           <div class="blog-grds-item-ctlr hm-blog-grds-item-ctlr dfpBlogSlider clearfix">
           <?php 
-            foreach( $news_query as $newss ) : setup_postdata($newss);
+            while($news_query->have_posts()): $news_query->the_post(); 
             global $post;
-            $imgID = get_post_thumbnail_id($post->ID);
-            $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): ''; 
+            $imgID = get_post_thumbnail_id(get_the_ID());
+            $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): ''; 
+            $categories = get_the_terms( get_the_ID(), 'category' );
           ?>
             <div class="blog-grds-item spotlight">
               <div class="blog-grid-item">
@@ -244,7 +255,7 @@ if(empty($news_query)){
                   </div>  
                 </div>
               </div>
-              <?php endforeach; wp_reset_postdata(); ?>
+              <?php endwhile; wp_reset_postdata(); ?>
             </div>
             <?php endif; ?>
           </div>
