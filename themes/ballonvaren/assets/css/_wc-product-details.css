@@ -502,9 +502,20 @@ body.single-product div.product form.cart .button:before{
 	width: 24px;
 	height: 24px;
 }
-/* .single-product .thumbnails-cntlr .slick-active + .slick-active + .slick-active {
-	padding-right: 12px;
-} */
+.single-product .fl-product-grd-inr{
+	overflow: hidden;
+}
+.single-product .fl-pro-grid-img{
+	transition: all .5s;
+	-ms-transition: all .5s;
+	-webkit-transition: all .5s;
+}
+.single-product .fl-product-grd-inr:hover .single-product .fl-pro-grid-img{
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
 .related.products.related-pro-crtl{
 	padding-top: 98px;
 	margin-left: -15px;
