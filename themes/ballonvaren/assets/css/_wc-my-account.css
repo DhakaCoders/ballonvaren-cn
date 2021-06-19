@@ -43,6 +43,9 @@ body.woocommerce-account .account-page-title h1{
     margin-bottom: 57px;
     letter-spacing: -0.02em;
 }
+body.woocommerce-account.loggedin-deshboard-crtl .account-page-title h1{
+    padding-top: 95px;
+}
 body.woocommerce-account .account-page-title h1 + p{
     color: #EE3E15;
     font-size: 32px;
@@ -1892,6 +1895,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
         font-size:19px;
     }
+
 }
 @media(max-width:1399px){
     body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
@@ -2009,6 +2013,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 38px;
     }
+    body.woocommerce-account.loggedin-deshboard-crtl .account-page-title h1{
+        padding-top: 75px;
+    }
 }
 
 @media(max-width: 991px){
@@ -2120,6 +2127,9 @@ body.woocommerce-checkout section.checkout-top-sec{
     }
 }
 @media(max-width: 767px){
+    body.woocommerce-account.loggedin-deshboard-crtl .account-page-title h1{
+        padding-top: 46px;
+    }
     body.woocommerce-checkout .checkout-page-title h1{
         font-size: 30px;
     }

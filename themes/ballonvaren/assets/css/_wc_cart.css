@@ -1057,6 +1057,9 @@ body.woocommerce-cart th.product-remove{
 		margin-top: 30px;
 		margin-bottom: 15px;
 	}
+	body.empty-cart.woocommerce-cart .woocommerce .cart-is-emtpy .cie-icon img{
+		max-width: 255px;
+	}
 }
 
 @media(max-width: 575px){
