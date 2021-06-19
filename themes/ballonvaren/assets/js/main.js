@@ -248,7 +248,7 @@ if( $('.single-product .hasRelatedProduct').length ){
       autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       responsive: [
         {
