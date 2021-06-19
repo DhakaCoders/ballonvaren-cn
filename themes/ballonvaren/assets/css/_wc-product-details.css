@@ -115,6 +115,10 @@ span.single-price-total{
 .single-product .cadeaubonnen-page-link-bg{
 	z-index: 3;
 }
+.single-product .slick-slider ul.slick-dots{
+	position: absolute;
+	bottom: 29px;
+}
 /* == review sec == */
 .single-product .woocommerce-Reviews h2{
 	display: none;
