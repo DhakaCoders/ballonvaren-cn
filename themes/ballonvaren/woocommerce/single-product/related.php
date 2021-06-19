@@ -22,10 +22,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( $related_products ) : ?>
 <section class="related-products">
 	<div class="related-grd-top-lft-img show-sm">
-    <img src="assets/images/nd-top-lft-img.png">
+    <img src="<?php echo THEME_URI; ?>/assets/images/nd-top-lft-img.png">
   </div>
   <div class="related-grd-top-rgt-img show-sm">
-    <img src="assets/images/xs-blog-grd-top-img.svg">
+    <img src="<?php echo THEME_URI; ?>/assets/images/xs-blog-grd-top-img.svg">
   </div>
   
 	<div class="white-sky-bg">
