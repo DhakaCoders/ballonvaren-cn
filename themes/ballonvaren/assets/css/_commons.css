@@ -480,14 +480,17 @@ a.red-color-arrow-btn:hover i{
 
 /*slider break fix*/
 
-.hmProdctGrdsSlider .hmProdctGrdsSlideItme{
+.hmProdctGrdsSlider .hmProdctGrdsSlideItme,
+.related-pro-crtl .hasRelatedProduct .product{
 	display: none;
 }
 
-.hmProdctGrdsSlider .hmProdctGrdsSlideItme:first-child{
-	display: none;
+.hmProdctGrdsSlider .hmProdctGrdsSlideItme:first-child,
+.related-pro-crtl .hasRelatedProduct .product:first-child{
+	display: block;
 }
 
-.hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme{
+.hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme,
+.related-pro-crtl .hasRelatedProduct.slick-initialized .product{
 	display: block;
 }
