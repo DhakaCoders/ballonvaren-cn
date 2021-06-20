@@ -166,12 +166,6 @@
 		padding-bottom: 260px;
 	}
 }
-@media(max-width: 1399px){
-	
-}
-@media(max-width: 1299px){
-	
-}
 @media(max-width: 1199px){
 	.white-sky-bg{
 		height: 259px;
@@ -248,11 +242,4 @@
 		display: block;
 
 	}
-}
-@media(max-width: 575px){
-	
-}
-
-@media(max-width: 479px){
-	
 }

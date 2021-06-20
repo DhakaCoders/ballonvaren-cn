@@ -1,31 +1,6 @@
-2021-06-20T07:34:25+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\inc\wc-functions.php:242
-Stack trace:
-#0 E:\host\htdocs\2021\06\ballonvaren\wp-includes\class-wp-hook.php(294): bryce_id_add_to_cart_text('Add to cart')
-#1 E:\host\htdocs\2021\06\ballonvaren\wp-includes\plugin.php(212): WP_Hook->apply_filters('Add to cart', Array)
-#2 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1855): apply_filters('woocommerce_pro...', 'Add to cart', Object(WC_Product_PW_Gift_Card))
-#3 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\woocommerce\single-product\add-to-cart\variation-add-to-cart-button.php(31): WC_Product->single_add_to_cart_text()
-#4 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\host\\htdocs\\...')
-#5 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\wc-temp in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\inc\wc-functions.php on line 242
+2021-06-20T10:23:26+00:00 CRITICAL syntax error, unexpected token "}" in D:\xampp\htdocs\projects\2021\ballonvaren\ballonvaren-cn\themes\ballonvaren\single.php on line 31
 
-2021-06-20T08:44:18+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_type() in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\woocommerce\cart\cart.php:46
-Stack trace:
-#0 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include()
-#1 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
-#2 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
-#3 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
-#4 E:\host\htdocs\2021\06\ballonvaren\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
-#5 [internal function]: do_shortcode_tag(Array)
-#6 E:\host\htdocs\2021\06\ballonvaren\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)( in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\woocommerce\cart\cart.php on line 46
-
-2021-06-20T08:46:56+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\woocommerce\cart\cart.php:47
-Stack trace:
-#0 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include()
-#1 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(99): wc_get_template('cart/cart.php')
-#2 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
-#3 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(85): WC_Shortcodes::shortcode_wrapper(Array)
-#4 E:\host\htdocs\2021\06\ballonvaren\wp-includes\shortcodes.php(343): WC_Shortcodes::cart('', '', 'woocommerce_car...')
-#5 [internal function]: do_shortcode_tag(Array)
-#6 E:\host\htdocs\2021\06\ballonvaren\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(wo in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\woocommerce\cart\cart.php on line 47
+2021-06-20T11:17:28+00:00 CRITICAL syntax error, unexpected token "}" in D:\xampp\htdocs\projects\2021\ballonvaren\ballonvaren-cn\themes\ballonvaren\single.php on line 31
 
 2021-06-20T12:19:08+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\inc\wc-functions.php:725
 Stack trace:
