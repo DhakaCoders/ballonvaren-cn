@@ -23,6 +23,7 @@ $gal = get_field('galerij', $product->get_id());
                       ?>
                     </div>
                   </div>
+                  <?php if( $gal ): ?>
                   <?php if( !empty($gal['afbeelding_1']) ): ?>
                   <div class="overons-msnry-grd-item msnrytgi1">
                     <div class="overons-msnry-grd-item-cntlr">
@@ -50,6 +51,7 @@ $gal = get_field('galerij', $product->get_id());
                       <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo cbv_get_image_src($gal['afbeelding_4']); ?>);"></div>
                     </div>
                   </div>
+                  <?php endif; ?>
                   <?php endif; ?>
                 </div>
               </div>
