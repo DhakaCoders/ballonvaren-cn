@@ -229,6 +229,9 @@ if( $('#additional_datum').length ){
   $( "#additional_datum" ).datepicker();
 }
 
+if( $('#gift-card-amount').length ){
+  $("#gift-card-amount").selectpicker();
+}
 //products counter
 if( $('.qty').length ){
   $('.qty').each(function() {
