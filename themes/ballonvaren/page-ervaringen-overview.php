@@ -70,7 +70,7 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
             <?php endwhile; ?>
           </div>
           <?php if( $query->max_num_pages > 1 ): ?>
-          <div class="fl-pagi-cntlr">
+          <div class="fl-pagination-ctlr">
             <?php
               $big = 999999999; // need an unlikely integer
               $query->query_vars['paged'] > 1 ? $current = $query->query_vars['paged'] : $current = 1;
