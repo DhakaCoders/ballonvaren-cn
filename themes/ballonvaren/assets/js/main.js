@@ -466,7 +466,7 @@ if (windowWidth <= 992){
   }
 }
 
-if(windowWidth <= 991){
+if(windowWidth <= 768){
   if( $('.dfpBlogSlider').length ){
     $('.dfpBlogSlider').slick({
       dots: true,
