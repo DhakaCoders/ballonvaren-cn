@@ -32,3 +32,12 @@ Text Domain: ballonvaren
 .single-product #reviews #comments ol.commentlist li:nth-last-child(2){
 	display: block;
 }
+
+.single-product .eveline-vernaeve-cntlr{
+	z-index: 10;
+}
+.related-products .hasRelatedProduct.slick-initialized .slick-track{
+	height: auto!important;
+
+	display: flex!important;
+}

@@ -46,8 +46,13 @@ $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' 
                 global $post, $product;
                 $imgID = get_post_thumbnail_id($product->get_id());
                 $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
+                $package_type = get_field('_package_type', $product->get_id());
+                $typeClass = '';
+                if( !empty($package_type) ){
+                  $typeClass = ' class="'.$package_type.'"';
+                }
             ?>
-            <li>
+            <li<?php echo $typeClass; ?>>
               <div class="fl-product-grd mHc">
                 <div class="fl-product-grd-inr">
                   <div class="fl-pro-gift-cntlr inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/pro-grd-trans-img-01.png');">
