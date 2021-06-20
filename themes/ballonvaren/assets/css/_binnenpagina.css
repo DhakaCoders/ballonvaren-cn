@@ -1324,6 +1324,15 @@ Gallery design
 	.dfp-gift-grd{
 		padding: 45px 30px 45px;
 	}
+	.dfpBlogSlider .blog-grds-item{
+		display: none;
+	}
+	.dfpBlogSlider .blog-grds-item:first-child{
+		display: block;
+	}
+	.dfpBlogSlider.slick-initialized .blog-grds-item:{
+		display: block;
+	}
 
 }
 
