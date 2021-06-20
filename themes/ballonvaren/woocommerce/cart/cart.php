@@ -45,8 +45,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 							$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 							$class  = '';
 							$v_product = get_product( $product_id );
-						    if( $v_product->is_type( 'pw-gift-card' ) ){
-					            $class  = 'cart-gift-card ';
+							$package_type = get_field('_package_type', $product_id);
+						    if( $v_product->is_type( 'pw-gift-card' ) && !empty($package_type) ){
+					            $class  = 'cart-gift-card '.$package_type.' ';
 					        }
 							?>
 							<tr class="<?php echo $class; ?>woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
