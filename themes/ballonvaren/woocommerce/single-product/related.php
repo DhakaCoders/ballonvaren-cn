@@ -25,7 +25,7 @@ if ( $related_products ) : ?>
     <img src="<?php echo THEME_URI; ?>/assets/images/nd-top-lft-img.png">
   </div>
   <div class="related-grd-top-rgt-img show-sm">
-    <img src="<?php echo THEME_URI; ?>/assets/images/xs-blog-grd-top-img.svg">
+    <img src="<?php echo THEME_URI; ?>/assets/images/single-related-grd-top-rgt-img.svg">
   </div>
   
 	<div class="white-sky-bg">
