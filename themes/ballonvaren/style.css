@@ -21,3 +21,16 @@ Text Domain: ballonvaren
 	border: 2px solid #000;
 	height: 50px;
 }
+
+.related-products .white-sky-bg{
+	display: none;
+}
+
+.single-product #reviews #comments ol.commentlist li{
+	display: none;
+}
+
+.single-product #reviews #comments ol.commentlist li:nth-last-child(1),
+.single-product #reviews #comments ol.commentlist li:nth-last-child(2){
+	display: block;
+}
