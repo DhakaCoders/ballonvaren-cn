@@ -127,6 +127,20 @@ body.page-template-page-cadeaubonnen .fl-products-cntlr ul.products{
 	padding-bottom: 0;
 }
 
+body.product-template-default .popup-product-title a{
+	color: #000!important;
+	line-height: 1;
+}
+body.product-template-default .xoo-cp-variations .variation{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+body.product-template-default .xoo-cp-modal .xoo-cp-variations .variation dt{
+	font-size: 15px;
+}
+body.product-template-default .xoo-cp-variations .variation dd{
+	margin-top: -3px;
+}
 
 
 /* == responsive == */
