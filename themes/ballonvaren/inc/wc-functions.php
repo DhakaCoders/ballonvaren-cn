@@ -281,9 +281,29 @@ function misha_adv_product_options(){
         )
     ));
     echo '</div>';
+
+    if( isset($_GET['post']) && isset($_GET['action']) && $_GET['action'] == 'edit' ){
+        $style = 'display:block';
+    }else{
+        $style = 'display:none';
+    }
+
+    echo '<div class="options_group" id="giftcard-manage" style="'.$style.'">';
+ 
+    // Radio Buttons field
+    woocommerce_wp_radio( array(
+        'id'            => '_package_type',
+        'value'   => get_post_meta( get_the_ID(), '_package_type', true ),
+        'label'         => __('Package Type'),
+        'options'       => array(
+            'single_pack'       => __('Single Pack'),
+            'duo_pack'       => __('Duo Pack'),
+            'family_fack'       => __('Family Pack'),
+        )
+    ) );
+    echo '</div>';
  
 }
-
 
 add_action( 'woocommerce_process_product_meta', 'misha_save_fields', 10, 2 );
 function misha_save_fields( $id, $post ){
@@ -291,6 +311,7 @@ function misha_save_fields( $id, $post ){
     //if( !empty( $_POST['super_product'] ) ) {
         update_post_meta( $id, 'product_min_qty', $_POST['product_min_qty'] );
         update_post_meta( $id, 'product_max_qty', $_POST['product_max_qty'] );
+        update_post_meta( $id, '_package_type', $_POST['_package_type'] );
     //} else {
     //  delete_post_meta( $id, 'super_product' );
     //}
@@ -701,4 +722,23 @@ function is_wc_page(){
 }
 function is_breadcrumbs(){
     return is_checkout() || is_account_page() || is_cart();
+}
+
+
+add_action( 'in_admin_footer', 'load_custom_script' );
+function load_custom_script() {
+?>
+<script type="text/javascript">
+    jQuery(document).ready( function() {
+        jQuery('#product-type').on('change', function(){
+            var productType = jQuery("#product-type option:selected").val();
+            if( productType == 'pw-gift-card' ){
+                jQuery("#giftcard-manage").show();
+            }else{
+                jQuery("#giftcard-manage").hide();
+            }
+        });
+    });
+</script>
+<?php
 }
