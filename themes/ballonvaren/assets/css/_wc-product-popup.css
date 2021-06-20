@@ -556,10 +556,16 @@ h3.pro-item-desc-title{
     	right: -14px;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-1 {
-    	max-width: 60%;
+    	max-width: 56%;
 	}
 	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 {
-    	max-width: 40%;
+    	max-width: 44%;
+	}
+	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle {
+		padding-left: 123px!important;
+	}
+	.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a, .popup-bottom-btn a {
+		width: 165px;
 	}
 	.xoo-cp-container h5 {
 	    font-size: 24px;
