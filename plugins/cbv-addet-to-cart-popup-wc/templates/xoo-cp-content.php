@@ -126,6 +126,11 @@ $sh_desc = $_product->get_short_description();
         while($pQuery->have_posts()): $pQuery->the_post(); 
         global $product, $woocommerce, $post;
         $loop_short_desc = $product->get_short_description();
+        switch ( $product->get_type() ) {
+        default :
+            $label  = __('MEER INFO', 'woocommerce');
+        break;
+        }
       ?>
       <div class="flex-fill bd-highlight">
         <div class="pro-item-cntlr">
@@ -140,16 +145,26 @@ $sh_desc = $_product->get_short_description();
             echo '</div>';
             echo '<div class="pro-item-desc pw-item-desc">';
             echo '<div class="pro-item-descWrap mHc">';
+            echo '<div class="title-wrap">'
             echo '<h3 class="pro-item-desc-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
+            echo '<div class="product-price">';
+            echo $product->get_price_html();
+            echo '</div>';
+            echo '</div>';
             if( !empty($loop_short_desc) ){
               echo '<div class="loop-shortdetails">';
               echo wpautop($loop_short_desc);
               echo '</div>';
             }
-            echo '<div class="product-price">';
-            echo $product->get_price_html();
-            echo '<span class="pro-prize-shrt-title show-sm"></span>';
-            echo '</div></div>';
+            echo '<div class="fl-pro-grd-btn">';
+            echo '<a class="red-color-arrow-btn" href="'.get_permalink( $product->get_id() ).'">
+                <span>'.$label.'</span>
+                <i><svg class="red-right-arrow" width="7" height="11" viewBox="0 0 7 11">
+                <use xlink:href="#red-right-arrow"></use> </svg>
+                </i>
+              </a>';
+            echo '</div>';
+            echo '</div>';
             echo '</div>';
             echo '</div>';
 
