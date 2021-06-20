@@ -21,3 +21,16 @@ Text Domain: ballonvaren
 	border: 2px solid #000;
 	height: 50px;
 }
+
+
+.spotlight-popup-cntlr .fl-pro-grd-btn{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    padding: 0 0;
+}
+
+.spotlight-popup-cntlr .fl-pro-grd-btn a.red-color-arrow-btn i{
+	margin-top: -2px;
+}

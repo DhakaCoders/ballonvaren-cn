@@ -23,8 +23,13 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+$package_type = get_field('_package_type', $product->get_id());
+$typeClass = '';
+if( !empty($package_type) ){
+  $typeClass = $package_type;
+}
 ?>
-<div <?php wc_product_class( '', $product ); ?>>
+<div <?php wc_product_class( $typeClass, $product ); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
