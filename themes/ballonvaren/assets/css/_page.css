@@ -225,7 +225,6 @@
     height: 50px;
     width: 185px;
     margin: 0 9px;
-    border: 1px solid #31304F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,11 +234,11 @@
 	color: #31304F;
 	border-color: #31304F;
 }*/
-.page-404-btn a:hover{
+/*.page-404-btn a:hover{
 	background: #D9534F;
     border-color: #D9534F;
     color: #fff;
-}
+}*/
 
 .bnr-ballon,
 .booking-top-img,
@@ -300,13 +299,23 @@
 	.fl-pagination-ctlr ul li{
 		padding: 0 15px;
 	}
+	.page-404-dsc-wrp strong{
+		padding-left: 150px;
+	}
 }
-
+@media(max-width: 479px){
+	.page-404-dsc-wrp strong{
+		padding-left: 100px;
+	}
+}
 @media(max-width: 479px){
 	.fl-pagination-ctlr ul{
 		margin: 0 -12px;
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 12px;
+	}
+	.page-404-dsc-wrp strong{
+		padding-left: 100px;
 	}
 }
