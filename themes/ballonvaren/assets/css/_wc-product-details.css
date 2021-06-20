@@ -1,11 +1,8 @@
 /* == single product page == */
 .single-product .fl-pro-grd-des{
-/*-webkit-box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27); 
--ms-box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27);
-box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27);*/
--webkit-box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
--moz-box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
-box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
+	-webkit-box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
+	-moz-box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
+	box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
 }
 .single-product #reviews #comments ol.commentlist li{
 	display: none;
@@ -22,18 +19,6 @@ box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
 	height: auto!important;
 	display: flex!important;
 }
-.related-pro-crtl .hasRelatedProduct{
-	margin-left: -34px;
-	margin-right: -34px;
-}
-.related.products.related-pro-crtl{
-	padding-left: 34px;
-	padding-right: 34px;
-}
-/* .related-pro-crtl .hasRelatedProduct .slick-list{
-	padding-left: 8px!important;
-	padding-right: 8px!important;
-} */
 .related-pro-crtl .hasRelatedProduct .product{
 	display: none;
 }
@@ -558,15 +543,7 @@ body.single-product div.product form.cart .button:hover{
 }
 .related.products.related-pro-crtl{
 	padding-top: 98px;
-	margin-left: -15px;
-	margin-right: -15px;
 }
-/* .single-product .hasRelatedProduct .slick-active:first-of-type{
-	padding-left: 27px;
-}
-.single-product .hasRelatedProduct .slick-active + .slick-active + .slick-active {
-	padding-right: 27px;
-} */ 
 .related-pro-crtl .product,
 .dft-hm-product-module .hmProdctGrdsSlideItme{
     padding: 0 12px;    
@@ -753,18 +730,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 }
 
 @media (max-width: 1599px){
-	.related-pro-crtl .hasRelatedProduct{
-		margin-left: -30px!important;
-		margin-right: -30px!important;
-	}
-	.related.products.related-pro-crtl{
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	/*.related-pro-crtl .hasRelatedProduct .slick-list{
-		padding-left: 6px!important;
-		padding-right: 6px!important;
-	}*/
 	.related-pro-crtl .hasRelatedProduct,
 	.dft-hm-product-module .hm-product-grds{
 	    margin:0 -7px;
@@ -865,10 +830,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 }
 
 @media(max-width: 1199px){
-	.related-pro-crtl .hasRelatedProduct .slick-list {
-    	padding-left: 5px!important;
-    	padding-right: 5px!important;
-	}
 	.woocommerce div.product div.summary{
 	    padding-left: 50px;
 	}
@@ -1225,10 +1186,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 }
 
 @media(max-width: 575px){
-	.related-pro-crtl .hasRelatedProduct .slick-list {
-    	padding-left: 0px!important;
-    	padding-right: 0px!important;
-	}
 	.single-product .related-pro-crtl .hasRelatedProduct .product{
 		max-width: 350px;
 		margin-left: auto;
