@@ -11,7 +11,7 @@
 	position: relative;
 	display: flex;
 	align-items: flex-end;
-	padding-bottom: 225px;
+	padding-bottom: 309px;
 	overflow: hidden;
 }
 .bnr-desc-wrap:after{
@@ -31,6 +31,12 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+}
+.banner-sec.no-effects .cloud-bg:after{
+	height: 90px;
+}
+.banner-sec.no-effects .cloud-bg > img{
+	display: none;
 }
 .banner-bg{
 	position: absolute;
@@ -232,8 +238,6 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	max-width: 100%;
-	width: 100%;
 	animation: animate calc(8s * var(--i)) linear infinite;
 }
 .cloud-bg:after{
@@ -248,7 +252,8 @@
 	z-index: 2;
 }
 .cloud-bg img{
-	bottom: 123px;
+	bottom: 90px;
+	
 }
 @keyframes animate{
 	0%{
@@ -293,6 +298,15 @@
 	}
 	.bn-process-grid-item p br{
 		display: none;
+	}
+	.bnr-btn .fl-red-btn {
+		min-width: 310px;
+		padding: 12px 20px;
+	}
+	.cloud-bg img{
+		bottom: 123px;
+		max-width: 100%;
+		width: 100%;
 	}
 }
 
@@ -356,21 +370,26 @@
 	.hm-dfp-twogrd-module-sce .booking-top-img{
 	    right: -15px;
 	}
+	.bnr-sub-title {
+		font-size: 26px;	}
+	.bnr-title {
+		font-size: 70px;
+	}
+	.bnr-sub-title2.fl-h5 {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
 }
 
 
 @media (max-width: 991px) {
-	.bnr-sub-title{
-		font-size: 40px;
-		margin-bottom: 7px;
-	}
 	.bnr-title{
-		margin-bottom: 7px;
-		font-size: 80px;
+		margin-bottom: 8px;
+		font-size: 62px;
 	}
 	
 	.bnr-desc-inr p{
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.overons-msnry-grd-sec-wrp.hm-overons-msnry-grd-sec-wrp{
 		padding-top: 70px;
@@ -391,14 +410,8 @@
 	.bn-process-grid-item{
 		width: 50%;
 	}
-	.bnr-sub-title{
-		font-size: 30px;
-	}
 	.bnr-title{
-		font-size: 70px;
-	}
-	.bnr-sub-title2{
-		margin-bottom: 26px;
+		font-size: 55px;
 	}
 
 	.bnr-ballon{
@@ -460,17 +473,73 @@
 	.cloud-bg:after{
 		height: 150px;
 	}
+	.hm-news-details-sec.news-details .white-sky-bg,
+	.hm-news-details-sec.news-details .ervng-dtls-onverted-icon,
+	.hm-news-details-sec.news-details .ervng-dtls-onverted-green-icon{
+		z-index: 3;
+	}
+	
 }
 
 @media (max-width: 639px) {
 	.hm-news-details-sec.news-details .white-sky-bg{
 		top: -170px;
 	}
-	.bnr-sub-title{
-		font-size: 26px;
+	.bnr-desc-wrap{
+		height: 670px;
+		display: flex;
 	}
-	.bnr-title{
+	.bnr-desc-cntlr{
+		position: absolute;
+		left: 0;
+		right: 0;
+		transform: initial; 
+		-ms-transform: initial;
+		-webkit-transform: initial; 
+		-o-transform: initial;
+		bottom: 30px;
+		right: 0;
+		display: block;
+	}
+	.bnr-sub-title2{
+		color: #ee3e15;
+		margin-bottom: 22px;
+	}
+	.bnr-desc-inr p{
+		font-size: 16px;
+		color: #9ea8b1;
+	}
+	.bn-process-grid{
+		padding-top: 65px;
+		padding-bottom: 94px;
+		position: relative;
+		z-index: 3;
+	}
+	.bnr-desc-inr{
+		position: relative;
+		padding: 0 0 30px 0;
+	}
+	.bnr-desc-inr:after {
+		position: absolute;
+		content: "";
+		width: 67px;
+		height: 2px;
+		background-color: #ecf1f4;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+	.bnr-sub-title{
+		font-size: 36px;
+	}
+	.bnr-title {
 		font-size: 60px;
+		margin-bottom: 16px;
+	}
+	.bnr-sub-title2.fl-h5{
+		font-size: 22px;
 	}
 }
 
@@ -519,29 +588,12 @@
 	.banner-cntrl{
 		position: absolute;
 	}
-	.bnr-desc-inr:after{
-		position: absolute;
-		content: "";
-		width: 67px;
-		height: 2px;
-		background-color: #ecf1f4;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		-webkit-transform: translateX(-50%);
-	}
 	.bnr-desc-inr{
 		margin:0 -20px; 
 		overflow: hidden;
 		padding-bottom: 30px;
 	}
-	.bn-process-grid{
-		padding-top: 95px;
-		padding-bottom: 94px;
-		position: relative;
-		z-index: 3;
-	}
+	
 	.bnr-desc-wrap{
 		padding-bottom: 0;
 	}
@@ -556,20 +608,12 @@
 	.bn-process-grid-item .bn-process-item-hdr .bn-process-grid-title{
 		font-size: 26px;
 	}
-	.bnr-sub-title2{
-		color: #ee3e15;
-		margin-bottom: 22px;
-	}
-	.bnr-desc-inr p{
-		font-size: 15px;
-		color: #9ea8b1;
-	}
 	.bn-process-grid-item p br{
 		display: block;
 	}
 	
 	.bn-process-grid{
-		padding-top: 60px;
+		padding-top: 40px;
 	}
 }
 
@@ -598,7 +642,6 @@
 	}
 	.bnr-btn .fl-red-btn{
 		min-width: 280px;
-		padding: 18px 20px;
 	}
 	
 	.bn-process-grid-item{

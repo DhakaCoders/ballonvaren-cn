@@ -170,7 +170,9 @@
 }
 .fl-pro-grd-des {
 	padding: 30px 23px 36px;
-	box-shadow: 0px 30px 84px rgba(44, 17, 62, 0.09);
+	-webkit-box-shadow: 0px 26px 19px 12px rgb(0 0 0 / 3%);
+	-moz-box-shadow: 0px 26px 19px 12px rgb(0 0 0 / 3%);
+	box-shadow: 0px 26px 19px 12px rgb(0 0 0 / 3%);
 	border-radius: 0px 0px 3px 3px;
 }
 .fl-products-cntlr .fl-product-grd .fl-pro-grd-title,
@@ -208,10 +210,9 @@
 	margin-right: 2px;
 	line-height: 1;
 }
-.fl-pro-grd-price span.woocommerce-Price-amount bdi,
-.fl-pro-grd-price span.woocommerce-Price-amount bdi span,
-.fl-pro-grd-price del span.woocommerce-Price-amount bdi,
-.fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
+<<<<<<< HEAD
+.fl-pro-grd-price ins span.woocommerce-Price-amount bdi,
+.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span,
 .fl-pro-grd-price ins span.woocommerce-Price-amount bdi,
 .fl-pro-grd-price ins span.woocommerce-Price-amount bdi span {
     font-size: 16px!important;
@@ -220,6 +221,9 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+=======
+
+>>>>>>> 6e276d59cd11514a3063feb7cd6cabdc30497a9a
 .fl-pro-grd-price span.woocommerce-Price-amount bdi span,
 .fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
 .fl-pro-grd-price ins span.woocommerce-Price-amount bdi span,
@@ -233,7 +237,7 @@ del span.woocommerce-Price-amount bdi,
 .single-product .single-price-total del span.woocommerce-Price-amount bdi,
 .single-product .single-price-total del span.woocommerce-Price-amount bdi span,
 .xoo-cp-pprice del span.woocommerce-Price-amount bdi,
-.xoo-cp-pprice del span.woocommerce-Price-amount bdi span {
+.xoo-cp-pprice del span.woocommerce-Price-amount bdi span{
 	position: relative;
     color:#909BA5!important;
     text-decoration-line: none!important;
@@ -619,7 +623,12 @@ del span.woocommerce-Price-amount bdi:after,
 }
 
 
-
+del{
+	color: #909BA5!important;
+}
+del span bdi{
+	color: #909BA5!important;
+}
 
 /* ================ */
 /* == responive == */
@@ -694,7 +703,7 @@ del span.woocommerce-Price-amount bdi:after,
 
 @media(max-width: 1399px){
 	.cadeaubonnen-page-link i{
-		left: -100px;
+		left: -107px;
 		max-width: 185px;
 	}
 }
@@ -839,10 +848,9 @@ del span.woocommerce-Price-amount bdi:after,
 	.cadeaubonnen-pg-lnk-cntrl{
 		padding: 33px 41px;
 	}
-	.cadeaubonnen-page-link i {
+	.archive .cadeaubonnen-page-link i {
 	    top: initial;
 	    left: -20px;
-	    max-width: initial;
 	    bottom: -15px;
 	}
 	.fl-products-cntlr ul.products > li.cadeaubonnen-page-link {
@@ -965,6 +973,12 @@ del span.woocommerce-Price-amount bdi:after,
 	}
 	.product-page-cntlr {
 	    padding-bottom: 0;
+	}
+	.archive .cadeaubonnen-page-link i {
+    	top: initial;
+    	left: -60px;
+    	bottom: -15px;
+    	max-width: 110px;
 	}
 }
 

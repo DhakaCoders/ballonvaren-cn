@@ -1,11 +1,20 @@
+<?php 
+  $shopcta = get_field('cadesec', 'options'); 
+  if($shopcta):
+?>
 <li class="cadeaubonnen-page-link">
   <div class="cadeaubonnen-page-link-bg">
     <div class="cadeaubonnen-pg-lnk-cntrl">
-      <h4 class="fl-h4 cad-pg-lnk-title">cadeaubonnen</h4>
-      <p>Ut purus ipsum, interdum quis libero et, tincidunt tincidunt ante.</p>
-      <p>Etiam vitae ultrices purus. Praesent<br> sodales nisl vel mauris cursus viverra. Quisque ut pharetra urna. </p>
-      <a href="#" class="fl-transparent-btn cad-pg-lnk-btn">CADEAUBONNEN</a>
+    <?php 
+      if( !empty($shopcta['titel']) ) printf('<h4 class="fl-h4 cad-pg-lnk-title">%s</h4>', $shopcta['titel']);
+      if( !empty($shopcta['beschrijving']) ) echo wpautop( $shopcta['beschrijving'] );
+      $knop = $shopcta['knop'];
+      if( is_array( $knop ) &&  !empty( $knop['url'] ) ){
+        printf('<a class="fl-transparent-btn cad-pg-lnk-btn" href="%s" target="%s">%s</a>', $knop['url'], $knop['target'], $knop['title']); 
+      }
+    ?>
     </div>
-      <i><img src="assets/images/absolute-ballon-3.svg" alt=""></i>
+      <i><img src="<?php echo THEME_URI; ?>/assets/images/absolute-ballon-3.svg" alt=""></i>
   </div>    
 </li>
+<?php endif; ?>
