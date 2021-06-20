@@ -440,7 +440,8 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Subtotal',
                 'Total',
                 'Set an amount',
-                'Apply coupon'
+                'Apply coupon',
+                'Coupon code'
             ),
             array( 
                 'ik ga bestellen', 
@@ -452,7 +453,8 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Subtotaal',
                 'Totaal',
                 'Bedrag',
-                'VERZILVER'
+                'VERZILVER',
+                'Heb je een kortingscode?'
             ),
             $translated
         );
