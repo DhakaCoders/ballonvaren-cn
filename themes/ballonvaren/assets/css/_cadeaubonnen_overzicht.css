@@ -3,9 +3,13 @@
 }
 .cadeaubonnen-overzicht-page-entry-hdr .page-entry-header{
 	margin-bottom: 64px;
+	border-bottom: 2px solid#f4f8f9;
+}
+.cadeaubonnen-overzicht-page-entry-hdr .page-entry-header .fl-h1{
+	margin-bottom: 15px;
 }
 .cadeaubonnen-overzicht-page-entry-hdr .page-entry-header p{
-	margin-bottom: 34px;
+	margin-bottom: 30px;
 } 
 .cadeaubonnen-overzicht-cntrl > ul > li:nth-child(2) .fl-pro-gift-cntlr{
 	background-color: #1eb4b3;
