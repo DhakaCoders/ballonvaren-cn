@@ -1,0 +1,20 @@
+2021-06-18T12:36:41+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 20480 bytes) in D:\xampp\htdocs\project\2021\march\ballonvaren\ballonvaren-cn\plugins\advanced-custom-fields-pro\includes\fields\class-acf-field-user.php on line 336
+
+2021-06-18T13:54:50+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\packages\woocommerce-blocks\src\Assets\AssetDataRegistry.php on line 16
+
+2021-06-18T13:55:08+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\06\ballonvaren\wp-admin\includes\ajax-actions.php on line 21
+
+2021-06-18T14:26:59+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\page-vip.php on line 212
+
+2021-06-18T14:28:56+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\page-vip.php on line 210
+
+2021-06-18T21:41:37+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\front-page.php on line 256
+
+2021-06-18T21:47:27+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on array in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\front-page.php:205
+Stack trace:
+#0 E:\host\htdocs\2021\06\ballonvaren\wp-includes\template-loader.php(106): include()
+#1 E:\host\htdocs\2021\06\ballonvaren\wp-blog-header.php(19): require_once('E:\\host\\htdocs\\...')
+#2 E:\host\htdocs\2021\06\ballonvaren\index.php(17): require('E:\\host\\htdocs\\...')
+#3 {main}
+  thrown in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\front-page.php on line 205
+

@@ -1,3 +1,7 @@
+<?php 
+global $product; 
+$intro = get_field('introsec', $product->get_id());
+?>
 <section class="review-sec">
   <div class="review-position-bg">
     <img src="<?php echo THEME_URI; ?>/assets/images/review-sec-cloud.png" alt="">
@@ -11,8 +15,10 @@
                 <div class="overons-msnry-grd-cntlr">
                   <div class="review-hdr-top show-sm">
                     <div class="review-hdr">
-                      <h2 class="fl-h2 revw-hdr-title">Vitae nisl maecenas eu fames.</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
+                      <?php 
+                        if( !empty($intro['titel']) ) printf('<h2 class="fl-h2 revw-hdr-title">%s</h2>', $intro['titel']); 
+                        if( !empty($intro['beschrijving']) ) echo wpautop($intro['beschrijving']); 
+                      ?>
                     </div>
                   </div>
                   <div class="overons-msnry-grd-item msnrytgi1">
@@ -69,7 +75,7 @@
             <p>Etiam vitae ultrices purus. Praesent<br> sodales nisl vel mauris cursus viverra. Quisque ut pharetra urna. </p>
             <a href="#" class="fl-transparent-btn cad-pg-lnk-btn">CADEAUBONNEN</a>
           </div>
-            <i><img src="assets/images/absolute-ballon-3.svg" alt=""></i>
+            <i><img src="<?php echo THEME_URI; ?>/assets/images/absolute-ballon-3.svg" alt=""></i>
         </div> 
       </div>
     </div>

@@ -7,15 +7,11 @@
 @import url('_home.css');
 @import url('_contact.css');
 @import url('_footer.css');
-
-/*start of Sabbir*/
 @import url('_news_overview.css');
 @import url('_ballonvaarten_overzicht.css');
 @import url('_cadeaubonnen_overzicht.css');
 @import url('_order-receive.css');
 @import url('_single-page.css');
-
-/*start of Niaz*/
 @import url('_wc_common.css');
 @import url('_woocommerce.css');
 @import url('_wc-my-account.css');
@@ -25,31 +21,9 @@
 @import url('_wc-product-details.css');
 @import url('_wc-product-popup.css');
 @import url('_checkout-progress.css');
-
-
-
-
-
-/*start of Milon*/
 @import url('_overons.css');
-
-
-/*start of Jahir*/
 @import url('_ballonvaren-kalender.css');
-
-
-
-
-/*start of Momin*/
 @import url('_others-luchtaballannen.css');
-
-
-/*start of Noyon*/
 @import url('_ervaring-overview.css');
 @import url('_ervaring-details.css');
-
-
-
-
-/*start of Shariful*/
 @import url('_binnenpagina.css');
