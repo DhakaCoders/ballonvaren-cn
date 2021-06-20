@@ -251,6 +251,10 @@ if( $('#additional_datum').length ){
 if( $('#gift-card-amount').length ){
   $("#gift-card-amount").selectpicker();
 }
+if( $('#pa_locate').length ){
+  $("#pa_locate").selectpicker();
+}
+
 //products counter
 if( $('.qty').length ){
   $('.qty').each(function() {

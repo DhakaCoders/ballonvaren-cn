@@ -211,9 +211,14 @@
 	bottom: -119px;
 }
 
+<<<<<<< HEAD
+/*---------------------------------------------------reponsive--------------------------------------------------------*/
+/*---------------------------------------------------reponsive--------------------------------------------------------*/
+=======
 
 
 
+>>>>>>> c0897ea3be8bc1318e854d1612cf80ae8468954a
 @media (max-width: 1699px){
 	.bv-calender-dsc-inner {
 	    padding-top: 40px;
@@ -341,6 +346,9 @@
 	}
 	.bv-clndr-absolute-img-one {
 	    margin-left: -35px;
+	}
+	.events-grid-item-inner {
+	    padding-bottom: 30px;
 	}
 	
 
