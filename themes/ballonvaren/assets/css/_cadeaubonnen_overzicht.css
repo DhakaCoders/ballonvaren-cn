@@ -251,6 +251,9 @@ body.page-template-page-cadeaubonnen .fl-products-cntlr ul.products{
 	.fl-pro-gift-cntlr span{
 		font-size: 27px;
 	}
+	body.page-template-page-cadeaubonnen .cadeaubonnen-overzicht-sec{
+		padding-top: 0;
+	}
 }
 
 @media (max-width: 639px) {
