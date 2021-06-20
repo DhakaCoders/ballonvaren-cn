@@ -272,8 +272,11 @@ span.single-price-total{
 	font-weight: 700;
 	color: #707C88;
 	border-bottom: 2px solid #f5f6f8;
-	margin-bottom: 28px;
+	margin-bottom: 15px;
 	padding-bottom: 30px;
+}
+.price-quentity-ctrl table.variations tr td label{
+	padding-top: 20px;
 }
 .meta-crtl ul{
 	margin: -11px 0;
