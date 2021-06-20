@@ -11,29 +11,7 @@ $terms = get_terms( 'category', array(
 $queried_object = get_queried_object();
 $current_id = $queried_object->term_id;
 ?>
-<section class="breadcrumb-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="breadcrumb-cntlr">
-          <ul class="reset-list clearfix">
-            <li>
-              <a href="#">
-                <span class="item">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#"><span>Binnenpagina</span></a>
-            </li>
-            <li class="active">
-              <span>Binnenpagina</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/breadcrumbs'); ?>
 <section class="blog-page-sec">
   <div class="container">
     <div class="row">
@@ -83,7 +61,8 @@ $current_id = $queried_object->term_id;
                   <div class="blog-grid-tag">
                     <?php 
                       foreach( $categories as $category ) {
-                          echo '<span>'.$category->name.'</span>';
+                        $colorbg = get_field('color_picker', $category);
+                        echo '<span style="background:'.$colorbg.'">'.$category->name.'</span>';
                       }
                     ?>  
                   </div>

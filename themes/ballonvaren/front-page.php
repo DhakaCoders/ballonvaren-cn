@@ -305,10 +305,11 @@ if( !empty($news_query) ){
             <div class="blog-grds-item spotlight">
               <div class="blog-grid-item">
                 <?php if ( ! empty( $categories ) && ! is_wp_error( $categories ) ){ ?>
-                  <div class="blog-grid-tag">
+                  <div class="blog-grid-tag" >
                     <?php 
                       foreach( $categories as $category ) {
-                          echo '<span>'.$category->name.'</span>';
+                          $colorbg = get_field('color_picker', $category);
+                          echo '<span style="background:'.$colorbg.'">'.$category->name.'</span>';
                       }
                     ?>  
                   </div>

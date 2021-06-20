@@ -212,7 +212,8 @@ $share_text = get_the_excerpt();
                 <div class="blog-grid-tag">
                   <?php 
                     foreach( $categories as $category ) {
-                        echo '<span>'.$category->name.'</span>';
+                      $colorbg = get_field('color_picker', $category);
+                      echo '<span style="background:'.$colorbg.'">'.$category->name.'</span>';
                     }
                   ?>  
                 </div>
