@@ -186,7 +186,7 @@ if( $('.single-product .hasRelatedProduct').length ){
       autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
-      slidesToShow: 3,
+      slidesToShow: 3,      
       slidesToScroll: 1,
       responsive: [
         {
@@ -318,6 +318,7 @@ if( $('.main-img-crtl').length ){
     arrows: false,
     fade: true,
     autoplay:true,
+    adaptiveHeight: true,
     asNavFor: '.thumbnails-cntlr .thumbnails',
      prevArrow: $('.fl-singgle-pro-prev'),
     nextArrow: $('.fl-singgle-pro-next'),
