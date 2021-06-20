@@ -188,7 +188,7 @@ span.single-price-total{
 	margin-bottom: 24px;
 }
 .single-product .long-desc ul{
-	padding-bottom: 22px;
+	padding-bottom: 0;
 }
 .long-desc p:last-of-type{
 	margin-bottom: 0;
@@ -1134,7 +1134,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		margin-bottom: 22px;
 	}
 	.single-product .long-desc ul{
-		padding-bottom: 20px;
+		padding-bottom: 13px;
 	}
 	.single-product .review-sec{
 		padding-top: 10px;
@@ -1170,9 +1170,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.single-product .long-desc p{
 		margin-bottom: 20px;
-	}
-	.single-product .long-desc ul{
-		padding-bottom: 18px;
 	}
 	.single-product .fl-product .wc-product-title{
 		font-size: 30px;
@@ -1283,6 +1280,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.related-pro-crtl .product,
 	.dft-hm-product-module .hmProdctGrdsSlideItme{
     	padding: 0 0;    
+	}
+	.fl-product .price-quentity-ctrl form .variations tbody tr td .bootstrap-select > .dropdown-toggle{
+		padding: 12px 0 5px;
 	} 
 }
 
