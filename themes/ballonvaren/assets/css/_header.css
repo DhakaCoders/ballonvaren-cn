@@ -566,6 +566,11 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 		font-size: 14px;
 	}
 }
+@media(max-width: 1499px){
+	.logo a {
+	    max-width: 230px;
+	}
+}
 @media(max-width: 1399px){
 	nav.main-nav > ul > li > a:after{
 		width: 8px;

@@ -274,7 +274,11 @@ overons-team-sec-wrp
 	    padding-bottom: 80px;
 	}
 	.overons-msnry-grd-rgt {
-	    padding-left: 40px;
+	    padding-left: 25px;
+	    width: 55%;
+	}
+	.overons-msnry-grd-lft {
+	    width: 45%;
 	}
 	.overons-team-sec-wrp{
 	    padding-bottom: 60px;
@@ -286,16 +290,16 @@ overons-team-sec-wrp
 	    padding-bottom: 185px;
 	}
 	.msnrytgi1 .overons-msnry-grd-item-img {
-	    min-height: 200px;
+	    min-height: 170px;
 	}
 	.msnrytgi2 .overons-msnry-grd-item-img {
-	    height: 330px;
+	    height: 300px;
 	}
 	.msnrytgi3 .overons-msnry-grd-item-img {
-	    min-height: 395px;
+	    min-height: 365px;
 	}
 	.msnrytgi4 .overons-msnry-grd-item-img {
-	    height: 265px;
+	    height: 235px;
 	}
 
 	.overons-team-module {
@@ -335,16 +339,16 @@ overons-team-sec-wrp
 	    padding-top: 20px;
 	}
 	.msnrytgi1 .overons-msnry-grd-item-img {
-	    min-height: 160px;
+	    min-height: 200px;
 	}
 	.msnrytgi2 .overons-msnry-grd-item-img {
-	    height: 240px;
+	    height: 280px;
 	}
 	.msnrytgi3 .overons-msnry-grd-item-img {
-	    min-height: 280px;
+	    min-height: 320px;
 	}
 	.msnrytgi4 .overons-msnry-grd-item-img {
-	    height: 200px;
+	    height: 240px;
 	}
 	.msnrytgi3 {
 	    margin-top: -80px;
@@ -415,6 +419,18 @@ overons-team-sec-wrp
 	}
 	.overons-team-parachute-btm {
 	    bottom: 140px;
+	}
+	.msnrytgi1 .overons-msnry-grd-item-img {
+	    min-height: 160px;
+	}
+	.msnrytgi2 .overons-msnry-grd-item-img {
+	    height: 240px;
+	}
+	.msnrytgi3 .overons-msnry-grd-item-img {
+	    min-height: 280px;
+	}
+	.msnrytgi4 .overons-msnry-grd-item-img {
+	    height: 200px;
 	}
 	
 
