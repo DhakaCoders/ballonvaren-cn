@@ -38,6 +38,12 @@ Text Domain: ballonvaren
 }
 .related-products .hasRelatedProduct.slick-initialized .slick-track{
 	height: auto!important;
-
 	display: flex!important;
+}
+.related-pro-crtl .hasRelatedProduct{
+
+}
+
+.single-product .hasRelatedProduct .slick-current.slick-active{
+    padding-left: 27px!important;
 }
