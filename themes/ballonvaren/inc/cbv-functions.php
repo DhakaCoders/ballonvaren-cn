@@ -196,3 +196,11 @@ function get_title_by_page_template( $pagetemplate ){
     }
   return $post_title;
 }
+
+
+function input_zero_befor_number($number){
+  if( $number < 10 ){
+    return '0'.$number;
+  }
+  return $number;
+}

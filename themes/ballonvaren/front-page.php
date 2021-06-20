@@ -59,7 +59,7 @@
           	<?php $i=1; foreach( $usps as $usp ): ?>
             <div class="bn-process-grid-item">
               <div class="bn-process-item-hdr mHc1">
-                <span><?php echo number_format($i); ?></span>
+                <span><?php echo input_zero_befor_number($i); ?></span>
                 <?php if( !empty($usp['titel']) ) printf( '<h4 class="fl-h5 bn-process-grid-title">%s</h4>', $usp['titel'] ); ?>
               </div>
               <?php if( !empty($usp['beschrijving']) ) echo wpautop($usp['beschrijving']); ?>

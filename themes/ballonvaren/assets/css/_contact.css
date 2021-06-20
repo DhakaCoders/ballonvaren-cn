@@ -61,6 +61,10 @@
 	padding: 25px 15px;
     margin-bottom: 28px;
 }
+.boek-je-form-sec-wrp .error-msg,
+.contact-form-sec-wrp .error-msg{
+    display: none;
+}
 .error-msg span {
     color: #fff;
     margin-bottom: 0;
