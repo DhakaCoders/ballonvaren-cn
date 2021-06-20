@@ -32,6 +32,12 @@
 	align-items: flex-end;
 	justify-content: center;
 }
+.banner-sec.no-effects .cloud-bg:after{
+	height: 90px;
+}
+.banner-sec.no-effects .cloud-bg > img{
+	display: none;
+}
 .banner-bg{
 	position: absolute;
 	top: 0;
@@ -247,7 +253,7 @@
 }
 .cloud-bg img{
 	bottom: 90px;
-	display:  none;
+	
 }
 @keyframes animate{
 	0%{

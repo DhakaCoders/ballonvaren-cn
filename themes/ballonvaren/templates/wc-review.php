@@ -1,6 +1,8 @@
 <?php 
 global $product; 
 $intro = get_field('introsec', $product->get_id());
+$cta = get_field('ctasec', $product->get_id());
+$gal = get_field('galerij', $product->get_id());
 ?>
 <section class="review-sec">
   <div class="review-position-bg">
@@ -21,32 +23,42 @@ $intro = get_field('introsec', $product->get_id());
                       ?>
                     </div>
                   </div>
+                  <?php if( !empty($gal['afbeelding_1']) ): ?>
                   <div class="overons-msnry-grd-item msnrytgi1">
                     <div class="overons-msnry-grd-item-cntlr">
-                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/overons-msnry-grd-item-img-1.png);"></div>
+                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo cbv_get_image_src($gal['afbeelding_1']); ?>);"></div>
                     </div>
                   </div>
+                  <?php endif; ?>
+                  <?php if( !empty($gal['afbeelding_2']) ): ?>
                   <div class="overons-msnry-grd-item msnrytgi2">
                     <div class="overons-msnry-grd-item-cntlr">
-                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/overons-msnry-grd-item-img-2.png);"></div>
+                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo cbv_get_image_src($gal['afbeelding_2']); ?>);"></div>
                     </div>
                   </div>
+                  <?php endif; ?>
+                  <?php if( !empty($gal['afbeelding_3']) ): ?>
                   <div class="overons-msnry-grd-item msnrytgi3">
                     <div class="overons-msnry-grd-item-cntlr">
-                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/overons-msnry-grd-item-img-3.png);"></div>
+                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo cbv_get_image_src($gal['afbeelding_3']); ?>);"></div>
                     </div>
                   </div>
+                  <?php endif; ?>
+                  <?php if( !empty($gal['afbeelding_4']) ): ?>
                   <div class="overons-msnry-grd-item msnrytgi4">
                     <div class="overons-msnry-grd-item-cntlr">
-                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/overons-msnry-grd-item-img-4.png);"></div>
+                      <div class="overons-msnry-grd-item-img inline-bg" style="background:url(<?php echo cbv_get_image_src($gal['afbeelding_4']); ?>);"></div>
                     </div>
                   </div>
+                  <?php endif; ?>
                 </div>
               </div>
               <div class="overons-msnry-grd-rgt">
                 <div class="review-hdr hide-sm">
-                  <h2 class="fl-h2 revw-hdr-title">Vitae nisl maecenas eu fames.</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend pellentesque tincidunt neque, dolor. Imperdiet malesuada est feugiat quis posuere vulputate sed aenean sed. </p>
+                  <?php 
+                    if( !empty($intro['titel']) ) printf('<h2 class="fl-h2 revw-hdr-title">%s</h2>', $intro['titel']); 
+                    if( !empty($intro['beschrijving']) ) echo wpautop($intro['beschrijving']); 
+                  ?>
                 </div>
                 <div class="revws-buyer">
                   <?php 
@@ -54,7 +66,7 @@ $intro = get_field('introsec', $product->get_id());
                   ?>
                 </div>
                 <div class="review-btn">
-                  <a href="#" class="fl-cyan-btn revw-btn modal-toggle">Laat een beoordeling achter</a>
+                  <a href="#" class="fl-cyan-btn revw-btn modal-toggle"><?php _e( 'Laat een beoordeling achter', 'ballonvaren' ); ?></a>
                 </div>
               </div>
             </div>
@@ -63,17 +75,21 @@ $intro = get_field('introsec', $product->get_id());
       </div>
     </div>
 </section>
-
+<?php if( $cta ): ?>
 <section class="cadeaubonnen-page-link">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="cadeaubonnen-page-link-bg">
           <div class="cadeaubonnen-pg-lnk-cntrl">
-            <h4 class="fl-h4 cad-pg-lnk-title">cadeaubonnen</h4>
-            <p>Ut purus ipsum, interdum quis libero et, tincidunt tincidunt ante.</p>
-            <p>Etiam vitae ultrices purus. Praesent<br> sodales nisl vel mauris cursus viverra. Quisque ut pharetra urna. </p>
-            <a href="#" class="fl-transparent-btn cad-pg-lnk-btn">CADEAUBONNEN</a>
+            <?php 
+              if( !empty($cta['titel']) ) printf('<h4 class="fl-h4 cad-pg-lnk-title">%s</h4>', $cta['titel']);
+              if( !empty($cta['beschrijving']) ) echo wpautop( $cta['beschrijving'] );
+              $knop = $cta['knop'];
+              if( is_array( $knop ) &&  !empty( $knop['url'] ) ){
+                printf('<a class="fl-transparent-btn cad-pg-lnk-btn" href="%s" target="%s">%s</a>', $knop['url'], $knop['target'], $knop['title']); 
+              }
+            ?>
           </div>
             <i><img src="<?php echo THEME_URI; ?>/assets/images/absolute-ballon-3.svg" alt=""></i>
         </div> 
@@ -81,3 +97,4 @@ $intro = get_field('introsec', $product->get_id());
     </div>
   </div>
 </section>
+<?php endif; ?>
