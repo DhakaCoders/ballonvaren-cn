@@ -7,3 +7,5 @@ Stack trace:
 #4 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\host\\htdocs\\...')
 #5 E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\woocommerce\includes\wc-temp in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\inc\wc-functions.php on line 242
 
+2021-06-20T08:44:52+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in G:\Xampp\htdocs\project\2021\February\ballonvaren\wp-includes\Requests\Transport\cURL.php on line 463
+
