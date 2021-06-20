@@ -46,13 +46,13 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
 		</p>
 		<div class="clear"></div>
 		<p class="form-row form-row-first billing_gsm_number" id="billing_address_1_field">
-			<label for="billing_gsm_number" class="">GSM nummer</label>
+			<label for="billing_gsm_number" class=""><?php esc_html_e( 'GSM nummer', 'woocommerce' ); ?></label>
 			<span class="woocommerce-input-wrapper">
 				<input type="text" class="input-text " name="billing_gsm_number" id="billing_gsm_number" value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_gsm_number', true ) ); ?>" placeholder="Bijv. 0493 20 36 20" autocomplete="gsm-number">
 			</span>
 		</p>
 		<p class="form-row form-row-last billing_phone" id="billing_phone_field">
-			<label for="billing_phone" class="">Telefoon</label>
+			<label for="billing_phone" class=""><?php esc_html_e( 'Telefoon', 'woocommerce' ); ?></label>
 			<span class="woocommerce-input-wrapper">
 				<input type="tel" class="input-text " name="billing_phone" id="billing_phone" value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_phone', true ) ); ?>" placeholder="Bijv. 09 224 61 11" autocomplete="tel">
 			</span>
@@ -68,26 +68,26 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
 			<legend><?php esc_html_e( 'Adres', 'woocommerce' ); ?></legend>
 
 			<p class="form-row form-row-first billing_address_1" id="billing_address_1_field">
-				<label for="billing_address_1" class="">Straatnaam</label>
+				<label for="billing_address_1" class=""><?php esc_html_e( 'Straatnaam', 'woocommerce' ); ?></label>
 				<span class="woocommerce-input-wrapper">
 					<input type="text" class="input-text " name="billing_address_1" id="billing_address_1" value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_address_1', true ) ); ?>" placeholder="Bijv. Stationstraat" autocomplete="address-line1">
 				</span>
 			</p>
 			<p class="form-row form-row-last billing_house" id="billing_house_field">
-				<label for="billing_house" class="">Nummer</label>
+				<label for="billing_house" class=""><?php esc_html_e( 'Nummer', 'woocommerce' ); ?></label>
 				<span class="woocommerce-input-wrapper">
 					<input type="text" class="input-text " name="billing_house" id="billing_house" value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_house', true ) ); ?>" placeholder="Bijv. 113-C" autocomplete="house-number">
 				</span>
 			</p>
 			<div class="clear"></div>
 			<p class="form-row form-row-first billing_postcode" id="billing_postcode_field">
-				<label for="billing_postcode" class="">Postcode</label>
+				<label for="billing_postcode" class=""><?php esc_html_e( 'Postcode', 'woocommerce' ); ?></label>
 				<span class="woocommerce-input-wrapper">
 					<input type="text" class="input-text " name="billing_postcode" id="billing_postcode" value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_postcode', true ) ); ?>" placeholder="Bijv. 9300" autocomplete="postal-code">
 				</span>
 			</p>
 			<p class="form-row form-row-last billing_city" id="billing_city_field">
-				<label for="billing_city" class="">Gemeente</label>
+				<label for="billing_city" class=""><?php esc_html_e( 'Gemeente', 'woocommerce' ); ?></label>
 				<span class="woocommerce-input-wrapper">
 					<input type="text" class="input-text " name="billing_city" id="billing_city" value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_city', true ) ); ?>" placeholder="Bijv. 9300" autocomplete="address-level2">
 				</span>
