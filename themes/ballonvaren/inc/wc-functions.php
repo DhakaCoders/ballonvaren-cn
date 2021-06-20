@@ -239,7 +239,16 @@ function cbv_get_single_price(){
 // Change 'add to cart' text on single product page (only for product ID 386)
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart_text' );
 function bryce_id_add_to_cart_text( $default ) {
-        return __( 'In Winkelmand', THEME_NAME );
+    global $product;
+    switch ( $product->get_type() ) {
+      case "pw-gift-card" :
+          $label  = __('Reserveer uw vlucht', 'woocommerce');
+      break;
+      default :
+          $label  = __('In Winkelmand', 'woocommerce');
+      break;
+      }
+    return __( $label, THEME_NAME );
 }
 add_action( 'cbv_related_product', 'woocommerce_output_related_products');
 add_action( 'cbv_product_review', 'get_review_form');
