@@ -497,7 +497,7 @@ body.single-product div.product form.cart .button:hover{
     background: #D9534F!important;
     border-color: #D9534F!important;
 }
-body.single-product div.product form.cart .button:before{
+/* body.single-product div.product form.cart .button:before{
 	content: "";
 	position: absolute;
 	left: 85px;
@@ -508,7 +508,7 @@ body.single-product div.product form.cart .button:before{
 	background: url(../images/cart-icon-2.svg);
 	width: 24px;
 	height: 24px;
-}
+} */
 /* .single-product .fl-product-grd-inr{
 	overflow: hidden;
 } */
