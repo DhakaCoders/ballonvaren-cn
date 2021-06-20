@@ -11,12 +11,12 @@
 .cadeaubonnen-overzicht-page-entry-hdr .page-entry-header p{
 	margin-bottom: 30px;
 } 
-.cadeaubonnen-overzicht-cntrl > ul > li:nth-child(2) .fl-pro-gift-cntlr{
+/*.cadeaubonnen-overzicht-cntrl > ul > li:nth-child(2) .fl-pro-gift-cntlr{
 	background-color: #1eb4b3;
 }
 .cadeaubonnen-overzicht-cntrl > ul > li:nth-child(3) .fl-pro-gift-cntlr{
 	background-color: #d2437b;
-}
+}*/
 .fl-pro-gift-cntlr{
 	min-height: 226px;
 	background-color: #fdc935;

@@ -251,7 +251,8 @@ span.single-price-total{
 	content: none;
 }
 .meta-crtl ul li strong,
-.cartbtn-wrap > strong{
+.cartbtn-wrap > strong,
+.single-product .variations_form table.variations tbody tr td.label label{
 	font-weight: 700!important;
 	font-size: 16px;
 	margin-right: 20px;
@@ -259,6 +260,7 @@ span.single-price-total{
 	display: inline-block;
 	vertical-align: baseline;
 	color: #2C113E;
+	text-transform: uppercase;
 }
 .meta-crtl ul li a{
 	color: #707C88;
@@ -290,6 +292,7 @@ span.single-price-total{
 	min-width: 100%!important;
 	max-width: 100%!important;
 	margin: 0!important;
+	left: initial;
 }
 
 .fl-product .price-quentity-ctrl form .variations tbody tr td .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
@@ -298,11 +301,14 @@ span.single-price-total{
 
 .fl-product .price-quentity-ctrl form .variations tbody tr td .bootstrap-select > .dropdown-toggle{
 	background: #FFFFFF!important;
-	border: 1px solid #F2EDE9;
+	border: 1px solid #ecf1f4;
 	box-sizing: border-box;
-	border-radius: 6px;
-	color: #8c8da2!important;
-	height: 50px!important;
+	border-radius: 3px;
+	color: #909BA5!important;
+	height: 48px!important;
+	display: inline-block;
+    line-height: 1;
+    padding: 15px 0 5px;
 }
 
 .fl-product .price-quentity-ctrl form .variations tbody tr td .bootstrap-select > .dropdown-toggle::before{
@@ -311,12 +317,12 @@ span.single-price-total{
 }
 
 .fl-product .price-quentity-ctrl form .variations tbody tr td  .bootstrap-select .dropdown-toggle .filter-option{
-	padding-left: 20px!important;
+	padding-left: 16px!important;
 	padding-right: 40px!important;
 }
 
 .fl-product .price-quentity-ctrl form .variations tbody tr td  .bootstrap-select .dropdown-toggle .filter-option-inner{
-	color: #8c8da2!important;
+	color: #909BA5!important;
 }
 
 .cartbtn-wrap{
@@ -628,6 +634,7 @@ body.archive.tax-product_cat .fl-pro-grd-img-cntlr img{
 
 body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
 	font-weight: 400;
+	text-transform: none;
 }
 
 .ywgc-sender-name, .ywgc-message{
