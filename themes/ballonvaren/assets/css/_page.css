@@ -229,6 +229,14 @@
     justify-content: center;
     align-items: center;
 }
+.page-404-btn a.fl-trnsprnt-btn{
+	background: transparent;
+	color: #EE3E15;
+}
+.page-404-btn a.fl-trnsprnt-btn:hover{
+	background: #EE3E15;
+	color: #fff;
+}
 /*.page-404-btn a:hover:first-of-type{
 	background:transparent;
 	color: #31304F;
