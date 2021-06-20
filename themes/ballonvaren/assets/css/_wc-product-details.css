@@ -26,7 +26,7 @@
 	height: 100%
 }
 .single-product .hasRelatedProduct div.product{
-	padding-bottom: 98px;
+	padding-bottom: 78px;
 }
 span.single-price-total{
 	display: inline-block;
@@ -508,9 +508,9 @@ body.single-product div.product form.cart .button:before{
 	width: 24px;
 	height: 24px;
 }
-.single-product .fl-product-grd-inr{
+/* .single-product .fl-product-grd-inr{
 	overflow: hidden;
-}
+} */
 .single-product .fl-pro-grid-img{
 	transition: all .5s;
 	-ms-transition: all .5s;
@@ -532,7 +532,10 @@ body.single-product div.product form.cart .button:before{
 }
 .single-product .hasRelatedProduct .slick-active + .slick-active + .slick-active {
 	padding-right: 27px;
-} 
+}
+.single-product .hasRelatedProduct .slick-active + .slick-active {
+	padding-right: 27px;
+}  
 .related-pro-crtl .product,
 .dft-hm-product-module .hmProdctGrdsSlideItme{
     padding: 0 12px;    
