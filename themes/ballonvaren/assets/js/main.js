@@ -238,6 +238,13 @@ if( $('#gift-card-amount').length ){
 if( $('#pa_locate').length ){
   $("#pa_locate").selectpicker();
 }
+if( $('#pa_aantal-volwassenen').length ){
+  $("#pa_aantal-volwassenen").selectpicker();
+}
+
+if( $('#pa_aantal-kinderen').length ){
+  $("#pa_aantal-kinderen").selectpicker();
+}
 
 //products counter
 if( $('.qty').length ){
