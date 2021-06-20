@@ -516,6 +516,12 @@ body.woocommerce-cart.woocommerce-page .product-price > small{
 	position: relative;
 	top: 2px;
 } 
+
+body.woocommerce-cart .woocommerce table.shop_table tr.cart-gift-card td.product-thumbnail > a{
+	background: #FDCA35;
+}
+
+
 /**
 Empty cart
 */
