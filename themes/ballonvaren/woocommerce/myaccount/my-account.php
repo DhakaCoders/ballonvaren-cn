@@ -26,19 +26,20 @@ defined( 'ABSPATH' ) || exit;
 <div class="myaccount-crtl">
 	<div class="account-page-title">
 		<?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
-			<h1>geboekte vluchten</h1>
+			<h1><?php esc_html_e( 'geboekte vluchten', 'woocommerce' ); ?></h1>
 		<?php }elseif( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false ){ ?>
-			<h1>Winkelmandje</h1>
+			<h1><?php esc_html_e( 'Winkelmandje', 'woocommerce' ); ?></h1>
 		<?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
-			<h1>Account Info</h1>
+			<h1><?php esc_html_e( 'Account Info', 'woocommerce' ); ?></h1>
 		<?php }else{ 
 		    $current_user = wp_get_current_user();
 		    $username = !empty($current_user->display_name)? $current_user->display_name : $current_user->user_firstname;
+		    $acc = get_field('myaccount', 'options'); 
 		?>
-		<h1><?php _e( 'Welkom bij uw account', 'woocommerce' ); ?></h1>
+		<?php if( !empty($acc['dash_titel']) ) printf('<h1>%s</h1>', $acc['dash_titel']); ?>
 			<p><?php printf( __( 'Hallo, %s', THEME_NAME ), esc_html( $username ) ); ?></p>
 			<div class="dashboar-text">
-				<p>Vanaf jouw accountdashboard kun je de recente bestellingen bekijken, verzend- en factuuradressen beheren en jouw wachtwoord en accountgegevens bewerken.</p>
+			<?php if( !empty($acc['dash_beschrijving']) ) echo wpautop($acc['dash_beschrijving']); ?>
 			</div>
 		<?php } ?>
 

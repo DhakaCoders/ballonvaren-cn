@@ -19,9 +19,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-do_action( 'woocommerce_before_customer_login_form' ); ?>
+do_action( 'woocommerce_before_customer_login_form' ); 
+$btminfo = get_field('myaccount', 'options'); 
+?>
 <div class="page-title">
-	<h1>Jouw account</h1>
+	<?php if( !empty($btminfo['titel']) ) printf('<h1>%s</h1>', $btminfo['titel']); ?>
 </div>
 <?php 
 if( isset($_GET['action']) && $_GET['action']=='registration'):
@@ -33,8 +35,8 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 ?>
 <div class="register-nextstep woocommerce-billing-fields" id="form_next">
 	<div class="register-top-title">
-		<h3><?php esc_html_e( 'NIEUW BIJ BALLONVAREN?', 'woocommerce' ); ?></h3>
-		<p>Vul hier je e-mailadres in als je nog niet beschikt over een account. Indien gewenst, kan je in de volgende stap een account aanmaken.</p>
+		<?php if( !empty($btminfo['reg_titel']) ) printf('<h3>%s</h3>', $btminfo['reg_titel']); ?>
+		<?php if( !empty($btminfo['reg_beschrijving']) ) echo wpautop($btminfo['reg_beschrijving']); ?>
 	</div>
 	<?php if($data_reg): ?>
 	
@@ -225,13 +227,13 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 				<h3><?php esc_html_e( 'Persoonlijke gegevens', 'woocommerce' ); ?></h3>
 				<div class="form-row form-row-wide" id="billing_personal_recom">
 					<span class="woocommerce-input-wrapper">
-						<input type="checkbox" id="personal_recom" name="billing_personal_recom" value="Persoonlijke aanbevelingen">&nbsp;<?php esc_html_e( 'Persoonlijke aanbevelingen', 'woocommerce' ); ?>
+						<input type="checkbox" id="personal_recom" name="billing_personal_recom" value="1">&nbsp;<?php esc_html_e( 'Persoonlijke aanbevelingen', 'woocommerce' ); ?>
 					</span>
 					<p><?php esc_html_e( 'Informatie en aanbevelingen over diensten en artikelen die passen bij jouw eerdere bestellingen. En soms vragen we om je mening over onze producten en diensten.', 'woocommerce' ); ?></p>
 				</div>
 				<div class="form-row form-row-wide" id="billing_acttion_insp">
 					<span class="woocommerce-input-wrapper">
-						<input type="checkbox" id="acttion_insp" name="billing_acttion_insp" value="Acties en inspiratie">&nbsp;<?php esc_html_e( 'Acties en inspiratie', 'woocommerce' ); ?>
+						<input type="checkbox" id="acttion_insp" name="billing_acttion_insp" value="1">&nbsp;<?php esc_html_e( 'Acties en inspiratie', 'woocommerce' ); ?>
 					</span>
 					<p><?php esc_html_e( 'Voordeel- en winacties, bergen inspiratie, maar ook verrassende aanbevelingen op basis van wat je bekijkt en koopt. Zo loop je nooit iets mis!', 'woocommerce' ); ?></p>
 				</div>
@@ -309,9 +311,9 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		<div class="u-column2 col-2">
 
-			<h4><?php esc_html_e( 'Nieuw bij Matheco?', 'woocommerce' ); ?></h4>
+			<?php if( !empty($btminfo['subtitel']) ) printf('<h4>%s</h4>', $btminfo['subtitel']); ?>
 			<div class="signup-notification">
-				<p>Vul hier je e-mailadres in als je nog niet beschikt over een account. Indien gewenst, kan je in de volgende stap een account aanmaken.</p>
+				<?php if( !empty($btminfo['beschrijving']) ) echo wpautop($btminfo['beschrijving']); ?>
 			</div>
 			<form method="post" action="?action=registration" class="woocommerce-form woocommerce-form-register register" id="mail_checker">
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">

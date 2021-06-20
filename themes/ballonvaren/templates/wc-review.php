@@ -77,7 +77,7 @@ $gal = get_field('galerij', $product->get_id());
       </div>
     </div>
 </section>
-<?php if( $cta ): ?>
+<?php if( !empty($cta) && $cta['titel']): ?>
 <section class="cadeaubonnen-page-link">
   <div class="container">
     <div class="row">
