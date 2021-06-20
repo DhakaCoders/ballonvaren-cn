@@ -41,9 +41,21 @@ Text Domain: ballonvaren
 	display: flex!important;
 }
 .related-pro-crtl .hasRelatedProduct{
-
+	margin-left: -34px;
+	margin-right: -34px;
 }
 
-.single-product .hasRelatedProduct .slick-current.slick-active{
-    padding-left: 27px!important;
+/*.single-product .hasRelatedProduct .slick-current.slick-active{
+    padding-left:  34px!important;
+}
+.single-product .hasRelatedProduct .slick-active + .slick-active + .slick-active{
+	padding-right: 34px!important;
+}*/
+.related.products.related-pro-crtl{
+	padding-left: 34px;
+	padding-right: 34px;
+}
+.related-pro-crtl .hasRelatedProduct .slick-list{
+	padding-left: 8px!important;
+	padding-right: 8px!important;
 }

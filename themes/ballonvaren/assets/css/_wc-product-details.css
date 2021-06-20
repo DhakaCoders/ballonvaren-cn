@@ -1303,6 +1303,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	single-product .hasRelatedProduct div.product{
 		padding-bottom: 98px;
+	}
+	.cart-top-text{
+		text-align: center;
 	} 
 }
 
