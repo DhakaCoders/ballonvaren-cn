@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<section class="banner-sec">
+<section class="banner-sec no-effects">
 <?php  
   $hbanner = get_field('home_banner', HOMEID);
   if($hbanner):
