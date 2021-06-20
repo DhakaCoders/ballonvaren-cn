@@ -47,7 +47,6 @@ $max_value = apply_filters( 'woocommerce_quantity_input_max', product_max_qty($p
 $min_value = apply_filters( 'woocommerce_quantity_input_min', product_min_qty($product_id, $_product) );
 $step      = apply_filters( 'woocommerce_quantity_input_step', 1, $_product );
 $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'woocommerce_stock_amount', 'intval' ) ? '[0-9]*' : '' );
-$sh_desc = $_product->get_short_description();
 ?>
 
 
@@ -62,9 +61,6 @@ $sh_desc = $_product->get_short_description();
             <div class="popup-product-title">
               <div><a href="<?php echo  $product_permalink; ?>"><?php echo $product_name; ?></a></div>
             </div>
-            <?php if( !empty($sh_desc) ): ?>
-              <div class="single-shortdetails"><?php echo wpautop($sh_desc); ?></div>
-            <?php endif; ?>
           <?php if($attributes): ?>
             <div class="xoo-cp-variations"><?php echo $attributes; ?></div>
           <?php endif; ?>
@@ -145,17 +141,15 @@ $sh_desc = $_product->get_short_description();
             echo '</div>';
             echo '<div class="pro-item-desc pw-item-desc">';
             echo '<div class="pro-item-descWrap mHc">';
-            echo '<div class="title-wrap">'
             echo '<h3 class="pro-item-desc-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
-            echo '<div class="product-price">';
-            echo $product->get_price_html();
-            echo '</div>';
-            echo '</div>';
             if( !empty($loop_short_desc) ){
               echo '<div class="loop-shortdetails">';
               echo wpautop($loop_short_desc);
               echo '</div>';
             }
+            echo '<div class="product-price">';
+            echo $product->get_price_html();
+            echo '<span class="pro-prize-shrt-title show-sm"></span>';
             echo '<div class="fl-pro-grd-btn">';
             echo '<a class="red-color-arrow-btn" href="'.get_permalink( $product->get_id() ).'">
                 <span>'.$label.'</span>
@@ -164,7 +158,7 @@ $sh_desc = $_product->get_short_description();
                 </i>
               </a>';
             echo '</div>';
-            echo '</div>';
+            echo '</div></div>';
             echo '</div>';
             echo '</div>';
 

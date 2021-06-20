@@ -2,3 +2,5 @@
 
 2021-06-20T16:23:12+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\cbv-addet-to-cart-popup-wc\templates\xoo-cp-content.php on line 149
 
+2021-06-20T16:24:34+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\cbv-addet-to-cart-popup-wc\templates\xoo-cp-content.php on line 149
+
