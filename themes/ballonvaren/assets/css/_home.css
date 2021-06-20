@@ -478,6 +478,13 @@
 	.hm-news-details-sec.news-details .ervng-dtls-onverted-green-icon{
 		z-index: 3;
 	}
+	.hm-blog-grds-item-ctlr .blog-grds-item{
+		display: none;
+	}
+	.hm-blog-grds-item-ctlr .blog-grds-item:first-child,
+	.hm-blog-grds-item-ctlr.dfpBlogSlider.slick-initialized .blog-grds-item{
+		display: block;
+	}
 	
 }
 
