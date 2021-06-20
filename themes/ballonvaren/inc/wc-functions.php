@@ -281,11 +281,12 @@ function misha_adv_product_options(){
         )
     ));
     echo '</div>';
-
+    $style = 'display:none';
     if( isset($_GET['post']) && isset($_GET['action']) && $_GET['action'] == 'edit' ){
-        $style = 'display:block';
-    }else{
-        $style = 'display:none';
+        $v_product = get_product( $_GET['post'] );
+        if($v_product->is_type( 'pw-gift-card' )){
+          $style = 'display:block';  
+        }
     }
 
     echo '<div class="options_group" id="giftcard-manage" style="'.$style.'">';
@@ -294,7 +295,7 @@ function misha_adv_product_options(){
     woocommerce_wp_radio( array(
         'id'            => '_package_type',
         'value'   => get_post_meta( get_the_ID(), '_package_type', true ),
-        'label'         => __('Package Type'),
+        'label'         => __('Gift Package Type'),
         'options'       => array(
             'single_pack'       => __('Single Pack'),
             'duo_pack'       => __('Duo Pack'),
