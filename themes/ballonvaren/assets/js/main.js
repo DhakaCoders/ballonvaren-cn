@@ -8,7 +8,6 @@ $('.navbar-toggle').on('click', function(){
 	
   
 
-
 //matchHeightCol
 if($('.mHc').length){
   $('.mHc').matchHeight();

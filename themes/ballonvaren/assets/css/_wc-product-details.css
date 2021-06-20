@@ -1,8 +1,11 @@
 /* == single product page == */
 .single-product .fl-pro-grd-des{
--webkit-box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27); 
+/*-webkit-box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27); 
 -ms-box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27);
-box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27);
+box-shadow: 0px 15px 13px 0px rgba(44,17,62,0.27);*/
+-webkit-box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
+-moz-box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
+box-shadow: 0px 10px 10px -2px rgba(229,229,229,1);
 }
 .single-product #reviews #comments ol.commentlist li{
 	display: none;
@@ -758,10 +761,10 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	.related-pro-crtl .hasRelatedProduct .slick-list{
+	/*.related-pro-crtl .hasRelatedProduct .slick-list{
 		padding-left: 6px!important;
 		padding-right: 6px!important;
-	}
+	}*/
 	.related-pro-crtl .hasRelatedProduct,
 	.dft-hm-product-module .hm-product-grds{
 	    margin:0 -7px;
