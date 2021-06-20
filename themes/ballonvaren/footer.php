@@ -13,51 +13,34 @@
   $smedias = get_field('social_media', 'options');
   $ftgalerij = get_field('ft_galerij', 'options');
   $copyright_text = get_field('copyright_text', 'options');
+  $usps = get_field('usps', 'options');
 ?>
 
-
+<?php if( $usps ): ?>
 <section class="footer-top-sec">
   <span class="hdr-color-border"></span>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="footer-top-sec-cntlr ftrTpSecSlider">
+          <?php foreach( $usps as $usp ): ?>
           <div class="ftr-top-sec-item-wrap">
             <div class="ftr-top-sec-item-cntlr">
               <div class="ftr-top-sec-item">
                 <h6 class="fl-h6 ftr-top-sec-item-title">
-                  <span>Nam sagittis lacus eget lectus</span>
+                  <?php if( !empty($usp['titel']) ) printf('<span>%s</span>', $usp['titel']); ?>
                   <i><img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-sec-item-img.svg" alt=""></i>
                 </h6>
               </div>
             </div>
           </div>
-          <div class="ftr-top-sec-item-wrap">
-            <div class="ftr-top-sec-item-cntlr">
-              <div class="ftr-top-sec-item">
-                <h6 class="fl-h6 ftr-top-sec-item-title">
-                  <span>Nam sagittis lacus eget lectus</span>
-                  <i><img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-sec-item-img.svg" alt=""></i>
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="ftr-top-sec-item-wrap">
-            <div class="ftr-top-sec-item-cntlr">
-              <div class="ftr-top-sec-item">
-                <h6 class="fl-h6 ftr-top-sec-item-title">
-                  <span>Nam sagittis lacus eget lectus</span>
-                  <i><img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-sec-item-img.svg" alt=""></i>
-                </h6>
-              </div>
-            </div>
-          </div>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
   </div>    
 </section>
-
+<?php endif; ?>
 <footer class="footer-wrp">
   <div class="container">
     <div class="row">
