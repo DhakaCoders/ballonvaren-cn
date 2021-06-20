@@ -7,6 +7,25 @@ $('.navbar-toggle').on('click', function(){
 });
 	
   
+//review popup
+if($('.modal-toggle').length){
+  $('.modal-toggle').on('click', function(e) {
+    e.preventDefault();
+    $( "<div class='modal-overlay close-toggle' onclick='closePopup()'></div>" ).insertBefore( "#review_form" );
+    $( '<button class="modal-close" onclick="closePopup()" href="#">X</button>' ).insertBefore( "#reply-title" );
+    $('#review_form_wrapper').addClass('is-visible');
+  });
+}
+if($('.close-toggle').length){
+  $('.close-toggle').on('click', function(e) {
+    e.preventDefault();
+    console.log('check');
+    $( ".modal-overlay.close-toggle" ).remove( );
+    $( ".modal-close.close-toggle" ).remove( );
+    $('#review_form_wrapper').removeClass('is-visible');
+  });
+}
+
 //matchHeightCol
 if($('.mHc').length){
   $('.mHc').matchHeight();
@@ -229,6 +248,9 @@ if( $('#additional_datum').length ){
   $( "#additional_datum" ).datepicker();
 }
 
+if( $('#gift-card-amount').length ){
+  $("#gift-card-amount").selectpicker();
+}
 //products counter
 if( $('.qty').length ){
   $('.qty').each(function() {
@@ -556,11 +578,11 @@ var html = '<p class="form-row form-row-wide" id="billing_company_field">' +
 
   $("#extra_fields").html(html);
 });
-$("#private").on('change', function(){
 
-var html = '';
+$("#private").on('change', function(){
+  var html = '';
   $("#extra_fields").empty(html);
-})
+});
 
 
 // shipping field show/hide
@@ -632,23 +654,9 @@ $("#billing_order_type_Particulier").on('change', function(){
     }
 });
 
-$('.modal-toggle').on('click', function(e) {
-  e.preventDefault();
-  $( "<div class='modal-overlay close-toggle' onclick='closePopup()'></div>" ).insertBefore( "#review_form" );
-  $( '<button class="modal-close" onclick="closePopup()" href="#">X</button>' ).insertBefore( "#reply-title" );
-  $('#review_form_wrapper').addClass('is-visible');
-});
 
-$('.close-toggle').on('click', function(e) {
-  e.preventDefault();
-  console.log('check');
-  $( ".modal-overlay.close-toggle" ).remove( );
-  $( ".modal-close.close-toggle" ).remove( );
-  $('#review_form_wrapper').removeClass('is-visible');
-});
-new WOW().init();
 
-    new WOW().init();
+
 })(jQuery);
 function closePopup(){
   jQuery( ".modal-overlay.close-toggle" ).remove( );

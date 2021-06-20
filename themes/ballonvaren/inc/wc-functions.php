@@ -13,14 +13,7 @@ function get_custom_wc_output_content_wrapper(){
     if(is_shop() OR is_product_category()){ 
         get_template_part('templates/breadcrumbs');
         echo '<section class="product-page-cntlr"><div class="product-category"><div class="container"><div class="row"><div class="col-md-12">';
-        echo '<div class="ballonvaarten-overzicht-page-entry-hdr">
-            <div class="contact-form-dsc-wrp">
-              <div class="page-entry-header">
-                <h1 class="fl-h1">BALLONVAARTEN<span>Consectetur sit velit neque.</span></h1>
-                <p>Ornare pretium volutpat faucibus nibh suscipit dictum. Integer ut urna lacus etiam est.</p>
-              </div>
-            </div>
-          </div>';
+        get_template_part('templates/shop', 'top');
         echo '<div class="fl-products-cntlr"><div class="fl-product-top">';
     }
 
@@ -201,6 +194,10 @@ if (!function_exists('add_custom_box_product_summary')) {
             echo '<div class="summary-ctrl">';
             echo '<div class="summary-hdr">';
             echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
+            echo '<div class="fl-pro-grd-price">';
+            echo '<span class="Vanaf">Vanaf</span>';
+            echo $product->get_price_html();                                                         
+            echo '</div>';
             if( !empty($long_desc) ){
                 echo '<div class="long-desc">';
                 echo '<h2>Beschrijving</h2>';
@@ -242,7 +239,16 @@ function cbv_get_single_price(){
 // Change 'add to cart' text on single product page (only for product ID 386)
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'bryce_id_add_to_cart_text' );
 function bryce_id_add_to_cart_text( $default ) {
-        return __( 'In Winkelmand', THEME_NAME );
+    global $product;
+    switch ( $product->get_type() ) {
+      case "pw-gift-card" :
+          $label  = __('Reserveer uw vlucht', 'woocommerce');
+      break;
+      default :
+          $label  = __('In Winkelmand', 'woocommerce');
+      break;
+      }
+    return __( $label, THEME_NAME );
 }
 add_action( 'cbv_related_product', 'woocommerce_output_related_products');
 add_action( 'cbv_product_review', 'get_review_form');
@@ -534,7 +540,7 @@ function misha_remove_my_account_links( $menu_links ){
     Set gift card category
 */
 function assign_gift_card_cat(){
-    $gift_cat = array('geschenken');
+    $gift_cat = array('cadeaubonnen');
     if( !empty($gift_cat) )
         return $gift_cat;
     else
@@ -692,4 +698,7 @@ include_once(THEME_DIR .'/inc/wc-manage-fields.php');
 
 function is_wc_page(){
     return is_checkout() || is_account_page();
+}
+function is_breadcrumbs(){
+    return is_checkout() || is_account_page() || is_cart();
 }

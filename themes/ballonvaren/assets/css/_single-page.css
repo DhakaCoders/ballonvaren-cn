@@ -10,7 +10,7 @@
     z-index: 1;
 }
 .review-hdr{
-	padding-bottom: 38px;
+	padding-bottom: 35px;
 	border-bottom: 1px solid #ECF1F4;
 	margin-bottom: 33px;
 }
@@ -86,9 +86,9 @@ ol.commentlist {
 	color: #2C113E;
 	font-weight: 700;
 	font-size: 38px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
-.review-hdr p{
+.review-hdr p:last-of-type{
 	margin-bottom: 0;
 }
 .revw-buyer-details{

@@ -247,6 +247,7 @@
 }
 .cloud-bg img{
 	bottom: 90px;
+	display:  none;
 }
 @keyframes animate{
 	0%{

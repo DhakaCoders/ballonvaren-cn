@@ -1,28 +1,5 @@
 <?php get_header();?>
-<?php if( !is_cart() ): ?>
-<section class="breadcrumb-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="breadcrumb-cntlr">
-          <ul class="reset-list clearfix">
-            <li>
-              <a href="#">
-                <span class="item">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#"><span>Binnenpagina</span></a>
-            </li>
-            <li class="active">
-              <span>Binnenpagina</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div></section>
-<?php endif; ?>
+<?php if( !is_breadcrumbs() ): get_template_part('templates/breadcrumbs'); endif; ?>
   <?php if(have_rows('inhoud')){ 
     get_template_part('templates/innerpage');
   }else{ ?>

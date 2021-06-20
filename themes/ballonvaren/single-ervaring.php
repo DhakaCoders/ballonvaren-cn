@@ -9,29 +9,7 @@ $intro = get_field('intro', $pageID);
 $page_title = !empty($intro['titel']) ? $intro['titel'] : $pagetitle;
 $sub_title = !empty($intro['subtitel']) ? '<span>'.$intro['subtitel'].'</span>' : '';
 ?>
-<section class="breadcrumb-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="breadcrumb-cntlr">
-          <ul class="reset-list clearfix">
-            <li>
-              <a href="#">
-                <span class="item">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#"><span>Binnenpagina</span></a>
-            </li>
-            <li class="active">
-              <span>Binnenpagina</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/breadcrumbs'); ?>
 <div class="relatate-product-hide-cntlr">
   <section class="eveline-vernaeve-sec">
     <div class="container">

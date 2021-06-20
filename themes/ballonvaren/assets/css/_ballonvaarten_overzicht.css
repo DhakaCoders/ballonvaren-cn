@@ -210,18 +210,7 @@
 	margin-right: 2px;
 	line-height: 1;
 }
-.fl-pro-grd-price span.woocommerce-Price-amount bdi,
-.fl-pro-grd-price span.woocommerce-Price-amount bdi span,
-.fl-pro-grd-price del span.woocommerce-Price-amount bdi,
-.fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
-.fl-pro-grd-price ins span.woocommerce-Price-amount bdi,
-.fl-pro-grd-price ins span.woocommerce-Price-amount bdi span {
-    font-size: 16px!important;
-    line-height: 1.2;
-    color: #1DB4B2!important;
-    text-transform: uppercase;
-    font-weight: 500;
-}
+
 .fl-pro-grd-price span.woocommerce-Price-amount bdi span,
 .fl-pro-grd-price del span.woocommerce-Price-amount bdi span,
 .fl-pro-grd-price ins span.woocommerce-Price-amount bdi span,
