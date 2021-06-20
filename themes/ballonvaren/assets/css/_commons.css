@@ -267,9 +267,14 @@ form .bootstrap-select .caret{
 	content: none;
 }
 .dropdown-toggle::before{
-	content: "\f107"!important;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 600;
+	/* content: "\f107"!important; */
+	content: "";
+    /* font-family: 'Font Awesome 5 Free'; */
+    /* font-weight: 600; */
+    background-image: url('../images/select-down-arrow.svg');
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 7px;
     text-decoration: inherit;
     color: #1E1E1E;
     font-size: 17px;
@@ -283,7 +288,9 @@ form .bootstrap-select .caret{
     line-height: 15px;
 }
 .bootstrap-select.show .dropdown-toggle::before{
-	content: "\f106"!important;
+	/* content: "\f106"!important; */
+	transform: rotate(-180deg);
+	margin-top: -4px;
 }
 
 .btn-light.focus, 
@@ -315,7 +322,7 @@ form .bootstrap-select .dropdown-toggle:focus{
 }
 form .dropdown-menu{
     margin: 0;
-    background-color: #ccc;
+    background-color: #1db4b2;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -332,12 +339,15 @@ form .dropdown-menu li:before{
 form .dropdown-menu li a{
 	padding-top: 6px;
 	color: #fff;
+	font-size: 16px;
+    text-transform: none;
+    padding: 5px 16px;
 }
 form 
 .dropdown-menu > .active > a, 
 .dropdown-menu > .active > a:focus, 
 .dropdown-menu > .active > a:hover{
-	background-color: #242424;
+	background-color: #c1e2c4;
 }
 
 .bootstrap-select .dropdown-toggle:focus{
@@ -470,14 +480,17 @@ a.red-color-arrow-btn:hover i{
 
 /*slider break fix*/
 
-.hmProdctGrdsSlider .hmProdctGrdsSlideItme{
+.hmProdctGrdsSlider .hmProdctGrdsSlideItme,
+.related-pro-crtl .hasRelatedProduct .product{
 	display: none;
 }
 
-.hmProdctGrdsSlider .hmProdctGrdsSlideItme:first-child{
-	display: none;
+.hmProdctGrdsSlider .hmProdctGrdsSlideItme:first-child,
+.related-pro-crtl .hasRelatedProduct .product:first-child{
+	display: block;
 }
 
-.hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme{
+.hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme,
+.related-pro-crtl .hasRelatedProduct.slick-initialized .product{
 	display: block;
 }
