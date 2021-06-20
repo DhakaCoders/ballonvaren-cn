@@ -7,24 +7,7 @@ $('.navbar-toggle').on('click', function(){
 });
 	
   
-//review popup
-if($('.modal-toggle').length){
-  $('.modal-toggle').on('click', function(e) {
-    e.preventDefault();
-    $( "<div class='modal-overlay close-toggle' onclick='closePopup()'></div>" ).insertBefore( "#review_form" );
-    $( '<button class="modal-close" onclick="closePopup()" href="#">X</button>' ).insertBefore( "#reply-title" );
-    $('#review_form_wrapper').addClass('is-visible');
-  });
-}
-if($('.close-toggle').length){
-  $('.close-toggle').on('click', function(e) {
-    e.preventDefault();
-    console.log('check');
-    $( ".modal-overlay.close-toggle" ).remove( );
-    $( ".modal-close.close-toggle" ).remove( );
-    $('#review_form_wrapper').removeClass('is-visible');
-  });
-}
+
 
 //matchHeightCol
 if($('.mHc').length){
@@ -179,19 +162,21 @@ if( $('.responsive-slider').length ){
 })();
 
 if (windowWidth <= 576){
-if( $('.bnProcessGridItemsSlider').length ){
-    $('.bnProcessGridItemsSlider').slick({
-      dots: true,
-      arrows:false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 1,
-      slidesToScroll: 1,      
-    });
+  if( $('.bnProcessGridItemsSlider').length ){
+      $('.bnProcessGridItemsSlider').slick({
+        dots: true,
+        arrows:false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,      
+      });
+  }
 }
-}
+
+
 
 if( $('.single-product .hasRelatedProduct').length ){
     $('.single-product .hasRelatedProduct').slick({
@@ -383,48 +368,7 @@ if( $('.thumbnails-cntlr .thumbnails').length ){
 /**
 Slick slider
 */
-if( $('.hasRelatedProduct').length ){
-    $('.hasRelatedProduct').slick({
-      dots: false,
-      arrows:false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      speed: 700,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 700,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
+
 
 if( $('.contact-form-wrp').length ){
   $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click', function(){
@@ -658,7 +602,24 @@ $("#billing_order_type_Particulier").on('change', function(){
     }
 });
 
-
+//review popup
+if($('.modal-toggle').length){
+  $('.modal-toggle').on('click', function(e) {
+    e.preventDefault();
+    $( "<div class='modal-overlay close-toggle' onclick='closePopup()'></div>" ).insertBefore( "#review_form" );
+    $( '<button class="modal-close" onclick="closePopup()" href="#">X</button>' ).insertBefore( "#reply-title" );
+    $('#review_form_wrapper').addClass('is-visible');
+  });
+}
+if($('.close-toggle').length){
+  $('.close-toggle').on('click', function(e) {
+    e.preventDefault();
+    console.log('check');
+    $( ".modal-overlay.close-toggle" ).remove( );
+    $( ".modal-close.close-toggle" ).remove( );
+    $('#review_form_wrapper').removeClass('is-visible');
+  });
+}
 
 
 })(jQuery);
