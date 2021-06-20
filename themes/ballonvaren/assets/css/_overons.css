@@ -178,9 +178,6 @@ overons-team-sec-wrp
 }
 
 
-@media (max-width: 1499px) {
-	
-}
 
 @media(max-width: 1399px){
 	.overons-team-parachute-tp {
@@ -433,14 +430,5 @@ overons-team-sec-wrp
 	    height: 200px;
 	}
 	
-
-}
-
-@media(max-width: 479px){
-	
-
-}
-
-@media(max-width: 359px){
 
 }
