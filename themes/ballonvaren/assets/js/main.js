@@ -8,7 +8,6 @@ $('.navbar-toggle').on('click', function(){
 	
   
 
-
 //matchHeightCol
 if($('.mHc').length){
   $('.mHc').matchHeight();
@@ -183,7 +182,7 @@ if( $('.single-product .hasRelatedProduct').length ){
       dots: false,
       arrows:false,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 3,      
@@ -238,6 +237,13 @@ if( $('#gift-card-amount').length ){
 }
 if( $('#pa_locate').length ){
   $("#pa_locate").selectpicker();
+}
+if( $('#pa_aantal-volwassenen').length ){
+  $("#pa_aantal-volwassenen").selectpicker();
+}
+
+if( $('#pa_aantal-kinderen').length ){
+  $("#pa_aantal-kinderen").selectpicker();
 }
 
 //products counter

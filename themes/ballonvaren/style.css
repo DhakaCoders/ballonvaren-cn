@@ -34,3 +34,7 @@ Text Domain: ballonvaren
 .spotlight-popup-cntlr .fl-pro-grd-btn a.red-color-arrow-btn i{
 	margin-top: -2px;
 }
+
+.price-quentity-ctrl table.variations tr td label{
+	padding-top: 20px;
+}
