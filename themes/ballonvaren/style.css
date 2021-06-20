@@ -36,3 +36,8 @@ Text Domain: ballonvaren
 .single-product .eveline-vernaeve-cntlr{
 	z-index: 10;
 }
+.related-products .hasRelatedProduct.slick-initialized .slick-track{
+	height: auto!important;
+
+	display: flex!important;
+}
