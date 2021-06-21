@@ -1384,9 +1384,17 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.main-img-crtl .woocommerce-product-gallery__image{
 		height: inherit;
 	}
+	.single-product .related-grd-top-rgt-img{
+		max-width: 70px;
+		top: -105px;
+	}
 }
 
 @media(max-width: 359px){
+	.single-product .related-grd-top-rgt-img{
+		max-width: 60px;
+		top: -85px;
+	}
 	.meta-crtl ul li strong, .cartbtn-wrap > strong{
 		min-width: 70px;
 		margin-right: 10px;
