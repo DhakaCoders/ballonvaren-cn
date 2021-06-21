@@ -269,7 +269,7 @@
 }
 
 .cloud-fixt-img{
-		animation-name: floating;
+	animation-name: clfloating;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
@@ -279,7 +279,11 @@
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
 }
-
+@keyframes clfloating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(20px, 15px); }
+    to   { transform: translate(0, 0px); }    
+}
 
 
 

@@ -14,7 +14,7 @@
 						<?php $i = 1; foreach( $btminfo['bottom_info'] as $btmrow ): ?>
 			            <div class="bn-process-grid-item mHc">
 			              <div class="bn-process-item-hdr mHc1">
-			                <span>0<?php echo $i; ?></span>
+			                <span><?php echo input_zero_befor_number($i); ?></span>
 			                
 			                <?php if( !empty($btmrow['titel']) ) printf('<h4 class="fl-h5 bn-process-grid-title">%s</h4>', $btmrow['titel']); ?>
 			              </div>

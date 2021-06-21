@@ -59,7 +59,7 @@
           	<?php $i=1; foreach( $usps as $usp ): ?>
             <div class="bn-process-grid-item">
               <div class="bn-process-item-hdr mHc1">
-                <span><?php echo number_format($i); ?></span>
+                <span><?php echo input_zero_befor_number($i); ?></span>
                 <?php if( !empty($usp['titel']) ) printf( '<h4 class="fl-h5 bn-process-grid-title">%s</h4>', $usp['titel'] ); ?>
               </div>
               <?php if( !empty($usp['beschrijving']) ) echo wpautop($usp['beschrijving']); ?>
@@ -305,10 +305,11 @@ if( !empty($news_query) ){
             <div class="blog-grds-item spotlight">
               <div class="blog-grid-item">
                 <?php if ( ! empty( $categories ) && ! is_wp_error( $categories ) ){ ?>
-                  <div class="blog-grid-tag">
+                  <div class="blog-grid-tag" >
                     <?php 
                       foreach( $categories as $category ) {
-                          echo '<span>'.$category->name.'</span>';
+                          $colorbg = get_field('color_picker', $category);
+                          echo '<span style="background:'.$colorbg.'">'.$category->name.'</span>';
                       }
                     ?>  
                   </div>

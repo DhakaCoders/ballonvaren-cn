@@ -397,7 +397,7 @@ if( $('.bn-masonry-gallery-grid').length ){
   $('.bn-masonry-gallery-grid').masonry({
     // options
     itemSelector: '.bn-masonry-gallery-grid-item',
-  });
+  }).masonry('reload');
 };
 
 
