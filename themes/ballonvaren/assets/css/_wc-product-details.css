@@ -80,7 +80,6 @@ span.single-price-total{
 	clear: both;
 	display: table;
 }
-
 .main-img-crtl .woocommerce-product-gallery__image{
 /*	height: 436px;*/
 	background: #fff;
@@ -1169,6 +1168,11 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.single-product .hasRelatedProduct div.product{
 		padding-bottom: 104px;
+	}
+	.single-product .related-grd-top-lft-img {
+	    position: absolute;
+	    top: -58px;
+	    left: 18px;
 	}
 }
 
