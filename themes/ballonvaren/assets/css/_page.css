@@ -161,7 +161,92 @@
 }*/
 
 
-
+/*
+-------------
+ 404 page
+-------------
+*/
+.page-404-sec-wrp{
+	padding-bottom: 85px;
+}
+.page-404-dsc-wrp{
+	max-width: 920px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.page-404-dsc-wrp strong{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-bottom: 40px;
+	padding-left: 190px;
+}
+.page-404-dsc-wrp span{
+	display: block;
+	font-size: 22px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #243444;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.page-404-dsc-wrp p{
+	margin-bottom: 50px;
+}
+.page-404-dsc-wrp ul{
+	display: table;
+	margin: 0 auto;
+}
+.page-404-dsc-wrp ul li{
+	float: left;
+	font-size: 16px;
+	line-height: 1.1;
+	font-weight: 500;
+	padding: 0 35px;
+}
+.page-404-dsc-wrp ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color:#525A61; 
+	text-decoration: underline;
+}
+.page-404-dsc-wrp ul li a:hover{
+	color: #8dcc0c;
+}
+.page-404-btn{
+	display: table;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+.page-404-btn a {
+    float: left;
+    height: 50px;
+    width: 185px;
+    margin: 0 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-404-btn a.fl-trnsprnt-btn{
+	background: transparent;
+	color: #EE3E15;
+}
+.page-404-btn a.fl-trnsprnt-btn:hover{
+	background: #EE3E15;
+	color: #fff;
+}
+/*.page-404-btn a:hover:first-of-type{
+	background:transparent;
+	color: #31304F;
+	border-color: #31304F;
+}*/
+/*.page-404-btn a:hover{
+	background: #D9534F;
+    border-color: #D9534F;
+    color: #fff;
+}*/
 
 .bnr-ballon,
 .booking-top-img,
@@ -175,18 +260,31 @@
 .ballon-rides-lft-top-img,
 .contact-parachute-icon,
 .contact-google-parachute,
-.cadeaubonnen-page-link i{
+.cadeaubonnen-page-link i,
+.bv-clndr-absolute-img-4{
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
 
+.cloud-fixt-img{
+	animation-name: clfloating;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
 @keyframes floating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
 }
+@keyframes clfloating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(20px, 15px); }
+    to   { transform: translate(0, 0px); }    
+}
+
 
 
 @media(max-width: 1399px){
@@ -221,13 +319,23 @@
 	.fl-pagination-ctlr ul li{
 		padding: 0 15px;
 	}
+	.page-404-dsc-wrp strong{
+		padding-left: 150px;
+	}
 }
-
+@media(max-width: 479px){
+	.page-404-dsc-wrp strong{
+		padding-left: 100px;
+	}
+}
 @media(max-width: 479px){
 	.fl-pagination-ctlr ul{
 		margin: 0 -12px;
 	}
 	.fl-pagination-ctlr ul li{
 		padding: 0 12px;
+	}
+	.page-404-dsc-wrp strong{
+		padding-left: 100px;
 	}
 }

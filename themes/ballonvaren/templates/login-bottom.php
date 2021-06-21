@@ -1,4 +1,9 @@
 <?php if( !is_user_logged_in() && is_account_page() && !isset($_GET['action']) ){ ?>
+<?php 
+    $btminfo = get_field('myaccount', 'options'); 
+    if($btminfo):
+?>
+<?php if( $btminfo['bottom_info'] ): ?>
 <section class="login-btm-section">
 <div class="container">
 	<div class="row">
@@ -6,27 +11,16 @@
 			<div class="login-info-crtl">
 				<div class="login-info-inr">
 					<div class="bn-process-grid-items bnProcessGridItemsSlider">
+						<?php $i = 1; foreach( $btminfo['bottom_info'] as $btmrow ): ?>
 			            <div class="bn-process-grid-item mHc">
 			              <div class="bn-process-item-hdr mHc1">
-			                <span>01</span>
-			                <h4 class="fl-h5 bn-process-grid-title">Vragen?</h4>
+			                <span><?php echo input_zero_befor_number($i); ?></span>
+			                
+			                <?php if( !empty($btmrow['titel']) ) printf('<h4 class="fl-h5 bn-process-grid-title">%s</h4>', $btmrow['titel']); ?>
 			              </div>
-			              <p>We maken tijd om voor uw reservatie op àl uw<br> vragen te antwoorden</p>
+			              <?php if( !empty($btmrow['beschrijving']) ) echo wpautop($btmrow['beschrijving']); ?>
 			            </div>
-			            <div class="bn-process-grid-item mHc">
-			              <div class="bn-process-item-hdr mHc1">
-			                <span>02</span>
-			                <h4 class="fl-h5 bn-process-grid-title">Briefing</h4>
-			              </div>  
-			              <p>We geven voor het opstijgen een uitgebreide<br> briefing</p>
-			            </div>
-			            <div class="bn-process-grid-item mHc">
-			              <div class="bn-process-item-hdr mHc1">
-			                <span>03</span>
-			                <h4 class="fl-h5 bn-process-grid-title">Hoog comfort</h4>
-			              </div>  
-			              <p>U vaart mee in ruime comfortabele<br> manden</p>
-			            </div>
+			            <?php $i++; endforeach; ?>
 			        </div>
 				</div>
 			</div>
@@ -39,7 +33,8 @@
 	<span class="white-sky-inline-bg show-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/xs-white-sky-bg.png');"></span>
 </div>
 </section>
-
+<?php endif; ?>
+<?php endif; ?>
 
 
 <?php } ?>

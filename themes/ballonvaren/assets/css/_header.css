@@ -489,6 +489,26 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 }
 
 
+/*home messege*/
+
+.home-messege{
+	padding: 18px 0;
+	background: #FDCA35;
+}
+
+.home-messege-inr{
+	text-align: center;
+	color: #2C113E;
+}
+.home-messege-inr p{
+	margin-bottom: 0;
+}
+.home-messege-inr p strong{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-right: 10px;
+}
+
 
 
 /*responsive*/
@@ -567,7 +587,15 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	}
 }
 @media(max-width: 1499px){
-	
+	.logo a {
+	    max-width: 230px;
+	}
+}
+@media(max-width: 1399px){
+	nav.main-nav > ul > li > a:after{
+		width: 8px;
+    	height: 8px;
+	}
 }
 
 @media(max-width: 1299px){

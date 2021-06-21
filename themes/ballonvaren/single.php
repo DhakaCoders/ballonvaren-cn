@@ -11,29 +11,7 @@ $terms = get_terms( 'category', array(
 $share_url = get_permalink();
 $share_text = get_the_excerpt();
 ?>
-<section class="breadcrumb-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="breadcrumb-cntlr">
-          <ul class="reset-list clearfix">
-            <li>
-              <a href="#">
-                <span class="item">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#"><span>Binnenpagina</span></a>
-            </li>
-            <li class="active">
-              <span>Binnenpagina</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('templates/breadcrumbs'); ?>
 <section class="innerpage-con-wrap" id="news-details">
   <article class="default-page-con">
     <div class="block-850">
@@ -50,99 +28,67 @@ $share_text = get_the_excerpt();
     </div>
     <?php if(have_rows('inhoud')){  ?>
     <?php while ( have_rows('inhoud') ) : the_row();  ?>
-    <?php if( get_row_layout() == 'galerij' ){ 
-    $galleries = get_sub_field('fc_afbeeldingen');
-    $full_wide = get_sub_field('full_wide');
-    $lightbox = get_sub_field('lightbox');
-    $kolom = get_sub_field('kolom');
-    if( $galleries ): 
+     <?php if( get_row_layout() == 'galerij' ){ 
+      $galleries = get_sub_field('fc_afbeeldingen');
+      $full_wide = get_sub_field('fullwidth');
+      $inline_image = get_sub_field('show_inline_afbeelding');
+      $lightbox = get_sub_field('lightbox');
+      $kolom = get_sub_field('kolom'); 
+      $hasinline_class = ($inline_image)?'has-inline-bg ':'';
+      if($galleries):
     ?>
-    <?php if($full_wide): ?>
-    <div class="block-1285">
-      <div class="top-gallery-module">
-        <div class="gallery-wrap has-inline-bg clearfix">
-          <div class="gallery gallery-columns-2">
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg">
-              </div>
-            </figure>
-
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg">
-              </div>
-            </figure>
+      <?php if($full_wide): ?>
+      <div class="block-1285">
+        <div class="top-gallery-module">
+          <div class="<?php echo $hasinline_class; ?>gallery-wrap clearfix">
+            <div class="gallery gallery-columns-<?php echo $kolom; ?>">
+              <?php foreach( $galleries as $image ): ?>
+              <figure class="gallery-item">
+                <div class="gallery-icon portrait">
+                <?php 
+                  if( $lightbox ){
+                    echo "<a data-fancybox='gallery' href='{$image['url']}'>";
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                    echo "</a>";
+                  }else{
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                  }
+                ?>
+                </div>
+              </figure>
+              <?php endforeach; ?>
+            </div>
           </div>
         </div>
-
-
-        <div class="gallery-wrap clearfix">
+      </div>
+      <?php else: ?>
+      <div class="block-850">
+        <div class="<?php echo $hasinline_class; ?>gallery-wrap clearfix">
           <div class="gallery gallery-columns-2">
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-13.jpg">
-              </div>
-            </figure>
-
-            <figure class="gallery-item">
-              <div class="gallery-icon portrait">
-                <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg');"></div>
-                <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-08.jpg">
-              </div>
-            </figure>
+              <?php foreach( $galleries as $image ): ?>
+              <figure class="gallery-item">
+                <div class="gallery-icon portrait">
+                <?php 
+                  if( $lightbox ){
+                    echo "<a data-fancybox='gallery' href='{$image['url']}'>";
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                    echo "</a>";
+                  }else{
+                    echo '<div class="gallery-icon-img inline-bg" style="background: url('.cbv_get_image_src( $image, 'dfpageg1' ).');"></div>';
+                    echo cbv_get_image_tag( $image, 'dfpageg1' );
+                  }
+                ?>
+                </div>
+              </figure>
+              <?php endforeach; ?>
           </div>
         </div>
-
-
       </div>
-    </div>
-    <?php else: ?>
-    <div class="block-850">
-      <div class="gallery-wrap has-inline-bg clearfix">
-        <div class="gallery gallery-columns-2">
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg">
-            </div>
-          </figure>
-
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg">
-            </div>
-          </figure>
-        </div>
-      </div>
-
-
-      <div class="gallery-wrap clearfix">
-        <div class="gallery gallery-columns-2">
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg">
-            </div>
-          </figure>
-
-          <figure class="gallery-item">
-            <div class="gallery-icon portrait">
-              <div class="gallery-icon-img inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg');"></div>
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-03.jpg">
-            </div>
-          </figure>
-        </div>
-      </div>
-
-
-    </div>
-    <?php endif; ?>
-    <?php endif; ?>
+      <?php endif; ?>
+      <?php endif; ?>
     <?php 
     }elseif( get_row_layout() == 'teksteditor' ){ 
     $beschrijving = get_sub_field('fc_teksteditor');
@@ -208,7 +154,29 @@ $share_text = get_the_excerpt();
     </div>
   </article>
 </section>
+<?php 
+  $terms = get_the_terms(get_the_ID(), 'category');
+  $slugs = array();
+  if( !empty($terms) ){
+    foreach( $terms as $term ){
+      $slugs[] = $term->slug;
+    }
+    $pQuery = new WP_Query(array(
+    'post_type' => 'post',
+    'posts_per_page'=> 3,
+    'orderby' => 'date',
+    'order'=> 'asc',
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'category',
+          'field'    => 'slug',
+          'terms'    => $slugs,
+      )
+    )
 
+  ));
+?>
+<?php if( $pQuery->have_posts() ): ?>
 <section class="blog-grds-sec news-details white-sky-bg-cntlr">
   <div class="white-sky-bg">
       <span class="white-sky-inline-bg hide-sm" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/white-sky-bg.png');"></span>
@@ -228,32 +196,46 @@ $share_text = get_the_excerpt();
             <img src="<?php echo THEME_URI; ?>/assets/images/nd-top-lft-img.png">
           </div>
           <div class="sec-entry-header">
-            <h3 class="fl-h3">Gerelateerde Artikelen</h3>
+            <h3 class="fl-h3"><?php _e( 'Gerelateerde Artikelen', 'ballonvaren' ); ?></h3>
           </div>
           <div class="blog-grds-item-ctlr dfpBlogSlider clearfix">
+            <?php 
+                while(have_posts()): the_post(); 
+                global $post;
+                $imgID = get_post_thumbnail_id(get_the_ID());
+                $imgsrc = !empty($imgID)? cbv_get_image_src($imgID): '';
+                $categories = get_the_terms( get_the_ID(), 'category' );
+            ?>
             <div class="blog-grds-item spotlight">
               <div class="blog-grid-item">
+                <?php if ( ! empty( $categories ) && ! is_wp_error( $categories ) ){ ?>
                 <div class="blog-grid-tag">
-                  <span>In de Kijker</span>  
+                  <?php 
+                    foreach( $categories as $category ) {
+                      $colorbg = get_field('color_picker', $category);
+                      echo '<span style="background:'.$colorbg.'">'.$category->name.'</span>';
+                    }
+                  ?>  
                 </div>
+                <?php } ?>
                 <div class="blog-grid-img">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/blog-img-01.jpg');">                  
+                  <a href="<?php the_permalink(); ?>" class="overlay-link"></a>
+                  <div class="bgi-img inline-bg" style="background-image: url('<?php echo $imgsrc; ?>');">                  
                   </div>
                 </div>  
                 <div class="blog-grid-des mHc">
                   <div class="post-date hide-md">
                     <i><svg class="date-icon" width="13" height="14" viewBox="0 0 13 14" fill="#EE3E15">
                     <use xlink:href="#date-icon"></use> </svg></i>
-                    <span>22.04.2021</span>
+                    <span><?php echo get_the_date('m.d.Y'); ?></span>
                   </div> 
-                  <h5 class="fl-h5 bgi-title mHc1"><a href="#">Nulla accumsan pharetra purus, sit amet iaculis leo.</a></h5>                      
+                  <h5 class="fl-h5 bgi-title mHc1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>                      
                   <div class="bgi-des mHc2">
-                    <p>Duis ligula mauris, ultricies eget ligula vitae, porttitor consequat nibh. Pellentesque ullamcorper nibh eget enim lacinia consequat.</p>
+                    <?php the_excerpt(); ?>
                   </div>  
                   <div class="fl-pro-grd-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
+                    <a class="red-color-arrow-btn" href="<?php the_permalink(); ?>">
+                      <span><?php _e( 'LEES MEER', 'ballonvaren' ); ?></span>
                       <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
                       <use xlink:href="#red-right-arrow"></use> </svg>
                       </i>
@@ -262,72 +244,12 @@ $share_text = get_the_excerpt();
                 </div>  
               </div>
             </div>
-            <div class="blog-grds-item">
-              <div class="blog-grid-item">
-                <div class="blog-grid-tag">
-                  <span>In de Kijker</span>  
-                </div>
-                <div class="blog-grid-img">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/blog-img-02.jpg');">                  
-                  </div>
-                </div>  
-                <div class="blog-grid-des mHc">
-                  <div class="post-date hide-md">
-                    <i><svg class="date-icon" width="13" height="14" viewBox="0 0 13 14" fill="#EE3E15">
-                    <use xlink:href="#date-icon"></use> </svg></i>
-                    <span>22.04.2021</span>
-                  </div> 
-                  <h5 class="fl-h5 bgi-title mHc1"><a href="#">Nulla accumsan pharetra purus, sit amet iaculis leo.</a></h5>                      
-                  <div class="bgi-des mHc2">
-                    <p>Duis ligula mauris, ultricies eget ligula vitae, porttitor consequat nibh. Pellentesque ullamcorper nibh eget enim lacinia consequat.</p>
-                  </div>  
-                  <div class="fl-pro-grd-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                      <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>  
-              </div>
-            </div>
-            <div class="blog-grds-item">
-              <div class="blog-grid-item">
-                <div class="blog-grid-tag">
-                  <span>In de Kijker</span>  
-                </div>
-                <div class="blog-grid-img">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="bgi-img inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/blog-img-03.jpg');">                  
-                  </div>
-                </div>  
-                <div class="blog-grid-des mHc">
-                  <div class="post-date hide-md">
-                    <i><svg class="date-icon" width="13" height="14" viewBox="0 0 13 14" fill="#EE3E15">
-                    <use xlink:href="#date-icon"></use> </svg></i>
-                    <span>22.04.2021</span>
-                  </div> 
-                  <h5 class="fl-h5 bgi-title mHc1"><a href="#">Nulla accumsan pharetra purus, sit amet iaculis leo.</a></h5>                      
-                  <div class="bgi-des mHc2">
-                    <p>Duis ligula mauris, ultricies eget ligula vitae, porttitor consequat nibh. Pellentesque ullamcorper nibh eget enim lacinia consequat.</p>
-                  </div>  
-                  <div class="fl-pro-grd-btn">
-                    <a class="red-color-arrow-btn" href="#">
-                      <span>LEES MEER</span>
-                      <i><svg class="red-right-arrow" width="9" height="14" viewBox="0 0 9 14">
-                      <use xlink:href="#red-right-arrow"></use> </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>  
-              </div>
-            </div>
+            <?php endwhile; ?>
           </div>
         </div>
       </div>
     </div>
     </div>
 </section>
+<?php endif; wp_reset_postdata(); } ?>
 <?php get_footer();?>

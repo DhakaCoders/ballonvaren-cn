@@ -1762,7 +1762,7 @@ body.woocommerce-checkout .place-order #pwgc-redeem-form input[type="submit"]{
     width: 210px;
     height: 50px;
     border-radius: 6px;
-    background: #8ccc0c;
+    background: #1DB4B2;
     color: #fff;
     font-weight: 700;
     margin-top: 30px!important;
@@ -1802,7 +1802,7 @@ body.woocommerce-checkout #pwgc-redeem-gift-card-form #pwgc-redeem-form  input[t
     border-color:#fcf8f8;
 }
 body.woocommerce-checkout .place-order #pwgc-redeem-form input[type="submit"]:hover {
-    background: #EC5387!important;
+    background: #EE3E15!important;
 }
 body.woocommerce-checkout .checkout-terms > .validate-required {
     margin-bottom:30px!important;
@@ -1849,7 +1849,7 @@ body.woocommerce-checkout section.checkout-top-sec{
 
 }
 
-@media(max-width: 1499px){
+@media(max-width: 1599px){
     body.woocommerce-checkout #customer_details .col-2 {
         padding-left: 50px;
     }
@@ -1890,6 +1890,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
         font-size:19px;
     }
+
 }
 @media(max-width:1399px){
     body.woocommerce-orders .myac-pro-grd-item .myac-pro-grd-item-inr{
@@ -3090,13 +3091,7 @@ body.woocommerce-checkout section.checkout-top-sec{
     .woocommerce-cart .woocommerce .cart-is-emtpy .cie-icon img{
         max-width: 100px;
     }
-    body.empty-cart .innerpage-con-wrap{
-        background: url(../images/empty-cart-xs-bg.png);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: 300px auto;
-        padding-bottom: 40px;
-    }
+   
     p.woocommerce-mini-cart__buttons.buttons a{
         width: 50%!important;
     }

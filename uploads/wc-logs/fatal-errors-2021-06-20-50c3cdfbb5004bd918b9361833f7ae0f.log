@@ -1,0 +1,16 @@
+2021-06-20T16:22:55+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\cbv-addet-to-cart-popup-wc\templates\xoo-cp-content.php on line 149
+
+2021-06-20T16:23:12+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\cbv-addet-to-cart-popup-wc\templates\xoo-cp-content.php on line 149
+
+2021-06-20T16:24:34+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\plugins\cbv-addet-to-cart-popup-wc\templates\xoo-cp-content.php on line 149
+
+2021-06-20T16:11:02+00:00 CRITICAL syntax error, unexpected token "}" in D:\xampp\htdocs\projects\2021\ballonvaren\ballonvaren-cn\themes\ballonvaren\single.php on line 31
+
+2021-06-20T17:45:26+00:00 CRITICAL syntax error, unexpected end of file in E:\host\htdocs\2021\06\ballonvaren\ballonvaren-cn\themes\ballonvaren\woocommerce\myaccount\dashboard.php on line 37
+
+2021-06-20T18:36:27+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\06\ballonvaren\wp-includes\wp-db.php on line 2056
+
+2021-06-20T18:47:20+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\06\ballonvaren\wp-includes\wp-db.php on line 2056
+
+2021-06-20T19:42:05+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\may\ballonvaren\wp-includes\Requests\Transport\cURL.php on line 163
+

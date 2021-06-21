@@ -47,7 +47,6 @@ $max_value = apply_filters( 'woocommerce_quantity_input_max', product_max_qty($p
 $min_value = apply_filters( 'woocommerce_quantity_input_min', product_min_qty($product_id, $_product) );
 $step      = apply_filters( 'woocommerce_quantity_input_step', 1, $_product );
 $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'woocommerce_stock_amount', 'intval' ) ? '[0-9]*' : '' );
-$sh_desc = $_product->get_short_description();
 ?>
 
 
@@ -62,9 +61,6 @@ $sh_desc = $_product->get_short_description();
             <div class="popup-product-title">
               <div><a href="<?php echo  $product_permalink; ?>"><?php echo $product_name; ?></a></div>
             </div>
-            <?php if( !empty($sh_desc) ): ?>
-              <div class="single-shortdetails"><?php echo wpautop($sh_desc); ?></div>
-            <?php endif; ?>
           <?php if($attributes): ?>
             <div class="xoo-cp-variations"><?php echo $attributes; ?></div>
           <?php endif; ?>
@@ -126,6 +122,11 @@ $sh_desc = $_product->get_short_description();
         while($pQuery->have_posts()): $pQuery->the_post(); 
         global $product, $woocommerce, $post;
         $loop_short_desc = $product->get_short_description();
+        switch ( $product->get_type() ) {
+        default :
+            $label  = __('MEER INFO', 'woocommerce');
+        break;
+        }
       ?>
       <div class="flex-fill bd-highlight">
         <div class="pro-item-cntlr">
@@ -149,6 +150,14 @@ $sh_desc = $_product->get_short_description();
             echo '<div class="product-price">';
             echo $product->get_price_html();
             echo '<span class="pro-prize-shrt-title show-sm"></span>';
+            echo '<div class="fl-pro-grd-btn">';
+            echo '<a class="red-color-arrow-btn" href="'.get_permalink( $product->get_id() ).'">
+                <span>'.$label.'</span>
+                <i><svg class="red-right-arrow" width="7" height="11" viewBox="0 0 7 11">
+                <use xlink:href="#red-right-arrow"></use> </svg>
+                </i>
+              </a>';
+            echo '</div>';
             echo '</div></div>';
             echo '</div>';
             echo '</div>';

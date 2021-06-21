@@ -131,7 +131,7 @@ if ( $customer_orders ) :
           <div class="contact-info">
           	<i></i>
           	<div>
-          		<a class="order-contact-btn" href="" target="_blank">CONTACT</a>
+          		<a class="order-contact-btn" href="<?php echo get_link_by_page_template('page-contact.php'); ?>" target="_blank"><?php esc_html_e( 'CONTACT', 'woocommerce' ); ?></a>
           	</div>
           </div>
         </div>
@@ -171,6 +171,6 @@ if ( $customer_orders ) :
 ?>
 </div>
 <?php else: ?>
-  <div class="no-results"><p>Geen bestellingen.</p></div>
+  <div class="no-results"><p><?php esc_html_e( 'Geen bestellingen', 'woocommerce' ); ?>.</p></div>
 <?php endif; ?>
 </div>

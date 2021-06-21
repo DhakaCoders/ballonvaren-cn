@@ -35,9 +35,15 @@ $wrapper_classes   = apply_filters(
 		'images',
 	)
 );
+$package_type = get_field('_package_type', $product->get_id());
+$typeClass = '';
+if( !empty($package_type) ){
+  $typeClass = $package_type.' ';
+}
 $attachment_ids = $product->get_gallery_image_ids();
+
 ?>
-<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
+<div class="<?php echo $typeClass; ?><?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
 	<figure class="woocommerce-product-gallery-wrap">
 		<div class="main-img-crtl">
 		<?php
