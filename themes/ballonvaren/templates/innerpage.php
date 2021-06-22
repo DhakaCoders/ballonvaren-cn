@@ -232,7 +232,9 @@
         <div class="block-850">
         <div class="fl-dft-overflow-controller">
           <div class="fl-dft-lftimg-rgtdes clearfix<?php echo $imgposcls; ?>">
-            <div class="fl-dft-lftimg-rgtdes-lft mHc" style="background-image: url(<?php echo $imgsrc; ?>);"></div>
+            <div class="fl-dft-lftimg-rgtdes-lft mHc" style="background-image: url(<?php echo $imgsrc; ?>);">
+              <img src="<?php echo $imgsrc; ?>" alt="">
+            </div>
             <div class="fl-dft-lftimg-rgtdes-rgt mHc">
               <?php echo wpautop($fc_tekst); ?>
             </div>
